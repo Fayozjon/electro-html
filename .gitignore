@@ -3,12 +3,9 @@
 
 # Grunt
 /node_modules/
-/electro/
-/electro-child
+/electro-html/
 
 electr*.zip
-/src/themes/electro/assets/plugins/electro-extensions.zip
-/dist/theme-files/*
 /dist/documentation
 
 npm-debug.log

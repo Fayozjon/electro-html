@@ -167,7 +167,7 @@ module.exports = function( grunt ) {
 				files: [ {
 					expand: true,
 					cwd: 'src/',
-					dest: '<%= dirs.distPHP %>/'
+					dest: '<%= dirs.distPHP %>/',
 					src: [
 						'**',
 						'!.*',
@@ -179,7 +179,8 @@ module.exports = function( grunt ) {
 						'!node_modules/**',
 						'!.DS_Store',
 						'!npm-debug.log',
-						'!switchstylesheet/'
+						'!switchstylesheet/**',
+						'!assets/images/**'
 					]
 				} ]
 			}

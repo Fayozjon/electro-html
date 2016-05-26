@@ -208,12 +208,13 @@
 		.menu-item-has-children {
 			&.open {
 				> .dropdown-menu {
-					position: static;
-					#{$start}: 0;
-					width: 100%;
-					height: auto;
-					opacity: 1;
-					visibility: visible;
+					position: static !important;
+					#{$start}: 0 !important;
+					width: 100% !important;
+					height: auto !important;
+					opacity: 1 !important;
+					visibility: visible !important;
+					min-height: inherit !important;
 				}
 			}
 
@@ -228,15 +229,28 @@
 		}
 	}
 
-	.page-template-template-homepage-v2 {
+	.departments-menu .departments-menu-dropdown {
+		.menu-item-has-children {
+			&:hover,
+			&:focus,
+			&.open {
+				ul.dropdown-menu {
+					display: block !important;
+					margin-top: 0 !important;
+				}
+			}
+		}
+	}
+
+	.home-v2 {
 		.departments-menu {
-			.dropdown {
-				.dropdown-menu {
+			> .dropdown {
+				> .dropdown-menu {
 					display: none;
 				}
 
 				&.open {
-					.dropdown-menu {
+					> .dropdown-menu {
 						display: block;
 					}
 				}
@@ -335,26 +349,15 @@
 		}
 	}
 
-	// .products {
-	// 	.product.product-card {
-	// 		.media-body {
-	// 			.hover-area {
-	// 				.action-buttons {
-	// 					> div ,
-	// 					> a{
-	// 						margin-#{$end}: 0;
-	// 						margin-#{$start}: 0;
-	// 					}
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// }
 
-	.page-template-template-homepage-v2 {
+	.home-v2 {
 		#sidebar {
 			margin-top: 5.714em !important;
 		}
+	}
+
+	.home-v2-slider {
+		left: 50%;
 	}
 
 	/*..........Home Page 3........*/

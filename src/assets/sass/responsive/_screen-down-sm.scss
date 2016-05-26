@@ -151,8 +151,6 @@
 		}
 	}
 
-
-
 	/*........Header Menu Dropdown........*/
 
 
@@ -225,10 +223,16 @@
 			&.open {
 				> .dropdown-menu {
 					display: block !important;
+					opacity: 1 !important;
+					visibility: visible !important;
+					width: auto !important;
+					margin-top: 0 !important;
 				}
 			}
 		}
 	}
+
+
 
 	.vertical-menu {
 
@@ -260,6 +264,20 @@
 	.vertical-menu .dropdown-menu > .menu-item {
 		padding: 0;
 	}
+
+	.departments-menu .departments-menu-dropdown {
+		.menu-item-has-children {
+			&:hover,
+			&:focus,
+			&.open {
+				ul.dropdown-menu {
+					display: block !important;
+					margin-top: 0 !important;
+				}
+			}
+		}
+	}
+	 
 
 	.yamm {
 		.yamm-content {
@@ -326,6 +344,12 @@
 
 
 	/*........Shop Page........*/
+
+	ul.products {
+		> li.product.list-view {
+			padding: 0;
+		}
+	}
 
 	.woocommerce-page {
 		.page-header {
@@ -502,6 +526,18 @@
 
 		a {
 			display: inline-block;
+		}
+	}
+
+	.electro-nav-tabs {
+		> li.nav-item {
+			display: block;
+			margin-bottom: 1.429em;
+
+			& + li.nav-item {
+				margin-#{$start}: 0;
+			}
+
 		}
 	}
 
@@ -794,6 +830,18 @@
 
 	/*........Blog Page........*/
 
+	article.post {
+		.media-attachment {
+			.media-attachment-gallery {
+				.owl-carousel {
+					.owl-stage-outer {
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+
 	article.post.format-quote,
 	article.post.format-link  {
 		padding: 2.857em;
@@ -859,7 +907,7 @@
 
 	.contact-form.vc_column_container {
 		.vc_column-inner {
-			padding-right: 1.071em;
+			padding-right: 0;
 		}
 	}
 
@@ -870,7 +918,7 @@
 		}
 	}
 
-	.store-info.store-info-v2.vc_column_container {
+	.store-info.store-info-v2 {
 		.vc_column-inner {
 			padding-#{$end}: 1.071em;
 
@@ -880,6 +928,11 @@
 		}
 	}
 
+	.store-info {
+		.inner-right-md {
+			padding: 0;
+		}
+	}
 
 	/*........About Page ........*/
 	.wpb-accordion {
@@ -984,6 +1037,12 @@
 			}
 		}
 	}
+
+	
+	 .primary-nav .nav-inline .dropdown-menu .menu-item > a {
+	 	white-space: normal;
+	 }
+	  
 
 	.products-carousel-with-image {
 		section header .h1,
@@ -1180,6 +1239,10 @@
 	  		}
 	  	}
 	 }
+
+	 #config {
+		position: absolute !important;
+	}
 }
 
 
@@ -1296,4 +1359,5 @@
 		width: 308px;
 		#{$end}: -25px !important;
 	}
+
 }

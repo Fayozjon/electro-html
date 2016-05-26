@@ -324,6 +324,8 @@
 
 	.footer-social-icons {
 		.social-icons {
+			text-align: center;
+
 			> li + li {
 				margin-#{$start}: 1.786em;
 			}
@@ -340,6 +342,23 @@
 				margin-#{$start}: 0;
 			}
 		}
+	}
+
+
+	/*........ Slider.......*/
+	.home-v1-slider,
+	.home-v2-slider,
+	.home-v3-slider {
+		height: 300px;
+
+		.owl-item {
+			font-size: 10px;
+			height: 300px;
+		}
+	}
+
+	#owl-main .item .caption {
+		padding-top: 20px;
 	}
 
 
@@ -407,6 +426,10 @@
 				}
 			}
 		}
+	}
+
+	.products .product.product-card .product-inner {
+		padding-bottom: 0;
 	}
 
 	section.section-product-cards-carousel header ul.nav {
@@ -973,6 +996,11 @@
 
 	/*........HomePage........*/
 
+	.section-onsale-product .savings {
+		float: none;
+		margin-top: 20px;
+	}
+
 	.ads-block {
 		> div {
 			margin-bottom: 1.429em;
@@ -1147,6 +1175,12 @@
 				.onsale-product-content {
 					margin-top: 2.143em;
 				}
+
+				.onsale-product-thumbnails {
+					.savings {
+						position: relative;
+					}
+				}
 			}
 		}
 	}
@@ -1183,7 +1217,26 @@
 				padding-#{$start}: 0.9375rem;
 			}
 		}
+
+		> ul.products.product-main-6-1 {
+			.product-outer {
+				height: inherit !important;
+			}
+
+			 > .product {
+			 	.thumbnails {
+			 		margin-#{$end}: 0;
+
+			 		> a{
+			 			width: 40%;
+			 			margin-bottom: 10px;
+			 		}
+			 	}
+			}
+		}
 	}
+
+
 
 	.columns-6-1 > ul.products.products-6 > li.product,
 	.section-onsale-product .columns-6-1 > ul.products.products-6 > .onsale-product,
@@ -1228,6 +1281,8 @@
 		 	}
 		}
 	}
+
+
 
 	/*........Store Category........*/
 

@@ -231,16 +231,23 @@
 
 	.departments-menu .departments-menu-dropdown {
 		.menu-item-has-children {
+		
 			&:hover,
 			&:focus,
 			&.open {
-				ul.dropdown-menu {
+				> ul.dropdown-menu {
+					position: static !important;
 					display: block !important;
 					margin-top: 0 !important;
+					#{$start}: 0 !important;
+					top: auto;
+					
 				}
 			}
 		}
 	}
+
+
 
 	.home-v2 {
 		.departments-menu {

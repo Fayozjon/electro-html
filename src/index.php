@@ -135,7 +135,7 @@
         <!-- For demo purposes – can be removed on production -->
         <div id="config" class="config">
             <div id="config_wrapper">
-                <?php $demo_url = 'http://transvelo.github.io/electro/html/'; ?>
+                <?php $demo_url = 'http://transvelo.github.io/electro-html/'; ?>
                 <div id="config_container">
                     <div class="style-main-title">Style Selector</div>
                     <div class="box-title">Choose Home &#038; Static Pages</div>

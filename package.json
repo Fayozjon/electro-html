@@ -1,7 +1,7 @@
 {
-	"name": "electro",
+	"name": "electro-html",
 	"title": "Electro",
-	"description": "Electro is fully responsive design-driven WP WooCommerce theme that will help you tell your story and sell your products online.",
+	"description": "Electro is fully responsive design-driven html template that will help you tell your story and sell your products online.",
 	"version": "1.0.0",
 	"keywords": [
 		"business",
@@ -17,21 +17,20 @@
 		"visual composer",
 		"woocommerce"
 	],
-	"homepage": "http://demo2.transvelo.com/electro/",
+	"homepage": "http://transvelo.github.io/electro-html/",
 	"author": "Transvelo",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Transvelo/electro.git"
+		"url": "https://github.com/Transvelo/electro-html.git"
 	},
 	"bugs": {
-		"url": "https://github.com/Transvelo/electro/issues"
+		"url": "https://github.com/Transvelo/electro-html/issues"
 	},
 	"license": "GPL-2.0",
 	"main": "Gruntfile.js",
 	"devDependencies": {
 		"gh-pages": "~0.5.0",
 		"grunt": "~0.4.5",
-		"grunt-checktextdomain": "^0.1.1",
 		"grunt-contrib-clean": "~0.6.0",
 		"grunt-contrib-compress": "~0.13.0",
 		"grunt-contrib-copy": "~0.5.0",
@@ -42,7 +41,6 @@
 		"grunt-gh-pages": "^1.0.0",
 		"grunt-sass": "^0.18.1",
 		"grunt-version":"~1.0.0",
-		"grunt-wp-i18n": "^0.4.8",
 		"node-bourbon": "~4.2.1-beta1",
 		"node-sass": "^2.1.1",
 		"susy": "^2.2.2"

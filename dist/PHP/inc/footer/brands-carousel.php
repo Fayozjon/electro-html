@@ -14,7 +14,7 @@
 							</div><!-- /.info -->
 						</figcaption>
 
-						 <img src="assets/images/blank.gif" data-echo="assets/images/brands/1.png" class="img-responsive" alt="">
+						 <img src="assets/images/brands/1.png" class="img-responsive" alt="">
 
 					</figure>
 				</a>
@@ -32,7 +32,7 @@
 							</div><!-- /.info -->
 						</figcaption>
 
-						 <img src="assets/images/blank.gif" data-echo="assets/images/brands/2.png" class="img-responsive" alt="">
+						 <img src="assets/images/brands/2.png" class="img-responsive" alt="">
 
 					</figure>
 				</a>
@@ -50,7 +50,7 @@
 							</div><!-- /.info -->
 						</figcaption>
 
-						 <img src="assets/images/blank.gif" data-echo="assets/images/brands/3.png" class="img-responsive" alt="">
+						 <img src="assets/images/brands/3.png" class="img-responsive" alt="">
 
 					</figure>
 				</a>
@@ -68,7 +68,7 @@
 							</div><!-- /.info -->
 						</figcaption>
 
-						<img src="assets/images/blank.gif" data-echo="assets/images/brands/4.png" class="img-responsive" alt="">
+						<img src="assets/images/brands/4.png" class="img-responsive" alt="">
 
 					</figure>
 				</a>
@@ -86,7 +86,7 @@
 							</div><!-- /.info -->
 						</figcaption>
 
-						<img src="assets/images/blank.gif" data-echo="assets/images/brands/5.png" class="img-responsive" alt="">
+						<img src="assets/images/brands/5.png" class="img-responsive" alt="">
 
 					</figure>
 				</a>
@@ -104,7 +104,7 @@
 							</div><!-- /.info -->
 						</figcaption>
 
-						<img src="assets/images/blank.gif" data-echo="assets/images/brands/6.png" class="img-responsive" alt="">
+						<img src="assets/images/brands/6.png" class="img-responsive" alt="">
 
 					</figure>
 				</a>
@@ -122,7 +122,7 @@
 							</div><!-- /.info -->
 						</figcaption>
 
-						<img src="assets/images/blank.gif" data-echo="assets/images/brands/3.png" class="img-responsive" alt="">
+						<img src="assets/images/brands/3.png" class="img-responsive" alt="">
 
 					</figure>
 				</a>
@@ -140,7 +140,7 @@
 							</div><!-- /.info -->
 						</figcaption>
 
-						<img src="assets/images/blank.gif" data-echo="assets/images/brands/5.png" class="img-responsive" alt="">
+						<img src="assets/images/brands/5.png" class="img-responsive" alt="">
 
 					</figure>
 				</a>
@@ -158,7 +158,7 @@
 							</div><!-- /.info -->
 						</figcaption>
 
-						<img src="assets/images/blank.gif" data-echo="assets/images/brands/2.png" class="img-responsive" alt="">
+						<img src="assets/images/brands/2.png" class="img-responsive" alt="">
 
 					</figure>
 				</a>
@@ -176,7 +176,7 @@
 							</div><!-- /.info -->
 						</figcaption>
 
-						<img src="assets/images/blank.gif" data-echo="assets/images/brands/1.png" class="img-responsive" alt="">
+						<img src="assets/images/brands/1.png" class="img-responsive" alt="">
 
 					</figure>
 				</a>
@@ -194,7 +194,7 @@
 							</div><!-- /.info -->
 						</figcaption>
 
-						<img src="assets/images/blank.gif" data-echo="assets/images/brands/6.png" class="img-responsive" alt="">
+						<img src="assets/images/brands/6.png" class="img-responsive" alt="">
 
 					</figure>
 				</a>
@@ -212,7 +212,7 @@
 							</div><!-- /.info -->
 						</figcaption>
 
-						<img src="assets/images/blank.gif" data-echo="assets/images/brands/4.png" class="img-responsive" alt="">
+						<img src="assets/images/brands/4.png" class="img-responsive" alt="">
 
 					</figure>
 				</a>

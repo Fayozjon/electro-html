@@ -151,8 +151,6 @@
 		}
 	}
 
-
-
 	/*........Header Menu Dropdown........*/
 
 
@@ -225,10 +223,16 @@
 			&.open {
 				> .dropdown-menu {
 					display: block !important;
+					opacity: 1 !important;
+					visibility: visible !important;
+					width: auto !important;
+					margin-top: 0 !important;
 				}
 			}
 		}
 	}
+
+
 
 	.vertical-menu {
 
@@ -260,6 +264,20 @@
 	.vertical-menu .dropdown-menu > .menu-item {
 		padding: 0;
 	}
+
+	.departments-menu .departments-menu-dropdown {
+		.menu-item-has-children {
+			&:hover,
+			&:focus,
+			&.open {
+				ul.dropdown-menu {
+					display: block !important;
+					margin-top: 0 !important;
+				}
+			}
+		}
+	}
+	 
 
 	.yamm {
 		.yamm-content {
@@ -306,6 +324,8 @@
 
 	.footer-social-icons {
 		.social-icons {
+			text-align: center;
+
 			> li + li {
 				margin-#{$start}: 1.786em;
 			}
@@ -325,7 +345,30 @@
 	}
 
 
+	/*........ Slider.......*/
+	.home-v1-slider,
+	.home-v2-slider,
+	.home-v3-slider {
+		height: 300px;
+
+		.owl-item {
+			font-size: 10px;
+			height: 300px;
+		}
+	}
+
+	#owl-main .item .caption {
+		padding-top: 20px;
+	}
+
+
 	/*........Shop Page........*/
+
+	ul.products {
+		> li.product.list-view {
+			padding: 0;
+		}
+	}
 
 	.woocommerce-page {
 		.page-header {
@@ -383,6 +426,10 @@
 				}
 			}
 		}
+	}
+
+	.products .product.product-card .product-inner {
+		padding-bottom: 0;
 	}
 
 	section.section-product-cards-carousel header ul.nav {
@@ -502,6 +549,18 @@
 
 		a {
 			display: inline-block;
+		}
+	}
+
+	.electro-nav-tabs {
+		> li.nav-item {
+			display: block;
+			margin-bottom: 1.429em;
+
+			& + li.nav-item {
+				margin-#{$start}: 0;
+			}
+
 		}
 	}
 
@@ -794,6 +853,18 @@
 
 	/*........Blog Page........*/
 
+	article.post {
+		.media-attachment {
+			.media-attachment-gallery {
+				.owl-carousel {
+					.owl-stage-outer {
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+
 	article.post.format-quote,
 	article.post.format-link  {
 		padding: 2.857em;
@@ -859,7 +930,7 @@
 
 	.contact-form.vc_column_container {
 		.vc_column-inner {
-			padding-right: 1.071em;
+			padding-right: 0;
 		}
 	}
 
@@ -870,7 +941,7 @@
 		}
 	}
 
-	.store-info.store-info-v2.vc_column_container {
+	.store-info.store-info-v2 {
 		.vc_column-inner {
 			padding-#{$end}: 1.071em;
 
@@ -880,6 +951,11 @@
 		}
 	}
 
+	.store-info {
+		.inner-right-md {
+			padding: 0;
+		}
+	}
 
 	/*........About Page ........*/
 	.wpb-accordion {
@@ -919,6 +995,11 @@
 
 
 	/*........HomePage........*/
+
+	.section-onsale-product .savings {
+		float: none;
+		margin-top: 20px;
+	}
 
 	.ads-block {
 		> div {
@@ -984,6 +1065,12 @@
 			}
 		}
 	}
+
+	
+	 .primary-nav .nav-inline .dropdown-menu .menu-item > a {
+	 	white-space: normal;
+	 }
+	  
 
 	.products-carousel-with-image {
 		section header .h1,
@@ -1088,6 +1175,12 @@
 				.onsale-product-content {
 					margin-top: 2.143em;
 				}
+
+				.onsale-product-thumbnails {
+					.savings {
+						position: relative;
+					}
+				}
 			}
 		}
 	}
@@ -1124,7 +1217,26 @@
 				padding-#{$start}: 0.9375rem;
 			}
 		}
+
+		> ul.products.product-main-6-1 {
+			.product-outer {
+				height: inherit !important;
+			}
+
+			 > .product {
+			 	.thumbnails {
+			 		margin-#{$end}: 0;
+
+			 		> a{
+			 			width: 40%;
+			 			margin-bottom: 10px;
+			 		}
+			 	}
+			}
+		}
 	}
+
+
 
 	.columns-6-1 > ul.products.products-6 > li.product,
 	.section-onsale-product .columns-6-1 > ul.products.products-6 > .onsale-product,
@@ -1170,6 +1282,8 @@
 		}
 	}
 
+
+
 	/*........Store Category........*/
 
 	.electro-store-directory {
@@ -1180,6 +1294,10 @@
 	  		}
 	  	}
 	 }
+
+	 #config {
+		position: absolute !important;
+	}
 }
 
 
@@ -1296,4 +1414,5 @@
 		width: 308px;
 		#{$end}: -25px !important;
 	}
+
 }

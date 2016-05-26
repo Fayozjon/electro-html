@@ -17,8 +17,8 @@
 				'product_category' => 'Audio Speakers',
 				'productImageURL' => 'assets/images/products/1.jpg',
 				'oldPrice'		=>'$2,299.00',
-				'newPrice'			=>'$1,999.00'
-
+				'newPrice'			=>'$1,999.00',
+				'price'			=>''
 
 				),
 			array(
@@ -26,8 +26,8 @@
 				'product_category' => 'Laptops',
 				'productImageURL' => 'assets/images/products/2.jpg',
 				'oldPrice'		=>'$2,299.00',
-				'newPrice'			=>'$1,999.00'
-
+				'newPrice'			=>'$1,999.00',
+				'price'			=>''
 
 				),
 			array(
@@ -44,7 +44,8 @@
 				'product_category' => 'Smartphones',
 				'productImageURL' => 'assets/images/products/4.jpg',
 				'oldPrice'		=>'$2,215.00',
-				'newPrice'		=>'$1,215.00'
+				'newPrice'		=>'$1,215.00',
+				'price'			=>''
 
 				),
 			array(
@@ -54,7 +55,6 @@
 				'oldPrice'		=>'',
 				'newPrice'		=>'',
 				'price'			=>'$1,999.00'
-
 
 				),
 			array(

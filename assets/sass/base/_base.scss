@@ -102,7 +102,7 @@ a:hover,a:focus {
 .site-header,
 .site-content,
 .site-footer {
-	@extend %clearfix;
+	@extend %clearfix !optional;
 }
 
 .light-bg {

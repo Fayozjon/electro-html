@@ -6,7 +6,6 @@
 /electro-html/
 
 electr*.zip
-/dist/documentation
 
 npm-debug.log
 .DS_Store

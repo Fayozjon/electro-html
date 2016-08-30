@@ -15,7 +15,6 @@
 							<a href="#products-carousel-prev" data-target="#products-carousel-with-umage" class="slider-prev"><i class="fa fa-angle-left"></i></a>
 							<a href="#products-carousel-next" data-target="#products-carousel-with-umage" class="slider-next"><i class="fa fa-angle-right"></i></a>
 						</div>
-
 					</header>
 
 					<div id="products-carousel-with-umage">

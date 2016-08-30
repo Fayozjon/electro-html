@@ -1,5 +1,5 @@
 (function($, window){
-    "use strict"; 
+    "use strict";
     var arrowWidth = 16;
 
     $.fn.resizeselect = function(settings) {
@@ -76,6 +76,11 @@
 
 (function($) {
     'use strict';
+
+    var is_rtl = false;
+    if ( jQuery( 'body' ).css( 'direction' ) === 'rtl' ) {
+        var is_rtl = true;
+    }
 
 
     /*===================================================================================*/
@@ -183,6 +188,7 @@
             autoplayHoverPause: false,
             stopOnHover: true,
             loop: true,
+            rtl: is_rtl,
             navRewind: true,
             items: 1,
             dots: true,
@@ -326,7 +332,7 @@
             "nav":true,
             "slideSpeed":300,
             "dots":true,
-            "rtl":false,
+            "rtl":is_rtl,
             "paginationSpeed":400,
             "navText":["",""],
             "margin":0,
@@ -367,7 +373,7 @@
             "nav":false,
             "slideSpeed":300,
             "dots":"true",
-            "rtl":false,
+            "rtl":is_rtl,
             "paginationSpeed":400,
             "navText":["",""],
             "margin":0,
@@ -405,7 +411,7 @@
             "nav":false,
             "slideSpeed":300,
             "dots":true,
-            "rtl":false,
+            "rtl":is_rtl,
             "paginationSpeed":400,
             "navText":["",""],
             "margin":0,
@@ -442,7 +448,7 @@
             "nav":false,
             "slideSpeed":300,
             "dots":true,
-            "rtl":false,
+            "rtl":is_rtl,
             "paginationSpeed":400,
             "navText":["",""],
             "margin":0,
@@ -479,7 +485,7 @@
             "nav":false,
             "slideSpeed":300,
             "dots":true,
-            "rtl":false,
+            "rtl":is_rtl,
             "paginationSpeed":400,
             "navText":["",""],
             "margin":30,
@@ -516,7 +522,7 @@
             "nav":false,
             "slideSpeed":300,
             "dots":true,
-            "rtl":false,
+            "rtl":is_rtl,
             "paginationSpeed":400,
             "navText":["",""],
             "margin":0,
@@ -536,7 +542,7 @@
             "nav":false,
             "slideSpeed":300,
             "dots":true,
-            "rtl":false,
+            "rtl":is_rtl,
             "paginationSpeed":400,
             "navText":["",""],
             "margin":0,
@@ -566,7 +572,7 @@
             "nav":false,
             "slideSpeed":300,
             "dots":true,
-            "rtl":false,
+            "rtl":is_rtl,
             "paginationSpeed":400,
             "navText":["",""],
             "margin":0,
@@ -574,6 +580,13 @@
 
         });
 
+        if( is_rtl ){
+            var navNext = "<i class=\"fa fa-chevron-left\"><\/i>";
+            var navPrev = "<i class=\"fa fa-chevron-right\"><\/i>";
+        }else {
+            var navPrev = "<i class=\"fa fa-chevron-left\"><\/i>";
+            var navNext = "<i class=\"fa fa-chevron-right\"><\/i>";
+        }
 
         $('#owl-brands').owlCarousel({
             "items":5,
@@ -581,9 +594,8 @@
             "autoplayHoverPause":true,
             "nav":true,"stagePadding":1,
             "dots":false,
-            "rtl":false,
-            "navText":["<i class=\"fa fa-chevron-left\"><\/i>",
-            "<i class=\"fa fa-chevron-right\"><\/i>"],
+            "rtl":is_rtl,
+            "navText":[navPrev,navNext],
             "touchDrag":false,
             "responsive":{
                 "0":{
@@ -609,7 +621,7 @@
             "nav":false,
             "slideSpeed":300,
             "dots":true,
-            "rtl":false,
+            "rtl":is_rtl,
             "paginationSpeed":400,
             "navText":["",""],
             "margin":0,
@@ -638,7 +650,7 @@
             "nav":false,
             "slideSpeed":300,
             "dots":true,
-            "rtl":false,
+            "rtl":is_rtl,
             "paginationSpeed":400,
             "navText":["",""],
             "margin":0,
@@ -731,7 +743,7 @@
             "nav":false,
             "slideSpeed":300,
             "dots":true,
-            "rtl":false,
+            "rtl":is_rtl,
             "paginationSpeed":400,
             "navText":["",""],
             "margin":0,
@@ -743,7 +755,7 @@
             "nav":false,
             "slideSpeed":300,
             "dots":true,
-            "rtl":false,
+            "rtl":is_rtl,
             "paginationSpeed":400,
             "navText":["",""],
             "margin":0,
@@ -1093,7 +1105,7 @@
 
     $( document ).ready( function() {
 
-        var is_rtl = false;
+
 
         var hash_value = window.location.hash;
 

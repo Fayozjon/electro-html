@@ -1285,6 +1285,25 @@
             return false;
         });
 
+        // Hamburger Menu Toggler
+        $( '.handheld-navigation-wrapper .navbar-toggler' ).on( 'click', function() {
+            $( this ).closest('.handheld-navigation-wrapper').toggleClass( "toggled" );
+        } );
+
+        // Hamburger Menu Close Trigger
+        $( '.ehm-close' ).on( 'click', function() {
+            $( this ).closest('.handheld-navigation-wrapper').toggleClass( "toggled" );
+        } );
+
+        // Hamburger Menu Close Trigger when click outside menu slide
+        $( document ).on("click", function(event) {
+            if ( $( '.handheld-navigation-wrapper' ).hasClass( 'toggled' ) ) {
+                if ( ! $( '.handheld-navigation-wrapper' ).is( event.target ) && 0 === $( '.handheld-navigation-wrapper' ).has( event.target ).length ) {
+                    $( '.handheld-navigation-wrapper' ).toggleClass( "toggled" );
+                }
+            }
+        });
+
         // Animate on scroll into view
         $( '.animate-in-view' ).each( function() {
             var $this = $(this), animation = $this.data( 'animation' );

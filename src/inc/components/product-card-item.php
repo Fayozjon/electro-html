@@ -12,7 +12,7 @@
 		$item=4;
 	} else if($page=='cat-3-col') {
 		$column=2;
-		$item=4;m=4;
+		$item=4;
 	}
 
 		$all_products = array(

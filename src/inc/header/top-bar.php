@@ -1,4 +1,4 @@
-<div class="top-bar">
+<div class="top-bar hidden-md-down">
 	<div class="container">
 		<nav>
 			<ul id="menu-top-bar-left" class="nav nav-inline pull-left animate-dropdown flip">

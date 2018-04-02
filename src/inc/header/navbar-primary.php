@@ -1,4 +1,4 @@
-<nav class="navbar navbar-primary navbar-full yamm">
+<nav class="navbar navbar-primary navbar-full yamm hidden-md-down">
 	<div class="container">
 		<div class="clearfix">
 			<button class="navbar-toggler hidden-sm-up pull-right flip" type="button" data-toggle="collapse" data-target="#header-v3">

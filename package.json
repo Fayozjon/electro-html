@@ -40,7 +40,7 @@
 		"grunt-contrib-watch": "~0.6.1",
 		"grunt-gh-pages": "^1.0.0",
 		"grunt-sass": "^0.18.1",
-		"grunt-version":"~1.0.0",
+		"grunt-version": "~1.0.0",
 		"node-bourbon": "~4.2.1-beta1",
 		"node-sass": "^2.1.1",
 		"susy": "^2.2.2"

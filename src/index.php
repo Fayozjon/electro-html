@@ -250,6 +250,7 @@
         <!-- For demo purposes – can be removed on production : End -->
 
         <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
         <script type="text/javascript" src="assets/js/tether.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap-hover-dropdown.min.js"></script>

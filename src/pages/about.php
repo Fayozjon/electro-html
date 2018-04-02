@@ -148,7 +148,7 @@
 											<p>Donec libero dolor, tincidunt id laoreet vitae, ullamcorper eu tortor. Maecenas pellentesque, dui vitae iaculis mattis, tortor nisi faucibus magna, vitae ultrices lacus purus vitae metus. Ut nec odio facilisis, ultricies nunc eget, fringilla orci.</p>
 
 										</div>
-									</div>
+									</div><!-- .col -->
 												
 
 									<div class="col-sm-6">
@@ -157,8 +157,8 @@
 											<p>Vestibulum velit nibh, egestas vel faucibus vitae, feugiat sollicitudin urna. Praesent iaculis id ipsum sit amet pretium. Aliquam tristique sapien nec enim euismod, scelerisque facilisis arcu consectetur. Vestibulum velit nibh, egestas vel faucibus vitae.</p>
 
 										</div>
-									</div>		
-								</div>
+									</div><!-- .col -->		
+								</div><!-- .row -->
 
 								<div class="row inner-bottom-xs">
 									<div class="col-sm-6">
@@ -167,7 +167,7 @@
 											<p>Donec libero dolor, tincidunt id laoreet vitae, ullamcorper eu tortor. Maecenas pellentesque, dui vitae iaculis mattis, tortor nisi faucibus magna, vitae ultrices lacus purus vitae metus. Ut nec odio facilisis, ultricies nunc eget, fringilla orci.</p>
 
 										</div>
-									</div>
+									</div><!-- .col -->
 												
 
 									<div class="col-sm-6">
@@ -176,9 +176,9 @@
 											<p>Vestibulum velit nibh, egestas vel faucibus vitae, feugiat sollicitudin urna. Praesent iaculis id ipsum sit amet pretium. Aliquam tristique sapien nec enim euismod, scelerisque facilisis arcu consectetur. Vestibulum velit nibh, egestas vel faucibus vitae.</p>
 
 										</div>
-									</div>		
-								</div>
-							</div>
+									</div><!-- .col -->		
+								</div><!-- .row -->
+							</div><!-- .text-boxes -->
 								
 
 							<div class="wpb-accordion col-sm-5">

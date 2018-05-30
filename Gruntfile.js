@@ -20,7 +20,9 @@ module.exports = function( grunt ) {
 			themeCSS: 'src/assets/css',
 			themeSASS: 'src/assets/sass',
 			distHTML: 'dist/HTML',
-			distPHP: 'dist/PHP'
+			distPHP: 'dist/PHP',
+			newThemeCSS: '2.0/src/assets/css',
+			newThemeSCSS: '2.0/src/assets/scss'
 		},
 
 		// JavaScript linting with JSHint.
@@ -73,23 +75,8 @@ module.exports = function( grunt ) {
 		// Compile all .scss files.
 		sass: {
 			dist: {
-				options: {
-					require: 'susy',
-					sourcemap: 'none',
-					includePaths: require( 'node-bourbon' ).includePaths
-				},
 				files: [{
-					'<%= dirs.themeCSS %>/style.css': '<%= dirs.themeSASS %>/style.scss',
-					'<%= dirs.themeCSS %>/rtl.css': '<%= dirs.themeSASS %>/rtl.scss',
-					'<%= dirs.themeCSS %>/colors/blue.css': '<%= dirs.themeSASS %>/colors/blue.scss',
-					'<%= dirs.themeCSS %>/colors/flat-blue.css': '<%= dirs.themeSASS %>/colors/flat-blue.scss',
-					'<%= dirs.themeCSS %>/colors/gold.css': '<%= dirs.themeSASS %>/colors/gold.scss',
-					'<%= dirs.themeCSS %>/colors/green.css': '<%= dirs.themeSASS %>/colors/green.scss',
-					'<%= dirs.themeCSS %>/colors/orange.css': '<%= dirs.themeSASS %>/colors/orange.scss',
-					'<%= dirs.themeCSS %>/colors/red.css': '<%= dirs.themeSASS %>/colors/red.scss',
-					'<%= dirs.themeCSS %>/colors/yellow.css': '<%= dirs.themeSASS %>/colors/yellow.scss',
-					'<%= dirs.themeCSS %>/colors/pink.css': '<%= dirs.themeSASS %>/colors/pink.scss',
-					'<%= dirs.themeCSS %>/colors/black.css': '<%= dirs.themeSASS %>/colors/black.scss',
+					'<%= dirs.newThemeCSS %>/style.css': '<%= dirs.newThemeSCSS %>/style.scss'
 				}]
 			}
 		},
@@ -198,17 +185,7 @@ module.exports = function( grunt ) {
 	});
 
 	// Load NPM tasks to be used here
-	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
-	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 	grunt.loadNpmTasks( 'grunt-sass' );
-	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
-	grunt.loadNpmTasks( 'grunt-contrib-watch' );
-	grunt.loadNpmTasks( 'grunt-version' );
-	grunt.loadNpmTasks( 'grunt-contrib-clean' );
-	grunt.loadNpmTasks( 'grunt-contrib-copy' );
-	grunt.loadNpmTasks( 'grunt-contrib-compress' );
-	grunt.loadNpmTasks( 'grunt-contrib-concat' );
-	grunt.loadNpmTasks( 'grunt-gh-pages' );
 
 	// Register tasks
 	grunt.registerTask( 'default', [

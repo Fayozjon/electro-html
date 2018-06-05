@@ -1,13 +1,23 @@
 .topbar__menu {
 	@include make-nav();
+
+	i {
+		margin-right: 6px;
+	}
 }
 .top-bar-inner {
 	display: flex;
-	justify-content:space-between;
+	justify-content: space-between;
+
+	a {
+		@include make-nav-link();
+		color: #334141;
+	}
 }
-.top-bar-inner a {
-	@include make-nav-link();
+.topbar-left a{
+	padding: 7px 0px;
 }
-.topbar__menu i {
-	margin-right:6px;
-}
+
+.topbar-right a{
+	padding-right: 0px;
+} 

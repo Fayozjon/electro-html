@@ -1,0 +1,7 @@
+.header-icons-inner {
+	display:flex;
+	justify-content: flex-end;
+}
+.header-icon+.header-icon {
+	padding-left: 20px;
+}

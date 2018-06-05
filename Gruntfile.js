@@ -22,7 +22,7 @@ module.exports = function( grunt ) {
 			distHTML: 'dist/HTML',
 			distPHP: 'dist/PHP',
 			newThemeCSS: '2.0/src/assets/css',
-			newThemeSCSS: '2.0/src/assets/scss'
+			newThemeSCSS: '2.0/src/assets/sass'
 		},
 
 		// JavaScript linting with JSHint.

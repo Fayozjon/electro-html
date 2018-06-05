@@ -461,3 +461,10 @@ body {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none; }
+  .secondary-nav .menu-item a {
+    display: block;
+    padding: 0.5rem 1rem; }
+    .secondary-nav .menu-item a:hover, .secondary-nav .menu-item a:focus {
+      text-decoration: none; }
+    .secondary-nav .menu-item a.disabled {
+      color: #6c757d; }

@@ -444,7 +444,7 @@ pre {
 body {
   font-family: 'Open Sans', sans-serif; }
 
-.top-bar-inner {
+.topbar-menu {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;

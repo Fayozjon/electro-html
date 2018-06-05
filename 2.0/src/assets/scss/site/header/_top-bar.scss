@@ -4,20 +4,14 @@
 	i {
 		margin-right: 6px;
 	}
+
+	 a {
+		@include make-nav-link();
+	}
+
 }
 .top-bar-inner {
 	display: flex;
 	justify-content: space-between;
-
-	a {
-		@include make-nav-link();
-		color: #334141;
-	}
 }
-.topbar-left a{
-	padding: 7px 0px;
-}
-
-.topbar-right a{
-	padding-right: 0px;
-} 
+	

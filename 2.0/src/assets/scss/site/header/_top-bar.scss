@@ -1,3 +1,7 @@
-.topbar-menu {
+.topbar__menu {
 	@include make-nav();
+}
+.top-bar-inner {
+	display: flex;
+	justify-content:space-between;
 }

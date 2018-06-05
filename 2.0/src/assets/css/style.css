@@ -444,9 +444,13 @@ pre {
 body {
   font-family: 'Open Sans', sans-serif; }
 
-.topbar-menu {
+.topbar__menu {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none; }
+
+.top-bar-inner {
+  display: flex;
+  justify-content: space-between; }

@@ -443,3 +443,10 @@ pre {
 
 body {
   font-family: 'Open Sans', sans-serif; }
+
+.top-bar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }

@@ -455,16 +455,27 @@ body {
   display: flex;
   justify-content: space-between; }
 
+.top-bar-inner a {
+  display: block;
+  padding: 0.5rem 1rem; }
+  .top-bar-inner a:hover, .top-bar-inner a:focus {
+    text-decoration: none; }
+  .top-bar-inner a.disabled {
+    color: #6c757d; }
+
+.topbar__menu i {
+  margin-right: 6px; }
+
 .secondary-nav {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none; }
-  .secondary-nav .menu-item a {
+  .secondary-nav .menu-item > a {
     display: block;
     padding: 0.5rem 1rem; }
-    .secondary-nav .menu-item a:hover, .secondary-nav .menu-item a:focus {
+    .secondary-nav .menu-item > a:hover, .secondary-nav .menu-item > a:focus {
       text-decoration: none; }
-    .secondary-nav .menu-item a.disabled {
+    .secondary-nav .menu-item > a.disabled {
       color: #6c757d; }

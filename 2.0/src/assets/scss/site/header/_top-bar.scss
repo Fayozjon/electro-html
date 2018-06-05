@@ -5,3 +5,9 @@
 	display: flex;
 	justify-content:space-between;
 }
+.top-bar-inner a {
+	@include make-nav-link();
+}
+.topbar__menu i {
+	margin-right:6px;
+}

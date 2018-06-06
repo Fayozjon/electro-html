@@ -487,31 +487,50 @@ body {
 .header-icon + .header-icon {
   padding-left: 20px; }
 
-.masthead, .electro-navigation {
+/*.masthead , .electro-navigation {
+	@include make-row();
+}
+
+.masthead {
+
+	.navbar-search, .electro-secondary-nav  {
+		@include make-auto-col();
+	}
+}
+
+.masthead {
+		.logo, .header-icons, {
+			@include make-col-ready();
+			@include make-col(3);
+		}
+}
+
+.electro-navigation .departments-menu {
+
+		@include make-col-ready();
+		@include make-col(3);
+}
+*/
+.masthead {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
-
-.masthead .navbar-search, .masthead .electro-secondary-nav {
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%; }
-
-.masthead .logo, .masthead .header-icons {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 25%;
-  max-width: 25%; }
-
-.electro-navigation .departments-menu {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 25%;
-  max-width: 25%; }
+  .masthead > .logo,
+  .masthead > .header-icons,
+  .masthead > .navbar-search {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .masthead > .logo,
+  .masthead > .header-icons {
+    flex: 0 0 25%;
+    max-width: 25%; }
+  .masthead > .navbar-search {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0; }

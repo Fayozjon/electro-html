@@ -48,5 +48,7 @@
 
 	> .navbar-search {
 		@include make-auto-col();
+		padding-left: 0;
+		padding-right: 0;
 	}
 }

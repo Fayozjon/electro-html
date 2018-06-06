@@ -485,7 +485,7 @@ body {
 .header-icon + .header-icon {
   padding-left: 20px; }
 
-.masthead {
+.masthead, .electro-navigation {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;

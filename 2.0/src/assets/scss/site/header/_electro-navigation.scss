@@ -6,6 +6,7 @@
 	}
 
 	> .electro-secondary-nav {
-		@include make-auto-col();
+		@include make-col(9);
+		@include make-col-ready();
 	}
 }

@@ -1,0 +1,13 @@
+.electro-navigation {
+	@include make-row();
+
+	> .departments-menu {
+        @include make-col-ready();
+		@include make-col(3);
+	}
+
+	> .electro-secondary-nav {
+		@include make-col(9);
+		@include make-col-ready();
+	}
+}

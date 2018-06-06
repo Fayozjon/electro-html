@@ -8,3 +8,6 @@
 .masthead , .electro-navigation {
 	@include make-row();
 }
+.masthead .navbar-search {
+	@include make-auto-col();
+}

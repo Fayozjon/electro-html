@@ -462,7 +462,9 @@ body {
 
 .top-bar-inner {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-right: -15px;
+  margin-left: -15px; }
 
 .secondary-nav {
   display: flex;
@@ -490,3 +492,8 @@ body {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
+
+.masthead .navbar-search {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%; }

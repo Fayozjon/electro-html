@@ -2,12 +2,31 @@
 	display: flex;
 	justify-content: flex-end;
 }
+
 .header-icon + .header-icon {
 	padding-left: 20px;
 }
+
 .masthead , .electro-navigation {
 	@include make-row();
 }
-.masthead .navbar-search {
-	@include make-auto-col();
+
+.masthead {
+
+	.navbar-search, .electro-secondary-nav  {
+		@include make-auto-col();
+	}
+}
+
+.masthead {
+		.logo, .header-icons, {
+			@include make-col-ready();
+			@include make-col(3);
+		}
+}
+
+.electro-navigation .departments-menu {
+
+		@include make-col-ready();
+		@include make-col(3);
 }

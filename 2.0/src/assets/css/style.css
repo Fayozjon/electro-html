@@ -493,7 +493,25 @@ body {
   margin-right: -15px;
   margin-left: -15px; }
 
-.masthead .navbar-search {
+.masthead .navbar-search, .masthead .electro-secondary-nav {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%; }
+
+.masthead .logo, .masthead .header-icons {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+.electro-navigation .departments-menu {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 25%;
+  max-width: 25%; }

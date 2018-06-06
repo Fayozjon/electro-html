@@ -530,7 +530,9 @@ body {
   .masthead > .navbar-search {
     flex-basis: 0;
     flex-grow: 1;
-    max-width: 100%; }
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 15px; }
 
 .electro-navigation {
   display: flex;

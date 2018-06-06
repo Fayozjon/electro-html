@@ -36,8 +36,7 @@
 	@include make-row();
 
 	> .logo,
-	> .header-icons,
-	> .navbar-search {
+	> .header-icons {
 		@include make-col-ready();
 	}
 

@@ -28,7 +28,9 @@
 }
 .topbar-right.topbar__menu li+li::before {
 
-	content: "|";
-	color: #d9e1e1;
-	line-height: 13px;
+	    content: " ";
+    	color: #d9e1e1;
+    	border-left: 1px solid;
+        display: inline-block;
+        height: 13px;
 }

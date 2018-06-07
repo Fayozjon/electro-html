@@ -1,39 +1,29 @@
 .header-icons-inner {
+
 	display: flex;
 	justify-content: flex-end;
+
+	a {
+		font-size: 14px;
+    	line-height: 18px;
+    	color: #333e48;
+
+    	i{
+    		font-size: 22px;
+    		line-height: 18px;
+    		font-weight: 700;
+    	}
+	}
+
 }
 
 .header-icon + .header-icon {
-	padding-left: 20px;
+	padding-left: 37px;
 }
-
-/*.masthead , .electro-navigation {
-	@include make-row();
-}
-
-.masthead {
-
-	.navbar-search, .electro-secondary-nav  {
-		@include make-auto-col();
-	}
-}
-
-.masthead {
-		.logo, .header-icons, {
-			@include make-col-ready();
-			@include make-col(3);
-		}
-}
-
-.electro-navigation .departments-menu {
-
-		@include make-col-ready();
-		@include make-col(3);
-}
-*/
 
 .masthead {
 	@include make-row();
+	padding: 28.5px 0px;
 
 	> .logo,
 	> .header-icons,
@@ -50,5 +40,8 @@
 		@include make-auto-col();
 		padding-left: 0;
 		padding-right: 0;		
+	}
+	.header-icons {
+		align-self: center;
 	}
 }

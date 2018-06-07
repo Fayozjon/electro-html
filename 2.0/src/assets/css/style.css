@@ -535,6 +535,8 @@ body {
     padding-right: 0; }
   .masthead .header-icons {
     align-self: center; }
+    .masthead .header-icons .header-icon span {
+      font-size: 15px; }
 
 .electro-navigation {
   display: flex;

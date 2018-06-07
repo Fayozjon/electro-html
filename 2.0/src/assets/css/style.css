@@ -451,10 +451,14 @@ body {
   margin-bottom: 0;
   list-style: none; }
   .topbar__menu i {
-    margin-right: 6px; }
+    margin-right: 10px; }
   .topbar__menu a {
     display: block;
-    padding: 0.5rem 1rem; }
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    padding: 0.5625rem 1rem;
+    font-size: 13px;
+    color: #334141; }
     .topbar__menu a:hover, .topbar__menu a:focus {
       text-decoration: none; }
     .topbar__menu a.disabled {
@@ -465,6 +469,14 @@ body {
   justify-content: space-between;
   margin-right: -15px;
   margin-left: -15px; }
+
+.top-bar {
+  border-bottom: 1px solid #e8e8e8; }
+
+.topbar-right.topbar__menu li + li::before {
+  content: "|";
+  color: #d9e1e1;
+  line-height: 13px; }
 
 .secondary-nav {
   display: flex;

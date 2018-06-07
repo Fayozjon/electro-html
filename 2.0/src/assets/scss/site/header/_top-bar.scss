@@ -1,12 +1,17 @@
 .topbar__menu {
 	@include make-nav();
-
+	
 	i {
-		margin-right: 6px;
+		margin-right: 10px;
 	}
 
 	 a {
 		@include make-nav-link();
+
+		display: inline-block;
+		padding: 0.5625rem 1rem;
+    	font-size: 13px;
+    	color: #334141;
 	}
 
 }
@@ -16,4 +21,14 @@
 	margin-right: -15px;
     margin-left: -15px;
 }
+
+.top-bar {
+	border-bottom: 1px solid #e8e8e8;
 	
+}
+.topbar-right.topbar__menu li+li::before {
+
+	content: "|";
+	color: #d9e1e1;
+	line-height: 13px;
+}

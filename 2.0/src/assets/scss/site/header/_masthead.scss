@@ -1,77 +1,81 @@
 .header-icons-inner {
 
-	display: flex;
-	justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 
-	a {
-		font-size: 22px;
-    	line-height: 18px;
-    	color: #333e48;
-    	font-weight: 700;
-    	text-decoration: none;
-    	
-	}
+    a {
+        font-size: 22px;
+        line-height: 18px;
+        color: #333e48;
+        font-weight: 700;
+        text-decoration: none;
+        display: flex;
+        
+    }
 
 }
 
 .header-icon + .header-icon {
-	padding-left: 37px;
+    padding-left: 37px;
 }
 
 .masthead {
-	@include make-row();
-	padding: 28.5px 0px;
-	align-items: center;
+    @include make-row();
+    padding: 28.5px 0px;
+    align-items: center;
 
-	> .logo,
-	> .header-icons,
-	> .navbar-search {
-		@include make-col-ready();
-	}
+    > .logo,
+    > .header-icons,
+    > .navbar-search {
+        @include make-col-ready();
+    }
 
-	> .logo,
-	> .header-icons {
-		@include make-col(3);
-	}
+    > .logo,
+    > .header-icons {
+        @include make-col(3);
+    }
 
-	> .navbar-search {
-		@include make-auto-col();
-		padding-left: 0;
-		padding-right: 0;		
-	}
-	.header-icons {
+    > .navbar-search {
+        @include make-auto-col();
+        padding-left: 0;
+        padding-right: 0;       
+    }
+    .header-icons {
 
-		.header-icon span{
-			font-size: 15px;
-				}
-	}
+        .header-icon span{
+            font-size: 15px;
+                }
+    }
 }
 
-	.navbar-search {
+    .navbar-search {
 
-		.input-group {
-		    border: 2px solid #fed700;
-    		border-radius: 30px;
-    		overflow: hidden;
-		}
-		.form-control, .custom-select, .btn {
-			box-shadow:none;
-			border: none;
+        .input-group {
+            border: 2px solid #fed700;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        .form-control, .custom-select, .btn {
+            box-shadow:none;
+            border: none;
             color: #6b6b6b;
             font-size: 15px;
-		}
+        }
+        
+        .form-control {
+            color: #a0a0a0;
+        }
 
-		.btn {
-			background: #fed700;
-			width: 60px;
-		    font-size: 23px;
-    		line-height: 1;
-		}
+        .btn {
+            background: #fed700;
+            width: 60px;
+            font-size: 23px;
+            line-height: 1;
+        }
 
-		.form-control {
-			width: 366px;
+        .form-control {
+            width: 366px;
+            padding-left: 30px;
+        }
 
-
-		}
-
-	}
+    }

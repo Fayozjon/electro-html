@@ -1,7 +1,7 @@
 .secondary-nav {
-	@include make-nav();
+    @include make-nav();
 
-	.menu-item > a {
-		@include make-nav-link();
-	}
+    .menu-item > a {
+        @include make-nav-link();
+    }
 }

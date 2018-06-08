@@ -573,6 +573,17 @@ body {
     padding-left: 15px;
     flex: 0 0 25%;
     max-width: 25%; }
+    .electro-navigation > .departments-menu a {
+      font-size: 14px;
+      color: #333e48;
+      padding: 12px;
+      background-color: #fed700;
+      font-weight: 700;
+      border: none;
+      text-align: left;
+      padding-left: 20px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px; }
   .electro-navigation > .electro-secondary-nav {
     flex: 0 0 75%;
     max-width: 75%;
@@ -581,3 +592,7 @@ body {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px; }
+    .electro-navigation > .electro-secondary-nav a {
+      color: #333e48;
+      font-size: 14px;
+      font-weight: 700; }

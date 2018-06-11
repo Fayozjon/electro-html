@@ -1,0 +1,75 @@
+.footer-widgets {
+    padding: 63px 0px;
+    background: #f8f8f8;
+
+    .footer-contact {
+        @include make-col(5);
+        @include make-col-ready();
+
+        .media {
+
+            margin-bottom: 15px;
+        }
+
+        .footer-call-us i {
+            font-size: 60px;
+            color: #fed700;
+            padding-right: 7px;
+        }
+
+        .media-body{
+        
+            .call-us-text{
+
+                font-size: 13px;
+                color: #333e48;
+            }
+            .call-us-number{
+
+                font-size: 20px;
+                color: #333e48;
+            }
+        }
+        .footer-address {
+            font-size: 14px;
+        }
+
+        .footer-logo {
+            margin-bottom: 25px;
+        }
+    }
+
+    .footer-bottom-widgets-menu {
+        @include make-auto-col();
+        @include make-col-ready();
+
+    }
+
+    .footer-bottom-widgets-menu-inner {
+        
+        display: flex;
+        justify-content: space-between;
+
+        .widget-title {
+            color: #333e48;
+            margin-bottom: 20px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .columns {
+            min-width: 205px;
+
+
+                li {
+                    margin-bottom:5px;
+
+                > a {
+                    font-size: 14px;
+                    color: #333e48;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

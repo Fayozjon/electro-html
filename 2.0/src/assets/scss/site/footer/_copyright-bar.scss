@@ -1,0 +1,24 @@
+.copyright-bar {
+    background: #eaeaea;
+    padding: 9.5px 0px;
+
+    a {
+        color: #333e48;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .pull-left {
+        font-size: 14px;
+    }
+
+    .copyright-bar-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cash-card {
+        @include make-nav();
+    }
+}

@@ -822,7 +822,8 @@ body {
     font-size: 13px; }
   .products .product-item__footer {
     border-top: 1px solid #878787;
-    display: none; }
+    display: none;
+    padding: 12px 5px; }
   .products li.product-item:hover .product-item__footer {
     display: block; }
   .products .product-item__action-buttons a {

@@ -2,10 +2,6 @@
 	@include make-row();
 }
 
-.left-sidebar .content-area {
-	order:1;
-}
-
 .widget-area {
 	 @include make-col-ready();
      @include make-col(3);
@@ -14,11 +10,25 @@
 .content-area {
 	@include make-col-ready();
 	@include make-auto-col();
-
 }
 
-.has-sidebar .content-area {
-	@include make-col-ready();
-     @include make-col(9);
+.left-sidebar .content-area,
+.right-sidebar .content-area {
+    @include make-col(9);
 }
 
+.left-sidebar {
+    .content-area {
+        order: 1;
+    }
+}
+
+.full-width {
+    .content-area {
+        @include make-col(12);
+    }
+
+    .widget-area {
+        display: none;
+    }
+}

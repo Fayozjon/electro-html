@@ -752,8 +752,5 @@ body {
 .site-content-inner {
   display: flex; }
 
-.content-area {
-  order: 2; }
-
-.widget-sidebar {
+.left-sidebar .content-area {
   order: 1; }

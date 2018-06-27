@@ -1,7 +1,16 @@
 .products{
     @include make-row();
     @include list-unstyled();
-
+        
+    .product-item {
+        @include make-col(3);
+        @include make-col-ready();
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .product-item-inner{
+        padding: 20px 24px 14px;
+    }
     &.columns-1 .product-item{
         @include make-col(12);
 
@@ -63,15 +72,5 @@
         &:nth-child(8n):after{
             content: none;
         }
-    }
-
-    .product-item {
-        @include make-col(3);
-        @include make-col-ready();
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    .product-item-inner{
-        padding: 20px 24px 14px;
     }
 }

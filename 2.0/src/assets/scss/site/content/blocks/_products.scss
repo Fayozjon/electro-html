@@ -17,18 +17,12 @@
         &:after {
             content: none;
         }
-        & .product-item__thumbnail {
-            @include make-row();
-        }
     }
     &.columns-2 .product-item{
         @include make-col(6);
 
         &:nth-child(2n):after{
             content: none;
-        }
-        & .product-item__thumbnail {
-            @include make-row();
         }
     }
     &.columns-3 .product-item {

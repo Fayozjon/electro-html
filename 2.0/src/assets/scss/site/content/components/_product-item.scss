@@ -14,9 +14,11 @@
 
 .product-item__categories {
 	margin-bottom: 9px;
-	margin-left: 15px;
 		
 		a{
+			@include hover-focus() {
+			color: #3b3b3b;
+		}
 		font-size: 12px;
 		color: #878787;
 		text-decoration: none;
@@ -28,7 +30,6 @@
 	color: #0062bd;
 	font-weight: bold;
 	margin-bottom: 10px;
-	margin-left: 15px;
 	
 	a {
 		color: #0062bd;
@@ -45,9 +46,10 @@
 }
 
 .product-item__price-add-to-cart {
-	margin: 10px 15px;
+	margin: 8px 0px;
 	display: flex;
     justify-content: space-between;
+    line-height: 37px;
 
 	.price-amount {
 		color: #343f49;
@@ -56,6 +58,13 @@
 	button {
 	    border: none;
 		color: #fff;
+		border-radius: 19px;
+		cursor: pointer;
+
+		i {
+		    padding: 4px;
+    		line-height: 1;
+		}
 	}
 }
 
@@ -68,15 +77,22 @@
 .product-item__footer {
 	border-top: 1px solid #eaeaea;
 	display: none;
-	padding: 12px 5px;
+	padding-top: 6px;
 }
 
 
 .product-item__action-buttons {
 	a {
-		padding: 0px 6px;
+		padding: 0px 3px;
+		
+		@include hover-focus() {
+			color: #3b3b3b;
+		}
+
 	}
+
 	i {
-		margin-right: 5px;
+		margin-right: 4px;
+		font-size: 16px;
 	}
 }

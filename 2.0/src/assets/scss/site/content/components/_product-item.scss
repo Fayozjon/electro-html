@@ -6,11 +6,14 @@
 		.product-item__footer {
 			display: block;
 		}
+		button {
+			background: #fed700;
+		}
 	}
 }
 
 .product-item__categories {
-	margin-bottom: 15px;
+	margin-bottom: 9px;
 		
 		a{
 		font-size: 12px;
@@ -23,19 +26,34 @@
 	font-size: 14px;
 	color: #0062bd;
 	font-weight: bold;
-	margin-bottom: 36px;
+	margin-bottom: 10px;
 	
 	a {
+		color: #0062bd;
 		text-decoration: none;
 	}
 }
 
+.product-item__thumbnail {
+	display: flex;
+
+	img {
+		margin: auto;
+	}
+}
+
 .product-item__price-add-to-cart {
-	margin-bottom: 10px;
+	margin: 10px 15px;
+	display: flex;
+    justify-content: space-between;
 
 	.price-amount {
 		color: #343f49;
 		font-size: 20px;
+	}
+	button {
+	    border: none;
+		color: #fff;
 	}
 }
 

@@ -1,5 +1,6 @@
 .secondary-nav {
     @include make-nav();
+    margin-left: -16px;
 
     .menu-item > a {
         @include make-nav-link();

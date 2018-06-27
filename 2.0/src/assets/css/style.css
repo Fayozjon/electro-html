@@ -811,14 +811,14 @@ body {
 .product-item:nth-child(4n):after {
   content: none; }
 
-.product-item__categories {
-  margin-bottom: 9px; }
-  .product-item__categories a {
-    font-size: 12px;
-    color: #878787;
-    text-decoration: none; }
-    .product-item__categories a:hover, .product-item__categories a:focus {
-      color: #3b3b3b; }
+.product-item__categories a {
+  margin-bottom: 9px;
+  font-size: 12px;
+  color: #878787;
+  text-decoration: none;
+  display: block; }
+  .product-item__categories a:hover, .product-item__categories a:focus {
+    color: #3b3b3b; }
 
 .product-item__title {
   font-size: 14px;
@@ -829,11 +829,9 @@ body {
     color: #0062bd;
     text-decoration: none; }
 
-.product-item__thumbnail {
-  display: flex; }
-  .product-item__thumbnail img {
-    margin: auto;
-    max-width: 100%; }
+.product-item__thumbnail img {
+  margin: auto;
+  max-width: 100%; }
 
 .product-item__price-add-to-cart {
   margin: 8px 0px;
@@ -847,10 +845,14 @@ body {
     border: none;
     color: #fff;
     border-radius: 19px;
-    cursor: pointer; }
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    font-size: 15px;
+    justify-content: center; }
     .product-item__price-add-to-cart button i {
-      padding: 4px;
-      line-height: 1; }
+      padding: 4px; }
 
 .product-item__action-buttons a {
   text-decoration: none;
@@ -880,82 +882,52 @@ body {
   list-style: none; }
   .products.columns-1 .product-item {
     flex: 0 0 100%;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
+    max-width: 100%; }
     .products.columns-1 .product-item:after {
       content: none; }
+    .products.columns-1 .product-item .product-item__thumbnail {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px; }
   .products.columns-2 .product-item {
     flex: 0 0 50%;
-    max-width: 50%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
+    max-width: 50%; }
     .products.columns-2 .product-item:nth-child(2n):after {
       content: none; }
+    .products.columns-2 .product-item .product-item__thumbnail {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px; }
   .products.columns-3 .product-item {
     flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
+    max-width: 33.3333333333%; }
     .products.columns-3 .product-item:nth-child(3n):after {
       content: none; }
   .products.columns-4 .product-item {
     flex: 0 0 25%;
-    max-width: 25%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
+    max-width: 25%; }
     .products.columns-4 .product-item:nth-child(4n):after {
       content: none; }
   .products.columns-5 .product-item {
     flex: 0 0 20%;
-    max-width: 20%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
+    max-width: 20%; }
     .products.columns-5 .product-item:nth-child(5n):after {
       content: none; }
   .products.columns-6 .product-item {
     flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
+    max-width: 16.6666666667%; }
     .products.columns-6 .product-item:nth-child(6n):after {
       content: none; }
   .products.columns-7 .product-item {
     flex: 0 0 14.1666666667%;
-    max-width: 14.1666666667%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
+    max-width: 14.1666666667%; }
     .products.columns-7 .product-item:nth-child(7n):after {
       content: none; }
   .products.columns-8 .product-item {
     flex: 0 0 12.5%;
-    max-width: 12.5%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
+    max-width: 12.5%; }
     .products.columns-8 .product-item:nth-child(8n):after {
       content: none; }
   .products .product-item {
@@ -969,4 +941,4 @@ body {
     padding-right: 0px;
     padding-left: 0px; }
   .products .product-item-inner {
-    padding: 12px 29px 15px 30px; }
+    padding: 20px 24px 14px; }

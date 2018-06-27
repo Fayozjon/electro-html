@@ -3,69 +3,69 @@
     @include list-unstyled();
 
     &.columns-1 .product-item{
-            @include make-col(12);
-            @include make-col-ready();
+        @include make-col(12);
+        @include make-col-ready();
 
-            &:after {
-                content: none;
-            }
+        &:after {
+            content: none;
         }
+    }
     &.columns-2 .product-item{
-            @include make-col(6);
-            @include make-col-ready();
+        @include make-col(6);
+        @include make-col-ready();
 
-            &:nth-child(2n):after{
-                content: none;
-            }
+        &:nth-child(2n):after{
+            content: none;
         }
+    }
     &.columns-3 .product-item {
         @include make-col(4);
         @include make-col-ready();
 
-            &:nth-child(3n):after{
-                content: none;
-            }
+        &:nth-child(3n):after{
+            content: none;
         }
+    }
     &.columns-4 .product-item {
         @include make-col(3);
         @include make-col-ready();
 
-            &:nth-child(4n):after{
-                content: none;
-            }
+        &:nth-child(4n):after{
+            content: none;
         }
+    }
     &.columns-5 .product-item {
         @include make-col(2.4);
         @include make-col-ready();
 
-            &:nth-child(5n):after{
-                content: none;
-            }
+        &:nth-child(5n):after{
+            content: none;
         }
+    }
     &.columns-6 .product-item {
         @include make-col(2);
         @include make-col-ready();
 
-            &:nth-child(6n):after{
-                content: none;
-            }
+        &:nth-child(6n):after{
+            content: none;
         }
+    }
     &.columns-7 .product-item {
         @include make-col(1.7);
         @include make-col-ready();
 
-            &:nth-child(7n):after{
-                content: none;
-            }
+        &:nth-child(7n):after{
+            content: none;
         }
+    }
     &.columns-8 .product-item {
         @include make-col(1.5);
         @include make-col-ready();
 
-            &:nth-child(8n):after{
-                content: none;
-            }
+        &:nth-child(8n):after{
+            content: none;
         }
+    }
 
     .product-item {
         @include make-col(3);
@@ -76,5 +76,4 @@
     .product-item-inner{
         padding: 12px 29px 15px 30px;
     }
-
 }

@@ -813,15 +813,17 @@ body {
     margin-bottom: 36px; }
     .products .product-item__title a {
       text-decoration: none; }
-  .products .product-item__price-add-to-cart .price-amount {
-    color: #343f49;
-    font-size: 20px; }
+  .products .product-item__price-add-to-cart {
+    margin-bottom: 10px; }
+    .products .product-item__price-add-to-cart .price-amount {
+      color: #343f49;
+      font-size: 20px; }
   .products .product-item__action-buttons a {
     text-decoration: none;
     color: #848484;
     font-size: 13px; }
   .products .product-item__footer {
-    border-top: 1px solid #878787;
+    border-top: 1px solid #eaeaea;
     display: none;
     padding: 12px 5px; }
   .products li.product-item:hover .product-item__footer {

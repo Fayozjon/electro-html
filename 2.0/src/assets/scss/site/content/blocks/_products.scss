@@ -1,7 +1,7 @@
 .products{
     @include make-row();
     @include list-unstyled();
-    
+
     .product-item {
         @include make-col(3);
         @include make-col-ready();
@@ -11,7 +11,10 @@
     .product-item-inner{
         padding: 20px 24px 14px;
     }
-    &.columns-1 .product-item{
+    &.column-1 .product-item {
+        .product-item__action-buttons {
+            justify-content: space-around;
+        }
         @include make-col(12);
 
         &:after {
@@ -19,6 +22,11 @@
         }
     }
     &.columns-2 .product-item{
+
+        .product-item__action-buttons {
+            justify-content: space-around;
+        }
+
         @include make-col(6);
 
         &:nth-child(2n):after{
@@ -26,6 +34,9 @@
         }
     }
     &.columns-3 .product-item {
+        .product-item__action-buttons {
+            justify-content: space-around;
+        }
         @include make-col(4);
 
         &:nth-child(3n):after{

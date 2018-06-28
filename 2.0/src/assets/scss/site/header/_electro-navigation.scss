@@ -9,7 +9,6 @@
             font-size: 14px;
             color: #333e48;
             padding: 12px;
-            font-weight: 700;
             border: none;
             text-align: left;
             padding-left: 20px;
@@ -20,8 +19,12 @@
             padding: 0px 7px;
         }
         .btn-secondary {
-            
+            font-weight: 700;
             background:#fed700;
+            box-shadow: none;
+        }
+        .dropdown-menu {
+            width: 100%;
         }
     }
 

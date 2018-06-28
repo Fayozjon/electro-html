@@ -1,7 +1,7 @@
 .products{
     @include make-row();
     @include list-unstyled();
-        
+    
     .product-item {
         @include make-col(3);
         @include make-col-ready();

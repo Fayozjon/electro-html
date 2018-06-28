@@ -5,6 +5,10 @@
         @include make-col-ready();
         @include make-col(3);
 
+        a:active {
+            background: none;
+        }
+
         a {
             font-size: 14px;
             color: #333e48;
@@ -15,6 +19,7 @@
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
         }
+
         i {
             padding: 0px 7px;
         }

@@ -6,9 +6,6 @@
         .product-item__footer {
             display: block;
         }
-        button {
-            background: #fed700;
-        }
     }
 
     &:after {
@@ -72,8 +69,13 @@
         color: #343f49;
         font-size: 20px;
     }
-    button {
+    .cart-button {
         @include make-button( 3.5px,7.5px,$font-size-base,$btn-line-height,50%);
+        @include button-variant( #e6e6e6, transparent,#fed700);
+        &:focus {
+                box-shadow: none;
+                outline: none;
+             }
     }
     i {
         color: #fff;

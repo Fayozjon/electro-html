@@ -1,0 +1,22 @@
+.banners {
+    @include make-row();
+    @include list-unstyled();
+
+    .banner {
+        @include make-col(4);
+        @include make-col-ready()
+    }
+
+    a{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .banner-media-body {
+        @include make-col(6);
+        @include make-col-ready();
+        align-self: center;
+        height: 100%;
+        flex: 1;
+    }
+}

@@ -1007,7 +1007,6 @@ body {
     padding-left: 15px; }
   .banners a {
     display: flex;
-    align-items: flex-start;
     text-decoration: none; }
   .banners .banner-media-body {
     flex: 0 0 50%;

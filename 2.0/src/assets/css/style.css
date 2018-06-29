@@ -1048,12 +1048,12 @@ body {
     .ad-block .upto .value {
       font-weight: bold;
       font-size: 30px;
-      letter-spacing: -0.025em;
-      line-height: 0.592em; }
+      letter-spacing: -0.76055px;
+      line-height: 30px; }
       .ad-block .upto .value sup {
-        top: -0.25em; }
+        top: -4px; }
     .ad-block .upto .suffix {
-      top: -0.5em;
+      top: -7px;
       position: relative;
       font-weight: bold;
       vertical-align: top;

@@ -992,12 +992,12 @@ body {
     .products.columns-8 .product-item:nth-child(8n):after {
       content: none; }
 
-.banners {
+.ad-block {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
-  .banners .banner {
+  .ad-block .ad {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
     position: relative;
@@ -1005,10 +1005,10 @@ body {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px; }
-  .banners a {
+  .ad-block a {
     display: flex;
     text-decoration: none; }
-  .banners .banner-media-body {
+  .ad-block .ad-media-body {
     flex: 0 0 50%;
     max-width: 50%;
     position: relative;
@@ -1018,45 +1018,46 @@ body {
     padding-left: 15px;
     align-self: center;
     height: 100%; }
-  .banners .banner-text {
-    font-size: 18px;
+    .ad-block .ad-media-body strong {
+      font-weight: 700; }
+  .ad-block .ad-text {
+    font-size: 17px;
     color: #333e48;
-    line-height: 23px; }
-  .banners .banner-action {
+    line-height: 21px;
+    font-weight: 200; }
+  .ad-block .ad-action {
     font-size: 15px;
     color: #333e48;
     line-height: 30px;
-    font-weight: 700;
-    padding-top: 5px; }
-  .banners i {
+    font-weight: 700; }
+  .ad-block i {
     background: #fed700;
     padding: 5px 6px;
     font-size: 9px;
     border-radius: 12px;
     margin-left: 8px;
     color: #ffffff; }
-  .banners .upto {
-    text-transform: uppercase;
+  .ad-block .upto {
     font-weight: 300; }
-    .banners .upto .prefix {
-      font-size: 0.919em;
-      line-height: 0.909em;
+    .ad-block .upto .prefix {
+      font-size: 12px;
+      line-height: 11px;
       display: inline-block;
-      width: 1.321em;
+      width: 17px;
       margin-right: 4px; }
-    .banners .upto .value {
+    .ad-block .upto .value {
       font-weight: bold;
-      font-size: 2.173em;
+      font-size: 30px;
       letter-spacing: -0.025em;
       line-height: 0.592em; }
-      .banners .upto .value sup {
+      .ad-block .upto .value sup {
         top: -0.25em; }
-    .banners .upto .suffix {
+    .ad-block .upto .suffix {
       top: -0.5em;
       position: relative;
       font-weight: bold;
       vertical-align: top;
       margin-left: 2px; }
-  .banners .banner-inner {
+  .ad-block .ad-inner {
     background: #f5f5f5;
     padding: 12px 20px 12px 5px; }

@@ -1,7 +1,7 @@
-.banners {
+.ad-block {
     @include make-row();
 
-    .banner {
+    .ad {
         @include make-col(4);
         @include make-col-ready()
     }
@@ -11,25 +11,30 @@
         text-decoration: none;
     }
 
-    .banner-media-body {
+    .ad-media-body  {
         @include make-col(6);
         @include make-col-ready();
         align-self: center;
         height: 100%;
+
+        strong {
+            font-weight: 700;
+        }
     }
 
-    .banner-text {
-        font-size: 18px;
+    .ad-text {
+        font-size: 17px;
         color: #333e48;
-        line-height: 23px;
+        line-height: 21px;
+        font-weight: 200;
     }
 
-    .banner-action {
+    .ad-action {
         font-size: 15px;
         color: #333e48;
         line-height: 30px;
         font-weight: 700;
-        padding-top: 5px;
+        
     }
 
     i {
@@ -45,16 +50,16 @@
             font-weight: 300;
 
             .prefix {
-                font-size: 0.919em;
-                line-height: 0.909em;
+                font-size: 12px;
+                line-height: 11px;
                 display: inline-block;
-                width: 1.321em;
+                width: 17px;
                 margin-right: 4px;
             }
 
             .value {
                 font-weight: bold;
-                font-size: 2.173em;
+                font-size: 30px;
                 letter-spacing: -0.025em;
                 line-height: 0.592em;
 
@@ -72,7 +77,7 @@
             }
         }
 
-    .banner-inner {
+    .ad-inner {
         background: #f5f5f5;
         padding: 12px 20px 12px 5px;
 

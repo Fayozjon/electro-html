@@ -1112,9 +1112,17 @@ body {
         text-align: center;
         background: #fed700;
         border-radius: 34px;
-        padding: 12px; }
-        .deals-and-tabs .deals-block .deals-block-header .savings .daels-amount {
-          display: block; }
+        padding: 8px 4px; }
+        .deals-and-tabs .deals-block .deals-block-header .savings .deals-amount {
+          font-size: 20px;
+          line-height: 18px;
+          display: block;
+          font-weight: 700;
+          color: #343f49; }
+        .deals-and-tabs .deals-block .deals-block-header .savings .savings-text {
+          font-size: 12px;
+          line-height: 18px;
+          color: #343f49; }
   .deals-and-tabs .tabs-block {
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
@@ -1123,6 +1131,11 @@ body {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px; }
+  .deals-and-tabs .nav-tabs {
+    display: flex;
+    justify-content: center; }
+    .deals-and-tabs .nav-tabs a {
+      border: none; }
 
 .home-v1-slider {
   width: 100vw;

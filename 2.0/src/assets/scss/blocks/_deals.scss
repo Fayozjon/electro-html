@@ -59,10 +59,20 @@
                 text-align: center;
                 background: #fed700;
                 border-radius: 34px;
-                padding: 12px;
+                padding: 8px 4px;
 
-                .daels-amount {
+                .deals-amount {
+                    font-size: 20px;
+                    line-height: 18px;
                     display: block;
+                    font-weight: 700;
+                    color: #343f49;
+                }
+
+                .savings-text {
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #343f49;
                 }
             }
         }
@@ -70,5 +80,14 @@
     .tabs-block {
         @include make-col(8);
         @include make-col-ready();
+    }
+
+    .nav-tabs{
+        display: flex;
+        justify-content: center;
+
+        a{
+            border: none;
+        }
     }
 }

@@ -201,6 +201,9 @@
     <div class="site-content">
         <div class="container">
             <div class="site-content-inner">
+                <div class="home-v1-slider">
+                    <img src="http://via.placeholder.com/1920x703">
+                </div>
                 <div class="home-v1-ad-block">
                     <div class="ad-block">
                         <div class="ad">
@@ -257,8 +260,8 @@
                 <div class="deals-and-tabs">
                     <div class="deals-block">  
                         <section class="section-onsale-product ">
-                            <header>
-                                <h2 class="h1">Special Offer</h2>
+                            <header class="deals-block-header">
+                                <h2 class="offer">Special<br>Offer</h2>
                                 <div class="savings">
                                     <span class="savings-text">Save
                                         <span class="daels-amount">
@@ -283,7 +286,7 @@
                                                 </span>
                                             </span> 
                                             <del>
-                                                <span class="deals-amount">
+                                                <span class="deals-del-amount">
                                                     <span class="Price-currencySymbol">$</span>99.00
                                                 </span>
                                             </del>
@@ -294,8 +297,8 @@
                                                 <span class="stock-sold">Already Sold: <strong>9</strong></span>
                                                 <span class="stock-available">Available: <strong>16</strong></span>
                                             </div>
-                                            <div class="progress">
-                                                <span class="progress-bar" style="width:36%">36</span>
+                                            <div class="deal-progress">
+                                                <span class="deal-progress-bar">36</span>
                                             </div>
                                     </div>
                                     <div class="deal-countdown-timer">
@@ -319,9 +322,293 @@
                                 </div>
                             </div>
                         </section>
+                    </div>
+                    <div class="tabs-block">
+                        <div class="products-carousel-tabs">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="feature-tab" data-toggle="tab" href="#feature" role="tab" aria-controls="feature" aria-selected="true">Feature</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="on-sale-tab" data-toggle="tab" href="#on-sale" role="tab" aria-controls="on-sale" aria-selected="false">On sale</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="top-rated-tab" data-toggle="tab" href="#top-rated" role="tab" aria-controls="top-rated" aria-selected="false">Top Rated</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="feature" role="tabpanel" aria-labelledby="feature-tab">
+                                    <ul class="products columns-3">
+                                        <li class="product-item">
+                                            <div class="product-item-inner">
+                                                <div class="product-item__header">
+                                                    <div class="product-item__categories"><a href="#">Smart Watches</a></div>
+                                                    <h2 class="product-item__title"><a href="#">Smareeeeetwatch 2.0 LTE<br>Wifi</a></h2>
+                                                </div>
+                                                <div class="product-item__body">
+                                                    <a href="#">
+                                                        <div class="product-item__thumbnail">
+                                                            <img src="http://via.placeholder.com/300x300" alt="">
+                                                        </div>
+                                                    </a>
+                                                    <div class="product-item__price-add-to-cart">
+                                                        <span class="price-amount">$129,00 </span>
+                                                        <button class="cart-button"><i class="fas fa-cart-arrow-down"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__footer">
+                                                    <div class="product-item__action-buttons">
+                                                        <a href="#"><i class="ec ec-compare"></i>Compare</a>
+                                                        <a href="#"><i class="ec ec-favorites"></i>Whislist</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="product-item">
+                                            <div class="product-item-inner">
+                                                <div class="product-item__header">
+                                                    <div class="product-item__categories"><a href="#">Smart Watches</a></div>
+                                                    <h2 class="product-item__title"><a href="#">Smartwatch 2.0 LTE<br>Wifi</a></h2>
+                                                </div>
+                                                <div class="product-item__body">
+                                                    <a href="#">
+                                                        <div class="product-item__thumbnail">
+                                                            <img src="http://via.placeholder.com/300x300" alt="">
+                                                        </div>
+                                                    </a>
+                                                    <div class="product-item__price-add-to-cart">
+                                                        <span class="price-amount">$129,00 </span>
+                                                        <button class="cart-button"><i class="fas fa-cart-arrow-down"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__footer">
+                                                    <div class="product-item__action-buttons">
+                                                        <a href="#"><i class="ec ec-compare"></i>Compare</a>
+                                                        <a href="#"><i class="ec ec-favorites"></i>Whislist</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="on-sale" role="tabpanel" aria-labelledby="on-sale-tab">
+                                    <ul class="products columns-3">
+                                        <li class="product-item">
+                                            <div class="product-item-inner">
+                                                <div class="product-item__header">
+                                                    <div class="product-item__categories"><a href="#">Smart Watches</a></div>
+                                                    <h2 class="product-item__title"><a href="#">Smartwatwdswch 2.0 LTE<br>Wifi</a></h2>
+                                                </div>
+                                                <div class="product-item__body">
+                                                    <a href="#">
+                                                        <div class="product-item__thumbnail">
+                                                            <img src="http://via.placeholder.com/300x300" alt="">
+                                                        </div>
+                                                    </a>
+                                                    <div class="product-item__price-add-to-cart">
+                                                        <span class="price-amount">$129,00 </span>
+                                                        <button class="cart-button"><i class="fas fa-cart-arrow-down"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__footer">
+                                                    <div class="product-item__action-buttons">
+                                                        <a href="#"><i class="ec ec-compare"></i>Compare</a>
+                                                        <a href="#"><i class="ec ec-favorites"></i>Whislist</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="product-item">
+                                            <div class="product-item-inner">
+                                                <div class="product-item__header">
+                                                    <div class="product-item__categories"><a href="#">Smart Watches</a></div>
+                                                    <h2 class="product-item__title"><a href="#">Smartwatch 2.0 LTE<br>Wifi</a></h2>
+                                                </div>
+                                                <div class="product-item__body">
+                                                    <a href="#">
+                                                        <div class="product-item__thumbnail">
+                                                            <img src="http://via.placeholder.com/300x300" alt="">
+                                                        </div>
+                                                    </a>
+                                                    <div class="product-item__price-add-to-cart">
+                                                        <span class="price-amount">$129,00 </span>
+                                                        <button class="cart-button"><i class="fas fa-cart-arrow-down"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__footer">
+                                                    <div class="product-item__action-buttons">
+                                                        <a href="#"><i class="ec ec-compare"></i>Compare</a>
+                                                        <a href="#"><i class="ec ec-favorites"></i>Whislist</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>                
                 </div>
             </div>
+            <section class="section-products">
+                <header>
+                    <h1>Recently Viewed</h1>
+                </header>
+                <div class="section-product-items">
+                    <ul class="products columns-6">
+                        <li class="product-item">
+                            <div class="product-item-inner">
+                                <div class="product-item__header">
+                                    <div class="product-item__categories"><a href="#">Smart Watches</a></div>
+                                    <h2 class="product-item__title"><a href="#">Smartwatch 2.0 LTE<br>Wifi</a></h2>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#">
+                                        <div class="product-item__thumbnail">
+                                            <img src="http://via.placeholder.com/300x300" alt="">
+                                        </div>
+                                    </a>
+                                    <div class="product-item__price-add-to-cart">
+                                        <span class="price-amount">$129,00 </span>
+                                        <button class="cart-button"><i class="fas fa-cart-arrow-down"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-item__footer">
+                                    <div class="product-item__action-buttons">
+                                        <a href="#"><i class="ec ec-compare"></i>Compare</a>
+                                        <a href="#"><i class="ec ec-favorites"></i>Whislist</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-item">
+                            <div class="product-item-inner">
+                                <div class="product-item__header">
+                                    <div class="product-item__categories"><a href="#">Smart Watches</a></div>
+                                    <h2 class="product-item__title"><a href="#">Smartwatch 2.0 LTE<br>Wifi</a></h2>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#">
+                                        <div class="product-item__thumbnail">
+                                            <img src="http://via.placeholder.com/300x300" alt="">
+                                        </div>
+                                    </a>
+                                    <div class="product-item__price-add-to-cart">
+                                        <span class="price-amount">$129,00 </span>
+                                        <button class="cart-button"><i class="fas fa-cart-arrow-down"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-item__footer">
+                                    <div class="product-item__action-buttons">
+                                        <a href="#"><i class="ec ec-compare"></i>Compare</a>
+                                        <a href="#"><i class="ec ec-favorites"></i>Whislist</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-item">
+                            <div class="product-item-inner">
+                                <div class="product-item__header">
+                                    <div class="product-item__categories"><a href="#">Smart Watches</a></div>
+                                    <h2 class="product-item__title"><a href="#">Smartwatch 2.0 LTE<br>Wifi</a></h2>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#">
+                                        <div class="product-item__thumbnail">
+                                            <img src="http://via.placeholder.com/300x300" alt="">
+                                        </div>
+                                    </a>
+                                    <div class="product-item__price-add-to-cart">
+                                        <span class="price-amount">$129,00 </span>
+                                        <button class="cart-button"><i class="fas fa-cart-arrow-down"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-item__footer">
+                                    <div class="product-item__action-buttons">
+                                        <a href="#"><i class="ec ec-compare"></i>Compare</a>
+                                        <a href="#"><i class="ec ec-favorites"></i>Whislist</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-item">
+                            <div class="product-item-inner">
+                                <div class="product-item__header">
+                                    <div class="product-item__categories"><a href="#">Cameras</a></div>
+                                    <h2 class="product-item__title"><a href="#">Camera C430W 4k<br>Waterproof</a></h2>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#">
+                                        <div class="product-item__thumbnail">
+                                            <img src="http://via.placeholder.com/330x308" alt="">
+                                        </div>
+                                    </a>
+                                    <div class="product-item__price-add-to-cart">
+                                        <span class="price-amount">$590</span>
+                                        <button class="cart-button"><i class="fas fa-cart-arrow-down"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-item__footer">
+                                    <div class="product-item__action-buttons">
+                                        <a href="#"><i class="ec ec-compare"></i>Compare</a>
+                                        <a href="#"><i class="ec ec-favorites"></i>Whislist</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                       <li class="product-item">
+                            <div class="product-item-inner">
+                                <div class="product-item__header">
+                                    <div class="product-item__categories"><a href="#">Smart Watches</a></div>
+                                    <h2 class="product-item__title"><a href="#">Smartwatch 2.0 LTE<br>Wifi</a></h2>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#">
+                                        <div class="product-item__thumbnail">
+                                            <img src="http://via.placeholder.com/300x300" alt="">
+                                        </div>
+                                    </a>
+                                    <div class="product-item__price-add-to-cart">
+                                        <span class="price-amount">$129,00 </span>
+                                        <button class="cart-button"><i class="fas fa-cart-arrow-down"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-item__footer">
+                                    <div class="product-item__action-buttons">
+                                        <a href="#"><i class="ec ec-compare"></i>Compare</a>
+                                        <a href="#"><i class="ec ec-favorites"></i>Whislist</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-item">
+                            <div class="product-item-inner">
+                                <div class="product-item__header">
+                                    <div class="product-item__categories"><a href="#">Accesories</a></div>
+                                    <h2 class="product-item__title"><a href="#">Powerbank 1130 mAh<br>Blue</a></h2>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#">
+                                        <div class="product-item__thumbnail">
+                                            <img src="http://via.placeholder.com/330x308" alt="">
+                                        </div>
+                                    </a>
+                                    <div class="product-item__price-add-to-cart">
+                                        <span class="price-amount">$103,00</span>
+                                        <button class="cart-button"><i class="fas fa-cart-arrow-down"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-item__footer">
+                                    <div class="product-item__action-buttons">
+                                        <a href="#"><i class="ec ec-compare"></i>Compare</a>
+                                        <a href="#"><i class="ec ec-favorites"></i>Whislist</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
     </div>
     <footer class="site-footer">

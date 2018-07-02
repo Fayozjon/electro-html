@@ -1,0 +1,8 @@
+@mixin stretch-full-width() {
+    width: 100vw;
+    position: relative;
+    margin-left: calc(-50vw + 50% - 8px);
+    @include media-breakpoint-down(md) { 
+        margin-left: calc(-50vw + 50%);
+    }
+}

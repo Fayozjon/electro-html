@@ -1,0 +1,74 @@
+.deals-and-tabs {
+    display: flex;
+    .deals-block{
+    	@include make-col(4);
+    	@include make-col-ready();
+
+        .section-onsale-product {
+            padding: 20px 21px 7px 21px;
+            border: 2px solid #fed700;
+            border-radius: 21px;
+        }
+
+    	h2 {
+            font-size: 22px;
+            line-height: 28px;
+            color: #343f49;
+            }
+
+        .onsale-product {
+            text-align: center;
+               a{
+                @include hover-focus() {
+                    text-decoration: none;
+                    }
+                }
+                .sale-price {
+                    font-size: 30px;
+                    color: #e00;
+                }
+                .deals-del-amount {
+                    font-size: 18px;
+                    color: #848484;
+                }
+                .deal-progress {
+                    .deal-stock {
+                        display: flex;
+                        justify-content: space-between;
+                        color: #383838;
+                        font-size: 15px;
+                        line-height: 18px;
+                    }
+                }
+
+            }
+
+        .deals-product-title {
+            font-size: 14px;
+            line-height: 18px;
+            color: #0062bd;
+            font-weight: 700;
+        }
+
+        .deals-block-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 15px;
+
+            .savings {
+                text-align: center;
+                background: #fed700;
+                border-radius: 34px;
+                padding: 12px;
+
+                .daels-amount {
+                    display: block;
+                }
+            }
+        }
+    }
+    .tabs-block {
+        @include make-col(8);
+        @include make-col-ready();
+    }
+}

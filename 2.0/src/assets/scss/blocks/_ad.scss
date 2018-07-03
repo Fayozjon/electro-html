@@ -47,35 +47,35 @@
 
     }
     .upto {
-            font-weight: 300;
+        font-weight: 300;
 
-            .prefix {
-                font-size: 12px;
-                line-height: 11px;
-                display: inline-block;
-                width: 17px;
-                margin-right: 4px;
-            }
+        .prefix {
+            font-size: 12px;
+            line-height: 11px;
+            display: inline-block;
+            width: 17px;
+            margin-right: 4px;
+        }
 
-            .value {
-                font-weight: bold;
-                font-size: 30px;
-                letter-spacing: -0.76055px;
-                line-height: 30px;
+        .value {
+            font-weight: bold;
+            font-size: 30px;
+            letter-spacing: -0.76055px;
+            line-height: 30px;
 
-                sup {
-                    top: -4px;
-                }
-            }
-
-            .suffix {
-                top: -7px;
-                position: relative;
-                font-weight: bold;
-                vertical-align: top;
-                margin-left: 2px;
+            sup {
+                top: -4px;
             }
         }
+
+        .suffix {
+            top: -7px;
+            position: relative;
+            font-weight: bold;
+            vertical-align: top;
+            margin-left: 2px;
+        }
+    }
 
     .ad-inner {
         background: #f5f5f5;

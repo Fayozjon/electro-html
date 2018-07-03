@@ -1,8 +1,8 @@
 .home-v1-slider {
-	@include stretch-full-width();
-	margin-bottom: 30px;
+    @include stretch-full-width();
+    margin-bottom: 30px;
 
-	img {
-		max-width: 100%;
-	}
+    img {
+        max-width: 100%;
+    }
 }

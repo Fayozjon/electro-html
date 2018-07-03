@@ -1,8 +1,8 @@
 .deals-and-tabs {
     display: flex;
     .deals-block{
-    	@include make-col(4);
-    	@include make-col-ready();
+        @include make-col(4);
+        @include make-col-ready();
 
         .section-onsale-product {
             padding: 20px 21px 7px 21px;
@@ -10,38 +10,38 @@
             border-radius: 21px;
         }
 
-    	h2 {
+        h2 {
             font-size: 22px;
             line-height: 28px;
             color: #343f49;
-            }
+        }
 
         .onsale-product {
             text-align: center;
-               a{
+            a{
                 @include hover-focus() {
                     text-decoration: none;
-                    }
                 }
-                .sale-price {
-                    font-size: 30px;
-                    color: #e00;
-                }
-                .deals-del-amount {
-                    font-size: 18px;
-                    color: #848484;
-                }
-                .deal-progress {
-                    .deal-stock {
-                        display: flex;
-                        justify-content: space-between;
-                        color: #383838;
-                        font-size: 15px;
-                        line-height: 18px;
-                    }
-                }
-
             }
+            .sale-price {
+                font-size: 30px;
+                color: #e00;
+            }
+            .deals-del-amount {
+                font-size: 18px;
+                color: #848484;
+            }
+            .deal-progress {
+                .deal-stock {
+                    display: flex;
+                    justify-content: space-between;
+                    color: #383838;
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+            }
+
+        }
 
         .deals-product-title {
             font-size: 14px;

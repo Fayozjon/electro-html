@@ -1131,11 +1131,17 @@ body {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px; }
-  .deals-and-tabs .nav-tabs {
-    display: flex;
-    justify-content: center; }
-    .deals-and-tabs .nav-tabs a {
-      border: none; }
+    .deals-and-tabs .tabs-block .nav {
+      display: flex;
+      justify-content: center; }
+      .deals-and-tabs .tabs-block .nav:before {
+        content: ' ';
+        border-bottom: 1px solid #ddd;
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 0;
+        width: 100%; }
 
 .home-v1-slider {
   width: 100vw;

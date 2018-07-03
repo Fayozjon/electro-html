@@ -80,14 +80,20 @@
     .tabs-block {
         @include make-col(8);
         @include make-col-ready();
-    }
 
-    .nav-tabs{
-        display: flex;
-        justify-content: center;
+        .nav {
+            display: flex;
+            justify-content: center;
 
-        a{
-            border: none;
+            &:before {
+                content: ' ';
+                border-bottom: 1px solid #ddd;
+                display: block;
+                position: absolute;
+                top: 35px;
+                right: 0;
+                width: 100%;
+            }
         }
     }
 }

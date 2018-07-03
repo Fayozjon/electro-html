@@ -325,19 +325,20 @@
                     </div>  
                     <div class="tabs-block">
                         <div class="products-carousel-tabs">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="tab">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#feature" aria-expanded="true">Feature</a>
+                            <ul class="nav nav-inline">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#feature" data-toggle="tab">Feature</a>
                                 </li>
-                                <li class="nav-item" role="tab">
-                                    <a class="nav-link" data-toggle="tab" href="#on-sale" aria-expanded="false">On sale</a>
+                                <li class="nav-item">
+                                    <a class="nav-link"  href="#on-sale" data-toggle="tab" aria-expanded="false">On sale</a>
                                 </li>
-                                <li class="nav-item" role="tab">
-                                    <a class="nav-link" id="top-rated-tab" data-toggle="tab" href="#top-rated" role="tab" aria-controls="top-rated" aria-selected="false">Top Rated</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#top-rated" data-toggle="tab">Top Rated</a>
                                 </li>
                             </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="feature" role="tabpanel" aria-labelledby="feature-tab">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="feature" role="tabpanel">
+                                    <div class="tab-products">
                                     <ul class="products columns-3">
                                         <li class="product-item">
                                             <div class="product-item-inner">
@@ -492,13 +493,14 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="on-sale" role="tabpanel" aria-labelledby="on-sale-tab">
+                            </div>
+                            <div class="tab-pane" id="on-sale" role="tabpanel">
                                 <ul class="products columns-3">
                                     <li class="product-item">
                                         <div class="product-item-inner">
                                             <div class="product-item__header">
                                                 <div class="product-item__categories"><a href="#">Smart Watches</a></div>
-                                                <h2 class="product-item__title"><a href="#">Smartwatch 2.0 LTE<br>Wifi</a></h2>
+                                                <h2 class="product-item__title"><a href="#">Smartwsdsdatch 2.0 LTE<br>Wifi</a></h2>
                                             </div>
                                             <div class="product-item__body">
                                                 <a href="#">
@@ -546,7 +548,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="top-rated-tab">
+                            <div class="tab-pane" id="contact" role="tabpanel">
                                 <ul class="products columns-3">
                                     <li class="product-item">
                                         <div class="product-item-inner">
@@ -745,11 +747,6 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="section-product-cards-carousel">
-                    <header>
-                        <h1>Best Seller</h1>
-                    </header>
                 </section>
                 <section class="section-products">
                     <header>

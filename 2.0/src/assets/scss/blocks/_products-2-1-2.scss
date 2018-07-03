@@ -1,4 +1,32 @@
 .products-2-1-2 {
     @include stretch-full-width();
     background-color: #f9f9f9;
+    padding-top: 25px;
+
+    .columns-2-1-2  {
+        display: flex;
+    }
+    .product-item{
+        background: #fff;
+        margin: 5px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .products-2 {
+        @include make-col(3);
+        @include make-col-ready();
+    }
+    .product-1 {
+        @include make-col(6);
+        @include make-col-ready();
+
+        .product-item{
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        .product-center {
+            padding: 0px 6px;
+        }
+    }
 }

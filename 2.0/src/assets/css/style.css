@@ -1159,3 +1159,12 @@ body {
 .section-products .product-item__action-buttons a {
   padding: 0;
   font-size: 12px; }
+
+.products-2-1-2 {
+  width: 100vw;
+  position: relative;
+  margin-left: calc(-50vw + 50% - 8px);
+  background-color: #f9f9f9; }
+  @media (max-width: 991.98px) {
+    .products-2-1-2 {
+      margin-left: calc(-50vw + 50%); } }

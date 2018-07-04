@@ -34,7 +34,23 @@
         color: #333e48;
         line-height: 30px;
         font-weight: 700;
-        
+
+        &:after {
+            display: inline-block;
+            font: normal normal normal 14px/1 font-electro;
+            font-size: 15px;
+            text-rendering: auto;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            content: "\62";
+            margin-left: 8px;
+            color: #fff;
+            text-align: center;
+            background: #fed700;
+            vertical-align: middle;
+            padding-top: 2px;
+        }
     }
 
     i {

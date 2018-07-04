@@ -80,53 +80,57 @@
     .tabs-block {
         @include make-col(8);
         @include make-col-ready();
+    }
+}
 
-        .nav {
-            display: flex;
-            justify-content: center;
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7px;
 
-            &:before {
-                content: ' ';
-                border-bottom: 1px solid #ddd;
-                display: block;
-                position: absolute;
-                top: 39px;
-                right: 0;
-                width: 100%;
-            }
-            a {
-                font-size: 18px;
-                line-height: 34px;      
-                color: #343f49;
-            }
+    &:before {
+        content: ' ';
+        border-bottom: 1px solid #ddd;
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+    }
+    a {
+        font-size: 18px;
+        line-height: 34px;      
+        color: #343f49;
+        margin: 2px 16px;
+        padding: 0;
+    }
 
-            .active {
-                position: relative;
-                font-weight: 700;
+    .active {
+        position: relative;
+        font-weight: 700;
 
-                &:after {
-                    content: ' ';
-                    border-bottom: 2px solid #fed700;
-                    display: block;
-                    position: absolute;
-                    bottom: 10px;
-                    width: 75%;
-                    right: 13px;
-                }
+        &:after {
+            content: ' ';
+            border-bottom: 2px solid #fed700;
+            display: block;
+            position: absolute;
+            top: 105%;
+            width: 100%;
+            right: 1px;
+        }
 
-                &:before{
-                    content: ' ';
-                    height: 4px;
-                    width: 10px;
-                    display: block;
-                    position: absolute;
-                    bottom: 6px;
-                    left: 50%;
-                    border-radius: 0 0 10px 10px;
-                    transform: translateX(-50%);
-                    background: #fed700;
-                }
-            }
+        &:before{
+            content: ' ';
+            height: 4px;
+            width: 10px;
+            display: block;
+            position: absolute;
+            top: 111%;
+            left: 50%;
+            border-radius: 0 0 10px 10px;
+            transform: translateX(-50%);
+            background: #fed700
         }
     }
 }

@@ -1,4 +1,9 @@
 .products-2-1-2 {
+    .nav-link {
+        font-size: 15px;
+        color: #333e48;
+        line-height: 34px;
+    }
     @include stretch-full-width();
     background-color: #f9f9f9;
     padding-top: 25px;

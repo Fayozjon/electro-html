@@ -34,4 +34,35 @@
             padding: 0px 6px;
         }
     }
+
+    .nav 
+    .nav-link {
+        @include hover-focus() {
+             position: relative;
+             
+            &:after {
+                content: ' ';
+                border-bottom: 2px solid #fed700;
+                display: block;
+                position: absolute;
+                top: 105%;
+                width: 100%;
+                right: 1px;
+            }
+
+            &:before{
+                content: ' ';
+                height: 4px;
+                width: 10px;
+                display: block;
+                position: absolute;
+                top: 111%;
+                left: 50%;
+                border-radius: 0 0 10px 10px;
+                transform: translateX(-50%);
+                background: #fed700
+            }
+
+        }
+    }
 }

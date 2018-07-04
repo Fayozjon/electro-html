@@ -30,6 +30,13 @@
         }
         .dropdown-menu {
             width: 100%;
+
+            li {
+                padding: 0 15px;
+            }
+            a {
+                padding: 6px 0 6px 5px;
+            }
         }
     }
 

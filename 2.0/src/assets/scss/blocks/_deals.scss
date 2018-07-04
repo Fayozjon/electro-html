@@ -96,8 +96,8 @@
         }
     }
 }
-
-.nav {
+.products-carousel-tabs
+.nav-inline {
 
     &:before {
         content: ' ';
@@ -118,7 +118,7 @@
             border-bottom: 2px solid #fed700;
             display: block;
             position: absolute;
-            top: 105%;
+            top: 103%;
             width: 100%;
             right: 1px;
         }
@@ -129,7 +129,7 @@
             width: 10px;
             display: block;
             position: absolute;
-            top: 111%;
+            top: 107%;
             left: 50%;
             border-radius: 0 0 10px 10px;
             transform: translateX(-50%);

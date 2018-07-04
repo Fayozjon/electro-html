@@ -9,19 +9,15 @@
     }
 
     &:after {
-     content: '';
-     border-right: 1px solid #eaeaea;
-     display: block;
-     position: absolute;
-     top: 50%;
-     right: 0;
-     height: 70%;
-     transform: translateY(-50%);
- }
-
- &:nth-child(4n):after{
-    content: none;
-}
+       content: '';
+       border-right: 1px solid #eaeaea;
+       display: block;
+       position: absolute;
+       top: 50%;
+       right: 0;
+       height: 70%;
+       transform: translateY(-50%);
+   }
 }
 
 .product-item__categories {

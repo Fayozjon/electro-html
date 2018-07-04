@@ -1033,7 +1033,9 @@ body {
     font-size: 15px;
     color: #333e48;
     line-height: 30px;
-    font-weight: 700; }
+    font-weight: 700;
+    display: flex;
+    align-items: center; }
     .ad-block .ad-action:after {
       display: inline-block;
       font: normal normal normal 14px/1 font-electro;
@@ -1150,48 +1152,48 @@ body {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px; }
+    .deals-and-tabs .tabs-block .products-carousel-tabs .nav {
+      position: relative;
+      justify-content: center;
+      margin-bottom: 7px; }
+      .deals-and-tabs .tabs-block .products-carousel-tabs .nav a {
+        font-size: 18px;
+        line-height: 34px;
+        color: #343f49;
+        margin: 2px 16px;
+        padding: 0; }
 
-.nav {
+.nav:before {
+  content: ' ';
+  border-bottom: 1px solid #ddd;
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%; }
+
+.nav .active {
   position: relative;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 7px; }
-  .nav:before {
+  font-weight: 700; }
+  .nav .active:after {
     content: ' ';
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #fed700;
     display: block;
     position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%; }
-  .nav a {
-    font-size: 18px;
-    line-height: 34px;
-    color: #343f49;
-    margin: 2px 16px;
-    padding: 0; }
-  .nav .active {
-    position: relative;
-    font-weight: 700; }
-    .nav .active:after {
-      content: ' ';
-      border-bottom: 2px solid #fed700;
-      display: block;
-      position: absolute;
-      top: 105%;
-      width: 100%;
-      right: 1px; }
-    .nav .active:before {
-      content: ' ';
-      height: 4px;
-      width: 10px;
-      display: block;
-      position: absolute;
-      top: 111%;
-      left: 50%;
-      border-radius: 0 0 10px 10px;
-      transform: translateX(-50%);
-      background: #fed700; }
+    top: 105%;
+    width: 100%;
+    right: 1px; }
+  .nav .active:before {
+    content: ' ';
+    height: 4px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    top: 111%;
+    left: 50%;
+    border-radius: 0 0 10px 10px;
+    transform: translateX(-50%);
+    background: #fed700; }
 
 .home-v1-slider {
   width: 100vw;
@@ -1284,3 +1286,5 @@ body {
       border-radius: 0 0 10px 10px;
       transform: translateX(-50%);
       background: #fed700; }
+  .products-2-1-2 .nav-item {
+    margin-left: 38px; }

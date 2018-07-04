@@ -39,7 +39,7 @@
     .nav-link {
         @include hover-focus() {
              position: relative;
-             
+
             &:after {
                 content: ' ';
                 border-bottom: 2px solid #fed700;
@@ -64,5 +64,9 @@
             }
 
         }
+    }
+
+    .nav-item {
+        margin-left: 38px;
     }
 }

@@ -65,6 +65,11 @@
     .price-amount {
         color: #343f49;
         font-size: 20px;
+        del{
+            font-size: 12px;
+            line-height: 18px;
+            color: #848484;
+        }
     }
     .cart-button {
         @include make-button( 3.5px,7.5px,$font-size-base,$btn-line-height,50%);

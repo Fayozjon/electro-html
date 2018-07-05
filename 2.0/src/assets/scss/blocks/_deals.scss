@@ -8,6 +8,10 @@
             padding: 20px 21px 7px 21px;
             border: 2px solid #fed700;
             border-radius: 21px;
+
+            .product-thumbnail img{
+                max-width: 100%;
+            }
         }
 
         h2 {
@@ -56,10 +60,13 @@
             padding: 0px 15px;
 
             .savings {
-                text-align: center;
                 background: #fed700;
-                border-radius: 34px;
-                padding: 8px 4px;
+                width: 76px;
+                height: 76px;
+                border-radius: 80px;
+                color: #000;
+                line-height: 2;
+                text-align: center;
 
                 .deals-amount {
                     font-size: 20px;

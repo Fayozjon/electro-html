@@ -40,3 +40,89 @@
             line-height: 15px;
         }
     }
+    .card-carosel-item{
+        .product-item-inner{
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 22px;
+            @include hover-focus() {
+                .hover-area{
+                    display: block;
+                }
+            }
+
+            .product-media-left {
+                flex: 0 0 43%;
+                max-width: 43%;
+
+                img {
+                    max-width: 79%;
+                    margin: auto;
+                    display: block;
+                }
+            }
+            .card-body{
+                flex: 0 0 57%;
+                max-width: 57%;
+                align-self: stretch;
+                padding: 0;
+
+                .card-body-inner{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .product-title {
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #0062bd;
+                        font-weight: 700;
+                    }
+                    .loop-product-categories{
+                        margin-bottom: 12px;
+
+                        a{
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #878787;
+                            margin-bottom: 12px;
+                            text-decoration: none;
+                        }
+                    }
+                    .product-item__price-add-to-cart {
+                        margin: 0;
+                        line-height: 18px;
+                        margin-bottom: 7px;
+                    }
+                    .initial{
+                        color: red;
+                    }
+                }
+            }
+
+            .hover-area{
+                flex: 0 0 57%;
+                align-self: flex-end;
+                margin-left: 43%;
+                max-width: 57%;
+                display: none;
+                border-top: 1px solid #eaeaea;
+
+                .action-buttons{
+                    width: 100%;
+                    font-size: 16px;
+                    line-height: 24px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                a {
+                    padding-top: 7px;
+                }
+            }
+            .loop-product-title {
+                text-decoration: none;
+            }
+        }
+    }

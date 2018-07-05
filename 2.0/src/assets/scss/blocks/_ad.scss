@@ -3,7 +3,10 @@
 
     .ad {
         @include make-col(4);
-        @include make-col-ready()
+        @include make-col-ready();
+        .ad-media-left img{
+            max-width: 100%;
+        }
     }
 
     a{

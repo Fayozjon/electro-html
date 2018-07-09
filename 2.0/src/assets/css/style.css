@@ -1482,7 +1482,9 @@ body {
       line-height: 18px;
       color: #0062bd;
       font-weight: 700;
-      text-decoration: none; }
+      text-decoration: none;
+      display: flex;
+      margin: auto; }
     .footer-column-widgets .widget-column img {
       margin-right: 20px; }
     .footer-column-widgets .widget-column li {
@@ -1494,3 +1496,32 @@ body {
         font-size: 12px;
         line-height: 15px;
         color: #8f8f8f; }
+  .footer-column-widgets .star-rating {
+    overflow: hidden;
+    position: relative;
+    height: 16px;
+    line-height: 1;
+    font-size: 16px;
+    width: 88px;
+    font-family: 'Font Awesome 5 Free';
+    margin: 8px 0; }
+    .footer-column-widgets .star-rating:before {
+      content: "\f005\f005\f005\f005\f005";
+      color: rgba(0, 0, 0, 0.2);
+      float: left;
+      top: 0;
+      left: 0;
+      position: absolute; }
+    .footer-column-widgets .star-rating span {
+      overflow: hidden;
+      float: left;
+      top: 0;
+      left: 0;
+      position: absolute;
+      padding-top: 24px; }
+      .footer-column-widgets .star-rating span:before {
+        content: "\f005\f005\f005\f005\f005";
+        top: 0;
+        position: absolute;
+        left: 0;
+        color: #fed700; }

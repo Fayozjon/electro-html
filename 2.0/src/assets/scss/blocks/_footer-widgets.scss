@@ -1,7 +1,7 @@
 .footer-column-widgets{
-    background-color: #fff;
-    display: flex;
+    @include make-row();
     margin-bottom: 45px;
+    background-color: #fff;
 
     &.columns-2 .widget-column{
         @include make-col(6);

@@ -668,6 +668,12 @@ body {
     .footer-newsletter .title .newsletter-title {
       margin-right: 25px;
       margin-bottom: 0; }
+      .footer-newsletter .title .newsletter-title:before {
+        content: "\76";
+        font-family: font-electro;
+        margin-right: 15px;
+        font-size: 1.619em;
+        vertical-align: middle; }
     .footer-newsletter .title .newsletter-marketing-text {
       margin-left: 25px; }
 
@@ -1384,13 +1390,13 @@ body {
       padding: 4.6px 21.5px;
       font-size: 15px;
       line-height: 15px; }
+  .section-product-cards-carousel .card-carosel-item .product-item:hover .hover-area, .section-product-cards-carousel .card-carosel-item .product-item:focus .hover-area {
+    display: block; }
   .section-product-cards-carousel .card-carosel-item .product-item-inner {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 22px; }
-    .section-product-cards-carousel .card-carosel-item .product-item-inner:hover .hover-area, .section-product-cards-carousel .card-carosel-item .product-item-inner:focus .hover-area {
-      display: block; }
     .section-product-cards-carousel .card-carosel-item .product-item-inner .product-media-left {
       flex: 0 0 43%;
       max-width: 43%; }

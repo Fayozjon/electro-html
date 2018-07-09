@@ -42,16 +42,20 @@
         }
     }
     .card-carosel-item{
-        .product-item-inner{
-            display: flex;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            padding: 22px;
+
+        .product-item {
             @include hover-focus() {
                 .hover-area{
                     display: block;
                 }
             }
+        }
+
+        .product-item-inner{
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 22px;
 
             .product-media-left {
                 flex: 0 0 43%;

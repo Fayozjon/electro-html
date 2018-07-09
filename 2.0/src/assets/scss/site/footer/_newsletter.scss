@@ -36,6 +36,14 @@
         .newsletter-title{
             margin-right: 25px;
             margin-bottom: 0;
+
+            &:before {
+                content: "\76";
+                font-family: font-electro;
+                margin-right: 15px;
+                font-size: 1.619em;
+                vertical-align: middle;
+            }
         }
         .newsletter-marketing-text {
             margin-left: 25px;

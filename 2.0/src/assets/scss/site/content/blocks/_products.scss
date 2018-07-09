@@ -1,6 +1,7 @@
 .products{
     @include make-row();
     @include list-unstyled();
+    margin: 0;
 
     .product-item {
         @include make-col(3);

@@ -1,4 +1,5 @@
-.section-product-cards-carousel 
+.section-product-cards-carousel {
+    margin-bottom: 40px;
     .show-nav{
         display: flex;
         justify-content: space-between;
@@ -126,3 +127,4 @@
             }
         }
     }
+}

@@ -1,4 +1,5 @@
 .footer-newsletter {
+    @include make-row();
     background: #fed700;
 
     .input-group {
@@ -34,6 +35,7 @@
 
         .newsletter-title{
             margin-right: 25px;
+            margin-bottom: 0;
         }
         .newsletter-marketing-text {
             margin-left: 25px;

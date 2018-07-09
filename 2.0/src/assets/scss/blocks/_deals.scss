@@ -1,5 +1,5 @@
 .deals-and-tabs {
-    display: flex;
+    @include make-row();
     .deals-block{
         @include make-col(4);
         @include make-col-ready();

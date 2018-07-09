@@ -1,0 +1,61 @@
+.footer-column-widgets{
+    background-color: #fff;
+    display: flex;
+    margin-bottom: 45px;
+
+    &.columns-2 .widget-column{
+        @include make-col(6);
+        @include make-col-ready();
+    } 
+    .product_list_widget {
+        @include list-unstyled;
+    }
+
+    .widget-column{
+        @include make-col(4);
+        @include make-col-ready();
+
+        .widget-title{
+            position: relative;
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 500;
+            padding: 15px 0;
+            border-bottom: 1px solid #dadada;
+            margin-bottom: 40px;
+
+            &:after{
+                content: ' ';
+                width: 83px;
+                border-bottom: 2px solid #fed700;
+                display: block;
+                position: absolute;
+                top: 100%;
+            }
+        }
+
+        a{
+            font-size: 14px;
+            line-height: 18px;
+            color: #0062bd;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        img{
+            margin-right: 20px;
+        }
+        li {
+            display: flex;
+            margin-bottom: 18px;
+        }
+        .electro-price{
+            font-size: 15px;
+            del{
+                font-size: 12px;
+                line-height: 15px;
+                color: #8f8f8f;
+            }
+        }
+    }
+}

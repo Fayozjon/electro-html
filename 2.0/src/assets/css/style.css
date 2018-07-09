@@ -1222,9 +1222,20 @@ body {
   padding: 12px 0px 35px 4px; }
 
 .section-products header {
-  border-bottom: 1px solid #dadada; }
+  border-bottom: 1px solid #dadada;
+  position: relative; }
   .section-products header h1 {
-    font-size: 22px; }
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 9px;
+    display: inline-block; }
+    .section-products header h1:after {
+      content: ' ';
+      border-bottom: 2px solid #fed700;
+      display: block;
+      position: absolute;
+      top: 100%;
+      width: 14%; }
 
 .section-products .product-item__action-buttons a {
   padding: 0;
@@ -1427,3 +1438,59 @@ body {
   max-width: 100%;
   display: block;
   height: auto; }
+
+.footer-column-widgets {
+  background-color: #fff;
+  display: flex;
+  margin-bottom: 45px; }
+  .footer-column-widgets.columns-2 .widget-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .footer-column-widgets .product_list_widget {
+    padding-left: 0;
+    list-style: none; }
+  .footer-column-widgets .widget-column {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    .footer-column-widgets .widget-column .widget-title {
+      position: relative;
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 500;
+      padding: 15px 0;
+      border-bottom: 1px solid #dadada;
+      margin-bottom: 40px; }
+      .footer-column-widgets .widget-column .widget-title:after {
+        content: ' ';
+        width: 83px;
+        border-bottom: 2px solid #fed700;
+        display: block;
+        position: absolute;
+        top: 100%; }
+    .footer-column-widgets .widget-column a {
+      font-size: 14px;
+      line-height: 18px;
+      color: #0062bd;
+      font-weight: 700;
+      text-decoration: none; }
+    .footer-column-widgets .widget-column img {
+      margin-right: 20px; }
+    .footer-column-widgets .widget-column li {
+      display: flex;
+      margin-bottom: 18px; }
+    .footer-column-widgets .widget-column .electro-price {
+      font-size: 15px; }
+      .footer-column-widgets .widget-column .electro-price del {
+        font-size: 12px;
+        line-height: 15px;
+        color: #8f8f8f; }

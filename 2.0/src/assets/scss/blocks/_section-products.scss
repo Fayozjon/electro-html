@@ -5,9 +5,22 @@
 
     header{
         border-bottom: 1px solid #dadada;
+        position: relative;
 
         h1{
             font-size: 22px;
+            margin: 0;
+            padding-bottom: 9px;
+            display: inline-block;
+
+            &:after{
+                content: ' ';
+                border-bottom: 2px solid #fed700;
+                display: block;
+                position: absolute;
+                top: 100%;
+                width: 14%;
+            }
         }
     }
     .product-item__action-buttons a{

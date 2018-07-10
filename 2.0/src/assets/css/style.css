@@ -1465,6 +1465,9 @@ body {
     .section-product-cards-carousel .card-carosel-item .product-item-inner .loop-product-title {
       text-decoration: none; }
 
+.home-v1-banner-block a {
+  display: block; }
+
 .home-v1-banner-block .banner-img {
   max-width: 100%;
   display: block;
@@ -1478,14 +1481,24 @@ body {
   margin-left: -15px;
   margin-bottom: 45px;
   background-color: #fff; }
+  .footer-column-widgets.column-1 .widget-column {
+    flex: 0 0 100%;
+    max-width: 100%; }
+  .footer-column-widgets.columns-3 .widget-column {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
   .footer-column-widgets.columns-2 .widget-column {
     flex: 0 0 50%;
-    max-width: 50%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
+    max-width: 50%; }
+  .footer-column-widgets.columns-4 .widget-column {
+    flex: 0 0 25%;
+    max-width: 25%; }
+  .footer-column-widgets.columns-5 .widget-column {
+    flex: 0 0 20%;
+    max-width: 20%; }
+  .footer-column-widgets.columns-6 .widget-column {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
   .footer-column-widgets .product_list_widget {
     padding-left: 0;
     list-style: none; }
@@ -1518,8 +1531,7 @@ body {
       color: #0062bd;
       font-weight: 700;
       text-decoration: none;
-      display: flex;
-      margin: auto; }
+      display: flex; }
     .footer-column-widgets .widget-column img {
       margin-right: 20px;
       width: 75px;
@@ -1563,3 +1575,6 @@ body {
         position: absolute;
         left: 0;
         color: #fed700; }
+  .footer-column-widgets .price-value {
+    margin-top: 23px;
+    display: block; }

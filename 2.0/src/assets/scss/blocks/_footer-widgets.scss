@@ -3,14 +3,33 @@
     margin-bottom: 45px;
     background-color: #fff;
 
+    &.column-1 .widget-column{
+       @include make-col(12);
+   }
+
+    &.columns-3 .widget-column{
+        @include make-col(4);
+    }
+
     &.columns-2 .widget-column{
         @include make-col(6);
-        @include make-col-ready();
     } 
+
+    &.columns-4 .widget-column{
+        @include make-col(3);
+    }
+
+    &.columns-5 .widget-column{
+        @include make-col(2.4);
+    }
+
+    &.columns-6 .widget-column{
+        @include make-col(2);
+    }
+
     .product_list_widget {
         @include list-unstyled;
     }
-
     .widget-column{
         @include make-col(4);
         @include make-col-ready();
@@ -41,7 +60,6 @@
             font-weight: 700;
             text-decoration: none;
             display: flex;
-            margin: auto;
         }
 
         img{
@@ -98,5 +116,10 @@
                 color: #fed700;
             }
         }
+    }
+
+    .price-value {
+        margin-top: 23px;
+        display: block;
     }
 }

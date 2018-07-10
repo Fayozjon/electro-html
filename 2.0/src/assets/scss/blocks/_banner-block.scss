@@ -1,6 +1,12 @@
-.home-v1-banner-block .banner-img{
-	max-width: 100%;
-	display: block;
-	height: auto;
-	margin-bottom: 39px;
+.home-v1-banner-block {
+    a {
+        display: block;
+    }
+
+    .banner-img{
+        max-width: 100%;
+        display: block;
+        height: auto;
+        margin-bottom: 39px;
+    }
 }

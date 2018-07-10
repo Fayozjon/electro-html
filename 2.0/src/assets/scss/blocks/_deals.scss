@@ -27,14 +27,18 @@
                     text-decoration: none;
                 }
             }
+
             .sale-price {
                 font-size: 30px;
                 color: #e00;
+                padding-left: 10px;
             }
+
             .deals-del-amount {
                 font-size: 18px;
                 color: #848484;
             }
+
             .deal-progress {
                 .deal-stock {
                     display: flex;
@@ -45,6 +49,16 @@
                 }
             }
 
+            .marketing-text {
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 15px;
+                color: #333e48;
+            }
+
+            .product-thumbnail {
+                margin-bottom: 10px;
+            }
         }
 
         .deals-product-title {
@@ -52,12 +66,13 @@
             line-height: 18px;
             color: #0062bd;
             font-weight: 700;
+            margin-bottom: 17px;
         }
 
         .deals-block-header {
             display: flex;
             justify-content: space-between;
-            padding: 0px 15px;
+            
 
             .savings {
                 background: #fed700;
@@ -65,8 +80,7 @@
                 height: 76px;
                 border-radius: 80px;
                 color: #000;
-                line-height: 2;
-                text-align: center;
+                position: relative;
 
                 .deals-amount {
                     font-size: 20px;
@@ -78,8 +92,14 @@
 
                 .savings-text {
                     font-size: 12px;
-                    line-height: 18px;
-                    color: #343f49;
+                    font-weight: 400;
+                    line-height: 1;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: block;
+                    text-align: center;
+                    width: 100%;
                 }
             }
         }

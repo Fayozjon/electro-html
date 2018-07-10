@@ -1130,7 +1130,8 @@ body {
         text-decoration: none; }
       .deals-and-tabs .deals-block .onsale-product .sale-price {
         font-size: 30px;
-        color: #e00; }
+        color: #e00;
+        padding-left: 10px; }
       .deals-and-tabs .deals-block .onsale-product .deals-del-amount {
         font-size: 18px;
         color: #848484; }
@@ -1140,23 +1141,29 @@ body {
         color: #383838;
         font-size: 15px;
         line-height: 18px; }
+      .deals-and-tabs .deals-block .onsale-product .marketing-text {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 15px;
+        color: #333e48; }
+      .deals-and-tabs .deals-block .onsale-product .product-thumbnail {
+        margin-bottom: 10px; }
     .deals-and-tabs .deals-block .deals-product-title {
       font-size: 14px;
       line-height: 18px;
       color: #0062bd;
-      font-weight: 700; }
+      font-weight: 700;
+      margin-bottom: 17px; }
     .deals-and-tabs .deals-block .deals-block-header {
       display: flex;
-      justify-content: space-between;
-      padding: 0px 15px; }
+      justify-content: space-between; }
       .deals-and-tabs .deals-block .deals-block-header .savings {
         background: #fed700;
         width: 76px;
         height: 76px;
         border-radius: 80px;
         color: #000;
-        line-height: 2;
-        text-align: center; }
+        position: relative; }
         .deals-and-tabs .deals-block .deals-block-header .savings .deals-amount {
           font-size: 20px;
           line-height: 18px;
@@ -1165,8 +1172,14 @@ body {
           color: #343f49; }
         .deals-and-tabs .deals-block .deals-block-header .savings .savings-text {
           font-size: 12px;
-          line-height: 18px;
-          color: #343f49; }
+          font-weight: 400;
+          line-height: 1;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          display: block;
+          text-align: center;
+          width: 100%; }
   .deals-and-tabs .tabs-block {
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
@@ -1507,6 +1520,9 @@ body {
       display: flex;
       margin: auto; }
     .footer-column-widgets .widget-column img {
+      margin-right: 20px;
+      width: 75px;
+      height: 75px;
       margin-right: 20px; }
     .footer-column-widgets .widget-column li {
       display: flex;

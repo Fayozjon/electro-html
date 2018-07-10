@@ -1552,7 +1552,7 @@ body {
     height: 16px;
     line-height: 1;
     font-size: 16px;
-    width: 88px;
+    width: 77px;
     font-family: 'Font Awesome 5 Free';
     margin: 8px 0; }
     .footer-column-widgets .star-rating:before {
@@ -1561,7 +1561,8 @@ body {
       float: left;
       top: 0;
       left: 0;
-      position: absolute; }
+      position: absolute;
+      font-size: 14px; }
     .footer-column-widgets .star-rating span {
       overflow: hidden;
       float: left;
@@ -1574,7 +1575,11 @@ body {
         top: 0;
         position: absolute;
         left: 0;
-        color: #fed700; }
+        color: #fed700;
+        font-weight: 700;
+        font-size: 14px;
+        width: 80%;
+        overflow: hidden; }
   .footer-column-widgets .price-value {
     margin-top: 23px;
     display: block; }

@@ -1136,12 +1136,21 @@ body {
       .deals-and-tabs .deals-block .onsale-product .deals-del-amount {
         font-size: 18px;
         color: #848484; }
+      .deals-and-tabs .deals-block .onsale-product .progress {
+        margin-bottom: 17px;
+        height: 100%; }
       .deals-and-tabs .deals-block .onsale-product .deal-progress .deal-stock {
         display: flex;
         justify-content: space-between;
         color: #383838;
         font-size: 15px;
-        line-height: 18px; }
+        line-height: 18px;
+        margin-bottom: 13px; }
+      .deals-and-tabs .deals-block .onsale-product .deal-progress .deal-progress-bar {
+        text-indent: -99999px;
+        border-radius: 8px;
+        background-color: #fed700;
+        width: 36%; }
       .deals-and-tabs .deals-block .onsale-product .marketing-text {
         font-size: 14px;
         line-height: 24px;
@@ -1149,6 +1158,44 @@ body {
         color: #333e48; }
       .deals-and-tabs .deals-block .onsale-product .product-thumbnail {
         margin-bottom: 10px; }
+      .deals-and-tabs .deals-block .onsale-product .deal-time {
+        display: none; }
+      .deals-and-tabs .deals-block .onsale-product .countdown {
+        text-align: center;
+        color: #383838;
+        margin-bottom: 12px; }
+        .deals-and-tabs .deals-block .onsale-product .countdown span[data-value="0"] {
+          display: none; }
+        .deals-and-tabs .deals-block .onsale-product .countdown > span {
+          display: inline-block;
+          margin: 0 6px; }
+          .deals-and-tabs .deals-block .onsale-product .countdown > span:last-child .value::after {
+            content: none; }
+          .deals-and-tabs .deals-block .onsale-product .countdown > span .value {
+            font-size: 34px;
+            line-height: 47px;
+            width: 56px;
+            height: 41px;
+            border-radius: 4px;
+            background-color: #e6e6e6;
+            display: block;
+            text-align: center;
+            position: relative;
+            margin-bottom: 4px;
+            font-size: 29px; }
+            .deals-and-tabs .deals-block .onsale-product .countdown > span .value::after {
+              content: ':';
+              display: inline-block;
+              position: absolute;
+              right: -11px;
+              font-size: 30px;
+              line-height: 27px;
+              top: 5px; }
+          .deals-and-tabs .deals-block .onsale-product .countdown > span b {
+            display: block;
+            font-size: 13px;
+            text-transform: uppercase;
+            line-height: 16px; }
     .deals-and-tabs .deals-block .deals-product-title {
       font-size: 14px;
       line-height: 18px;

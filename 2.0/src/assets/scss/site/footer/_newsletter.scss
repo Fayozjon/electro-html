@@ -1,6 +1,7 @@
 .footer-newsletter {
     @include make-row();
     background: #fed700;
+    margin: 0;
 
     .input-group {
         @include make-col(5);

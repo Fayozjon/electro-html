@@ -93,6 +93,10 @@
                             color: #878787;
                             margin-bottom: 12px;
                             text-decoration: none;
+
+                            @include hover-focus(){
+                                color: #333;
+                            }
                         }
                     }
                     .product-item__price-add-to-cart {

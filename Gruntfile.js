@@ -185,6 +185,20 @@ module.exports = function( grunt ) {
 	});
 
 	// Load NPM tasks to be used here
+	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
+	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
+	grunt.loadNpmTasks( 'grunt-sass' );
+	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
+	grunt.loadNpmTasks( 'grunt-contrib-watch' );
+	grunt.loadNpmTasks( 'grunt-version' );
+	grunt.loadNpmTasks( 'grunt-contrib-clean' );
+	grunt.loadNpmTasks( 'grunt-contrib-copy' );
+	grunt.loadNpmTasks( 'grunt-contrib-compress' );
+	grunt.loadNpmTasks( 'grunt-contrib-concat' );
+	grunt.loadNpmTasks( 'grunt-gh-pages' );
+	grunt.loadNpmTasks( 'grunt-php2html' );
+
+	// Load NPM tasks to be used here
 	grunt.loadNpmTasks( 'grunt-sass' );
 
 	// Register tasks

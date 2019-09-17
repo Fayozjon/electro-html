@@ -4,6 +4,9 @@
 // Electro setup
 @import 'electro/variables';
 
+// MT setup
+@import 'mt-variables';
+
 // Custom setup
 @import 'user-variables';
 
@@ -17,6 +20,9 @@
 ------------------------------------------------------------------------*/
 
 @import 'electro/electro';
+
+// MT core
+@import 'mt-main';
 
 // Custom core
 @import 'user';

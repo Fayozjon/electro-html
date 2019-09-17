@@ -1,0 +1,43 @@
+/*------------------------------------
+  Madrasthemes variables
+------------------------------------*/
+
+// Breakpoints
+// =========================================================
+
+$xs:                                                        0;
+$sm:                                                        576px;
+$md:                                                        768px;
+$lg:                                                        992px;
+$xl:                                                        1200px;
+$wd:                                                        1480px; /* EOC */
+
+$grid-breakpoints: (
+  xs:                                                       $xs,
+  sm:                                                       $sm,
+  md:                                                       $md,
+  lg:                                                       $lg,
+  xl:                                                       $xl,
+  wd:                                                       $wd /* EOC */
+) !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  wd: 1430px /* EOC */
+) !default;
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:                                    "Open Sans", Helvetica, Arial, sans-serif !default;
+
+$font-size-base:                                            .875rem !default; // Assumes the browser default, typically 16px

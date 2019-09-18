@@ -2,6 +2,25 @@
   Madrasthemes variables
 ------------------------------------*/
 
+// Color System
+// =========================================================
+
+// Grays
+$gray-20:                                                   #e8e8e8 !default;
+$gray-40:                                                   #cad5d5 !default;
+$gray-50:                                                   #959595 !default;
+$gray-70:                                                   #334141 !default;
+$gray-90:                                                   #333e48 !default;
+
+// Colors
+$yellow:                                                    #fed700 !default;
+$dark:                                                      #070909 !default;
+$black:                                                     #000000 !default;
+
+// Theme Colors
+$primary:                                                   $yellow !default;
+
+
 // Breakpoints
 // =========================================================
 
@@ -21,8 +40,9 @@ $grid-breakpoints: (
   wd:                                                       $wd /* EOC */
 ) !default;
 
+
 // Grid containers
-//
+// =========================================================
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
@@ -34,10 +54,55 @@ $container-max-widths: (
 ) !default;
 
 
+// Body
+// =========================================================
+// Settings for the `<body>` element.
+
+$body-color:                $gray-90 !default;
+
+
 // Fonts
-//
+// =========================================================
 // Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif:                                    "Open Sans", Helvetica, Arial, sans-serif !default;
-
 $font-size-base:                                            .875rem !default; // Assumes the browser default, typically 16px
+
+
+// Header
+// =========================================================
+
+// Text Colors
+$header-nav-link-color:                                     $gray-70 !default;
+$header-nav-link-active-color:     							$dark !default;
+$header-nav-link-hover-color:            				    $dark !default;
+$header-topbar-nav-link-color:                              $gray-70 !default;
+$header-topbar-nav-separator-color:                         $gray-40 !default;
+
+// Font
+$header-topbar-nav-link-font-size:                          .813rem !default;
+$header-topbar-nav-link-icon-font-size:                     ($font-size-base * 1.286) !default; //18px
+//$header-nav-link-icon-font-size:                            ($font-size-base * .625) !default;
+//$header-navbar-link-font-size:                              ($font-size-base * .875) !default;
+$header-sub-menu-nav-link-font-size:             			$font-size-base !default;
+//$header-sub-menu-title-font-size:                           ($font-size-base * 1) !default;
+//$header-sub-menu-title-font-weight:                         $font-weight-semi-bold !default;
+
+// Borders
+$header-topbar-border-color:                                $gray-20 !default;
+
+// Box Shadow
+$header-submenu-box-shadow:                                 0 2px 5px rgba($black, .28) !default;
+
+
+// Drop Down
+// =========================================================
+
+// Colors
+$dropdown-link-color:                                       $gray-70 !default;
+
+// Type
+$dropdown-item-font-size:                                   $font-size-base !default;
+
+// Box Shadow
+$dropdown-box-shadow:                                       0 2px 5px rgba($black, .28) !default;

@@ -1,0 +1,49 @@
+/*------------------------------------
+  Header Default
+------------------------------------*/
+/* Topbar Nav Item */
+.u-header-topbar {
+    border-bottom: 1px solid $header-topbar-border-color;
+}
+
+/* Topbar Nav Item */
+.u-header-topbar__nav-item {
+    & + .u-header-topbar__nav-item{
+        margin-left: 1.5rem;
+
+        &-border {
+            margin-left: 0;
+        }
+
+        &-border,
+        &-border-single > div {
+
+            &::before {
+                content: '|';
+                color: $header-topbar-nav-separator-color;
+                margin: 0 .875rem;
+                -webkit-font-smoothing: antialiased;
+            }
+        }
+    }
+
+    &-no-border {
+        &::before {
+            display: none;
+        }
+    }
+}
+
+/* Topbar Nav Link */
+.u-header-topbar__nav-link {
+    font-size: $header-topbar-nav-link-font-size;
+    color: $header-topbar-nav-link-color;
+
+    i {
+        font-size: $header-topbar-nav-link-icon-font-size;
+    }
+
+    &[href]:hover {
+		color: $header-nav-link-hover-color;
+	}
+}

@@ -2,6 +2,22 @@
   Text Colors
 ------------------------------------*/
 
-.text-gray-50 {
+.text-gray-30 { //#a0a0a0
+    color: $gray-30;
+}
+
+.text-gray-50 { //#959595
     color: $gray-50;
+}
+
+.text-gray-60 { //#6b6b6b
+    color: $gray-60;
+}
+
+.text-gray-90 { //#333e48
+    color: $gray-90;
+
+    &[href]:hover {
+		color: $gray-90;
+	}
 }

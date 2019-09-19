@@ -1,0 +1,27 @@
+/*------------------------------------
+  Typography Font Size
+------------------------------------*/
+
+.font-size-12 {
+    font-size: ($font-size-base * .857); //12px
+}
+
+.font-size-15 {
+    font-size: ($font-size-base * 1.071); //15px
+}
+
+.font-size-16 {
+    font-size: ($font-size-base * 1.143); //16px
+}
+
+.font-size-20 {
+    font-size: ($font-size-base * 1.429); //20px
+}
+
+.font-size-22 {
+    font-size: ($font-size-base * 1.571); //22px
+}
+
+.font-size-24 {
+    font-size: ($font-size-base * 1.714); //24px
+}

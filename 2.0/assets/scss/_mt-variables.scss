@@ -7,8 +7,10 @@
 
 // Grays
 $gray-20:                                                   #e8e8e8 !default;
+$gray-30:                                                   #a0a0a0 !default;
 $gray-40:                                                   #cad5d5 !default;
 $gray-50:                                                   #959595 !default;
+$gray-60:                                                   #6b6b6b !default;
 $gray-70:                                                   #334141 !default;
 $gray-90:                                                   #333e48 !default;
 
@@ -106,3 +108,17 @@ $dropdown-item-font-size:                                   $font-size-base !def
 
 // Box Shadow
 $dropdown-box-shadow:                                       0 2px 5px rgba($black, .28) !default;
+
+
+// Hamburgers
+// =========================================================
+
+// Width & Heights
+$hamburger-layer-width:             						($font-size-base * 1.071) !default;
+$hamburger-layer-height:            						.130rem !default;
+
+// Tooltip
+// =========================================================
+
+// Background Color
+$tooltip-bg:                                                $black !default;

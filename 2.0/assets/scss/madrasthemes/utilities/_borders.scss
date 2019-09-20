@@ -2,6 +2,11 @@
   Borders-width
 ------------------------------------*/
 
+// Custom options
+.rounded-top-lg {
+    @include border-top-radius($border-radius-lg);
+}
+
 .border-width-2 {
     border-width: 2px !important;
 }

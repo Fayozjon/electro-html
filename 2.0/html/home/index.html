@@ -85,7 +85,21 @@
                                         </div>
                                     </li>
                                     <li class="list-inline-item mr-0 u-header-topbar__nav-item u-header-topbar__nav-item-border">
-                                        <a href="#" class="u-header-topbar__nav-link"><i class="ec ec-user mr-1"></i> Register <span class="text-gray-50">or</span> Sign in</a>
+                                        <!-- Account Sidebar Toggle Button -->
+                                        <a id="sidebarNavToggler" href="javascript:;" role="button" class="u-header-topbar__nav-link"
+                                            aria-controls="sidebarContent"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                            data-unfold-event="click"
+                                            data-unfold-hide-on-scroll="false"
+                                            data-unfold-target="#sidebarContent"
+                                            data-unfold-type="css-animation"
+                                            data-unfold-animation-in="fadeInRight"
+                                            data-unfold-animation-out="fadeOutRight"
+                                            data-unfold-duration="500">
+                                            <i class="ec ec-user mr-1"></i> Register <span class="text-gray-50">or</span> Sign in
+                                        </a>
+                                        <!-- End Account Sidebar Toggle Button -->
                                     </li>
                                 </ul>
                             </div>
@@ -93,6 +107,8 @@
                     </div>
                 </div>
                 <!-- End Topbar -->
+
+                <!-- Logo-Search-header-icons -->
                 <div class="py-5">
                     <div class="container">
                         <div class="row align-items-center">
@@ -167,7 +183,7 @@
                                 <aside id="sidebarHeader1" class="u-sidebar u-sidebar--left" aria-labelledby="sidebarHeaderInvokerMenu">
                                     <div class="u-sidebar__scroller">
                                         <div class="u-sidebar__container">
-                                            <div class="u-header-sidebar__footer-offset">
+                                            <div class="u-header-sidebar__footer-offset pb-0">
                                                 <!-- Toggle Button -->
                                                 <div class="d-sm-none position-absolute top-0 right-0 z-index-2 pt-4 pr-7">
                                                     <button type="button" class="close ml-auto"
@@ -191,13 +207,45 @@
                                                     <div id="headerSidebarContent" class="u-sidebar__content u-header-sidebar__content">
                                                         <!-- Logo -->
                                                         <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-vertical" href="index.html" aria-label="Front">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
-                                                                <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
-                                                                <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
-                                                                <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
-                                                                <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
+                                                            <svg version="1.1" x="0px" y="0px" width="175.748px" height="42.52px" viewBox="0 0 175.748 42.52" enable-background="new 0 0 175.748 42.52" style="margin-bottom: 0;">
+                                                                <ellipse class="ellipse-bg" fill-rule="evenodd" clip-rule="evenodd" fill="#FDD700" cx="170.05" cy="36.341" rx="5.32" ry="5.367"></ellipse>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" fill="#333E48" d="M30.514,0.71c-0.034,0.003-0.066,0.008-0.056,0.056
+                                                                    C30.263,0.995,29.876,1.181,29.79,1.5c-0.148,0.548,0,1.568,0,2.427v36.459c0.265,0.221,0.506,0.465,0.725,0.734h6.187
+                                                                    c0.2-0.25,0.423-0.477,0.669-0.678V1.387C37.124,1.185,36.9,0.959,36.701,0.71H30.514z M117.517,12.731
+                                                                    c-0.232-0.189-0.439-0.64-0.781-0.734c-0.754-0.209-2.039,0-3.121,0h-3.176V4.435c-0.232-0.189-0.439-0.639-0.781-0.733
+                                                                    c-0.719-0.2-1.969,0-3.01,0h-3.01c-0.238,0.273-0.625,0.431-0.725,0.847c-0.203,0.852,0,2.399,0,3.725
+                                                                    c0,1.393,0.045,2.748-0.055,3.725h-6.41c-0.184,0.237-0.629,0.434-0.725,0.791c-0.178,0.654,0,1.813,0,2.765v2.766
+                                                                    c0.232,0.188,0.439,0.64,0.779,0.733c0.777,0.216,2.109,0,3.234,0c1.154,0,2.291-0.045,3.176,0.057v21.277
+                                                                    c0.232,0.189,0.439,0.639,0.781,0.734c0.719,0.199,1.969,0,3.01,0h3.01c1.008-0.451,0.725-1.889,0.725-3.443
+                                                                    c-0.002-6.164-0.047-12.867,0.055-18.625h6.299c0.182-0.236,0.627-0.434,0.725-0.79c0.176-0.653,0-1.813,0-2.765V12.731z
+                                                                    M135.851,18.262c0.201-0.746,0-2.029,0-3.104v-3.104c-0.287-0.245-0.434-0.637-0.781-0.733c-0.824-0.229-1.992-0.044-2.898,0
+                                                                    c-2.158,0.104-4.506,0.675-5.74,1.411c-0.146-0.362-0.451-0.853-0.893-0.96c-0.693-0.169-1.859,0-2.842,0h-2.842
+                                                                    c-0.258,0.319-0.625,0.42-0.725,0.79c-0.223,0.82,0,2.338,0,3.443c0,8.109-0.002,16.635,0,24.381
+                                                                    c0.232,0.189,0.439,0.639,0.779,0.734c0.707,0.195,1.93,0,2.955,0h3.01c0.918-0.463,0.725-1.352,0.725-2.822V36.21
+                                                                    c-0.002-3.902-0.242-9.117,0-12.473c0.297-4.142,3.836-4.877,8.527-4.686C135.312,18.816,135.757,18.606,135.851,18.262z
+                                                                    M14.796,11.376c-5.472,0.262-9.443,3.178-11.76,7.056c-2.435,4.075-2.789,10.62-0.501,15.126c2.043,4.023,5.91,7.115,10.701,7.9
+                                                                    c6.051,0.992,10.992-1.219,14.324-3.838c-0.687-1.1-1.419-2.664-2.118-3.951c-0.398-0.734-0.652-1.486-1.616-1.467
+                                                                    c-1.942,0.787-4.272,2.262-7.134,2.145c-3.791-0.154-6.659-1.842-7.524-4.91h19.452c0.146-2.793,0.22-5.338-0.279-7.563
+                                                                    C26.961,15.728,22.503,11.008,14.796,11.376z M9,23.284c0.921-2.508,3.033-4.514,6.298-4.627c3.083-0.107,4.994,1.976,5.685,4.627
+                                                                    C17.119,23.38,12.865,23.38,9,23.284z M52.418,11.376c-5.551,0.266-9.395,3.142-11.76,7.056
+                                                                    c-2.476,4.097-2.829,10.493-0.557,15.069c1.997,4.021,5.895,7.156,10.646,7.957c6.068,1.023,11-1.227,14.379-3.781
+                                                                    c-0.479-0.896-0.875-1.742-1.393-2.709c-0.312-0.582-1.024-2.234-1.561-2.539c-0.912-0.52-1.428,0.135-2.23,0.508
+                                                                    c-0.564,0.262-1.223,0.523-1.672,0.676c-4.768,1.621-10.372,0.268-11.537-4.176h19.451c0.668-5.443-0.419-9.953-2.73-13.037
+                                                                    C61.197,13.388,57.774,11.12,52.418,11.376z M46.622,23.343c0.708-2.553,3.161-4.578,6.242-4.686
+                                                                    c3.08-0.107,5.08,1.953,5.686,4.686H46.622z M160.371,15.497c-2.455-2.453-6.143-4.291-10.869-4.064
+                                                                    c-2.268,0.109-4.297,0.65-6.02,1.524c-1.719,0.873-3.092,1.957-4.234,3.217c-2.287,2.519-4.164,6.004-3.902,11.007
+                                                                    c0.248,4.736,1.979,7.813,4.627,10.326c2.568,2.439,6.148,4.254,10.867,4.064c4.457-0.18,7.889-2.115,10.199-4.684
+                                                                    c2.469-2.746,4.012-5.971,3.959-11.063C164.949,21.134,162.732,17.854,160.371,15.497z M149.558,33.952
+                                                                    c-3.246-0.221-5.701-2.615-6.41-5.418c-0.174-0.689-0.26-1.25-0.4-2.166c-0.035-0.234,0.072-0.523-0.045-0.77
+                                                                    c0.682-3.698,2.912-6.257,6.799-6.547c2.543-0.189,4.258,0.735,5.52,1.863c1.322,1.182,2.303,2.715,2.451,4.967
+                                                                    C157.789,30.669,154.185,34.267,149.558,33.952z M88.812,29.55c-1.232,2.363-2.9,4.307-6.13,4.402
+                                                                    c-4.729,0.141-8.038-3.16-8.025-7.563c0.004-1.412,0.324-2.65,0.947-3.726c1.197-2.061,3.507-3.688,6.633-3.612
+                                                                    c3.222,0.079,4.966,1.708,6.632,3.668c1.328-1.059,2.529-1.948,3.9-2.99c0.416-0.315,1.076-0.688,1.227-1.072
+                                                                    c0.404-1.031-0.365-1.502-0.891-2.088c-2.543-2.835-6.66-5.377-11.704-5.137c-6.02,0.288-10.218,3.697-12.484,7.846
+                                                                    c-1.293,2.365-1.951,5.158-1.729,8.408c0.209,3.053,1.191,5.496,2.619,7.508c2.842,4.004,7.385,6.973,13.656,6.377
+                                                                    c5.976-0.568,9.574-3.936,11.816-8.354c-0.141-0.271-0.221-0.604-0.336-0.902C92.929,31.364,90.843,30.485,88.812,29.55z">
+                                                                </path>
                                                             </svg>
-                                                            <span class="u-header__navbar-brand-text">Front</span>
                                                         </a>
                                                         <!-- End Logo -->
 
@@ -602,31 +650,6 @@
                                                 </div>
                                                 <!-- End Content -->
                                             </div>
-
-                                            <!-- Footer -->
-                                            <footer id="SVGwaveWithDots" class="svg-preloader u-header-sidebar__footer">
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item pr-3">
-                                                        <a class="u-header-sidebar__footer-link" href="../pages/privacy.html">Privacy</a>
-                                                    </li>
-                                                    <li class="list-inline-item pr-3">
-                                                        <a class="u-header-sidebar__footer-link" href="../pages/terms.html">Terms</a>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <a class="u-header-sidebar__footer-link" href="../pages/help.html">
-                                                            <i class="fas fa-info-circle"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <!-- SVG Background Shape -->
-                                                <div class="position-absolute right-0 bottom-0 left-0 z-index-n1">
-                                                    <img class="js-svg-injector" src="../../assets/svg/components/wave-bottom-with-dots.svg" alt="Image Description"
-                                                    data-parent="#SVGwaveWithDots">
-                                                </div>
-                                                <!-- End SVG Background Shape -->
-                                            </footer>
-                                            <!-- End Footer -->
                                         </div>
                                     </div>
                                 </aside>
@@ -672,426 +695,117 @@
                         </div>
                     </div>
                 </div>
-                <div id="logoAndNav" class="container px-3 px-md-5">
-                    <!-- Nav -->
-                    <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space py-3 py-md-0">
-                        <!-- Logo -->
-                        <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="141px" height="41px" viewBox="0 0 228.1 66.8" style="margin-bottom: 0;" style="enable-background:new 0 0 228.1 66.8;" xml:space="preserve">
-                                <style type="text/css">
-                                	.st0{clip-path:url(#SVGID_2_);}
-                                	.st1{clip-path:url(#SVGID_2_);fill:#D72624;}
-                                </style>
-                                <g>
-                                  	<defs>
-                                  		<rect id="SVGID_1_" y="0" width="228.1" height="66.8"/>
-                                  	</defs>
-                                  	<clipPath id="SVGID_2_">
-                                  		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-                                  	</clipPath>
-                                  	<path class="st0" d="M228.1,59.8c0,3.9-3.1,7-7,7c-3.9,0-7-3.1-7-7s3.1-7,7-7C225,52.8,228.1,56,228.1,59.8"/>
-                                  	<path class="st1" d="M47.7,54.4c0.8-0.8,1.2-1.1,1.9-1.1c1,0,1.6,0.9,1.6,1.6c0,1.2-0.7,2.1-1.8,3.6c-2.4,3-7.2,7.5-14.4,7.5
-                                  		c-6.9,0-8.8-5.7-8.8-5.7s-5.9,5.7-14,5.7C4.3,65.9,0,61.1,0,52.8C0,40,8.8,30.1,21.5,30.1c4,0,7.2,1.2,8.2,1.9
-                                  		c1.7-6.6,3.3-13,3.3-19c0-3.7-1.9-5.5-4.3-5.5C27.6,7.5,27,7,27,6.1C27,3.7,33,0,39.4,0C45.3,0,49,3.2,49,8.8
-                                  		c0,10.1-9.5,29.6-9.5,43.3c0,2.9,1.8,4.6,3.8,4.6C45.3,56.7,46.2,55.8,47.7,54.4 M23.7,35c-6.3,0-8.9,12.7-8.9,18.9
-                                  		c0,2.8,1.1,4.6,3.6,4.6c2.1,0,4.4-1.9,5.9-5.4c1.2-2.8,3.1-10.3,3.1-14.8C27.3,36.3,26.1,35,23.7,35"/>
-                                  	<path class="st1" d="M86.1,42.8c0,12.7-8,23.5-21.9,23.5c-9.9,0-16.4-5.8-16.4-14.8c0-11,8.7-21.9,24.2-21.9
-                                  		C80.3,29.6,86.1,35,86.1,42.8 M75.5,45.2C72,43.8,71,42.6,71,40.6c0-2.8,1.7-3.7,1.7-4.4c0-0.6-0.3-0.9-1-0.9
-                                  		c-0.5,0-1.6,0.3-3.2,1.6c-2.8,2.3-5.5,6.4-5.5,12.9c0,5.1,2.9,8.4,7.3,8.4c4.5,0,7.5-4.6,7.5-8.6C77.7,47.6,77.1,45.9,75.5,45.2"/>
-                                  	<path class="st1" d="M87.8,55.3c0-10.3,8.7-24.7,8.7-42.3c0-3.7-1.9-5.5-4.4-5.5c-1,0-1.6-0.5-1.6-1.4c0-2.4,6-6.1,12.4-6.1
-                                  		c5.9,0,9.6,3.2,9.6,8.8c0,9.5-9,32.4-9,43.3c0,2.9,1.6,4.6,3.6,4.6c1.9,0,2.8-0.9,4.3-2.4c0.8-0.8,1.2-1.1,1.9-1.1
-                                  		c1,0,1.6,0.9,1.6,1.6c0,1.2-0.7,2.1-1.8,3.6c-2.4,3.1-7.1,7.5-14.2,7.5C91.3,65.9,87.8,61.1,87.8,55.3"/>
-                                  	<path class="st1" d="M146.6,65.9c-6.8,0-8.7-6-8.7-6s-6,6-14.2,6c-6.7,0-12.1-4.5-12.1-13.2c0-11.2,6.8-22.6,22.9-22.6
-                                  		c6,0,7.7,2.1,9.5,2.1c1.9,0,6.8-2.1,9.4-2.1c1,0,1.7,0.5,1.7,1.7c0,2.7-4,11.5-4,20.3c0,2.9,1.8,4.6,3.8,4.6c1.9,0,2.8-0.9,4.3-2.4
-                                  		c0.8-0.8,1.2-1.1,1.9-1.1c1,0,1.6,0.9,1.6,1.6c0,1.2-0.7,2.1-1.8,3.6C158.5,61.5,153.7,65.9,146.6,65.9 M135.5,35
-                                  		c-6.4,0-9.3,11.9-9.3,18.1c0,2.9,1.4,5.3,3.8,5.3c2.1,0,4.4-1.9,5.9-5.3c1.4-2.9,2.9-10.4,2.9-14.8C138.9,36.3,137.9,35,135.5,35"
-                                  		/>
-                                  	<path class="st1" d="M201.7,57.4c1.4,0,2.3-0.5,3.2-1.1c0.8-0.6,1-0.9,1.7-0.9c0.8,0,1.1,0.6,1.1,1.2c0,0.9-0.6,1.8-1.4,2.8
-                                  		c-2.6,3.4-6.3,6.4-12.2,6.4c-6.4,0-10.1-3.8-10.1-8.7c0-6.9,3.6-11.4,3.6-15.8c0-1.8-1-3.2-2.6-3.2c-1.9,0-4.6,1.9-7.1,6.9
-                                  		c-1.9,3.8-4.9,13.4-4.9,17.9c0,1.9-0.8,2.4-2.5,2.4c-3.4,0-7.8,0.6-9.5,0.6c-1.5,0-2.4-0.6-2.4-2.5c0-4.2,4.7-19.4,4.7-25.5
-                                  		c0-1.9-0.8-2.1-0.8-3.6c0-2.5,6.1-4.2,12.7-4.2c2.5,0,3.8,1,3.8,2.9c0,1.8-0.9,5.1-0.9,5.1c2-2.5,8.7-8,15.4-8
-                                  		c6.2,0,8.7,2.8,8.7,7.1c0,5.2-3.2,11.8-3.2,16.4C199.2,56.3,200.1,57.4,201.7,57.4"/>
-                                </g>
-                            </svg>
-                        </a>
-                        <!-- End Logo -->
+                <!-- End Logo-Search-header-icons -->
 
-                        <!-- Responsive Toggle Button -->
-                        <button type="button" class="navbar-toggler btn u-hamburger"
-                            aria-label="Toggle navigation"
-                            aria-expanded="false"
-                            aria-controls="navBar"
-                            data-toggle="collapse"
-                            data-target="#navBar">
-                            <span id="hamburgerTrigger" class="u-hamburger__box">
-                                <span class="u-hamburger__inner"></span>
-                            </span>
-                        </button>
-                        <!-- End Responsive Toggle Button -->
-
-                        <!-- Navigation -->
-                        <div id="navBar" class="collapse pt-4 pt-md-0 navbar-collapse u-header__navbar-collapse">
-                            <ul class="navbar-nav u-header__navbar-nav">
-                                <!-- Home -->
-                                <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                                    data-event="hover"
-                                    data-animation-in="slideInUp"
-                                    data-animation-out="fadeOut">
-                                    <a id="homeMegaMenu" class="nav-link u-header__nav-link u-header__primary-nav-link-toggle py-3 py-md-6 font-size-1__5 u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="homeSubMenu">Home</a>
-
-                                    <!-- Home - Submenu -->
-                                    <ul id="homeSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="homeMegaMenu" style="min-width: 230px;">
-                                        <!-- Home-v1 -->
-                                        <li class="hs-has-sub-menu">
-                                            <a class="nav-link u-header__sub-menu-nav-link " href="index.html">Home-v1</a>
-                                        </li>
-                                        <!-- End Home-v1 -->
-
-                                        <!-- Home-v2 -->
-                                        <li class="hs-has-sub-menu">
-                                            <a class="nav-link u-header__sub-menu-nav-link " href="home-v2.html">Home-v2</a>
-                                        </li>
-                                        <!-- End Home-v2 -->
-
-                                        <!-- Home-v3 -->
-                                        <li class="hs-has-sub-menu">
-                                            <a class="nav-link u-header__sub-menu-nav-link " href="home-v3.html">Home-v3</a>
-                                        </li>
-                                        <!-- End Home-v3 -->
-
-                                        <!-- Home-v4 -->
-                                        <li class="hs-has-sub-menu">
-                                            <a class="nav-link u-header__sub-menu-nav-link " href="home-v4.html">Home-v4</a>
-                                        </li>
-                                        <!-- End Home-v4 -->
-
-                                        <!-- Store Landing -->
-                                        <li class="hs-has-sub-menu">
-                                            <a class="nav-link u-header__sub-menu-nav-link " href="store-landing.html">Store Landing</a>
-                                        </li>
-                                        <!-- End Store Landing -->
-                                    </ul>
-                                    <!-- End Home - Submenu -->
-                                </li>
-                                <!-- End Home -->
-
-                                <!-- Pages -->
-                                <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                                  data-event="hover"
-                                  data-animation-in="slideInUp"
-                                  data-animation-out="fadeOut">
-                                    <a id="pagesMegaMenu" class="nav-link u-header__nav-link u-header__primary-nav-link-toggle py-3 py-md-6 font-size-1__5 u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Cities</a>
-
-                                    <!-- Pages - Submenu -->
-                                    <ul id="pagesSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
-                                      <!-- Account -->
-                                      <li class="hs-has-sub-menu">
-                                        <a id="navLinkPagesAccount" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesAccount">Account</a>
-
-                                        <ul id="navSubmenuPagesAccount" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesAccount" style="min-width: 230px;">
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/dashboard.html">Dashboard</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/profile.html">Profile</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/my-tasks.html">My tasks</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/projects.html">Projects</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/members.html">Members</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/edit-profile.html">Edit profile</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/change-password.html">Change password</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/notifications.html">Notifications</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/activity.html">Activity</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/payment-methods.html">Payment methods</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/invite-friends.html">Invite friends</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/plans.html">Plans</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/api-token.html">API Token</a></li>
-                                        </ul>
-                                      </li>
-                                      <!-- End Account -->
-
-                                      <!-- Company -->
-                                      <li class="hs-has-sub-menu">
-                                        <a id="navLinkPagesCompany" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesCompany">Company</a>
-
-                                        <ul id="navSubmenuPagesAbout" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesAbout" style="min-width: 230px;">
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/about-agency.html">About Agency</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/services-agency.html">Services Agency</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/careers.html">Careers</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/careers-single.html">Careers Single</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/hire-us.html">Hire Us</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/customers.html">Customers</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/customer-story.html">Customer story</a></li>
-                                        </ul>
-                                      </li>
-                                      <!-- Company -->
-
-                                      <!-- Portfolio -->
-                                      <li class="hs-has-sub-menu">
-                                        <a id="navLinkPagesPortfolio" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesPortfolio">Portfolio</a>
-
-                                        <ul id="navSubmenuPagesPortfolio" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesPortfolio" style="min-width: 230px;">
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/boxed-classic.html">All layouts</a></li>
-                                          <li class="dropdown-divider"></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/case-studies-simple.html">Case Studies Simple</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/case-studies-modern.html">Case Studies Modern</a></li>
-                                          <li class="dropdown-divider"></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/single-page-simple.html">Single Page Simple</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/single-page-grid.html">Single Page Grid</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/single-page-masonry.html">Single Page Masonry</a></li>
-                                        </ul>
-                                      </li>
-                                      <!-- End Portfolio -->
-
-                                      <!-- Login -->
-                                      <li class="hs-has-sub-menu">
-                                        <a id="navLinkPagesLogin" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesLogin">Login & Signup</a>
-
-                                        <ul id="navSubmenuPagesLogin" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesLogin" style="min-width: 230px;">
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/login.html">Login</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/signup.html">Signup</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/recover-account.html">Recover Account</a></li>
-                                          <li class="dropdown-divider"></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/login-simple.html">Login Simple</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/signup-simple.html">Signup Simple</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/recover-account-simple.html">Recover Account Simple</a></li>
-                                        </ul>
-                                      </li>
-                                      <!-- Signup -->
-
-                                      <!-- Contacts -->
-                                      <li class="hs-has-sub-menu">
-                                        <a id="navLinkContactsServices" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuContactsServices">Contacts</a>
-
-                                        <ul id="navSubmenuContactsServices" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkContactsServices" style="min-width: 230px;">
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/contacts-agency.html">Contacts Agency</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/contacts-start-up.html">Contacts Start-Up</a></li>
-                                        </ul>
-                                      </li>
-                                      <!-- Contacts -->
-
-                                      <!-- Utilities -->
-                                      <li class="hs-has-sub-menu">
-                                        <a id="navLinkPagesUtilities" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesUtilities">Utilities</a>
-
-                                        <ul id="navSubmenuPagesUtilities" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesUtilities" style="min-width: 230px;">
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/pricing.html">Pricing</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/faq.html">FAQ</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/terms.html">Terms & Conditions</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/privacy.html">Privacy & Policy</a></li>
-                                        </ul>
-                                      </li>
-                                      <!-- Utilities -->
-
-                                      <!-- Specialty -->
-                                      <li class="hs-has-sub-menu">
-                                        <a id="navLinkPagesSpecialty" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesSpecialty">Specialty</a>
-
-                                        <ul id="navSubmenuPagesSpecialty" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesSpecialty" style="min-width: 230px;">
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/cover-page.html">Cover Page</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/coming-soon.html">Coming Soon</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/maintenance-mode.html">Maintenance Mode</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/status.html">Status</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/invoice.html">Status</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/error-404.html">Error 404</a></li>
-                                        </ul>
-                                      </li>
-                                      <!-- Specialty -->
-                                    </ul>
-                                    <!-- End Pages - Submenu -->
-                                </li>
-                                <!-- End Pages -->
-
-                                <!-- Blog -->
-                                <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                                  data-event="hover"
-                                  data-animation-in="slideInUp"
-                                  data-animation-out="fadeOut">
-                                <a id="blogMegaMenu" class="nav-link u-header__nav-link u-header__primary-nav-link-toggle py-3 py-md-6 font-size-1__5 u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Food</a>
-
-                                <!-- Blog - Submenu -->
-                                <ul id="blogSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="blogMegaMenu" style="min-width: 230px;">
-                                  <!-- Classic -->
-                                  <li class="hs-has-sub-menu">
-                                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogClassic">Classic</a>
-
-                                    <ul id="navSubmenuBlogClassic" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogClassic" style="min-width: 230px;">
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/classic-left-sidebar.html">Left Sidebar</a></li>
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/classic-right-sidebar.html">Right Sidebar</a></li>
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/classic-full-width.html">Full Width</a></li>
-                                    </ul>
-                                  </li>
-                                  <!-- Classic -->
-
-                                  <!-- Grid -->
-                                  <li class="hs-has-sub-menu">
-                                    <a id="navLinkBlogGrid" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogGrid">Grid</a>
-
-                                    <ul id="navSubmenuBlogGrid" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogGrid" style="min-width: 230px;">
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/grid-left-sidebar.html">Left Sidebar</a></li>
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/grid-right-sidebar.html">Right Sidebar</a></li>
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/grid-full-width.html">Full Width</a></li>
-                                    </ul>
-                                  </li>
-                                  <!-- Grid -->
-
-                                  <!-- List -->
-                                  <li class="hs-has-sub-menu">
-                                    <a id="navLinkBlogList" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogList">List</a>
-
-                                    <ul id="navSubmenuBlogList" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogList" style="min-width: 230px;">
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/list-left-sidebar.html">Left Sidebar</a></li>
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/list-right-sidebar.html">Right Sidebar</a></li>
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/list-full-width.html">Full Width</a></li>
-                                    </ul>
-                                  </li>
-                                  <!-- List -->
-
-                                  <!-- Modern -->
-                                  <li class="hs-has-sub-menu">
-                                    <a id="navLinkBlogCard" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogCard">Modern</a>
-
-                                    <ul id="navSubmenuBlogCard" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogCard" style="min-width: 230px;">
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/modern-left-sidebar.html">Left Sidebar</a></li>
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/modern-right-sidebar.html">Right Sidebar</a></li>
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/modern-full-width.html">Full Width</a></li>
-                                    </ul>
-                                  </li>
-                                  <!-- Grid Modern -->
-
-                                  <!-- Masonry -->
-                                  <li class="hs-has-sub-menu">
-                                    <a id="navLinkBlogGridMinimal" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogGridMinimal">Masonry</a>
-
-                                    <ul id="navSubmenuBlogGridMinimal" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogGridMinimal" style="min-width: 230px;">
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/masonry-left-sidebar.html">Left Sidebar</a></li>
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/masonry-right-sidebar.html">Right Sidebar</a></li>
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/masonry-full-width.html">Full Width</a></li>
-                                    </ul>
-                                  </li>
-                                  <!-- Masonry -->
-
-                                  <!-- Single Article -->
-                                  <li class="hs-has-sub-menu">
-                                    <a id="navLinkBlogGridMasonry" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogGridMasonry">Single Article</a>
-
-                                    <ul id="navSubmenuBlogGridMasonry" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogGridMasonry" style="min-width: 230px;">
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/single-article-classic.html">Classic</a></li>
-                                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/single-article-simple.html">Simple</a></li>
-                                    </ul>
-                                  </li>
-                                  <!-- Single Article -->
-                                </ul>
-                                <!-- End Submenu -->
-                                </li>
-                                <!-- End Blog -->
-
-                                <!-- Shop -->
-                                <li class="nav-item hs-has-mega-menu u-header__nav-item"
-                                  data-event="hover"
-                                  data-animation-in="slideInUp"
-                                  data-animation-out="fadeOut"
-                                  data-max-width="440px"
-                                  data-position="right">
-                                <a id="shopMegaMenu" class="nav-link u-header__nav-link u-header__primary-nav-link-toggle py-3 py-md-6 font-size-1__5 u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Travel Store</a>
-
-                                <!-- Shop - Mega Menu -->
-                                <div class="hs-mega-menu u-header__sub-menu u-header__mega-menu-position-right-fix--md" aria-labelledby="shopMegaMenu">
-                                  <div class="u-header__mega-menu-wrapper">
-                                    <span class="u-header__sub-menu-title">Shop Elements</span>
-
-                                    <div class="row">
-                                      <div class="col-sm-6">
-                                        <ul class="u-header__sub-menu-nav-group">
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/classic.html">Classic</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/categories.html">Categories</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/categories-sidebar.html">Categories Sidebar</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/products-grid.html">Products Grid</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/products-list.html">Products List</a></li>
-                                        </ul>
-                                      </div>
-
-                                      <div class="col-sm-6">
-                                        <ul class="u-header__sub-menu-nav-group">
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/single-product.html">Single Product</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/empty-cart.html">Empty Cart</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/cart.html">Cart</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/checkout.html">Checkout</a></li>
-                                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/order-completed.html">Order Completed</a></li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <!-- Mega Menu Banner -->
-                                  <div class="u-header__product-banner">
-                                    <div class="d-flex align-items-end">
-                                      <img class="img-fluid mr-4" src="../../assets/img/mockups/img4.png" alt="Image Description">
-                                      <div class="u-header__product-banner-content">
-                                        <div class="mb-4">
-                                          <span class="u-header__product-banner-title">Win T-shirt</span>
-                                          <p class="u-header__product-banner-text">Win one of our Front brand T-shirts.</p>
+                <!-- Vertical-and-secondary-menu -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-auto">
+                            <div class="max-width-300 min-width-300">
+                                <!-- Basics Accordion -->
+                                <div id="basicsAccordion">
+                                    <!-- Card -->
+                                    <div class="card border-0">
+                                        <div class="card-header card-collapse border-0" id="basicsHeadingOne">
+                                            <button type="button" class="btn-link btn-block d-flex card-btn py-3 text-lh-1 px-4 shadow-none btn-primary rounded-top-lg border-0 font-weight-bold text-gray-90"
+                                                data-toggle="collapse"
+                                                data-target="#basicsCollapseOne"
+                                                aria-expanded="true"
+                                                aria-controls="basicsCollapseOne">
+                                                <span class="ml-0 text-gray-90 mr-2">
+                                                    <span class="fa fa-list-ul"></span>
+                                                </span>
+                                                <span class="pl-1 text-gray-90">All Departments</span>
+                                            </button>
                                         </div>
-                                        <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="../shop/classic.html">Learn More <span class="fas fa-angle-right ml-2"></span></a>
-                                      </div>
+                                        <div id="basicsCollapseOne" class="collapse show position-absolute top-100 right-0 left-0"
+                                            aria-labelledby="basicsHeadingOne"
+                                            data-parent="#basicsAccordion">
+                                            <div class="card-body p-0">
+                                                <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space py-3 py-md-0 hs-menu-initialized hs-menu-horizontal">
+                                                    <div id="navBar" class="collapse pt-4 pt-md-0 navbar-collapse u-header__navbar-collapse">
+                                                        <ul class="navbar-nav u-header__navbar-nav">
+                                                            <!-- Nav Item -->
+                                                            <li class="nav-item hs-has-mega-menu u-header__nav-item"
+                                                                data-event="hover"
+                                                                data-animation-in="slideInUp"
+                                                                data-animation-out="fadeOut"
+                                                                data-position="left">
+                                                                <a id="basicMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Basic mega menu</a>
+
+                                                                <!-- Nav Item - Mega Menu -->
+                                                                <div class="hs-mega-menu w-100 u-header__sub-menu left-100 top-0" aria-labelledby="basicMegaMenu">
+                                                                    <div class="row u-header__mega-menu-wrapper">
+                                                                        <div class="col-sm-3 mb-3 mb-sm-0">
+                                                                            <span class="u-header__sub-menu-title">One</span>
+                                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                                <li><a class="nav-link u-header__sub-menu-nav-link" href="#">One</a></li>
+                                                                                <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Two</a></li>
+                                                                                <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Three</a></li>
+                                                                            </ul>
+                                                                        </div>
+
+                                                                        <div class="col-sm-3 mb-3 mb-sm-0">
+                                                                            <span class="u-header__sub-menu-title">Two</span>
+                                                                            <ul class="u-header__sub-menu-nav-group">
+                                                                                <li><a class="nav-link u-header__sub-menu-nav-link" href="#">One</a></li>
+                                                                                <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Two</a></li>
+                                                                                <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Three</a></li>
+                                                                            </ul>
+                                                                        </div>
+
+                                                                        <div class="col-sm-3 mb-3 mb-sm-0">
+                                                                            <span class="u-header__sub-menu-title">Three</span>
+                                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                                <li><a class="nav-link u-header__sub-menu-nav-link" href="#">One</a></li>
+                                                                                <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Two</a></li>
+                                                                            </ul>
+                                                                        </div>
+
+                                                                        <div class="col-sm-3">
+                                                                            <span class="u-header__sub-menu-title">Four</span>
+                                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                                <li><a class="nav-link u-header__sub-menu-nav-link" href="#">One</a></li>
+                                                                                <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Two</a></li>
+                                                                                <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Three</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- End Nav Item - Mega Menu -->
+                                                            </li>
+                                                            <!-- End Nav Item -->
+                                                        </ul>
+                                                    </div>
+                                                </nav>
+                                                <!-- <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Active</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Link</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Link</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Disabled</a>
+                                                    </li>
+                                                </ul> -->
+                                            </div>
+                                        </div>
                                     </div>
-                                  </div>
-                                  <!-- End Mega Menu Banner -->
+                                    <!-- End Card -->
                                 </div>
-                                <!-- End Shop - Mega Menu -->
-                                </li>
-                                <!-- End Shop -->
-                            </ul>
+                                <!-- End Basics Accordion -->
+                            </div>
                         </div>
-                        <ul class="list-inline d-none ml-xl-9 mb-0 d-md-flex align-items-center">
-                            <!-- Search -->
-                            <li class="list-inline-item mr-3">
-                              <a class="btn btn-xs btn-icon btn-text-secondary target-of-invoker-has-unfolds" href="javascript:;" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="searchPushTop" data-unfold-type="jquery-slide" data-unfold-target="#searchPushTop">
-                                <svg class="icon" width="20px" height="20px" style="margin-bottom: 0;"><use xlink:href="#magnifying-glass" /></svg>
-                              </a>
-                            </li>
-                            <!-- End Search -->
+                        <div class="col">
 
-                            <!-- Off canvas Menu -->
-                            <li class="list-inline-item mr-3">
-                                <button id="sidebarHeaderInvoker" type="button" class="navbar-toggler d-block btn u-hamburger u-hamburger-custom ml-auto text-lh-0"
-                                    aria-controls="sidebarHeader"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    data-unfold-event="click"
-                                    data-unfold-hide-on-scroll="false"
-                                    data-unfold-target="#sidebarHeader"
-                                    data-unfold-type="css-animation"
-                                    data-unfold-animation-in="fadeInLeft"
-                                    data-unfold-animation-out="fadeOutLeft"
-                                    data-unfold-duration="500">
-                                    <span id="hamburgerTrigger" class="">
-                                        <i class="flaticon-menu font-size-7"></i>
-                                    </span>
-                                </button>
-                            </li>
-                            <!-- End Off canvas Menu -->
-
-                            <!-- Account Login -->
-                            <li class="list-inline-item">
-                                <!-- Account Sidebar Toggle Button -->
-                                <a id="sidebarNavToggler" class="btn-text-secondary" href="javascript:;" role="button"
-                                    aria-controls="sidebarContent"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    data-unfold-event="click"
-                                    data-unfold-hide-on-scroll="false"
-                                    data-unfold-target="#sidebarContent"
-                                    data-unfold-type="css-animation"
-                                    data-unfold-animation-in="fadeInRight"
-                                    data-unfold-animation-out="fadeOutRight"
-                                    data-unfold-duration="500">
-                                    <svg class="icon" width="30px" height="30px" style="margin-bottom: 0;"><use xlink:href="#user" /></svg>
-                                </a>
-                                <!-- End Account Sidebar Toggle Button -->
-                            </li>
-                            <!-- End Account Login -->
-                        </ul>
-                      <!-- End Navigation -->
-                    </nav>
-                    <!-- End Nav -->
+                        </div>
+                    </div>
                 </div>
+                <!-- End Vertical-and-secondary-menu -->
             </div>
         </header>
         <!-- ========== END HEADER ========== -->
@@ -2021,457 +1735,6 @@
         </footer>
         <!-- ========== END FOOTER ========== -->
 
-        <!-- ========== HEADER SIDEBAR ========== -->
-        <aside id="sidebarHeader" class="u-sidebar u-sidebar--left" aria-labelledby="sidebarHeaderInvoker">
-            <div class="u-sidebar__scroller">
-                <div class="u-sidebar__container">
-                    <div class="u-header-sidebar__footer-offset pb-3">
-                        <!-- Content -->
-                        <div class="js-scrollbar u-sidebar__body">
-                            <div id="headerSidebarContent" class="u-sidebar__content u-header-sidebar__content">
-                                <!-- Logo -->
-                                <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-vertical" href="index.html" aria-label="Front">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="141px" height="41px" viewBox="0 0 228.1 66.8" style="margin-bottom: 0;" style="enable-background:new 0 0 228.1 66.8;" xml:space="preserve">
-                                        <style type="text/css">
-                                            .st0{clip-path:url(#SVGID_2_);}
-                                            .st1{clip-path:url(#SVGID_2_);fill:#D72624;}
-                                        </style>
-                                        <g>
-                                            <defs><rect id="SVGID_1_" y="0" width="228.1" height="66.8"/></defs>
-                                            <clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_"  style="overflow:visible;"/></clipPath>
-                                            <path class="st0" d="M228.1,59.8c0,3.9-3.1,7-7,7c-3.9,0-7-3.1-7-7s3.1-7,7-7C225,52.8,228.1,56,228.1,59.8"/>
-                                            <path class="st1" d="M47.7,54.4c0.8-0.8,1.2-1.1,1.9-1.1c1,0,1.6,0.9,1.6,1.6c0,1.2-0.7,2.1-1.8,3.6c-2.4,3-7.2,7.5-14.4,7.5
-                                            c-6.9,0-8.8-5.7-8.8-5.7s-5.9,5.7-14,5.7C4.3,65.9,0,61.1,0,52.8C0,40,8.8,30.1,21.5,30.1c4,0,7.2,1.2,8.2,1.9
-                                            c1.7-6.6,3.3-13,3.3-19c0-3.7-1.9-5.5-4.3-5.5C27.6,7.5,27,7,27,6.1C27,3.7,33,0,39.4,0C45.3,0,49,3.2,49,8.8
-                                            c0,10.1-9.5,29.6-9.5,43.3c0,2.9,1.8,4.6,3.8,4.6C45.3,56.7,46.2,55.8,47.7,54.4 M23.7,35c-6.3,0-8.9,12.7-8.9,18.9
-                                            c0,2.8,1.1,4.6,3.6,4.6c2.1,0,4.4-1.9,5.9-5.4c1.2-2.8,3.1-10.3,3.1-14.8C27.3,36.3,26.1,35,23.7,35"/>
-                                            <path class="st1" d="M86.1,42.8c0,12.7-8,23.5-21.9,23.5c-9.9,0-16.4-5.8-16.4-14.8c0-11,8.7-21.9,24.2-21.9
-                                            C80.3,29.6,86.1,35,86.1,42.8 M75.5,45.2C72,43.8,71,42.6,71,40.6c0-2.8,1.7-3.7,1.7-4.4c0-0.6-0.3-0.9-1-0.9
-                                            c-0.5,0-1.6,0.3-3.2,1.6c-2.8,2.3-5.5,6.4-5.5,12.9c0,5.1,2.9,8.4,7.3,8.4c4.5,0,7.5-4.6,7.5-8.6C77.7,47.6,77.1,45.9,75.5,45.2"/>
-                                            <path class="st1" d="M87.8,55.3c0-10.3,8.7-24.7,8.7-42.3c0-3.7-1.9-5.5-4.4-5.5c-1,0-1.6-0.5-1.6-1.4c0-2.4,6-6.1,12.4-6.1
-                                            c5.9,0,9.6,3.2,9.6,8.8c0,9.5-9,32.4-9,43.3c0,2.9,1.6,4.6,3.6,4.6c1.9,0,2.8-0.9,4.3-2.4c0.8-0.8,1.2-1.1,1.9-1.1
-                                            c1,0,1.6,0.9,1.6,1.6c0,1.2-0.7,2.1-1.8,3.6c-2.4,3.1-7.1,7.5-14.2,7.5C91.3,65.9,87.8,61.1,87.8,55.3"/>
-                                            <path class="st1" d="M146.6,65.9c-6.8,0-8.7-6-8.7-6s-6,6-14.2,6c-6.7,0-12.1-4.5-12.1-13.2c0-11.2,6.8-22.6,22.9-22.6
-                                            c6,0,7.7,2.1,9.5,2.1c1.9,0,6.8-2.1,9.4-2.1c1,0,1.7,0.5,1.7,1.7c0,2.7-4,11.5-4,20.3c0,2.9,1.8,4.6,3.8,4.6c1.9,0,2.8-0.9,4.3-2.4
-                                            c0.8-0.8,1.2-1.1,1.9-1.1c1,0,1.6,0.9,1.6,1.6c0,1.2-0.7,2.1-1.8,3.6C158.5,61.5,153.7,65.9,146.6,65.9 M135.5,35
-                                            c-6.4,0-9.3,11.9-9.3,18.1c0,2.9,1.4,5.3,3.8,5.3c2.1,0,4.4-1.9,5.9-5.3c1.4-2.9,2.9-10.4,2.9-14.8C138.9,36.3,137.9,35,135.5,35"
-                                            />
-                                            <path class="st1" d="M201.7,57.4c1.4,0,2.3-0.5,3.2-1.1c0.8-0.6,1-0.9,1.7-0.9c0.8,0,1.1,0.6,1.1,1.2c0,0.9-0.6,1.8-1.4,2.8
-                                            c-2.6,3.4-6.3,6.4-12.2,6.4c-6.4,0-10.1-3.8-10.1-8.7c0-6.9,3.6-11.4,3.6-15.8c0-1.8-1-3.2-2.6-3.2c-1.9,0-4.6,1.9-7.1,6.9
-                                            c-1.9,3.8-4.9,13.4-4.9,17.9c0,1.9-0.8,2.4-2.5,2.4c-3.4,0-7.8,0.6-9.5,0.6c-1.5,0-2.4-0.6-2.4-2.5c0-4.2,4.7-19.4,4.7-25.5
-                                            c0-1.9-0.8-2.1-0.8-3.6c0-2.5,6.1-4.2,12.7-4.2c2.5,0,3.8,1,3.8,2.9c0,1.8-0.9,5.1-0.9,5.1c2-2.5,8.7-8,15.4-8
-                                            c6.2,0,8.7,2.8,8.7,7.1c0,5.2-3.2,11.8-3.2,16.4C199.2,56.3,200.1,57.4,201.7,57.4"/>
-                                        </g>
-                                    </svg>
-                                </a>
-                                <!-- End Logo -->
-
-                                <!-- List -->
-                                <ul id="headerSidebarList" class="u-header-collapse__nav">
-                                    <!-- Home Section -->
-                                    <li class="u-has-submenu u-header-collapse__submenu">
-                                        <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomeCollapse" data-target="#headerSidebarHomeCollapse">
-                                            Home
-                                        </a>
-
-                                        <div id="headerSidebarHomeCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                            <ul id="headerSidebarHomeMenu" class="u-header-collapse__nav-list">
-                                                <!-- Home - Classic -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomeClassicSubNavCollapse" data-target="#headerSidebarHomeClassicSubNavCollapse">
-                                                        Classic
-                                                    </a>
-
-                                                    <ul id="headerSidebarHomeClassicSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="index.html">Classic Agency</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-business.html">Classic Business</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-marketing.html">Classic Marketing</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-consulting.html">Classic Consulting</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-start-up.html">Classic Start-up</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-studio.html">Classic Studio <span class="badge badge-success badge-primary ml-1">New</span></a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Home - Classic -->
-
-                                                <!-- Home - Corporate -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarHomeCorporateSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomeCorporateSubNavCollapse">
-                                                        Corporate
-                                                    </a>
-
-                                                    <ul id="headerSidebarHomeCorporateSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="corporate-agency.html">Corporate Agency</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="corporate-start-up.html">Corporate Start-Up</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="corporate-business.html">Corporate Business</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Home - Corporate -->
-
-                                                <!-- Home - Portfolio -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarHomePortfolioSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomePortfolioSubNavCollapse">
-                                                        Portfolio
-                                                    </a>
-
-                                                    <ul id="headerSidebarHomePortfolioSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="portfolio-agency.html">Portfolio Agency</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="portfolio-profile.html">Portfolio Profile</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Home - Portfolio -->
-
-                                                <!-- Home - App -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarHomeAppSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomeAppSubNavCollapse">
-                                                        App
-                                                    </a>
-
-                                                    <ul id="headerSidebarHomeAppSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-ui-lit.html">App UI kit</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-saas.html">App SaaS</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-workflow.html">App Workflow</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-payment.html">App Payment</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-software.html">App Software</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Home - App -->
-
-                                                <!-- Home - Onepages -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerHomeSidebarOnepagesSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerHomeSidebarOnepagesSubNavCollapse">
-                                                        Onepages <span class="badge badge-success badge-primary ml-2">New</span>
-                                                    </a>
-
-                                                    <ul id="headerHomeSidebarOnepagesSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="onepages-agency.html">Onepages Agency <span class="badge badge-success badge-primary ml-1">New</span></a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="onepages-showcase.html">Onepages Showcase <span class="badge badge-success badge-primary ml-1">New</span></a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Home - Onepages -->
-
-                                                <!-- Home - Blog -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerHomeSidebarBlogSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerHomeSidebarBlogSubNavCollapse">
-                                                        Blog
-                                                    </a>
-
-                                                    <ul id="headerHomeSidebarBlogSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="blog-agency.html">Blog Agency</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="blog-start-up.html">Blog Start-Up</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="blog-business.html">Blog Business</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Home - Blog -->
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <!-- End Home Section -->
-
-                                    <!-- Page Section -->
-                                    <li class="u-has-submenu u-header-collapse__submenu">
-                                        <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesCollapse">
-                                            Pages
-                                        </a>
-
-                                        <div id="headerSidebarPagesCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                            <ul id="headerSidebarPagesMenu" class="u-header-collapse__nav-list">
-                                                <!-- Page - Account -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesAccountSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesAccountSubNavCollapse">
-                                                        Account
-                                                    </a>
-
-                                                    <ul id="headerSidebarPagesAccountSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/dashboard.html">Dashboard</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/profile.html">Profile</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/my-tasks.html">My tasks</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/projects.html">Projects</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/members.html">Members</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/edit-profile.html">Edit profile</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/change-password.html">Change password</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/notifications.html">Notifications</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/activity.html">Activity</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/payment-methods.html">Payment methods</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/invite-friends.html">Invite friends</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/plans.html">Plans</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/api-token.html">API Token</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Page - Account -->
-
-                                                <!-- Page - Company -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesCompanySubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesCompanySubNavCollapse">
-                                                        Company
-                                                    </a>
-
-                                                    <ul id="headerSidebarPagesCompanySubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/about-agency.html">About Agency</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/services-agency.html">Services Agency</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/careers.html">Careers</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/careers-single.html">Careers Single</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/hire-us.html">Hire Us</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/customers.html">Customers</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/customer-story.html">Customer story</a></li>;
-                                                    </ul>
-                                                </li>
-                                                <!-- End Page - Company -->
-
-                                                <!-- Page - Portfolio -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesPortfolioSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesPortfolioSubNavCollapse">
-                                                        Portfolio
-                                                    </a>
-
-                                                    <ul id="headerSidebarPagesPortfolioSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/boxed-classic.html">All layouts</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/case-studies-simple.html">Case Studies Simple</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/case-studies-modern.html">Case Studies Modern</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/single-page-simple.html">Single Page Simple</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/single-page-grid.html">Single Page Grid</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/single-page-masonry.html">Single Page Masonry</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Page - Portfolio -->
-
-                                                <!-- Page - Login -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesLoginSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesLoginSubNavCollapse">
-                                                        Login
-                                                    </a>
-
-                                                    <ul id="headerSidebarPagesLoginSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/login.html">Login</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/signup.html">Signup</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/recover-account.html">Recover Account</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/login-simple.html">Login Simple</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/signup-simple.html">Signup Simple</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/recover-account-simple.html">Recover Account Simple</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Page - Login -->
-
-                                                <!-- Page - Contacts -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesContactsSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesContactsSubNavCollapse">
-                                                        Contacts
-                                                    </a>
-
-                                                    <ul id="headerSidebarPagesContactsSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/contacts-agency.html">Contacts Agency</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/contacts-start-up.html">Contacts Start-Up</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Page - Contacts -->
-
-                                                <!-- Page - Resources -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesResourcesSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesResourcesSubNavCollapse">
-                                                        Resources
-                                                    </a>
-
-                                                    <ul id="headerSidebarPagesResourcesSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/help.html">Help</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/help-article.html">Help article</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/faq.html">FAQ</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Page - Resources -->
-
-                                                <!-- Page - Utilities -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesUtilitiesSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesUtilitiesSubNavCollapse">
-                                                        Utilities
-                                                    </a>
-
-                                                    <ul id="headerSidebarPagesUtilitiesSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/pricing.html">Pricing</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/terms.html">Terms & Conditions</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/privacy.html">Privacy & Policy</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Page - Utilities -->
-
-                                                <!-- Page - Specialty -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesSpecialtySubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesSpecialtySubNavCollapse">
-                                                        Specialty
-                                                    </a>
-
-                                                    <ul id="headerSidebarPagesSpecialtySubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/cover-page.html">Cover Page</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/coming-soon.html">Coming Soon</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/maintenance-mode.html">Maintenance Mode</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/status.html">Status</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/invoice.html">Status</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/error-404.html">Error 404</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Page - Specialty -->
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <!-- End Page Section -->
-
-                                    <!-- Blog -->
-                                    <li class="u-has-submenu u-header-collapse__submenu">
-                                        <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogCollapse">
-                                            Blog
-                                        </a>
-
-                                        <div id="headerSidebarBlogCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                            <ul id="headerSidebarBlogMenu" class="u-header-collapse__nav-list">
-                                                <!-- Blog - Classic -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogClassicSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogClassicSubNavCollapse">
-                                                        Classic
-                                                    </a>
-
-                                                    <ul id="headerSidebarBlogClassicSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/classic-left-sidebar.html">Left Sidebar</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/classic-right-sidebar.html">Right Sidebar</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/classic-full-width.html">Full Width</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Blog - Classic -->
-
-                                                <!-- Blog - Grid -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogGridSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogGridSubNavCollapse">
-                                                        Grid
-                                                    </a>
-
-                                                    <ul id="headerSidebarBlogGridSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/grid-left-sidebar.html">Left Sidebar</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/grid-right-sidebar.html">Right Sidebar</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/grid-full-width.html">Full Width</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Blog - Grid -->
-
-                                                <!-- Blog - List -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogListSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogListSubNavCollapse">
-                                                        List
-                                                    </a>
-
-                                                    <ul id="headerSidebarBlogListSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/list-left-sidebar.html">Left Sidebar</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/list-right-sidebar.html">Right Sidebar</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/list-full-width.html">Full Width</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Blog - List -->
-
-                                                <!-- Blog - Modern -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogModernSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogModernSubNavCollapse">
-                                                        Modern
-                                                    </a>
-
-                                                    <ul id="headerSidebarBlogModernSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/modern-left-sidebar.html">Left Sidebar</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/modern-right-sidebar.html">Right Sidebar</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/modern-full-width.html">Full Width</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Blog - Modern -->
-
-                                                <!-- Blog - Masonry -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogMasonrySubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogMasonrySubNavCollapse">
-                                                        Masonry
-                                                    </a>
-
-                                                    <ul id="headerSidebarBlogMasonrySubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/masonry-left-sidebar.html">Left Sidebar</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/masonry-right-sidebar.html">Right Sidebar</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/masonry-full-width.html">Full Width</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Blog - Masonry -->
-
-                                                <!-- Blog - Single Article -->
-                                                <li class="u-has-submenu u-header-collapse__submenu">
-                                                    <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogSingleArticleSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogSingleArticleSubNavCollapse">
-                                                        Single Article
-                                                    </a>
-
-                                                    <ul id="headerSidebarBlogSingleArticleSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/single-article-classic.html">Classic</a></li>
-                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/single-article-simple.html">Simple</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Blog - Single Article -->
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <!-- End Blog -->
-
-                                    <!-- Shop Section -->
-                                    <li class="u-has-submenu u-header-collapse__submenu">
-                                        <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarShopCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarShopCollapse">
-                                            Shop
-                                        </a>
-
-                                        <div id="headerSidebarShopCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                            <ul id="headerSidebarShopMenu" class="u-header-collapse__nav-list u-header-collapse__nav-list--no-spacer">
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/classic.html">Classic</a></li>
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/categories.html">Categories</a></li>
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/categories-sidebar.html">Categories Sidebar</a></li>
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/products-grid.html">Products Grid</a></li>
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/products-list.html">Products List</a></li>
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/single-product.html">Single Product</a></li>
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/empty-cart.html">Empty Cart</a></li>
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/cart.html">Cart</a></li>
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/checkout.html">Checkout</a></li>
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/order-completed.html">Order Completed</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <!-- End Shop Section -->
-
-                                    <!-- Demos Section -->
-                                    <li class="u-has-submenu u-header-collapse__submenu">
-                                        <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarDemosCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarDemosCollapse">
-                                            Demos
-                                        </a>
-
-                                        <div id="headerSidebarDemosCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                            <ul id="headerSidebarDemosMenu" class="u-header-collapse__nav-list u-header-collapse__nav-list--no-spacer">
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../house/index.html">House</a></li>
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../job/index.html">Job</a></li>
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../crypto/index.html">Crypto Landing</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <!-- End Demos Section -->
-
-                                    <!-- Docs Section -->
-                                    <li class="u-has-submenu u-header-collapse__submenu">
-                                        <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebardocsCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebardocsCollapse">
-                                            Docs
-                                        </a>
-
-                                        <div id="headerSidebardocsCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                            <ul id="headerSidebardocsMenu" class="u-header-collapse__nav-list u-header-collapse__nav-list--no-spacer">
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../documentation/index.html">Classic</a></li>
-                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../index.html">Get started</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <!-- End Docs Section -->
-                                </ul>
-                                <!-- End List -->
-                            </div>
-                        </div>
-                        <!-- End Content -->
-                    </div>
-               </div>
-            </div>
-        </aside>
-        <!-- ========== END HEADER SIDEBAR ========== -->
-
         <!-- ========== SECONDARY CONTENTS ========== -->
         <!-- Account Sidebar Navigation -->
         <aside id="sidebarContent" class="u-sidebar" aria-labelledby="sidebarNavToggler">
@@ -2589,7 +1852,7 @@
                                     <div id="signup" style="display: none; opacity: 0;" data-target-group="idForm">
                                         <!-- Title -->
                                         <header class="text-center mb-7">
-                                        <h2 class="h4 mb-0">Welcome to Front.</h2>
+                                        <h2 class="h4 mb-0">Welcome to Electro.</h2>
                                         <p>Fill out the form to get started.</p>
                                         </header>
                                         <!-- End Title -->

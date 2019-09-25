@@ -6,6 +6,16 @@
     width: ($font-size-base * 1.571); //22px
 }
 
+@include media-breakpoint-up(xl) {
+    .vmm-tfw {
+        width: ($font-size-base * 42.857); //600px
+    }
+
+    .vmm-fw {
+        width: ($font-size-base * 64.286); //900px
+    }
+}
+
 .max-width-300 {
     max-width: 18.75rem;
 }
@@ -25,4 +35,16 @@
 
 .height-40 {
     height: ($font-size-base * 2.929); //40px
+}
+
+.min-height-170 {
+    min-height: ($font-size-base * 12.143); //170px
+}
+
+.min-height-420 {
+    min-height: ($font-size-base * 14.286); //200px
+
+    @include media-breakpoint-up(md) {
+        min-height: ($font-size-base * 30); //420px
+    }
 }

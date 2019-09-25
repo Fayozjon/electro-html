@@ -1,0 +1,28 @@
+/*------------------------------------
+  Slick Pagination
+------------------------------------*/
+
+.u-slick__pagination--long {
+    li {
+        margin: 0 ($font-size-base * 0.5);
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        span {
+            transform: none;
+            border: 0;
+            width: 0.5rem; //8px
+            height: 0.5rem; //8px
+            background-color: $slick-pagination-long-dot-bg-color;
+        }
+
+        &.slick-active span {
+            transform: none;
+            width: ($font-size-base * 2.143); //30px
+            background-color: $primary;
+            @include border-radius($slick-pagination-long-active-dot-border-radius);
+        }
+    }
+}

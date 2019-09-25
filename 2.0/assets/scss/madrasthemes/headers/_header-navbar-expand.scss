@@ -1,0 +1,45 @@
+/*------------------------------------
+  Navbar Expand
+------------------------------------*/
+
+.vertical-menu {
+    .navbar-expand {
+        @each $breakpoint in map-keys($grid-breakpoints) {
+            $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+            @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+                &#{$infix} {
+                    .navbar-nav {
+                        flex-direction: column;
+                    }
+
+                    .u-header__navbar-nav {
+                        align-items: unset;
+                        width: 100%;
+                        padding: $header-vmm-nav-bar-nav-paddingY 0;
+                    }
+
+                    // Submenu
+                    .u-header__navbar-nav .u-header {
+                        &__nav-link {
+                            padding-top: $header-vmm-nav-link-paddingY;
+                            padding-bottom: $header-vmm-nav-link-paddingY;
+                            padding-right: $header-vmm-nav-link-paddingX;
+                            padding-left: $header-vmm-nav-link-paddingX;
+                        }
+
+                        &__sub-menu {
+                            box-shadow: none;
+                            border-bottom-left-radius: 0;
+                        }
+
+                        &__mega-menu-wrapper {
+                            padding-top: $header-vmm-wrapper-paddingY;
+                            padding-bottom: $header-vmm-wrapper-paddingY;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

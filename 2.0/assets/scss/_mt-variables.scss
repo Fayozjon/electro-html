@@ -12,7 +12,11 @@ $gray-40:                                                   #cad5d5 !default;
 $gray-50:                                                   #959595 !default;
 $gray-60:                                                   #6b6b6b !default;
 $gray-70:                                                   #334141 !default;
+$gray-80:                                                   #dddddd !default;
 $gray-90:                                                   #333e48 !default;
+$gray-1000:                                                 #b0b5b9 !default;
+$gray-2000:                                                 #f5f5f5 !default;
+$gray-3000:                                                 #bcbcbc !default;
 
 // Colors
 $yellow:                                                    #fed700 !default;
@@ -21,6 +25,16 @@ $black:                                                     #000000 !default;
 
 // Theme Colors
 $primary:                                                   $yellow !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "gray-1":     $gray-2000
+  ),
+  $theme-colors
+);
 
 
 // Breakpoints
@@ -70,12 +84,23 @@ $body-color:                $gray-90 !default;
 $font-family-sans-serif:                                    "Open Sans", Helvetica, Arial, sans-serif !default;
 $font-size-base:                                            .875rem !default; // Assumes the browser default, typically 16px
 
+$font-weight-light:                                         300 !default;
+$font-weight-medium:                                        500 !default;
+$font-weight-semi-bold:                                     600 !default;
+$font-weight-bold:                                          700 !default;
+
+
+// Borders
+// =========================================================
+
+$border-radius-pill:                                        6.1875rem !default;
+
 
 // Header
 // =========================================================
 
 // Text Colors
-$header-nav-link-color:                                     $gray-70 !default;
+$header-nav-link-color:                                     $gray-90 !default;
 $header-nav-link-active-color:     							$dark !default;
 $header-nav-link-hover-color:            				    $dark !default;
 $header-topbar-nav-link-color:                              $gray-70 !default;
@@ -88,13 +113,41 @@ $header-topbar-nav-link-icon-font-size:                     ($font-size-base * 1
 //$header-navbar-link-font-size:                              ($font-size-base * .875) !default;
 $header-sub-menu-nav-link-font-size:             			$font-size-base !default;
 //$header-sub-menu-title-font-size:                           ($font-size-base * 1) !default;
-//$header-sub-menu-title-font-weight:                         $font-weight-semi-bold !default;
+$header-sub-menu-title-font-weight:                         $font-weight-bold !default;
 
 // Borders
 $header-topbar-border-color:                                $gray-20 !default;
+$header-sub-menu-border-top-width:                          ($font-size-base * .125) !default;
+$header-sub-menu-bottom-border-radius:                      ($font-size-base * .5) !default;
 
 // Box Shadow
 $header-submenu-box-shadow:                                 0 2px 5px rgba($black, .28) !default;
+
+// Padding Spaces
+$header-nav-link-paddingY:                                  .781rem !default; //12.5px
+$header-nav-link-paddingX:                                  .99rem !default;
+$header-sub-menu-nav-link-paddingY:                         ($font-size-base * 0.38) !default; //5px
+
+// Vertical-Menu - Padding Spaces
+$header-vmm-nav-item-paddingX:                              $font-size-base !default; //14px
+$header-vmm-nav-link-paddingY:                              ($font-size-base * 0.464) !default; //6.5px
+$header-vmm-nav-link-paddingX:                              ($font-size-base * 0.357) !default; //5px
+$header-vmm-nav-bar-nav-paddingY:                           ($font-size-base * 0.5) !default; //7px
+$header-vmm-wrapper-paddingY:                               ($font-size-base * 2.571) !default; //36px
+
+// Vertical-Menu - Position
+$header-vertical-mega-menu-position:                        absolute !default;
+$header-vertical-mega-menu-position-top:                    100% !default;
+$header-vertical-mega-menu-position-left:                   0 !default;
+$header-vertical-mega-menu-position-right:                  $header-vertical-mega-menu-position-left !default;
+
+// Vertical-Menu - Border
+$header-vmm-nav-link-border-color:                          $gray-80 !default;
+
+// Vertical-Menu - Font
+$header-vmm-nav-link-toggle-icon-color:                     $gray-1000 !default;
+$header-vmm-nav-link-toggle-icon-size:                      ($font-size-base * 1.143) !default; //16px
+$header-vmm-nav-link-hover-color:                           $gray-2000 !default;
 
 
 // Drop Down
@@ -127,3 +180,21 @@ $hamburger-layer-height:            						.130rem !default;
 
 // Background Color
 $tooltip-bg:                                                $black !default;
+
+
+// Slick
+// =========================================================
+
+$slick-pagination-long-dot-bg-color:                        $gray-3000 !default;
+$slick-pagination-long-active-dot-border-radius:            $border-radius-pill !default;
+
+
+// Links
+// =========================================================
+
+// Background Color
+$link-icon-bg-color:                                        $primary !default;
+
+// Width & Heights
+$link-icon-width:                                           1.063rem !default;
+$link-icon-height:                                          $link-icon-width !default;

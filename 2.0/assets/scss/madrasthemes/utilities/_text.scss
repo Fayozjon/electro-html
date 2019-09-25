@@ -6,12 +6,20 @@
     font-size: ($font-size-base * .857); //12px
 }
 
+.font-size-13 {
+    font-size: ($font-size-base * .929); //13px
+}
+
 .font-size-15 {
     font-size: ($font-size-base * 1.071); //15px
 }
 
 .font-size-16 {
     font-size: ($font-size-base * 1.143); //16px
+}
+
+.font-size-18 {
+    font-size: ($font-size-base * 1.286); //18px
 }
 
 .font-size-20 {
@@ -26,10 +34,62 @@
     font-size: ($font-size-base * 1.714); //24px
 }
 
+.font-size-50 {
+    font-size: ($font-size-base * 2); //50px
+
+    @include media-breakpoint-up(md) {
+        font-size: ($font-size-base * 3.571); //50px
+    }
+}
+
+.font-size-55 {
+    font-size: ($font-size-base * 1.6); //55px
+
+    @include media-breakpoint-up(md) {
+        font-size: ($font-size-base * 3.929); //55px
+    }
+}
+
+.font-size-64 {
+    font-size: ($font-size-base * 2); //64px
+
+    @include media-breakpoint-up(md) {
+        font-size: ($font-size-base * 4.571); //64px
+    }
+}
+
 /*------------------------------------
   Line Height
 ------------------------------------*/
 
 .text-lh-1 {
     line-height: 1;
+}
+
+.text-lh-23 {
+    line-height: 1.438rem; //23px
+}
+
+.text-lh-45 {
+    line-height: ($font-size-base * 2); //45px
+
+    @include media-breakpoint-up(md) {
+        line-height: ($font-size-base * 3.21); //45px
+    }
+}
+
+.text-lh-57 {
+    line-height: ($font-size-base * 2); //57px
+
+    @include media-breakpoint-up(md) {
+        line-height: ($font-size-base * 4.071); //57px
+    }
+}
+
+/*------------------------------------
+  letter Space
+------------------------------------*/
+
+.text-ls-n1 {
+    letter-spacing: -.4px;
 }

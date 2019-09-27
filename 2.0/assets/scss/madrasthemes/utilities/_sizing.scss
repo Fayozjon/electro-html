@@ -6,6 +6,10 @@
     width: ($font-size-base * 1.571); //22px
 }
 
+.width-75 {
+    width: 4.688rem; //75px
+}
+
 @include media-breakpoint-up(xl) {
     .vmm-tfw {
         width: ($font-size-base * 42.857); //600px
@@ -16,6 +20,14 @@
     }
 }
 
+.max-width-120 {
+    max-width: 7.5rem; //120px
+}
+
+.max-width-180 {
+    max-width: 11.25rem; //180px
+}
+
 .max-width-300 {
     max-width: 18.75rem;
 }
@@ -24,10 +36,26 @@
     min-width: 18.75rem;
 }
 
+.min-width-370 {
+    min-width: 18.125rem; //290px
+
+    @include media-breakpoint-only(md) {
+        max-width: 18.75rem; //300px
+    }
+
+    @include media-breakpoint-up(lg) {
+        min-width: 23.125rem; //370px
+    }
+}
+
 
 /*------------------------------------
   Height
 ------------------------------------*/
+
+.height-20 {
+    height: ($font-size-base * 1.429); //20px
+}
 
 .height-22 {
     height: ($font-size-base * 1.571); //22px
@@ -35,6 +63,10 @@
 
 .height-40 {
     height: ($font-size-base * 2.929); //40px
+}
+
+.height-75 {
+    height: 4.688rem; //75px
 }
 
 .min-height-170 {

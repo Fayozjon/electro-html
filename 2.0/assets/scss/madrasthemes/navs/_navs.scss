@@ -1,0 +1,50 @@
+/*------------------------------------
+  Navs
+------------------------------------*/
+
+.nav {
+    &-tab {
+        border-color: $gray-80;
+        
+        .nav-link {
+            margin-bottom: -1px;
+            border-width: 2px;
+            padding: .5rem .3rem;
+            font-size: 1.125rem;
+            color: $gray-7000;
+
+            &:hover {
+                color: $gray-7000;
+            }
+
+            &.active {
+				font-weight: $font-weight-bold;
+                color: $gray-7000;
+                position: relative;
+
+                &::after {
+                    content: ' ';
+                    height: 4px;
+                    width: 10px;
+                    display: block;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 50%;
+                    border-radius: 0 0 10px 10px;
+                    transform: translateX(-50%);
+                    background-color: $primary;
+                }
+			}
+        }
+    }
+
+    .nav-item {
+		&:not(:first-child) {
+			margin-left: .4rem;
+		}
+
+		&:not(:last-child) {
+			margin-right: .4rem;
+		}
+	}
+}

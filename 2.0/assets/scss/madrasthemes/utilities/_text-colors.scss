@@ -21,3 +21,19 @@
 		color: $gray-90;
 	}
 }
+
+.text-gray-100 {
+    color: $gray-7000; //#343f49
+}
+
+.text-blue { //#0062bd
+    color: $blue;
+
+    &[href]:hover {
+		color: lighten($blue, 2%);
+	}
+}
+
+.text-red { //#ee0000
+    color: $red;
+}

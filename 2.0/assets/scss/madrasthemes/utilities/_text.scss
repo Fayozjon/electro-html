@@ -10,6 +10,10 @@
     font-size: ($font-size-base * .929); //13px
 }
 
+.font-size-14 {
+    font-size: $font-size-base; //14px
+}
+
 .font-size-15 {
     font-size: ($font-size-base * 1.071); //15px
 }
@@ -32,6 +36,10 @@
 
 .font-size-24 {
     font-size: ($font-size-base * 1.714); //24px
+}
+
+.font-size-30 {
+    font-size: ($font-size-base * 2.143); //30px
 }
 
 .font-size-50 {
@@ -64,6 +72,14 @@
 
 .text-lh-1 {
     line-height: 1;
+}
+
+.text-lh-18 {
+    line-height: 1.125rem; //18px
+}
+
+.text-lh-28 {
+    line-height: 1.75rem; //28px
 }
 
 .text-lh-23 {

@@ -26,8 +26,17 @@
 // Search Forms
 @import "search-forms/search-form";
 
+// Buttons
+@import "buttons/buttons";
+
+// Card
+@import "card/card";
+
 // Slick
 @import "slick/paginations/slick-pagination";
+
+// Nav
+@import "navs/navs";
 
 // Utilities
 @import "utilities/text";
@@ -35,3 +44,4 @@
 @import "utilities/borders";
 @import "utilities/sizing";
 @import "utilities/position-spaces";
+@import "utilities/content-centered";

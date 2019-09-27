@@ -1,0 +1,22 @@
+/*------------------------------------
+  Buttons
+------------------------------------*/
+
+/* Add cart btn */
+.btn-add-cart {
+    width: 2.188rem;
+    height: 2.188rem;
+    background-color: $gray-6000;
+    color: $white;
+    @include flex-content-center;
+    @include border-radius($border-radius-pill)
+
+    i {
+        font-size: 1.25rem;
+    }
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
+}

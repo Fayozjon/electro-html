@@ -1,0 +1,15 @@
+/*------------------------------------
+  Content Centered
+------------------------------------*/
+
+.flex-center-between {
+    @include flex-center-between;
+}
+
+.flex-content-center {
+    @include flex-content-center;
+}
+
+.flex-horizontal-center {
+    @include flex-horizontal-center;
+}

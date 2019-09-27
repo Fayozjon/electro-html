@@ -66,12 +66,46 @@
     }
 }
 
+.prodcut-title {
+    font-size: ($font-size-base * .857); //12px
+    line-height: $font-size-base; //14px
+
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-base; //14px
+        line-height: 1.125rem; //18px
+    }
+
+    @include media-breakpoint-up(xl) {
+        //height: 38px;
+        //overflow: hidden;
+        
+        a {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
+}
+
+.prodcut-price {
+    font-size: ($font-size-base * 1.143); //16px
+
+    @include media-breakpoint-up(lg) {
+        font-size: ($font-size-base * 1.429); //20px
+    }
+}
+
 /*------------------------------------
   Line Height
 ------------------------------------*/
 
 .text-lh-1 {
     line-height: 1;
+}
+
+.text-lh-14 {
+    line-height: $font-size-base; //14px
 }
 
 .text-lh-18 {

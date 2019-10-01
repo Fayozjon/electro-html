@@ -5,7 +5,7 @@
 .nav {
     &-tab {
         border-color: $gray-80;
-        
+
         .nav-link {
             margin-bottom: -1px;
             border-width: 2px;
@@ -35,6 +35,12 @@
                     background-color: $primary;
                 }
 			}
+        }
+
+        &-sm {
+            .nav-link {
+                font-size: 0.938rem;
+            }
         }
     }
 

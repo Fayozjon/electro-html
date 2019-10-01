@@ -25,3 +25,25 @@
         }
     }
 }
+
+.Products-4-1-4 {
+    @include media-breakpoint-up(xl) {
+        .products-1 {
+            .product-body {
+                height: 100%;
+            }
+
+            .product {
+                &:hover {
+                    .product-inner {
+                        height: calc(100% + 35px);
+                    }
+
+                    .product-body {
+                        height: calc(100% - 28px);
+                    }
+                }
+            }
+        }
+    }
+}

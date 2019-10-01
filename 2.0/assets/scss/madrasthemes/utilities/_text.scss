@@ -76,9 +76,6 @@
     }
 
     @include media-breakpoint-up(xl) {
-        //height: 38px;
-        //overflow: hidden;
-        
         a {
             display: -webkit-box;
             -webkit-line-clamp: 2;

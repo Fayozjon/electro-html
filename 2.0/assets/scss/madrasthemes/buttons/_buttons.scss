@@ -9,7 +9,7 @@
     background-color: $gray-6000;
     color: $white;
     @include flex-content-center;
-    @include border-radius($border-radius-pill)
+    @include border-radius($border-radius-pill);
 
     i {
         font-size: 1.25rem;
@@ -18,5 +18,19 @@
     &:hover {
         background-color: $primary;
         color: $white;
+    }
+
+    &__wide {
+        width: auto;
+        background-color: $primary;
+        padding: 0 1rem;
+        font-weight: $font-weight-bold;
+        font-size: .813rem;
+        height: 2.313rem;
+
+        &:hover {
+            background-color: $gray-90;
+            box-shadow: 0 4px 11px rgba($gray-90, .25) !important;
+        }
     }
 }

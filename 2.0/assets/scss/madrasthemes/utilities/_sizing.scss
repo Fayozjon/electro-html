@@ -20,6 +20,16 @@
     }
 }
 
+.m-width-xl-100 {
+    @include media-breakpoint-only(xl) {
+        max-width: 100%; //100%
+    }
+}
+
+.max-width-60 {
+    max-width: 3.75rem; //60px
+}
+
 .max-width-120 {
     max-width: 7.5rem; //120px
 }

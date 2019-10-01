@@ -26939,6 +26939,40 @@ body {
   }
 }
 
+.navbar-expand .u-header__mega-menu-position-right-fix.hs-mega-menu.hs-position-right {
+  right: 35%;
+}
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .u-header__mega-menu-position-right-fix.hs-mega-menu.hs-position-right {
+    right: 35%;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .u-header__mega-menu-position-right-fix.hs-mega-menu.hs-position-right {
+    right: 35%;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .u-header__mega-menu-position-right-fix.hs-mega-menu.hs-position-right {
+    right: 35%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-expand-xl .u-header__mega-menu-position-right-fix.hs-mega-menu.hs-position-right {
+    right: 35%;
+  }
+}
+
+@media (min-width: 1480px) {
+  .navbar-expand-wd .u-header__mega-menu-position-right-fix.hs-mega-menu.hs-position-right {
+    right: 35%;
+  }
+}
+
 /*------------------------------------
   Nav Alignments
 ------------------------------------*/

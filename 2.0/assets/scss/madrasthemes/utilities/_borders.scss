@@ -18,3 +18,12 @@
 .borders-radius-20 {
     border-radius: 1.25rem; //20px
 }
+
+// Medium Devices
+@include media-breakpoint-up(md) {
+    .border-md-0        { border: 0 !important; }
+    .border-md-top-0    { border-top: 0 !important; }
+    .border-md-right-0  { border-right: 0 !important; }
+    .border-md-left-0   { border-left: 0 !important; }
+    .border-md-bottom-0 { border-bottom: 0 !important; }
+}

@@ -83,6 +83,12 @@
     min-height: ($font-size-base * 12.143); //170px
 }
 
+.min-height-172 {
+    @include media-breakpoint-up(md) {
+        min-height: 10.75rem; //172px
+    }
+}
+
 .min-height-420 {
     min-height: ($font-size-base * 14.286); //200px
 

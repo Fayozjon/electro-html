@@ -24,6 +24,7 @@ $gray-7000:                                                 #343f49 !default;
 $gray-8000:                                                 #878787 !default;
 $gray-9000:                                                 #848484 !default;
 $gray-10000:                                                #f9f9f9 !default;
+$gray-11000:                                                #7b8186 !default;
 
 // Colors
 $yellow:                                                    #fed700 !default;
@@ -46,7 +47,8 @@ $theme-colors: map-merge(
     "gray-4":     $gray-6000, //#e6e6e6
     "gray-5":     $gray-8000, //#878787
     "gray-6":     $gray-9000, //#848484
-    "gray-7":     $gray-10000 //#f9f9f9
+    "gray-7":     $gray-10000, //#f9f9f9
+    "gray-8":     $gray-11000 //#f9f9f9
   ),
   $theme-colors
 );

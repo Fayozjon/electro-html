@@ -1,0 +1,9 @@
+/*------------------------------------
+  Overflow
+------------------------------------*/
+
+@include media-breakpoint-up(md) {
+    .overflow-md-visble {
+        overflow: visible !important;
+    }
+}

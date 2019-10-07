@@ -1,0 +1,15 @@
+/*------------------------------------
+  Slick Arrows
+------------------------------------*/
+
+.u-slick__arrow {
+    &-normal {
+        cursor: pointer;
+
+        &.slick-disabled,
+        &.slick-disabled.js-next,
+        &.slick-disabled.js-prev {
+            opacity: .5;
+        }
+    }
+}

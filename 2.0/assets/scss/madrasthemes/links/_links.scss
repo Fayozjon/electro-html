@@ -11,3 +11,16 @@
         }
     }
 }
+
+.link-hover {
+    &__brand {
+        display: block;
+        opacity: .5;
+        filter: grayscale(1);
+
+        &:hover {
+            filter: none;
+            opacity: 1;
+        }
+    }
+}

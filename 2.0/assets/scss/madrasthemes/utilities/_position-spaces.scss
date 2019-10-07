@@ -6,8 +6,16 @@
     top: -($font-size-base * .143); //-2px
 }
 
+.top-2 {
+    top: ($font-size-base * .143); //2px
+}
+
 .top-8 {
     top: ($font-size-base * .571); //8px
+}
+
+.top-10 {
+    top: ($font-size-base * .625); //10px
 }
 
 .top-100 {
@@ -24,4 +32,16 @@
 
 .bottom-1 {
     bottom: 1rem;
+}
+
+.right-1 {
+    right: 1rem;
+}
+
+.right-2 {
+    right: 2rem;
+}
+
+.right-3 {
+    right: 3rem;
 }

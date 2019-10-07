@@ -26847,6 +26847,19 @@ h1, h2, h3, h4, h5, h6,
   font-size: 0.938rem;
 }
 
+.link-hover__brand {
+  display: block;
+  opacity: .5;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.link-hover__brand:hover {
+  -webkit-filter: none;
+          filter: none;
+  opacity: 1;
+}
+
 /*------------------------------------
   Header Default
 ------------------------------------*/
@@ -27280,6 +27293,10 @@ h1, h2, h3, h4, h5, h6,
 /*------------------------------------
   Card
 ------------------------------------*/
+.product {
+  position: relative;
+}
+
 .product .prodcut-footer {
   display: none;
 }
@@ -27341,6 +27358,17 @@ h1, h2, h3, h4, h5, h6,
 
 .u-slick-overflow-visble .slick-list {
   overflow: visible;
+}
+
+/*------------------------------------
+  Slick Arrows
+------------------------------------*/
+.u-slick__arrow-normal {
+  cursor: pointer;
+}
+
+.u-slick__arrow-normal.slick-disabled, .u-slick__arrow-normal.slick-disabled.js-next, .u-slick__arrow-normal.slick-disabled.js-prev {
+  opacity: .5;
 }
 
 /*------------------------------------
@@ -27415,6 +27443,10 @@ h1, h2, h3, h4, h5, h6,
 
 .font-size-16 {
   font-size: 1.00012rem;
+}
+
+.font-size-17 {
+  font-size: 1.06225rem;
 }
 
 .font-size-18 {
@@ -27793,6 +27825,10 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+.max-height-50 {
+  max-height: 3.125rem;
+}
+
 /*------------------------------------
   Box Shadow
 ------------------------------------*/
@@ -27816,8 +27852,16 @@ h1, h2, h3, h4, h5, h6,
   top: -0.12512rem;
 }
 
+.top-2 {
+  top: 0.12512rem;
+}
+
 .top-8 {
   top: 0.49962rem;
+}
+
+.top-10 {
+  top: 0.54688rem;
 }
 
 .top-100 {
@@ -27834,6 +27878,18 @@ h1, h2, h3, h4, h5, h6,
 
 .bottom-1 {
   bottom: 1rem;
+}
+
+.right-1 {
+  right: 1rem;
+}
+
+.right-2 {
+  right: 2rem;
+}
+
+.right-3 {
+  right: 3rem;
 }
 
 /*------------------------------------
@@ -27862,6 +27918,21 @@ h1, h2, h3, h4, h5, h6,
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+}
+
+/*------------------------------------
+  Transform
+------------------------------------*/
+.transform-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/*------------------------------------
+  Z-Index
+------------------------------------*/
+.z-index-9 {
+  z-index: 9;
 }
 
 /*------------------------------------

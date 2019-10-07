@@ -35,6 +35,7 @@
 // Slick
 @import "slick/paginations/slick-pagination";
 @import "slick/slick";
+@import "slick/arrows/slick-arrow";
 
 // Nav
 @import "navs/navs";
@@ -48,3 +49,5 @@
 @import "utilities/overflow";
 @import "utilities/position-spaces";
 @import "utilities/content-centered";
+@import "utilities/transform";
+@import "utilities/z-index";

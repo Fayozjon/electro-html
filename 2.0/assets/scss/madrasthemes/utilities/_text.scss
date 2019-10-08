@@ -50,6 +50,10 @@
     font-size: ($font-size-base * 2.286); //32px
 }
 
+.font-size-40 {
+    font-size: ($font-size-base * 2.857); //40px
+}
+
 .font-size-44 {
     font-size: ($font-size-base * 3.143); //44px
 }
@@ -68,6 +72,10 @@
     @include media-breakpoint-up(md) {
         font-size: ($font-size-base * 3.929); //55px
     }
+}
+
+.font-size-56 {
+    font-size: ($font-size-base * 4); //56px
 }
 
 .font-size-64 {
@@ -115,6 +123,12 @@
         position: absolute;
         bottom: -1px;
         left: 0;
+    }
+
+    &__sm {
+        &::after {
+            width: 84px;
+        }
     }
 }
 

@@ -28187,20 +28187,20 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-.prodcut-title {
+.product-title {
   font-size: 0.74987rem;
   line-height: 0.875rem;
 }
 
 @media (min-width: 992px) {
-  .prodcut-title {
+  .product-title {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .prodcut-title a {
+  .product-title a {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;

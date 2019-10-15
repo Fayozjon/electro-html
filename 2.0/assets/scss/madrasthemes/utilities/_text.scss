@@ -58,6 +58,10 @@
     font-size: ($font-size-base * 3.143); //44px
 }
 
+.font-size-46 {
+    font-size: ($font-size-base * 3.286); //46px
+}
+
 .font-size-50 {
     font-size: ($font-size-base * 2); //50px
 
@@ -89,25 +93,6 @@
 @include media-breakpoint-only(md) {
     .font-size-15-md {
         font-size: 0.75rem; //12px
-    }
-}
-
-.product-title {
-    font-size: ($font-size-base * .857); //12px
-    line-height: $font-size-base; //14px
-
-    @include media-breakpoint-up(lg) {
-        font-size: $font-size-base; //14px
-        line-height: 1.125rem; //18px
-    }
-
-    @include media-breakpoint-up(xl) {
-        a {
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
     }
 }
 
@@ -178,6 +163,10 @@
     @include media-breakpoint-up(md) {
         line-height: ($font-size-base * 3.21); //45px
     }
+}
+
+.text-lh-50 {
+    line-height: ($font-size-base * 3.571); //50px
 }
 
 .text-lh-57 {

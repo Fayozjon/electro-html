@@ -1,16 +1,16 @@
 /*------------------------------------
   Card
 ------------------------------------*/
-.product {
+.product-item {
     position: relative;
 
-    .prodcut-footer {
+    &__footer {
         display: none;
     }
 
     @include media-breakpoint-up(xl) {
         &:hover {
-            .product-inner {
+            .product-item__inner {
                 position: absolute;
                 width: 100%;
                 height: auto;
@@ -20,27 +20,47 @@
                 z-index: 1;
             }
 
-            .prodcut-footer {
+            .product-item__footer {
                 display: block;
+            }
+        }
+    }
+
+    &__title {
+        font-size: ($font-size-base * .857); //12px
+        line-height: $font-size-base; //14px
+
+        @include media-breakpoint-up(lg) {
+            font-size: $font-size-base; //14px
+            line-height: 1.125rem; //18px
+        }
+
+        @include media-breakpoint-up(xl) {
+            a {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                min-height: 2.25rem;
             }
         }
     }
 }
 
-.products-4-1-4 {
+.products-group-4-1-4 {
     @include media-breakpoint-up(xl) {
-        .products-1 {
-            .product-body {
+        .products-group-1 {
+            &__body {
                 height: 100%;
             }
 
-            .product {
+            .product-item {
                 &:hover {
-                    .product-inner {
+                    .product-item__inner {
                         height: calc(100% + 35px);
                     }
 
-                    .product-body {
+                    .product-item__body {
                         height: calc(100% - 28px);
                     }
                 }

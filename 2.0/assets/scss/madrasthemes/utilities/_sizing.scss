@@ -34,6 +34,10 @@
     max-width: 7.5rem; //120px
 }
 
+.max-width-150 {
+    max-width: 9.375rem; //150px
+}
+
 .max-width-180 {
     max-width: 11.25rem; //180px
 }
@@ -103,9 +107,21 @@
     min-height: ($font-size-base * 12.143); //170px
 }
 
+.min-height-wd-170 {
+    @include media-breakpoint-up(wd) {
+        min-height: ($font-size-base * 12.143); //170px
+    }
+}
+
 .min-height-172 {
     @include media-breakpoint-up(md) {
         min-height: 10.75rem; //172px
+    }
+}
+
+.min-height-xl-182 {
+    @include media-breakpoint-only(xl) {
+        min-height: ($font-size-base * 13); //182px
     }
 }
 

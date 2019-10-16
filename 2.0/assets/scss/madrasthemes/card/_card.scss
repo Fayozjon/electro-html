@@ -54,6 +54,10 @@
                 height: 100%;
             }
 
+            .product-item__title a {
+                min-height: 100%;
+            }
+
             .product-item {
                 &:hover {
                     .product-item__inner {

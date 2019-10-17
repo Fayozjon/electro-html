@@ -45,6 +45,14 @@
             }
         }
     }
+
+    &__list {
+        @include media-breakpoint-up(xl) {
+            .product-item__title a {
+                min-height: 100%;
+            }
+        }
+    }
 }
 
 .products-group-4-1-4 {

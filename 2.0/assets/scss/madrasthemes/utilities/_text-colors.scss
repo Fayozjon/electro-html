@@ -41,3 +41,9 @@
 .text-red { //#ee0000
     color: $red;
 }
+
+.hover-on-dark {
+    &:hover {
+        color: $gray-90 !important;
+    }
+}

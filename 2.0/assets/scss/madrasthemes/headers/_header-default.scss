@@ -44,7 +44,7 @@
     }
 
     &[href]:hover {
-		color: $header-nav-link-hover-color;
+		color: $header-topbar-nav-link-hover-color;
 	}
 }
 
@@ -124,6 +124,7 @@
                     height: auto;
                     top: -2px;
                     left: calc(100% - 6px);
+                    bottom: 0;
                 }
 
                 .u-header__nav-link {
@@ -169,7 +170,7 @@
         .vmm-bg {
             right: 0;
             position: absolute;
-            top: 0;
+            bottom: 0;
         }
 
         .vmm-bg-extended {

@@ -10,6 +10,7 @@
         &.slick-disabled.js-next,
         &.slick-disabled.js-prev {
             opacity: .5;
+            cursor: not-allowed;
         }
     }
 }

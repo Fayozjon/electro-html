@@ -31738,6 +31738,7 @@ h1, h2, h3, h4, h5, h6,
 
 .u-slick__arrow-normal.slick-disabled, .u-slick__arrow-normal.slick-disabled.js-next, .u-slick__arrow-normal.slick-disabled.js-prev {
   opacity: .5;
+  cursor: not-allowed;
 }
 
 /*------------------------------------
@@ -31838,8 +31839,20 @@ h1, h2, h3, h4, h5, h6,
   font-size: 1.49975rem;
 }
 
+@media (min-width: 1480px) {
+  .font-size-wd-25 {
+    font-size: 1.56275rem;
+  }
+}
+
 .font-size-30 {
   font-size: 1.87512rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1479.98px) {
+  .font-size-xl-30 {
+    font-size: 1.87512rem;
+  }
 }
 
 .font-size-32 {
@@ -32098,6 +32111,36 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+@media (min-width: 1200px) and (max-width: 1479.98px) {
+  .border-xl-0 {
+    border: 0 !important;
+  }
+}
+
+@media (min-width: 1480px) {
+  .border-wd-0 {
+    border: 0 !important;
+  }
+}
+
+@media (min-width: 1480px) {
+  .border-md-0 {
+    border: 0 !important;
+  }
+  .border-md-top-0 {
+    border-top: 0 !important;
+  }
+  .border-md-right-0 {
+    border-right: 0 !important;
+  }
+  .border-md-left-0 {
+    border-left: 0 !important;
+  }
+  .border-md-bottom-0 {
+    border-bottom: 0 !important;
+  }
+}
+
 .product-item {
   border-bottom: 1px solid #eaeaea;
 }
@@ -32186,6 +32229,10 @@ h1, h2, h3, h4, h5, h6,
   max-width: 3.75rem;
 }
 
+.max-width-70 {
+  max-width: 4.375rem;
+}
+
 .max-width-120 {
   max-width: 7.5rem;
 }
@@ -32245,6 +32292,18 @@ h1, h2, h3, h4, h5, h6,
 ------------------------------------*/
 .height-20 {
   height: 1.25038rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1479.98px) {
+  .height-xl-20 {
+    height: 1.25038rem;
+  }
+}
+
+@media (min-width: 1480px) {
+  .height-wd-14 {
+    height: 0.875rem;
+  }
 }
 
 .height-22 {
@@ -32343,6 +32402,10 @@ h1, h2, h3, h4, h5, h6,
   top: 0.12512rem;
 }
 
+.top-3 {
+  top: 1rem;
+}
+
 .top-8 {
   top: 0.49962rem;
 }
@@ -32357,6 +32420,10 @@ h1, h2, h3, h4, h5, h6,
 
 .left-100 {
   left: 100% !important;
+}
+
+.left-3 {
+  left: 1rem;
 }
 
 .left-12 {
@@ -32381,6 +32448,12 @@ h1, h2, h3, h4, h5, h6,
 
 .right-3 {
   right: 3rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1479.98px) {
+  .right-xl-324 {
+    right: 20.25rem;
+  }
 }
 
 /*------------------------------------

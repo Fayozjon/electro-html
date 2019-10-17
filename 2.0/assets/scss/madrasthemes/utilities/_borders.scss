@@ -43,6 +43,22 @@
     .border-md-bottom-0 { border-bottom: 0 !important; }
 }
 
+@include media-breakpoint-only(xl) {
+    .border-xl-0 { border: 0 !important;}
+}
+
+@include media-breakpoint-up(wd) {
+    .border-wd-0 { border: 0 !important;}
+}
+
+@include media-breakpoint-up(wd) {
+    .border-md-0        { border: 0 !important; }
+    .border-md-top-0    { border-top: 0 !important; }
+    .border-md-right-0  { border-right: 0 !important; }
+    .border-md-left-0   { border-left: 0 !important; }
+    .border-md-bottom-0 { border-bottom: 0 !important; }
+}
+
 .product-item {
     border-bottom: 1px solid $gray-14000;
 

@@ -10,6 +10,10 @@
     top: ($font-size-base * .143); //2px
 }
 
+.top-3 {
+    top: 1rem; //16px
+}
+
 .top-8 {
     top: ($font-size-base * .571); //8px
 }
@@ -24,6 +28,10 @@
 
 .left-100 {
     left: 100% !important; //100%
+}
+
+.left-3 {
+    left: 1rem; //16px
 }
 
 .left-12 {
@@ -48,4 +56,10 @@
 
 .right-3 {
     right: 3rem;
+}
+
+.right-xl-324 {
+    @include media-breakpoint-only(xl) {
+        right: 20.25rem;
+    }
 }

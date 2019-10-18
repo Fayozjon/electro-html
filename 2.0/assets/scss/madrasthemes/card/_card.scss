@@ -35,12 +35,17 @@
             line-height: 1.125rem; //18px
         }
 
-        @include media-breakpoint-up(xl) {
+        @include media-breakpoint-up(md) {
             a {
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
+            }
+        }
+
+        @include media-breakpoint-up(xl) {
+            a {
                 min-height: 2.25rem;
             }
         }

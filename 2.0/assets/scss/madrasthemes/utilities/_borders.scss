@@ -51,6 +51,10 @@
     .border-wd-0 { border: 0 !important;}
 }
 
+@include media-breakpoint-down(lg) {
+    .border-wd-0 { border: 0 !important;}
+}
+
 @include media-breakpoint-up(wd) {
     .border-md-0        { border: 0 !important; }
     .border-md-top-0    { border-top: 0 !important; }
@@ -88,6 +92,14 @@
         }
     }
 
+    &__card {
+        @include media-breakpoint-up(xl) {
+            &::after {
+                height: 70%;
+            }
+        }
+    }
+
     &:nth-child(even) {
         &::after {
             content: none;
@@ -105,6 +117,14 @@
     &.remove-divider {
         &::after {
             content: none;
+        }
+    }
+
+    &.remove-divider-md-lg {
+        @include media-breakpoint-between(md,lg) {
+            &::after {
+                content: none;
+            }
         }
     }
 

@@ -10,7 +10,7 @@
 
     @include media-breakpoint-up(xl) {
         &:hover {
-            .product-item__inner {
+            .product-item__inner:not(.remove-prodcut-hover) {
                 position: absolute;
                 width: 100%;
                 height: auto;

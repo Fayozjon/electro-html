@@ -98,6 +98,12 @@
                 height: 70%;
             }
         }
+
+        @include media-breakpoint-down(sm) {
+            &::after {
+                content: none;
+            }
+        }
     }
 
     &:nth-child(even) {

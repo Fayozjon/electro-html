@@ -27293,26 +27293,26 @@ label.btn {
 }
 
 .u-hamburger:hover .u-hamburger__inner, .u-hamburger:hover .u-hamburger__inner::before, .u-hamburger:hover .u-hamburger__inner::after {
-  background-color: #fed700;
+  background-color: #000000;
 }
 
 .u-hamburger__box {
-  width: 0.93712rem;
-  height: 0.89rem;
+  width: 1.4rem;
+  height: 0.975rem;
   display: inline-block;
   position: relative;
 }
 
 .u-hamburger__inner {
   display: block;
-  top: 0.065rem;
-  margin: top, -0.065rem;
+  top: 0.0625rem;
+  margin: top, -0.0625rem;
 }
 
 .u-hamburger__inner, .u-hamburger__inner::before, .u-hamburger__inner::after {
-  width: 0.93712rem;
-  height: 0.13rem;
-  background-color: #8c98a4;
+  width: 1.4rem;
+  height: 0.125rem;
+  background-color: #000000;
   position: absolute;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -27327,7 +27327,7 @@ label.btn {
 }
 
 .u-hamburger__inner::before {
-  top: 0.38rem;
+  top: 0.425rem;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform;
@@ -27336,26 +27336,26 @@ label.btn {
 }
 
 .u-hamburger__inner::after {
-  top: 0.76rem;
+  top: 0.85rem;
 }
 
 .u-hamburger[aria-expanded="true"] .u-hamburger__inner,
 .u-hamburger .is-active .u-hamburger__inner {
-  -webkit-transform: translate3d(0, 0.38rem, 0) rotate(45deg);
-          transform: translate3d(0, 0.38rem, 0) rotate(45deg);
+  -webkit-transform: translate3d(0, 0.425rem, 0) rotate(45deg);
+          transform: translate3d(0, 0.425rem, 0) rotate(45deg);
 }
 
 .u-hamburger[aria-expanded="true"] .u-hamburger__inner::before,
 .u-hamburger .is-active .u-hamburger__inner::before {
-  -webkit-transform: rotate(-45deg) translate3d(-0.13387rem, -0.25rem, 0);
-          transform: rotate(-45deg) translate3d(-0.13387rem, -0.25rem, 0);
+  -webkit-transform: rotate(-45deg) translate3d(-0.2rem, -0.3rem, 0);
+          transform: rotate(-45deg) translate3d(-0.2rem, -0.3rem, 0);
   opacity: 0;
 }
 
 .u-hamburger[aria-expanded="true"] .u-hamburger__inner::after,
 .u-hamburger .is-active .u-hamburger__inner::after {
-  -webkit-transform: translate3d(0, -0.76rem, 0) rotate(-90deg);
-          transform: translate3d(0, -0.76rem, 0) rotate(-90deg);
+  -webkit-transform: translate3d(0, -0.85rem, 0) rotate(-90deg);
+          transform: translate3d(0, -0.85rem, 0) rotate(-90deg);
 }
 
 .u-hamburger--white .u-hamburger__inner, .u-hamburger--white .u-hamburger__inner::before, .u-hamburger--white .u-hamburger__inner::after {
@@ -27367,11 +27367,11 @@ label.btn {
 }
 
 .js-header-fix-moment .u-hamburger--white .u-hamburger__inner, .js-header-fix-moment .u-hamburger--white .u-hamburger__inner::before, .js-header-fix-moment .u-hamburger--white .u-hamburger__inner::after {
-  background-color: #8c98a4;
+  background-color: #000000;
 }
 
 .js-header-fix-moment .u-hamburger--white:hover .u-hamburger__inner, .js-header-fix-moment .u-hamburger--white:hover .u-hamburger__inner::before, .js-header-fix-moment .u-hamburger--white:hover .u-hamburger__inner::after {
-  background-color: #fed700;
+  background-color: #000000;
 }
 
 /*------------------------------------
@@ -32277,7 +32277,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 @media (min-width: 1200px) and (max-width: 1479.98px) {
-  .m-width-xl-100 {
+  .max-width-xl-100 {
     max-width: 100%;
   }
 }
@@ -32296,12 +32296,6 @@ h1, h2, h3, h4, h5, h6,
 
 .max-width-150 {
   max-width: 9.375rem;
-}
-
-@media (min-width: 1200px) and (max-width: 1479.98px) {
-  .max-width-150 {
-    max-width: 5.625rem;
-  }
 }
 
 .max-width-180 {
@@ -32395,6 +32389,14 @@ h1, h2, h3, h4, h5, h6,
 
 .min-height-50 {
   min-height: 3.125rem;
+}
+
+.min-height-132 {
+  min-height: 8.25038rem;
+}
+
+.min-height-166 {
+  min-height: 10.37487rem;
 }
 
 .min-height-170 {

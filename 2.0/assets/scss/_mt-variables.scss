@@ -232,8 +232,16 @@ $border-radius-lg:                                          ($font-size-base * .
 // =========================================================
 
 // Width & Heights
-$hamburger-layer-width:             						($font-size-base * 1.071) !default;
-$hamburger-layer-height:            						.130rem !default;
+$hamburger-layer-width:             						($font-size-base * 1.6) !default;
+//$hamburger-layer-height:            						.14rem !default;
+
+// Spacing
+//$hamburger-padding:                                         .25rem !default;
+$hamburger-layer-spacing:                                   .3rem !default;
+
+//Colors
+$hamburger-layer-color:             					    $black !default;
+$hamburger-layer-hover-color:             					$black !default;
 
 // Tooltip
 // =========================================================

@@ -20,7 +20,7 @@
     }
 }
 
-.m-width-xl-100 {
+.max-width-xl-100 {
     @include media-breakpoint-only(xl) {
         max-width: 100%; //100%
     }
@@ -42,7 +42,7 @@
     max-width: 9.375rem; //150px
 
     @include media-breakpoint-only(xl) {
-        max-width: 5.625rem; //90px
+        //max-width: 5.625rem; //90px
     }
 }
 
@@ -133,6 +133,15 @@
 .min-height-50 {
     min-height: 3.125rem; //50px
 }
+
+.min-height-132 {
+    min-height: ($font-size-base * 9.429); //132px
+}
+
+.min-height-166 {
+    min-height: ($font-size-base * 11.857); //166px
+}
+
 
 .min-height-170 {
     min-height: ($font-size-base * 12.143); //170px

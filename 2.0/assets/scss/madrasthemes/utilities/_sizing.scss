@@ -122,7 +122,11 @@
 }
 
 .height-450 {
-    height: ($font-size-base * 32.143); //450px
+    height: ($font-size-base * 20.143); //450px
+
+    @include media-breakpoint-up(md) {
+        height: ($font-size-base * 32.143); //450px
+    }
 }
 
 .height-20 {

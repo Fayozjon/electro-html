@@ -32222,6 +32222,38 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+.bg-animation {
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  background: linear-gradient(to left, #dcdcdc 0%, #e4e4e4 100%, #e4e4e4 100%);
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -150px 0;
+  }
+  100% {
+    background-position: 150px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -150px 0;
+  }
+  100% {
+    background-position: 150px 0;
+  }
+}
+
 /*------------------------------------
   Width
 ------------------------------------*/
@@ -32344,7 +32376,13 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .height-450 {
-  height: 28.12513rem;
+  height: 17.62513rem;
+}
+
+@media (min-width: 768px) {
+  .height-450 {
+    height: 28.12513rem;
+  }
 }
 
 .height-20 {

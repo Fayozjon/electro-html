@@ -184,7 +184,7 @@ a {
 }
 
 a:hover {
-  color: #b29600;
+  color: #333e48;
   text-decoration: none;
 }
 
@@ -4490,7 +4490,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color: #b29600;
+  color: #333e48;
   text-decoration: none;
 }
 
@@ -19202,7 +19202,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a,
 
 h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover,
 .h1 > a:hover, .h2 > a:hover, .h3 > a:hover, .h4 > a:hover, .h5 > a:hover, .h6 > a:hover {
-  color: #b29600;
+  color: #333e48;
 }
 
 h1.text-white > a, h2.text-white > a, h3.text-white > a, h4.text-white > a, h5.text-white > a, h6.text-white > a,
@@ -19480,7 +19480,7 @@ button:focus {
 }
 
 .link-muted:hover {
-  border-color: #b29600;
+  border-color: #333e48;
 }
 
 .link-muted__toggle-default {
@@ -26615,11 +26615,11 @@ label.btn {
 }
 
 .dropdown-item:hover {
-  color: #fed700;
+  color: #333e48;
 }
 
 .dropdown-item.active {
-  color: #fed700;
+  color: #333e48;
 }
 
 .dropdown-item-icon {
@@ -31513,40 +31513,6 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-.navbar-expand .u-header__mega-menu-position-right-fix.hs-mega-menu.hs-position-right {
-  right: 35%;
-}
-
-@media (min-width: 576px) {
-  .navbar-expand-sm .u-header__mega-menu-position-right-fix.hs-mega-menu.hs-position-right {
-    right: 35%;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar-expand-md .u-header__mega-menu-position-right-fix.hs-mega-menu.hs-position-right {
-    right: 35%;
-  }
-}
-
-@media (min-width: 992px) {
-  .navbar-expand-lg .u-header__mega-menu-position-right-fix.hs-mega-menu.hs-position-right {
-    right: 35%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .navbar-expand-xl .u-header__mega-menu-position-right-fix.hs-mega-menu.hs-position-right {
-    right: 35%;
-  }
-}
-
-@media (min-width: 1480px) {
-  .navbar-expand-wd .u-header__mega-menu-position-right-fix.hs-mega-menu.hs-position-right {
-    right: 35%;
-  }
-}
-
 /*------------------------------------
   Nav Alignments
 ------------------------------------*/
@@ -32263,8 +32229,20 @@ h1, h2, h3, h4, h5, h6,
   width: 1.37462rem;
 }
 
+.width-35 {
+  width: 2.1875rem;
+}
+
+.width-60 {
+  width: 3.75025rem;
+}
+
 .width-75 {
   width: 4.688rem;
+}
+
+.width-134 {
+  width: 8.37462rem;
 }
 
 @media (min-width: 1200px) {
@@ -32353,8 +32331,32 @@ h1, h2, h3, h4, h5, h6,
 /*------------------------------------
   Height
 ------------------------------------*/
+.height-10 {
+  height: 0.54688rem;
+}
+
+.height-12 {
+  height: 0.65625rem;
+}
+
+.height-190 {
+  height: 11.87462rem;
+}
+
+.height-450 {
+  height: 28.12513rem;
+}
+
 .height-20 {
   height: 1.25038rem;
+}
+
+.height-35 {
+  height: 2.1875rem;
+}
+
+.height-60 {
+  height: 3.75025rem;
 }
 
 @media (min-width: 1200px) and (max-width: 1479.98px) {

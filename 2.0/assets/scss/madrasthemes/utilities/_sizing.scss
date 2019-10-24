@@ -182,7 +182,6 @@
     min-height: ($font-size-base * 11.857); //166px
 }
 
-
 .min-height-170 {
     min-height: ($font-size-base * 12.143); //170px
 }
@@ -218,6 +217,24 @@
 
     @include media-breakpoint-up(md) {
         min-height: ($font-size-base * 31.286); //420px
+    }
+}
+
+.min-height-4-1-4 {
+    @include media-breakpoint-up(md) {
+        min-height: ($font-size-base * 29.286); //410px
+    }
+
+    @include media-breakpoint-up(lg) {
+        min-height: ($font-size-base * 38.571); //540px
+    }
+
+    @include media-breakpoint-up(xl) {
+        min-height: ($font-size-base * 41.429); //580px
+    }
+
+    @include media-breakpoint-up(wd) {
+        min-height: ($font-size-base * 40.571); //568px
     }
 }
 

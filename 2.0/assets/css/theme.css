@@ -32481,6 +32481,30 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+@media (min-width: 768px) {
+  .min-height-4-1-4 {
+    min-height: 25.62525rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .min-height-4-1-4 {
+    min-height: 33.74962rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .min-height-4-1-4 {
+    min-height: 36.25038rem;
+  }
+}
+
+@media (min-width: 1480px) {
+  .min-height-4-1-4 {
+    min-height: 35.49962rem;
+  }
+}
+
 .max-height-50 {
   max-height: 3.125rem;
 }

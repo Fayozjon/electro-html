@@ -31516,8 +31516,8 @@ h1, h2, h3, h4, h5, h6,
 .u-header__navbar--wide.navbar-expand .u-header__navbar-nav .u-header__nav-link {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  padding-right: 1.15rem;
-  padding-left: 1.15rem;
+  padding-right: 1.1rem;
+  padding-left: 1.1rem;
 }
 
 .u-header__navbar--wide.navbar-expand .u-header__navbar-nav .u-header__nav-link-toggle::after {
@@ -31537,8 +31537,8 @@ h1, h2, h3, h4, h5, h6,
   .u-header__navbar--wide.navbar-expand-sm .u-header__navbar-nav .u-header__nav-link {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    padding-right: 1.15rem;
-    padding-left: 1.15rem;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
   }
   .u-header__navbar--wide.navbar-expand-sm .u-header__navbar-nav .u-header__nav-link-toggle::after {
     font-size: 90%;
@@ -31556,8 +31556,8 @@ h1, h2, h3, h4, h5, h6,
   .u-header__navbar--wide.navbar-expand-md .u-header__navbar-nav .u-header__nav-link {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    padding-right: 1.15rem;
-    padding-left: 1.15rem;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
   }
   .u-header__navbar--wide.navbar-expand-md .u-header__navbar-nav .u-header__nav-link-toggle::after {
     font-size: 90%;
@@ -31575,8 +31575,8 @@ h1, h2, h3, h4, h5, h6,
   .u-header__navbar--wide.navbar-expand-lg .u-header__navbar-nav .u-header__nav-link {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    padding-right: 1.15rem;
-    padding-left: 1.15rem;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
   }
   .u-header__navbar--wide.navbar-expand-lg .u-header__navbar-nav .u-header__nav-link-toggle::after {
     font-size: 90%;
@@ -31594,8 +31594,8 @@ h1, h2, h3, h4, h5, h6,
   .u-header__navbar--wide.navbar-expand-xl .u-header__navbar-nav .u-header__nav-link {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    padding-right: 1.15rem;
-    padding-left: 1.15rem;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
   }
   .u-header__navbar--wide.navbar-expand-xl .u-header__navbar-nav .u-header__nav-link-toggle::after {
     font-size: 90%;
@@ -31613,8 +31613,8 @@ h1, h2, h3, h4, h5, h6,
   .u-header__navbar--wide.navbar-expand-wd .u-header__navbar-nav .u-header__nav-link {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    padding-right: 1.15rem;
-    padding-left: 1.15rem;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
   }
   .u-header__navbar--wide.navbar-expand-wd .u-header__navbar-nav .u-header__nav-link-toggle::after {
     font-size: 90%;
@@ -31629,7 +31629,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .u-header__navbar--wide .u-header__nav-item:first-child .u-header__nav-link {
-  padding-left: 1.15rem;
+  padding-left: 1.1rem;
 }
 
 /*------------------------------------
@@ -32342,17 +32342,10 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .bg-animation {
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-name: placeHolderShimmer;
-          animation-name: placeHolderShimmer;
-  background: linear-gradient(to left, #dcdcdc 0%, #e4e4e4 100%, #e4e4e4 100%);
+  -webkit-animation: fading 1.5s infinite;
+          animation: fading 1.5s infinite;
+  background-color: #c7c7c7 !important;
+  opacity: .1;
 }
 
 @-webkit-keyframes placeHolderShimmer {
@@ -32371,6 +32364,37 @@ h1, h2, h3, h4, h5, h6,
   100% {
     background-position: 150px 0;
   }
+}
+
+@-webkit-keyframes fading {
+  0% {
+    opacity: .1;
+  }
+  50% {
+    opacity: .2;
+  }
+  100% {
+    opacity: .1;
+  }
+}
+
+@keyframes fading {
+  0% {
+    opacity: .1;
+  }
+  50% {
+    opacity: .2;
+  }
+  100% {
+    opacity: .1;
+  }
+}
+
+/*------------------------------------
+  Background Soft Colors
+------------------------------------*/
+.banner-bg {
+  background-color: #f5f5f5 !important;
 }
 
 /*------------------------------------
@@ -32473,6 +32497,12 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+@media (min-width: 1200px) {
+  .max-width-450 {
+    max-width: 28.125rem;
+  }
+}
+
 @media (min-width: 1480px) {
   .max-width-1130 {
     max-width: 1130px;
@@ -32558,6 +32588,10 @@ h1, h2, h3, h4, h5, h6,
   min-height: 8.25038rem;
 }
 
+.min-height-146 {
+  min-height: 9.12538rem;
+}
+
 .min-height-166 {
   min-height: 10.37487rem;
 }
@@ -32602,6 +32636,10 @@ h1, h2, h3, h4, h5, h6,
   .min-height-438 {
     min-height: 27.37525rem;
   }
+}
+
+.min-height-564 {
+  min-height: 35.25025rem;
 }
 
 @media (min-width: 768px) {

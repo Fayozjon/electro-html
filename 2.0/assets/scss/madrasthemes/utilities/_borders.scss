@@ -152,15 +152,26 @@
 }
 
 .bg-animation {
-    animation-duration: 3.5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-name: placeHolderShimmer;
-    background: linear-gradient(to left, #dcdcdc 0%, #e4e4e4 100%, #e4e4e4 100%);
+    animation: fading 1.5s infinite;
+    background-color: #c7c7c7 !important;
+    opacity: .1;
 }
 
 @keyframes placeHolderShimmer {
     0%{ background-position: -150px 0; }
     100%{ background-position: 150px 0; }
+}
+
+@keyframes fading {
+  0% {
+    opacity: .1;
+  }
+
+  50% {
+    opacity: .2;
+  }
+
+  100% {
+    opacity: .1;
+  }
 }

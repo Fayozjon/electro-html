@@ -98,6 +98,12 @@
     }
 }
 
+.max-width-450 {
+    @include media-breakpoint-up(xl) {
+        max-width: 28.125rem; //450px
+    }
+}
+
 .max-width-1130 {
     @include media-breakpoint-up(wd) {
         max-width: 1130px;
@@ -182,6 +188,10 @@
     min-height: ($font-size-base * 9.429); //132px
 }
 
+.min-height-146 {
+    min-height: ($font-size-base * 10.429); //146px
+}
+
 .min-height-166 {
     min-height: ($font-size-base * 11.857); //166px
 }
@@ -222,6 +232,10 @@
     @include media-breakpoint-up(md) {
         min-height: ($font-size-base * 31.286); //420px
     }
+}
+
+.min-height-564 {
+    min-height: ($font-size-base * 40.286); //564px
 }
 
 .min-height-4-1-4 {

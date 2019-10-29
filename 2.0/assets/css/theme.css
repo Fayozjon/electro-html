@@ -31910,6 +31910,18 @@ h1, h2, h3, h4, h5, h6,
   margin-right: .4rem;
 }
 
+.nav-tab-pill .nav-link {
+  color: #7b8186;
+  border: 2px solid transparent;
+}
+
+.nav-tab-pill .nav-link.active {
+  background-color: transparent;
+  border-color: #fed700;
+  color: #333e48;
+  padding: 2px 20px;
+}
+
 /*------------------------------------
   Typography Font Size
 ------------------------------------*/
@@ -31929,7 +31941,7 @@ h1, h2, h3, h4, h5, h6,
   font-size: 0.875rem;
 }
 
-.font-size-15 {
+.font-size-15, .nav-tab-pill .nav-link {
   font-size: 0.93712rem;
 }
 

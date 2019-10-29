@@ -114,6 +114,11 @@
 
 .section-title {
     position: relative;
+    
+    @include media-breakpoint-down(xs) {
+        font-size: ($font-size-base * 1.214); //17px
+        font-weight: $font-weight-bold;
+    }
 
     &::after {
         content: ' ';
@@ -129,6 +134,12 @@
     &__sm {
         &::after {
             width: 84px;
+        }
+    }
+
+    &__full {
+        &::after {
+            width: 100%;
         }
     }
 }

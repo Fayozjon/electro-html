@@ -32033,6 +32033,13 @@ h1, h2, h3, h4, h5, h6,
   position: relative;
 }
 
+@media (max-width: 575.98px) {
+  .section-title {
+    font-size: 1.06225rem;
+    font-weight: 700;
+  }
+}
+
 .section-title::after {
   content: ' ';
   height: 2px;
@@ -32046,6 +32053,10 @@ h1, h2, h3, h4, h5, h6,
 
 .section-title__sm::after {
   width: 84px;
+}
+
+.section-title__full::after {
+  width: 100%;
 }
 
 .prodcut-price {
@@ -32469,6 +32480,22 @@ h1, h2, h3, h4, h5, h6,
 
 .min-width-300 {
   min-width: 18.75rem;
+}
+
+.max-width-334 {
+  max-width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .max-width-334 {
+    max-width: 20.375rem;
+  }
+}
+
+@media (min-width: 1480px) {
+  .max-width-334 {
+    max-width: 20.875rem;
+  }
 }
 
 .max-width-340 {

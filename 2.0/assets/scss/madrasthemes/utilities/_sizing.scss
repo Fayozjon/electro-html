@@ -78,6 +78,18 @@
     min-width: 18.75rem; //300px
 }
 
+.max-width-334 {
+    max-width: 100%; //334px
+
+    @include media-breakpoint-up(xl) {
+        max-width: 20.375rem; //326px
+    }
+
+    @include media-breakpoint-up(wd) {
+        max-width: 20.875rem; //334px
+    }
+}
+
 .max-width-340 {
     max-width: 100%; //340px
 

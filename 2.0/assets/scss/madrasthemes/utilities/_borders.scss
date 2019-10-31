@@ -26,6 +26,15 @@
     border-color: $gray-80 !important;
 }
 
+@include media-breakpoint-down(lg) {
+    .border-lg-down-0  {border-width: 0 !important}
+}
+
+@include media-breakpoint-down(md) {
+    .border-md-down-top-0    { border-top: 0 !important; }
+    .border-md-down-bottom-0 { border-bottom: 0 !important; }
+}
+
 @include media-breakpoint-only(xs) {
     .border-sm-0        { border: 0 !important; }
     .border-sm-top-0    { border-top: 0 !important; }
@@ -41,6 +50,15 @@
     .border-md-right-0  { border-right: 0 !important; }
     .border-md-left-0   { border-left: 0 !important; }
     .border-md-bottom-0 { border-bottom: 0 !important; }
+}
+
+// Large Devices
+@include media-breakpoint-up(lg) {
+    .border-lg-0        { border: 0 !important; }
+    .border-lg-top-0    { border-top: 0 !important; }
+    .border-lg-right-0  { border-right: 0 !important; }
+    .border-lg-left-0   { border-left: 0 !important; }
+    .border-lg-bottom-0 { border-bottom: 0 !important; }
 }
 
 @include media-breakpoint-only(xl) {
@@ -148,6 +166,18 @@
                 content: none;
             }
         }
+    }
+}
+
+.remove-bd-xl-only {
+    @include media-breakpoint-only(xl) {
+        border-width: 0 !important;
+    }
+}
+
+.remove-bd-wd {
+    @include media-breakpoint-up(wd) {
+        border-width: 0 !important;
     }
 }
 

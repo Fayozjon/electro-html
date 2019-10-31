@@ -60,7 +60,8 @@
     }
 }
 
-.products-group-4-1-4 {
+.products-group-4-1-4,
+.products-group-8-1 {
     @include media-breakpoint-up(xl) {
         .products-group-1 {
             &__body {

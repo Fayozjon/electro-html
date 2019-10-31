@@ -59,12 +59,12 @@
             color: $gray-11000;
             @extend .font-size-15;
             border: 2px solid transparent;
+            padding: 2px 20px;
 
             &.active {
                 background-color: transparent;
                 border-color: $primary;
                 color: $gray-90;
-                padding: 2px 20px;
             }
         }
     }

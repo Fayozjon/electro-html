@@ -106,6 +106,12 @@
     }
 }
 
+.font-size-14-down-lg {
+    @include media-breakpoint-down(lg) {
+        font-size: $font-size-base; //14px
+    }
+}
+
 @include media-breakpoint-only(md) {
     .font-size-15-md {
         font-size: 0.75rem; //12px
@@ -114,7 +120,7 @@
 
 .section-title {
     position: relative;
-    
+
     @include media-breakpoint-down(xs) {
         font-size: ($font-size-base * 1.214); //17px
         font-weight: $font-weight-bold;
@@ -172,6 +178,10 @@
     line-height: 1.188rem; //19px
 }
 
+.text-lh-21 {
+    line-height: 1.313rem; //21px
+}
+
 .text-lh-23 {
     line-height: 1.438rem; //23px
 }
@@ -210,4 +220,14 @@
 
 .text-ls-n1 {
     letter-spacing: -.4px;
+}
+
+/*------------------------------------
+  Others
+------------------------------------*/
+
+.underline-on-hover {
+    &:hover {
+        text-decoration: underline;
+    }
 }

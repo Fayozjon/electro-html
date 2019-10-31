@@ -29,6 +29,7 @@ $gray-12000:                                                #8f8f8f !default;
 $gray-13000:                                                #f8f8f8 !default;
 $gray-14000:                                                #eaeaea !default;
 $gray-15000:                                                #7c7c7c !default;
+$gray-16000:                                                #9d9c9c !default;
 
 // Colors
 $yellow:                                                    #fed700 !default;
@@ -60,7 +61,8 @@ $theme-colors: map-merge(
     "gray-8":     $gray-11000, //#7b8186
     "gray-9":     $gray-12000, //#8f8f8f
     "gray-13":    $gray-13000, //#f8f8f8
-    "gray-14":    $gray-14000 //#eaeaea
+    "gray-14":    $gray-14000, //#eaeaea
+    "gray-15":    $gray-16000 //#df3737
   ),
   $theme-colors
 );

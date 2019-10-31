@@ -20,9 +20,16 @@
 
             &::before {
                 content: '|';
-                color: $header-topbar-nav-separator-color;
+                color: darken($primary, 5%);
                 margin: 0 .875rem;
                 -webkit-font-smoothing: antialiased;
+            }
+        }
+
+        &-border:not(.full-bg),
+        &-border-single:not(.full-bg) > div {
+            &::before {
+                color: $header-topbar-nav-separator-color;
             }
         }
     }

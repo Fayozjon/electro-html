@@ -31425,9 +31425,14 @@ h1, h2, h3, h4, h5, h6,
 .u-header-topbar__nav-item + .u-header-topbar__nav-item-border::before,
 .u-header-topbar__nav-item + .u-header-topbar__nav-item-border-single > div::before {
   content: '|';
-  color: #cad5d5;
+  color: #e5c100;
   margin: 0 .875rem;
   -webkit-font-smoothing: antialiased;
+}
+
+.u-header-topbar__nav-item + .u-header-topbar__nav-item-border:not(.full-bg)::before,
+.u-header-topbar__nav-item + .u-header-topbar__nav-item-border-single:not(.full-bg) > div::before {
+  color: #cad5d5;
 }
 
 .u-header-topbar__nav-item-no-border::before {
@@ -32401,6 +32406,10 @@ h1, h2, h3, h4, h5, h6,
   color: #6b6b6b;
 }
 
+.text-gray-70 {
+  color: #334141;
+}
+
 .text-gray-90 {
   color: #333e48;
 }
@@ -32425,6 +32434,10 @@ h1, h2, h3, h4, h5, h6,
   color: #0067c7;
 }
 
+.text-primary-darken-5 {
+  color: #e5c100;
+}
+
 .text-red {
   color: #ee0000;
 }
@@ -32445,6 +32458,10 @@ h1, h2, h3, h4, h5, h6,
   border-width: 2px !important;
 }
 
+.border-width-0 {
+  border-width: 0 !important;
+}
+
 /*------------------------------------
   Borders-radius
 ------------------------------------*/
@@ -32457,6 +32474,10 @@ h1, h2, h3, h4, h5, h6,
 ------------------------------------*/
 .border-color-1 {
   border-color: #dddddd !important;
+}
+
+.border-color-2 {
+  border-top: 1px solid #e5c100;
 }
 
 @media (max-width: 1199.98px) {
@@ -32897,6 +32918,10 @@ h1, h2, h3, h4, h5, h6,
 
 .height-40 {
   height: 2.56288rem;
+}
+
+.height-42 {
+  height: 2.625rem;
 }
 
 .height-75 {

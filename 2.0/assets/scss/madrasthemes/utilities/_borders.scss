@@ -11,6 +11,10 @@
     border-width: 2px !important;
 }
 
+.border-width-0 {
+    border-width: 0 !important;
+}
+
 /*------------------------------------
   Borders-radius
 ------------------------------------*/
@@ -24,6 +28,10 @@
 ------------------------------------*/
 .border-color-1 {
     border-color: $gray-80 !important;
+}
+
+.border-color-2 {
+    border-top: 1px solid darken($primary, 5%);
 }
 
 @include media-breakpoint-down(lg) {

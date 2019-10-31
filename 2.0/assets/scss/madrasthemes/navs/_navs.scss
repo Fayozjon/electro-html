@@ -41,6 +41,20 @@
             .nav-link {
                 font-size: 0.938rem;
             }
+
+            @include media-breakpoint-down(md) {
+                &::after {
+                    content: ' ';
+                    border-bottom: 1px solid $gray-80;
+                    display: block;
+                    position: absolute;
+                    bottom: 3px;
+                    width: 100%;
+                    z-index: -1;
+                    right: 0;
+                    left: 0;
+                }
+            }
         }
     }
 

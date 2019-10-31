@@ -7,3 +7,9 @@
         overflow: visible !important;
     }
 }
+
+@include media-breakpoint-up(lg) {
+    .overflow-lg-visble {
+        overflow: visible !important;
+    }
+}

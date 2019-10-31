@@ -40,3 +40,10 @@
         background-color: $primary !important;
     }
 }
+
+.btn-remove-bg-hover {
+    &:hover,
+    &:focus {
+        background-color: transparent !important;
+    }
+}

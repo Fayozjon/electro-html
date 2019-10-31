@@ -31940,6 +31940,10 @@ h1, h2, h3, h4, h5, h6,
   background-color: #fed700 !important;
 }
 
+.btn-remove-bg-hover:hover, .btn-remove-bg-hover:focus {
+  background-color: transparent !important;
+}
+
 /*------------------------------------
   Card
 ------------------------------------*/
@@ -32131,6 +32135,20 @@ h1, h2, h3, h4, h5, h6,
 
 .nav-tab-sm .nav-link {
   font-size: 0.938rem;
+}
+
+@media (max-width: 991.98px) {
+  .nav-tab-sm::after {
+    content: ' ';
+    border-bottom: 1px solid #dddddd;
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    z-index: -1;
+    right: 0;
+    left: 0;
+  }
 }
 
 .nav .nav-item:not(:first-child) {
@@ -33058,6 +33076,12 @@ h1, h2, h3, h4, h5, h6,
 ------------------------------------*/
 @media (min-width: 768px) {
   .overflow-md-visble {
+    overflow: visible !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .overflow-lg-visble {
     overflow: visible !important;
   }
 }

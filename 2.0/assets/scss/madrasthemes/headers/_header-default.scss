@@ -108,6 +108,20 @@
             }
         }
 
+        &.v2 {
+            min-width: 16.875rem; //270px
+            
+            /* Nav Item */
+            .u-header__nav-item {
+                &.hs-mega-menu-opened,
+                &.hs-sub-menu-opened {
+                    .u-header__sub-menu {
+                        top: 0px;
+                    }
+                }
+            }
+        }
+
         /* Nav Item */
         .u-header__nav-item {
             padding: 0 $header-vmm-nav-item-paddingX;

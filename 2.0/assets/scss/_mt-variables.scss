@@ -62,7 +62,7 @@ $theme-colors: map-merge(
     "gray-9":     $gray-12000, //#8f8f8f
     "gray-13":    $gray-13000, //#f8f8f8
     "gray-14":    $gray-14000, //#eaeaea
-    "gray-15":    $gray-16000 //#df3737
+    "gray-15":    $gray-16000 //#eaeaea
   ),
   $theme-colors
 );
@@ -219,6 +219,10 @@ $header-vmm-nav-link-border-color:                          $gray-80 !default;
 $header-vmm-nav-link-toggle-icon-color:                     $gray-1000 !default;
 $header-vmm-nav-link-toggle-icon-size:                      ($font-size-base * 1.143) !default; //16px
 $header-vmm-nav-link-hover-color:                           $gray-2000 !default;
+
+
+//secondary-menu
+$header-secondary-nav-link-paddingY:                        ($font-size-base * 0.614) !default; //8.5px
 
 
 // Drop Down

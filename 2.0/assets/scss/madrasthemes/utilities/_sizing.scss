@@ -62,6 +62,14 @@
     max-width: 11.25rem; //180px
 }
 
+.max-width-200 {
+    max-width: 12.5rem; //200px
+}
+
+.min-width-200 {
+    min-width: 12.5rem; //200px
+}
+
 .max-width-270 {
     max-width: 16.875rem; //270px
 }
@@ -76,6 +84,14 @@
 
 .min-width-300 {
     min-width: 18.75rem; //300px
+}
+
+.max-width-320 {
+    max-width: 100%;
+
+    @include media-breakpoint-up(xl) {
+        max-width: 20rem; //320px
+    }
 }
 
 .max-width-334 {
@@ -110,6 +126,12 @@
     }
 }
 
+.max-width-830-xl {
+    @include media-breakpoint-up(xl) {
+        max-width: 51.875rem; //830px
+    }
+}
+
 .max-width-450 {
     @include media-breakpoint-up(xl) {
         max-width: 28.125rem; //450px
@@ -119,6 +141,12 @@
 .max-width-1130 {
     @include media-breakpoint-up(wd) {
         max-width: 1130px;
+    }
+}
+
+.max-width-1060-wd {
+    @include media-breakpoint-up(wd) {
+        max-width: 66.25rem; //1060px
     }
 }
 
@@ -192,12 +220,26 @@
     height: 4.688rem; //75px
 }
 
+.height-410-xl {
+    @include media-breakpoint-up(xl) {
+        height: 25.625rem;
+    }
+}
+
 .min-height-45 {
     min-height: 2.813rem; //45px
 }
 
 .min-height-50 {
     min-height: 3.125rem; //50px
+}
+
+.min-height-64 {
+    min-height: 4rem; //64px
+}
+
+.min-height-126 {
+    min-height: ($font-size-base * 9); //126px
 }
 
 .min-height-132 {
@@ -292,4 +334,8 @@
 
 .max-height-50 {
     max-height: 3.125rem; //50px
+}
+
+.pyc-10 {
+    padding: 10.5px 0 !important;
 }

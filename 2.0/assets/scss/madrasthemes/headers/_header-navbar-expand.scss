@@ -106,3 +106,30 @@
         }
     }
 }
+
+.secondary-menu {
+    .navbar-expand {
+        @each $breakpoint in map-keys($grid-breakpoints) {
+            $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+            @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+                &#{$infix} {
+                    // Submenu
+                    .u-header__navbar-nav .u-header {
+                        &__nav-link {
+                            padding-top: $header-secondary-nav-link-paddingY;
+                            padding-bottom: $header-secondary-nav-link-paddingY;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .u-header__navbar-nav .u-header {
+        &__nav-link {
+            font-weight: $font-weight-normal;
+            font-size: ($font-size-base * .929); //13px
+        }
+    }
+}

@@ -34,6 +34,26 @@
     border-top: 1px solid darken($primary, 5%);
 }
 
+
+@each $color, $value in $theme-colors {
+    .border-top-#{$color} {
+        border-top-color: $value !important;
+    }
+
+    .border-right-#{$color} {
+        border-right-color: $value !important;
+    }
+
+    .border-bottom-#{$color} {
+        border-bottom-color: $value !important;
+    }
+
+    .border-left-#{$color} {
+        border-left-color: $value !important;
+    }
+}
+
+
 @include media-breakpoint-down(lg) {
     .border-lg-down-0  {border-width: 0 !important}
 }

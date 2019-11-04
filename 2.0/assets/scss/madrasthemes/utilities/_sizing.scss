@@ -89,7 +89,7 @@
 .max-width-320 {
     max-width: 100%;
 
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(lg) {
         max-width: 20rem; //320px
     }
 }
@@ -123,6 +123,12 @@
 
     @include media-breakpoint-up(lg) {
         min-width: 23.125rem; //370px
+    }
+}
+
+.max-width-590-lg {
+    @include media-breakpoint-up(lg) {
+        max-width: 36.875rem; //590px
     }
 }
 
@@ -221,7 +227,7 @@
 }
 
 .height-410-xl {
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(lg) {
         height: 25.625rem;
     }
 }

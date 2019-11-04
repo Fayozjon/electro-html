@@ -33271,7 +33271,7 @@ h1, h2, h3, h4, h5, h6,
   max-width: 100%;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .max-width-320 {
     max-width: 20rem;
   }
@@ -33316,6 +33316,12 @@ h1, h2, h3, h4, h5, h6,
 @media (min-width: 992px) {
   .min-width-370 {
     min-width: 23.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .max-width-590-lg {
+    max-width: 36.875rem;
   }
 }
 
@@ -33414,7 +33420,7 @@ h1, h2, h3, h4, h5, h6,
   height: 4.688rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .height-410-xl {
     height: 25.625rem;
   }

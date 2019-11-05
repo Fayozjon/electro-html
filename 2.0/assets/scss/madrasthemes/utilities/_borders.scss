@@ -63,7 +63,7 @@
     .border-md-down-bottom-0 { border-bottom: 0 !important; }
 }
 
-@include media-breakpoint-only(xs) {
+@include media-breakpoint-down(sm) {
     .border-sm-0        { border: 0 !important; }
     .border-sm-top-0    { border-top: 0 !important; }
     .border-sm-right-0  { border-right: 0 !important; }
@@ -174,6 +174,22 @@
 
     &.remove-divider-md-lg {
         @include media-breakpoint-between(md,lg) {
+            &::after {
+                content: none;
+            }
+        }
+    }
+
+    &.remove-divider-md {
+        @include media-breakpoint-only(md) {
+            &::after {
+                content: none;
+            }
+        }
+    }
+
+    &.remove-divider-lg {
+        @include media-breakpoint-only(lg) {
             &::after {
                 content: none;
             }

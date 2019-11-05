@@ -5720,7 +5720,7 @@ input[type="button"].btn-block {
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
 }
 
 .navbar > .container,
@@ -5739,7 +5739,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.33594rem;
   padding-bottom: 0.33594rem;
-  margin-right: 1rem;
+  margin-right: 0;
   font-size: 1.09375rem;
   line-height: inherit;
   white-space: nowrap;
@@ -19715,7 +19715,7 @@ button:focus {
 .u-header__navbar-brand > img {
   padding-top: 0;
   padding-bottom: 0;
-  width: 9.375rem;
+  width: 6.375rem;
 }
 
 .u-header__navbar-brand-center {
@@ -32228,6 +32228,10 @@ h1, h2, h3, h4, h5, h6,
 /*------------------------------------
   Typography Font Size
 ------------------------------------*/
+.font-size-8 {
+  font-size: 0.49962rem;
+}
+
 .font-size-11 {
   font-size: 0.602rem;
 }
@@ -32336,6 +32340,10 @@ h1, h2, h3, h4, h5, h6,
   .font-size-64 {
     font-size: 3.99962rem;
   }
+}
+
+.font-size-130 {
+  font-size: 8.12525rem;
 }
 
 @media (max-width: 1199.98px) {
@@ -32951,7 +32959,7 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .border-sm-0 {
     border: 0 !important;
   }
@@ -33105,6 +33113,18 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .product-item.remove-divider-md::after {
+    content: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .product-item.remove-divider-lg::after {
+    content: none;
+  }
+}
+
 @media (min-width: 1480px) {
   .product-item.remove-divider-wd::after {
     content: none;
@@ -33223,6 +33243,10 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+.min-width-46 {
+  min-width: 2.875rem;
+}
+
 .max-width-60 {
   max-width: 3.75rem;
 }
@@ -33243,12 +33267,22 @@ h1, h2, h3, h4, h5, h6,
   max-width: 11.25rem;
 }
 
-.max-width-200 {
-  max-width: 12.5rem;
+@media (min-width: 992px) {
+  .max-width-200 {
+    max-width: 12.5rem;
+  }
 }
 
-.min-width-200 {
-  min-width: 12.5rem;
+@media (min-width: 992px) {
+  .min-width-200 {
+    min-width: 12.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .max-width-244 {
+    max-width: 15.25rem;
+  }
 }
 
 .max-width-270 {
@@ -33268,10 +33302,10 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .max-width-320 {
-  max-width: 100%;
+  max-width: 18.75rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .max-width-320 {
     max-width: 20rem;
   }
@@ -33420,7 +33454,7 @@ h1, h2, h3, h4, h5, h6,
   height: 4.688rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .height-410-xl {
     height: 25.625rem;
   }

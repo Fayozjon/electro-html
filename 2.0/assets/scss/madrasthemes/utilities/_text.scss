@@ -2,6 +2,10 @@
   Typography Font Size
 ------------------------------------*/
 
+.font-size-8 {
+    font-size: ($font-size-base * .571); //8px
+}
+
 .font-size-11 {
     font-size: ($font-size-base * .688); //11px
 }
@@ -105,6 +109,11 @@
         font-size: ($font-size-base * 4.571); //64px
     }
 }
+
+.font-size-130 {
+    font-size: ($font-size-base * 9.286); //130px
+}
+
 
 .font-size-14-down-lg {
     @include media-breakpoint-down(lg) {

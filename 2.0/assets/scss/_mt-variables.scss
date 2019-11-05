@@ -162,6 +162,10 @@ $link-hover-color:                        $dark !default;
 
 $border-radius-pill:                                        6.1875rem !default;
 
+// Navbar
+
+$navbar-padding-x:                  0 !default;
+
 
 // Header
 // =========================================================
@@ -173,6 +177,9 @@ $header-nav-link-hover-color:            				    $dark !default;
 $header-topbar-nav-link-color:                              $gray-70 !default;
 $header-topbar-nav-link-hover-color:                        $gray-90 !default;
 $header-topbar-nav-separator-color:                         $gray-40 !default;
+
+// Width & Heights
+$header-navbar-brand-width:                                 6.375rem !default;
 
 // Font
 $header-topbar-nav-link-font-size:                          .813rem !default;

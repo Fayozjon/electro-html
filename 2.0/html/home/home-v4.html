@@ -37,13 +37,13 @@
                 <!-- Logo-Search-header-icons -->
                 <div class="bg-primary">
                     <div class="container">
-                        <div class="row min-height-64 align-items-center">
+                        <div class="row min-height-64 align-items-center position-relative">
                             <!-- Logo-offcanvas-menu -->
-                            <div class="col-md-auto">
+                            <div class="col-auto">
                                 <!-- Nav -->
-                                <nav class="navbar navbar-expand u-header__navbar py-0 justify-content-between max-width-200 min-width-200">
+                                <nav class="navbar navbar-expand u-header__navbar py-0 max-width-200 min-width-200">
                                     <!-- Logo -->
-                                    <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
+                                    <a class="order-1 order-xl-0 navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
                                         <svg version="1.1" x="0px" y="0px" width="126px" height="42.52px" viewBox="0 0 175.748 42.52" enable-background="new 0 0 175.748 42.52" style="margin-bottom: 0;">
                                             <ellipse class="ellipse-bg" fill-rule="evenodd" clip-rule="evenodd" fill="#FDD700" cx="170.05" cy="36.341" rx="5.32" ry="5.367"></ellipse>
                                             <path fill-rule="evenodd" clip-rule="evenodd" fill="#333E48" d="M30.514,0.71c-0.034,0.003-0.066,0.008-0.056,0.056
@@ -87,7 +87,7 @@
                                     <!-- End Logo -->
 
                                     <!-- Fullscreen Toggle Button -->
-                                    <button id="sidebarHeaderInvokerMenu" type="button" class="navbar-toggler d-block btn u-hamburger ml-auto"
+                                    <button id="sidebarHeaderInvokerMenu" type="button" class="navbar-toggler d-block btn u-hamburger mr-3 mr-xl-0"
                                         aria-controls="sidebarHeader"
                                         aria-haspopup="true"
                                         aria-expanded="false"
@@ -584,7 +584,7 @@
                             </div>
                             <!-- End Logo-offcanvas-menu -->
                             <!-- Search Bar -->
-                            <div class="col">
+                            <div class="col d-none d-xl-block">
                                 <form class="js-focus-state">
                                     <label class="sr-only" for="searchproduct">Search</label>
                                     <div class="input-group">
@@ -608,16 +608,48 @@
                             </div>
                             <!-- End Search Bar -->
                             <!-- Header Icons -->
-                            <div class="col-md-auto">
-                                <div class="d-flex">
-                                    <ul class="d-flex list-unstyled mb-0">
-                                        <li class="col"><a href="#" class="text-gray-90" data-toggle="tooltip" data-placement="top" title="Compare"><i class="font-size-22 ec ec-compare"></i></a></li>
-                                        <li class="col"><a href="#" class="text-gray-90" data-toggle="tooltip" data-placement="top" title="Favorites"><i class="font-size-22 ec ec-favorites"></i></a></li>
-                                        <li class="col pr-0">
+                            <div class="col col-xl-auto text-right text-xl-left pl-0 pl-xl-3 position-static">
+                                <div class="d-inline-flex">
+                                    <ul class="d-flex list-unstyled mb-0 align-items-center">
+                                        <!-- Search -->
+                                        <li class="col d-xl-none px-2 px-sm-3 position-static">
+                                            <a id="searchClassicInvoker" class="font-size-22 text-gray-90 text-lh-1 btn-text-secondary" href="javascript:;" role="button"
+                                                data-toggle="tooltip"
+                                                data-placement="top"
+                                                title="Search"
+                                                aria-controls="searchClassic"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                                data-unfold-target="#searchClassic"
+                                                data-unfold-type="css-animation"
+                                                data-unfold-duration="300"
+                                                data-unfold-delay="300"
+                                                data-unfold-hide-on-scroll="true"
+                                                data-unfold-animation-in="slideInUp"
+                                                data-unfold-animation-out="fadeOut">
+                                                <span class="ec ec-search"></span>
+                                            </a>
+
+                                            <!-- Input -->
+                                            <div id="searchClassic" class="dropdown-menu dropdown-unfold dropdown-menu-right left-0 mx-2" aria-labelledby="searchClassicInvoker">
+                                                <form class="js-focus-state input-group px-3">
+                                                    <input class="form-control" type="search" placeholder="Search Product">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="button">Search</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <!-- End Input -->
+                                        </li>
+                                        <!-- End Search -->
+                                        <li class="col d-none d-xl-block"><a href="#" class="text-gray-90" data-toggle="tooltip" data-placement="top" title="Compare"><i class="font-size-22 ec ec-compare"></i></a></li>
+                                        <li class="col d-none d-xl-block"><a href="#" class="text-gray-90" data-toggle="tooltip" data-placement="top" title="Favorites"><i class="font-size-22 ec ec-favorites"></i></a></li>
+                                        <li class="col d-xl-none px-2 px-sm-3"><a href="#" class="text-gray-90" data-toggle="tooltip" data-placement="top" title="My Account"><i class="font-size-22 ec ec-user"></i></a></li>
+                                        <li class="col pr-xl-0 px-2 px-sm-3">
                                             <a href="#" class="text-gray-90 position-relative d-flex " data-toggle="tooltip" data-placement="top" title="Cart">
                                                 <i class="font-size-22 ec ec-shopping-bag"></i>
                                                 <span class="width-22 height-22 bg-dark position-absolute d-flex align-items-center justify-content-center rounded-circle left-12 top-8 font-weight-bold font-size-12 text-white">4</span>
-                                                <span class="font-weight-bold font-size-16 text-gray-90 ml-3">$299.00</span>
+                                                <span class="d-none d-xl-block font-weight-bold font-size-16 text-gray-90 ml-3">$299.00</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -630,7 +662,7 @@
                 <!-- End Logo-Search-header-icons -->
 
                 <!-- Vertical-and-secondary-menu -->
-                <div class="box-shadow-1">
+                <div class="box-shadow-1 d-none d-xl-block">
                     <div class="container">
                         <div class="row">
                             <!-- Vertical Menu -->
@@ -1164,20 +1196,21 @@
 
         <!-- ========== MAIN CONTENT ========== -->
         <main id="content" role="main">
-            <!-- Slider Section -->
+            <!-- Slider & Banner Section -->
             <div class="mb-4">
                 <div class="container overflow-hidden">
                     <div class="row">
-                        <div class="col-lg pr-lg-2 mb-4 mb-lg-0">
-                            <div class="bg-img-hero mr-lg-1 height-410-xl max-width-1060-wd max-width-830-xl max-width-590-lg overflow-hidden" style="background-image: url(../../assets/img/1920x422/img1.jpg);">
+                        <!-- Slider -->
+                        <div class="col-xl pr-xl-2 mb-4 mb-xl-0">
+                            <div class="bg-img-hero mr-xl-1 height-410-xl max-width-1060-wd max-width-830-xl overflow-hidden" style="background-image: url(../../assets/img/1920x422/img1.jpg);">
                                 <div class="js-slick-carousel u-slick"
                                     data-autoplay="true"
                                     data-speed="7000"
-                                    data-pagi-classes="text-center position-absolute right-0 bottom-0 left-0 u-slick__pagination u-slick__pagination--long justify-content-center mb-3 mb-md-4">
+                                    data-pagi-classes="text-center position-absolute right-0 bottom-0 left-0 u-slick__pagination u-slick__pagination--long justify-content-start ml-9 mb-3 mb-md-5">
                                     <div class="js-slide bg-img-hero-center">
-                                        <div class="row height-410-xl py-7 py-md-0">
+                                        <div class="row height-410-xl py-7 py-md-0 mx-0">
                                             <div class="d-none d-wd-block offset-1"></div>
-                                            <div class="col-xl col col-md-6 mt-md-8">
+                                            <div class="col-xl col-6 col-md-6 mt-md-8">
                                                 <h1 class="font-size-64 text-lh-57 font-weight-light"
                                                     data-scs-animation-in="fadeInUp">
                                                     THE NEW <span class="d-block font-size-55">STANDARD</span>
@@ -1194,7 +1227,7 @@
                                                         <sup class="">$</sup>749<sup class="">99</sup>
                                                     </div>
                                                 </div>
-                                                <button type="button" class="btn btn-primary transition-3d-hover rounded-lg py-2 px-md-7 px-3 font-size-15"
+                                                <button type="button" class="btn btn-primary transition-3d-hover rounded-lg py-2 px-md-7 px-2 font-size-15"
                                                     data-scs-animation-in="fadeInUp"
                                                     data-scs-animation-delay="400">
                                                     Start Buying
@@ -1208,9 +1241,9 @@
                                         </div>
                                     </div>
                                     <div class="js-slide bg-img-hero-center">
-                                        <div class="row height-410-xl py-7 py-md-0">
+                                        <div class="row height-410-xl py-7 py-md-0 mx-0">
                                             <div class="d-none d-wd-block offset-1"></div>
-                                            <div class="col-xl col col-md-6 mt-md-8">
+                                            <div class="col-xl col-6 col-md-6 mt-md-8">
                                                 <h1 class="font-size-64 text-lh-57 font-weight-light"
                                                     data-scs-animation-in="slideInLeft">
                                                     THE NEW <span class="d-block font-size-55">STANDARD</span>
@@ -1227,7 +1260,7 @@
                                                         <sup class="">$</sup>749<sup class="">99</sup>
                                                     </div>
                                                 </div>
-                                                <button type="button" class="btn btn-primary transition-3d-hover rounded-lg py-2 px-md-7 px-3 font-size-15"
+                                                <button type="button" class="btn btn-primary transition-3d-hover rounded-lg py-2 px-md-7 px-2 font-size-15"
                                                     data-scs-animation-in="slideInLeft"
                                                     data-scs-animation-delay="600">
                                                     Start Buying
@@ -1241,9 +1274,9 @@
                                         </div>
                                     </div>
                                     <div class="js-slide bg-img-hero-center">
-                                        <div class="row height-410-xl py-7 py-md-0">
+                                        <div class="row height-410-xl py-7 py-md-0 mx-0">
                                             <div class="d-none d-wd-block offset-1"></div>
-                                            <div class="col-xl col col-md-6 mt-md-8">
+                                            <div class="col-xl col-6 col-md-6 mt-md-8">
                                                 <h1 class="font-size-64 text-lh-57 font-weight-light"
                                                     data-scs-animation-in="fadeInUp">
                                                     THE NEW <span class="d-block font-size-55">STANDARD</span>
@@ -1260,7 +1293,7 @@
                                                         <sup class="">$</sup>749<sup class="">99</sup>
                                                     </div>
                                                 </div>
-                                                <button type="button" class="btn btn-primary transition-3d-hover rounded-lg py-2 px-md-7 px-3 font-size-15"
+                                                <button type="button" class="btn btn-primary transition-3d-hover rounded-lg py-2 px-md-7 px-2 font-size-15"
                                                     data-scs-animation-in="fadeInUp"
                                                     data-scs-animation-delay="400">
                                                     Start Buying
@@ -1276,208 +1309,74 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-auto pl-lg-2">
-                            <ul class="list-unstyled row mx-n2 mx-lg-0 d-lg-block mb-0">
-                                <li class="col px-2 px-lg-0 mb-3">
-                                    <a href="#" class="min-height-126 max-width-320 px-3 px-lg-0 py-4 py-lg-1 py-xl-2 py-wd-1 banner-bg d-block d-lg-flex align-items-center text-gray-90">
-                                        <div class="col-lg-6 col-xl-5 col-wd-6 mb-3 mb-lg-0 pr-lg-0">
-                                            <img class="img-fluid" src="../../assets/img/246X176/img1.jpg" alt="Image Description">
-                                        </div>
-                                        <div class="col-lg-6 col-xl-7 col-wd-6 pr-xl-4 pr-wd-3">
-                                            <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
-                                                CATCH BIG <strong>DEALS</strong> ON THE CAMERAS
+                        <!-- End Slider -->
+                        <!-- Banner -->
+                        <div class="col-xl-auto pl-xl-2 ">
+                            <div class="overflow-hidden">
+                                <ul class="list-unstyled row flex-nowrap flex-xl-wrap overflow-auto overflow-lg-visble mx-n2 mx-xl-0 d-xl-block mb-0">
+                                    <li class="px-2 px-xl-0 flex-shrink-0 flex-xl-shrink-1 mb-3">
+                                        <a href="#" class="min-height-126 max-width-320 py-1 py-xl-2 py-wd-1 banner-bg d-flex align-items-center text-gray-90">
+                                            <div class="col col-lg-6 col-xl-5 col-wd-6 mb-3 mb-lg-0 pr-lg-0">
+                                                <img class="img-fluid" src="../../assets/img/246X176/img1.jpg" alt="Image Description">
                                             </div>
-                                            <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
-                                                Shop now
-                                                <span class="link__icon ml-1">
-                                                    <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
-                                                </span>
+                                            <div class="col col-lg-6 col-xl-7 col-wd-6 pr-xl-4 pr-wd-3">
+                                                <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
+                                                    CATCH BIG <strong>DEALS</strong> ON THE CAMERAS
+                                                </div>
+                                                <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
+                                                    Shop now
+                                                    <span class="link__icon ml-1">
+                                                        <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
+                                                    </span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="col px-2 px-lg-0 mb-3">
-                                    <a href="#" class="min-height-126 max-width-320 px-3 px-lg-0 py-4 py-lg-1 py-xl-2 py-wd-1 banner-bg d-block d-lg-flex align-items-center text-gray-90">
-                                        <div class="col-lg-6 col-xl-5 col-wd-6 mb-3 mb-lg-0 pr-lg-0">
-                                            <img class="img-fluid" src="../../assets/img/246X176/img2.jpg" alt="Image Description">
-                                        </div>
-                                        <div class="col-lg-6 col-xl-7 col-wd-6 pr-xl-4 pr-wd-3">
-                                            <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
-                                                THE NEW <strong>360 CAMERAS</strong>
+                                        </a>
+                                    </li>
+                                    <li class="px-2 px-xl-0 flex-shrink-0 flex-xl-shrink-1 mb-3">
+                                        <a href="#" class="min-height-126 max-width-320 py-1 py-xl-2 py-wd-1 banner-bg d-flex align-items-center text-gray-90">
+                                            <div class="col col-lg-6 col-xl-5 col-wd-6 mb-3 mb-lg-0 pr-lg-0">
+                                                <img class="img-fluid" src="../../assets/img/246X176/img2.jpg" alt="Image Description">
                                             </div>
-                                            <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
-                                                Shop now
-                                                <span class="link__icon ml-1">
-                                                    <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
-                                                </span>
+                                            <div class="col col-lg-6 col-xl-7 col-wd-6 pr-xl-4 pr-wd-3">
+                                                <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
+                                                    THE NEW <strong>360 CAMERAS</strong>
+                                                </div>
+                                                <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
+                                                    Shop now
+                                                    <span class="link__icon ml-1">
+                                                        <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
+                                                    </span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="col px-2 px-lg-0 mb-0">
-                                    <a href="#" class="min-height-126 max-width-320 px-3 px-lg-0 py-4 py-lg-1 py-xl-2 py-wd-1 banner-bg d-block d-lg-flex align-items-center text-gray-90">
-                                        <div class="col-lg-6 col-xl-5 col-wd-6 mb-3 mb-lg-0 pr-lg-0">
-                                            <img class="img-fluid" src="../../assets/img/246X176/img3.jpg" alt="Image Description">
-                                        </div>
-                                        <div class="col-lg-6 col-xl-7 col-wd-6 pr-xl-4 pr-wd-3">
-                                            <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
-                                                CATCH BIG <strong>DEALS</strong> ON THE CAMERAS
+                                        </a>
+                                    </li>
+                                    <li class="px-2 px-xl-0 flex-shrink-0 flex-xl-shrink-1 mb-0">
+                                        <a href="#" class="min-height-126 max-width-320 py-1 py-xl-2 py-wd-1 banner-bg d-flex align-items-center text-gray-90">
+                                            <div class="col col-lg-6 col-xl-5 col-wd-6 mb-3 mb-lg-0 pr-lg-0">
+                                                <img class="img-fluid" src="../../assets/img/246X176/img3.jpg" alt="Image Description">
                                             </div>
-                                            <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
-                                                Shop now
-                                                <span class="link__icon ml-1">
-                                                    <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
-                                                </span>
+                                            <div class="col col-lg-6 col-xl-7 col-wd-6 pr-xl-4 pr-wd-3">
+                                                <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
+                                                    CATCH BIG <strong>DEALS</strong> ON THE CAMERAS
+                                                </div>
+                                                <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
+                                                    Shop now
+                                                    <span class="link__icon ml-1">
+                                                        <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
+                                                    </span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                        <!-- End Banner -->
                     </div>
                 </div>
             </div>
-            <!-- End Slider Section -->
+            <!-- End Slider & Banner Section -->
             <div class="container">
-                <!-- Banner -->
-                <div class="row mb-6">
-                    <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
-                        <a href="#" class="min-height-146 py-1 py-xl-2 py-wd-1 banner-bg d-flex align-items-center text-gray-90">
-                            <div class="col-6 col-xl-7 col-wd-6 pr-0">
-                                <img class="img-fluid" src="../../assets/img/246X176/img1.jpg" alt="Image Description">
-                            </div>
-                            <div class="col-6 col-xl-5 col-wd-6 pr-xl-4 pr-wd-3">
-                                <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
-                                    CATCH BIG <strong>DEALS</strong> ON THE CAMERAS
-                                </div>
-                                <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
-                                    Shop now
-                                    <span class="link__icon ml-1">
-                                        <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
-                        <a href="#" class="min-height-146 py-1 py-xl-2 py-wd-1 banner-bg d-flex align-items-center text-gray-90">
-                            <div class="col-6 col-xl-7 col-wd-6 pr-0">
-                                <img class="img-fluid" src="../../assets/img/246X176/img2.jpg" alt="Image Description">
-                            </div>
-                            <div class="col-6 col-xl-5 col-wd-6 pr-xl-4 pr-wd-3">
-                                <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
-                                    THE NEW <strong>360 CAMERAS</strong>
-                                </div>
-                                <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
-                                    Shop now
-                                    <span class="link__icon ml-1">
-                                        <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
-                        <a href="#" class="min-height-146 py-1 py-xl-2 py-wd-1 banner-bg d-flex align-items-center text-gray-90">
-                            <div class="col-6 col-xl-7 col-wd-6 pr-0">
-                                <img class="img-fluid" src="../../assets/img/246X176/img3.jpg" alt="Image Description">
-                            </div>
-                            <div class="col-6 col-xl-5 col-wd-6 pr-xl-4 pr-wd-3">
-                                <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
-                                    CATCH BIG <strong>DEALS</strong> ON THE CAMERAS
-                                </div>
-                                <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
-                                    Shop now
-                                    <span class="link__icon ml-1">
-                                        <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 mb-4 mb-xl-0 col-xl-3 d-md-none d-wd-block">
-                        <a href="#" class="min-height-146 py-1 py-xl-2 py-wd-1 banner-bg d-flex align-items-center text-gray-90">
-                            <div class="col-6 col-xl-5 col-wd-6 pr-0">
-                                <img class="img-fluid" src="../../assets/img/190X150/img4.png" alt="Image Description">
-                            </div>
-                            <div class="col-6 col-xl-7 col-wd-6">
-                                <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
-                                    CATCH BIG <strong>DEALS</strong> ON THE CAMERAS
-                                </div>
-                                <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
-                                    Shop now
-                                    <span class="link__icon ml-1">
-                                        <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- End Banner -->
-                <!-- Feature List -->
-                <div class="mb-6 row border rounded-lg mx-0">
-                    <!-- Feature List -->
-                    <div class="media col px-8 py-3">
-                        <div class="u-avatar mr-2">
-                            <i class="text-primary ec ec-transport font-size-46"></i>
-                        </div>
-                        <div class="media-body text-center">
-                            <span class="d-block font-weight-bold text-dark">Free Delivery</span>
-                            <div class=" text-secondary">from $50</div>
-                        </div>
-                    </div>
-                    <!-- End Feature List -->
-
-                    <!-- Feature List -->
-                    <div class="media col px-8 border-left py-3">
-                        <div class="u-avatar mr-2">
-                            <i class="text-primary ec ec-customers font-size-56"></i>
-                        </div>
-                        <div class="media-body text-center">
-                            <span class="d-block font-weight-bold text-dark">99 % Customer</span>
-                            <div class=" text-secondary">Feedbacks</div>
-                        </div>
-                    </div>
-                    <!-- End Feature List -->
-
-                    <!-- Feature List -->
-                    <div class="media col px-8 border-left py-3">
-                        <div class="u-avatar mr-2">
-                            <i class="text-primary ec ec-returning font-size-46"></i>
-                        </div>
-                        <div class="media-body text-center">
-                            <span class="d-block font-weight-bold text-dark">365 Days</span>
-                            <div class=" text-secondary">for free return</div>
-                        </div>
-                    </div>
-                    <!-- End Feature List -->
-
-                    <!-- Feature List -->
-                    <div class="media col px-8 border-left py-3">
-                        <div class="u-avatar mr-2">
-                            <i class="text-primary ec ec-payment font-size-46"></i>
-                        </div>
-                        <div class="media-body text-center">
-                            <span class="d-block font-weight-bold text-dark">Payment</span>
-                            <div class=" text-secondary">Secure System</div>
-                        </div>
-                    </div>
-                    <!-- End Feature List -->
-
-                    <!-- Feature List -->
-                    <div class="media col px-8 border-left py-3">
-                        <div class="u-avatar mr-2">
-                            <i class="text-primary ec ec-tag font-size-46"></i>
-                        </div>
-                        <div class="media-body text-center">
-                            <span class="d-block font-weight-bold text-dark">Only Best</span>
-                            <div class=" text-secondary">Brands</div>
-                        </div>
-                    </div>
-                    <!-- End Feature List -->
-                </div>
-                <!-- End Feature List -->
                 <!-- Tab Prodcut Section -->
                 <div class="mb-6">
                     <!-- Nav Classic -->
@@ -1520,7 +1419,7 @@
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade pt-2 show active" id="pills-one-example1" role="tabpanel" aria-labelledby="pills-one-example1-tab" data-target-group="groups">
                             <ul class="row list-unstyled products-group no-gutters">
-                                <li class="col-6 col-md-4 col-xl product-item">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1547,7 +1446,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1575,7 +1474,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item remove-divider-md-lg">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item remove-divider-md">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1602,7 +1501,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item remove-divider-xl">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item d-md-none d-lg-block remove-divider-lg">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1629,7 +1528,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item d-xl-none d-wd-block">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item d-md-none d-xl-block">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1656,7 +1555,34 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item d-xl-none d-wd-block remove-divider-wd remove-divider-md-lg">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item d-md-none d-xl-block remove-divider-xl">
+                                    <div class="product-item__outer h-100">
+                                        <div class="product-item__inner px-xl-4 p-3">
+                                            <div class="product-item__body pb-xl-2">
+                                                <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
+                                                <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Purple Solo 2 Wireless</a></h5>
+                                                <div class="mb-2">
+                                                    <a href="#" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img3.jpg" alt="Image Description"></a>
+                                                </div>
+                                                <div class="flex-center-between mb-1">
+                                                    <div class="prodcut-price">
+                                                        <div class="text-gray-100">$685,00</div>
+                                                    </div>
+                                                    <div class="d-none d-xl-block prodcut-add-cart">
+                                                        <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__footer">
+                                                <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                    <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-compare mr-1 font-size-15"></i> Compare</a>
+                                                    <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-favorites mr-1 font-size-15"></i> Wishlist</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item d-md-none d-wd-block remove-divider-wd">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1688,7 +1614,7 @@
                         </div>
                         <div class="tab-pane fade pt-2" id="pills-two-example1" role="tabpanel" aria-labelledby="pills-two-example1-tab" data-target-group="groups">
                             <ul class="row list-unstyled products-group no-gutters">
-                                <li class="col-6 col-md-4 col-xl product-item">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1715,7 +1641,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1742,7 +1668,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item remove-divider-md-lg">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item remove-divider-md">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1769,7 +1695,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item remove-divider-xl">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item d-md-none d-lg-block remove-divider-lg">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1796,7 +1722,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item d-xl-none d-wd-block">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item d-md-none d-xl-block">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1823,7 +1749,34 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item d-xl-none d-wd-block remove-divider-wd remove-divider-md-lg">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item d-md-none d-xl-block remove-divider-xl">
+                                    <div class="product-item__outer h-100">
+                                        <div class="product-item__inner px-xl-4 p-3">
+                                            <div class="product-item__body pb-xl-2">
+                                                <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
+                                                <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Tablet White EliteBook Revolve 810 G2</a></h5>
+                                                <div class="mb-2">
+                                                    <a href="#" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img2.jpg" alt="Image Description"></a>
+                                                </div>
+                                                <div class="flex-center-between mb-1">
+                                                    <div class="prodcut-price">
+                                                        <div class="text-gray-100">$685,00</div>
+                                                    </div>
+                                                    <div class="d-none d-xl-block prodcut-add-cart">
+                                                        <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__footer">
+                                                <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                    <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-compare mr-1 font-size-15"></i> Compare</a>
+                                                    <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-favorites mr-1 font-size-15"></i> Wishlist</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item d-md-none d-wd-block remove-divider-wd">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1854,7 +1807,7 @@
                         </div>
                         <div class="tab-pane fade pt-2" id="pills-three-example1" role="tabpanel" aria-labelledby="pills-three-example1-tab" data-target-group="groups">
                             <ul class="row list-unstyled products-group no-gutters">
-                                <li class="col-6 col-md-4 col-xl product-item">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1881,7 +1834,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1908,7 +1861,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item remove-divider-md-lg">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item remove-divider-md">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1935,7 +1888,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item remove-divider-xl">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item d-md-none d-lg-block remove-divider-lg">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1962,7 +1915,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item d-xl-none d-wd-block">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item d-md-none d-xl-block">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -1989,7 +1942,34 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="col-6 col-md-4 col-xl product-item d-xl-none d-wd-block remove-divider-wd remove-divider-md-lg">
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item d-md-none d-xl-block remove-divider-xl">
+                                    <div class="product-item__outer h-100">
+                                        <div class="product-item__inner px-xl-4 p-3">
+                                            <div class="product-item__body pb-xl-2">
+                                                <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
+                                                <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Tablet White EliteBook Revolve 810 G2</a></h5>
+                                                <div class="mb-2">
+                                                    <a href="#" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img2.jpg" alt="Image Description"></a>
+                                                </div>
+                                                <div class="flex-center-between mb-1">
+                                                    <div class="prodcut-price">
+                                                        <div class="text-gray-100">$685,00</div>
+                                                    </div>
+                                                    <div class="d-none d-xl-block prodcut-add-cart">
+                                                        <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__footer">
+                                                <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                    <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-compare mr-1 font-size-15"></i> Compare</a>
+                                                    <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-favorites mr-1 font-size-15"></i> Wishlist</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-6 col-md-4 col-lg-3 col-xl product-item d-md-none d-wd-block remove-divider-wd">
                                     <div class="product-item__outer h-100">
                                         <div class="product-item__inner px-xl-4 p-3">
                                             <div class="product-item__body pb-xl-2">
@@ -2022,7 +2002,374 @@
                     <!-- End Tab Content -->
                 </div>
                 <!-- End Tab Prodcut Section -->
+                <!-- Full banner -->
+                <div class="mb-8">
+                    <a href="#" class="d-block text-gray-90">
+                        <div class="bg-img-hero pt-3" style="background-image: url(../../assets/img/1400X143/img1.png);">
+                            <div class="space-top-2-md p-4 pt-4 pt-md-5 pt-lg-6 pt-xl-5 pb-lg-4 px-xl-14 px-lg-6">
+                                <div class="flex-horizontal-center overflow-auto overflow-md-visble">
+                                    <h1 class="text-lh-38 font-size-30 font-weight-light mb-0 flex-shrink-0 flex-md-shrink-1">SHOP AND <strong>SAVE BIG</strong> ON HOTTEST TABLETS</h1>
+                                    <div class="flex-content-center ml-4 flex-shrink-0">
+                                        <div class="bg-primary rounded-lg px-6 py-2">
+                                            <em class="font-size-14 font-weight-light">STARTING AT</em>
+                                            <div class="font-size-30 font-weight-bold text-lh-1">
+                                                <sup class="">$</sup>79<sup class="">99</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Full banner -->
             </div>
+            <!-- Week Deals limited -->
+            <div class="bg-gray-7 mb-6 py-7">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 col-wd-2">
+                            <div class="max-width-244">
+                                <div class="d-flex border-bottom border-color-1 mb-3">
+                                    <h3 class="section-title mb-0 pb-2 font-size-22">Week Deals limited, Just now</h3>
+                                </div>
+                                <div class="mb-3 mb-md-2 text-center text-md-left">
+                                    <h1 class="font-size-130 font-weight-light mb-2 text-lh-1">%</h1>
+                                    <h6 class="text-gray-2 mb-2">Hurry Up! Offer ends in:</h6>
+                                    <div class="js-countdown d-flex mx-n2 justify-content-center justify-content-md-start"
+                                        data-end-date="2020/11/30"
+                                        data-hours-format="%H"
+                                        data-minutes-format="%M"
+                                        data-seconds-format="%S">
+                                        <div class="text-lh-1 px-2 text-center">
+                                            <div class="bg-white rounded-sm border border-width-2 border-primary py-2 px-2 min-width-46">
+                                                <div class="text-gray-2 font-size-20 mb-2">
+                                                    <span class="js-cd-hours"></span>
+                                                </div>
+                                                <div class="text-gray-2 font-size-8 text-center">HOURS</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-lh-1 px-2 text-center">
+                                            <div class="bg-white rounded-sm border border-width-2 border-primary py-2 px-2 min-width-46">
+                                                <div class="text-gray-2 font-size-20 mb-2">
+                                                    <span class="js-cd-minutes"></span>
+                                                </div>
+                                                <div class="text-gray-2 font-size-8 text-center">MINS</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-lh-1 px-2 text-center">
+                                            <div class="bg-white rounded-sm border border-width-2 border-primary py-2 px-2 min-width-46">
+                                                <div class="text-gray-2 font-size-20 mb-2">
+                                                    <span class="js-cd-seconds"></span>
+                                                </div>
+                                                <div class="text-gray-2 font-size-8 text-center">SECS</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-lg-9 col-wd-10">
+                            <div class="">
+                                <div class="js-slick-carousel u-slick position-static overflow-hidden u-slick-overflow-visble pb-5 pt-2 px-1"
+                                    data-pagi-classes="text-center right-0 bottom-1 left-0 u-slick__pagination u-slick__pagination--long mb-0 z-index-n1 mt-3"
+                                    data-slides-show="5"
+                                    data-slides-scroll="1"
+                                    data-responsive='[{
+                                      "breakpoint": 1400,
+                                      "settings": {
+                                        "slidesToShow": 4
+                                      }
+                                    }, {
+                                        "breakpoint": 1200,
+                                        "settings": {
+                                          "slidesToShow": 3
+                                        }
+                                    }, {
+                                      "breakpoint": 992,
+                                      "settings": {
+                                        "slidesToShow": 2
+                                      }
+                                    }, {
+                                      "breakpoint": 768,
+                                      "settings": {
+                                        "slidesToShow": 2
+                                      }
+                                    }, {
+                                      "breakpoint": 554,
+                                      "settings": {
+                                        "slidesToShow": 2
+                                      }
+                                    }]'>
+                                    <div class="js-slide products-group">
+                                        <div class="product-item mx-1 remove-divider">
+                                            <div class="product-item__outer h-100">
+                                                <div class="product-item__inner bg-white px-wd-4 p-2 p-md-3">
+                                                    <div class="product-item__body pb-xl-2">
+                                                        <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
+                                                        <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Wireless Audio System Multiroom 360 degree Full base audio</a></h5>
+                                                        <div class="mb-2">
+                                                            <a href="#" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img1.jpg" alt="Image Description"></a>
+                                                        </div>
+                                                        <div class="flex-center-between mb-1">
+                                                            <div class="prodcut-price">
+                                                                <div class="text-gray-100">$685,00</div>
+                                                            </div>
+                                                            <div class="d-none d-xl-block prodcut-add-cart">
+                                                                <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__footer">
+                                                        <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-compare mr-1 font-size-15"></i> Compare</a>
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-favorites mr-1 font-size-15"></i> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="js-slide products-group">
+                                        <div class="product-item mx-1 remove-divider">
+                                            <div class="product-item__outer h-100">
+                                                <div class="product-item__inner bg-white px-wd-4 p-2 p-md-3">
+                                                    <div class="product-item__body pb-xl-2">
+                                                        <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
+                                                        <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Wireless Audio System Multiroom 360 degree Full base audio</a></h5>
+                                                        <div class="mb-2">
+                                                            <a href="#" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img2.jpg" alt="Image Description"></a>
+                                                        </div>
+                                                        <div class="flex-center-between mb-1">
+                                                            <div class="prodcut-price">
+                                                                <div class="text-gray-100">$685,00</div>
+                                                            </div>
+                                                            <div class="d-none d-xl-block prodcut-add-cart">
+                                                                <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__footer">
+                                                        <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-compare mr-1 font-size-15"></i> Compare</a>
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-favorites mr-1 font-size-15"></i> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="js-slide products-group">
+                                        <div class="product-item mx-1 remove-divider">
+                                            <div class="product-item__outer h-100">
+                                                <div class="product-item__inner bg-white px-wd-4 p-2 p-md-3">
+                                                    <div class="product-item__body pb-xl-2">
+                                                        <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
+                                                        <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Wireless Audio System Multiroom 360 degree Full base audio</a></h5>
+                                                        <div class="mb-2">
+                                                            <a href="#" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img3.jpg" alt="Image Description"></a>
+                                                        </div>
+                                                        <div class="flex-center-between mb-1">
+                                                            <div class="prodcut-price">
+                                                                <div class="text-gray-100">$685,00</div>
+                                                            </div>
+                                                            <div class="d-none d-xl-block prodcut-add-cart">
+                                                                <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__footer">
+                                                        <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-compare mr-1 font-size-15"></i> Compare</a>
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-favorites mr-1 font-size-15"></i> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="js-slide products-group">
+                                        <div class="product-item mx-1 remove-divider">
+                                            <div class="product-item__outer h-100">
+                                                <div class="product-item__inner bg-white px-wd-4 p-2 p-md-3">
+                                                    <div class="product-item__body pb-xl-2">
+                                                        <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
+                                                        <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Wireless Audio System Multiroom 360 degree Full base audio</a></h5>
+                                                        <div class="mb-2">
+                                                            <a href="#" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img4.jpg" alt="Image Description"></a>
+                                                        </div>
+                                                        <div class="flex-center-between mb-1">
+                                                            <div class="prodcut-price">
+                                                                <div class="text-gray-100">$685,00</div>
+                                                            </div>
+                                                            <div class="d-none d-xl-block prodcut-add-cart">
+                                                                <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__footer">
+                                                        <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-compare mr-1 font-size-15"></i> Compare</a>
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-favorites mr-1 font-size-15"></i> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="js-slide products-group">
+                                        <div class="product-item mx-1 remove-divider">
+                                            <div class="product-item__outer h-100">
+                                                <div class="product-item__inner bg-white px-wd-4 p-2 p-md-3">
+                                                    <div class="product-item__body pb-xl-2">
+                                                        <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
+                                                        <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Wireless Audio System Multiroom 360 degree Full base audio</a></h5>
+                                                        <div class="mb-2">
+                                                            <a href="#" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img5.jpg" alt="Image Description"></a>
+                                                        </div>
+                                                        <div class="flex-center-between mb-1">
+                                                            <div class="prodcut-price">
+                                                                <div class="text-gray-100">$685,00</div>
+                                                            </div>
+                                                            <div class="d-none d-xl-block prodcut-add-cart">
+                                                                <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__footer">
+                                                        <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-compare mr-1 font-size-15"></i> Compare</a>
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-favorites mr-1 font-size-15"></i> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="js-slide products-group">
+                                        <div class="product-item mx-1 remove-divider">
+                                            <div class="product-item__outer h-100">
+                                                <div class="product-item__inner bg-white px-wd-4 p-2 p-md-3">
+                                                    <div class="product-item__body pb-xl-2">
+                                                        <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
+                                                        <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Wireless Audio System Multiroom 360 degree Full base audio</a></h5>
+                                                        <div class="mb-2">
+                                                            <a href="#" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img6.jpg" alt="Image Description"></a>
+                                                        </div>
+                                                        <div class="flex-center-between mb-1">
+                                                            <div class="prodcut-price">
+                                                                <div class="text-gray-100">$685,00</div>
+                                                            </div>
+                                                            <div class="d-none d-xl-block prodcut-add-cart">
+                                                                <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__footer">
+                                                        <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-compare mr-1 font-size-15"></i> Compare</a>
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-favorites mr-1 font-size-15"></i> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="js-slide products-group">
+                                        <div class="product-item mx-1 remove-divider">
+                                            <div class="product-item__outer h-100">
+                                                <div class="product-item__inner bg-white px-wd-4 p-2 p-md-3">
+                                                    <div class="product-item__body pb-xl-2">
+                                                        <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
+                                                        <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Wireless Audio System Multiroom 360 degree Full base audio</a></h5>
+                                                        <div class="mb-2">
+                                                            <a href="#" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img7.jpg" alt="Image Description"></a>
+                                                        </div>
+                                                        <div class="flex-center-between mb-1">
+                                                            <div class="prodcut-price">
+                                                                <div class="text-gray-100">$685,00</div>
+                                                            </div>
+                                                            <div class="d-none d-xl-block prodcut-add-cart">
+                                                                <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__footer">
+                                                        <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-compare mr-1 font-size-15"></i> Compare</a>
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-favorites mr-1 font-size-15"></i> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="js-slide products-group">
+                                        <div class="product-item mx-1 remove-divider">
+                                            <div class="product-item__outer h-100">
+                                                <div class="product-item__inner bg-white px-wd-4 p-2 p-md-3">
+                                                    <div class="product-item__body pb-xl-2">
+                                                        <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
+                                                        <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Wireless Audio System Multiroom 360 degree Full base audio</a></h5>
+                                                        <div class="mb-2">
+                                                            <a href="#" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img1.jpg" alt="Image Description"></a>
+                                                        </div>
+                                                        <div class="flex-center-between mb-1">
+                                                            <div class="prodcut-price">
+                                                                <div class="text-gray-100">$685,00</div>
+                                                            </div>
+                                                            <div class="d-none d-xl-block prodcut-add-cart">
+                                                                <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__footer">
+                                                        <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-compare mr-1 font-size-15"></i> Compare</a>
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-favorites mr-1 font-size-15"></i> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="js-slide products-group">
+                                        <div class="product-item mx-1 remove-divider">
+                                            <div class="product-item__outer h-100">
+                                                <div class="product-item__inner bg-white px-wd-4 p-2 p-md-3">
+                                                    <div class="product-item__body pb-xl-2">
+                                                        <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
+                                                        <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Wireless Audio System Multiroom 360 degree Full base audio</a></h5>
+                                                        <div class="mb-2">
+                                                            <a href="#" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img1.jpg" alt="Image Description"></a>
+                                                        </div>
+                                                        <div class="flex-center-between mb-1">
+                                                            <div class="prodcut-price">
+                                                                <div class="text-gray-100">$685,00</div>
+                                                            </div>
+                                                            <div class="d-none d-xl-block prodcut-add-cart">
+                                                                <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__footer">
+                                                        <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-compare mr-1 font-size-15"></i> Compare</a>
+                                                            <a href="#" class="text-gray-6 font-size-13"><i class="ec ec-favorites mr-1 font-size-15"></i> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Week Deals limited -->
+
             <!-- Television Entertainment -->
             <div class="mb-6" style="background-image: url(../../assets/img/1920x1080/img4.jpg);">
                 <div class="container">
@@ -2031,9 +2378,9 @@
                             <img class="img-fluid" src="../../assets/img/665X616/img1.png" alt="Image Description">
                         </div>
                         <div class="col-12 col-lg-8 col-xl-7 col-wd-6 pt-6 pt-md-0">
-                            <dv class=" d-flex border-bottom border-color-1 mr-md-2">
+                            <div class=" d-flex border-bottom border-color-1 mr-md-2">
                                 <h3 class="section-title section-title__full mb-0 pb-2 font-size-22">Television Entertainment</h3>
-                            </dv>
+                            </div>
                             <div class="js-slick-carousel position-static u-slick u-slick--gutters-2 u-slick overflow-hidden u-slick-overflow-visble py-5"
                                 data-arrows-classes="position-absolute top-0 font-size-17 u-slick__arrow-normal top-10 pt-6 pt-md-0"
                                 data-arrow-left-classes="fa fa-angle-left right-2"

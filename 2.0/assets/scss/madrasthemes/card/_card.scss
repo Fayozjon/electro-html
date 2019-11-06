@@ -3,6 +3,7 @@
 ------------------------------------*/
 .product-item {
     position: relative;
+    display: flex;
 
     &__footer {
         display: none;

@@ -84,6 +84,18 @@
     }
 }
 
+/* Navbar Brand */
+.u-header__navbar-brand {
+    &,
+    & > img {
+        width: $header-navbar-brand-width-sm;
+
+        @include media-breakpoint-up(md) {
+            width: $header-navbar-brand-width;
+        }
+    }
+}
+
 /* Vertical-Menu */
 .u-header {
     .vertical-menu {
@@ -110,7 +122,7 @@
 
         &.v2 {
             min-width: 16.875rem; //270px
-            
+
             /* Nav Item */
             .u-header__nav-item {
                 &.hs-mega-menu-opened,

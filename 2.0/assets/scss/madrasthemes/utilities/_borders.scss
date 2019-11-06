@@ -27,7 +27,7 @@
   Borders-Color
 ------------------------------------*/
 .border-color-1 {
-    border-color: $gray-80 !important;
+    border-color: $gray-80 !important; //#ddd
 }
 
 .border-color-2 {
@@ -98,7 +98,7 @@
 }
 
 @include media-breakpoint-down(lg) {
-    .border-wd-0 { border: 0 !important;}
+    .border-lg-0 { border: 0 !important;}
 }
 
 @include media-breakpoint-up(wd) {

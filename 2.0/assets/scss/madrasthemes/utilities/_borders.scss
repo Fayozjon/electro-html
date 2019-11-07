@@ -98,7 +98,7 @@
 }
 
 @include media-breakpoint-down(lg) {
-    .border-lg-0 { border: 0 !important;}
+    .border-lg-down-0 { border: 0 !important;}
 }
 
 @include media-breakpoint-up(wd) {

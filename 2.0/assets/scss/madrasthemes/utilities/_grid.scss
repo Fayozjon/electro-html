@@ -1,0 +1,11 @@
+/*------------------------------------
+  Grid
+------------------------------------*/
+
+@each $size, $value in $grid-breakpoints {
+    .col-2dot4-#{$size} {
+        @include media-breakpoint-up($size) {
+            @include make-col(2.4);
+        }
+    }
+}

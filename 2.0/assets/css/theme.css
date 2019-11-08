@@ -33552,12 +33552,16 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-.min-height-450 {
-  min-height: 28.125rem;
+@media (min-width: 1200px) {
+  .min-height-xl-450 {
+    min-height: 28.125rem;
+  }
 }
 
-.min-height-630 {
-  min-height: 39.375rem;
+@media (min-width: 1200px) {
+  .min-height-630 {
+    min-height: 39.375rem;
+  }
 }
 
 .min-height-564 {
@@ -33773,14 +33777,36 @@ h1, h2, h3, h4, h5, h6,
 /*------------------------------------
   Grid
 ------------------------------------*/
-.col-2dot4-xs {
+.col-xs-2dot4 {
   -ms-flex: 0 0 20%;
       flex: 0 0 20%;
   max-width: 20%;
 }
 
+.col-xs-3dot9 {
+  -ms-flex: 0 0 32.5%;
+      flex: 0 0 32.5%;
+  max-width: 32.5%;
+}
+
 @media (min-width: 576px) {
-  .col-2dot4-sm {
+  .col-sm-2dot4 {
+    -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 576px) {
+  .col-sm-3dot9 {
+    -ms-flex: 0 0 32.5%;
+        flex: 0 0 32.5%;
+    max-width: 32.5%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-2dot4 {
     -ms-flex: 0 0 20%;
         flex: 0 0 20%;
     max-width: 20%;
@@ -33788,7 +33814,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 @media (min-width: 768px) {
-  .col-2dot4-md {
+  .col-md-3dot9 {
+    -ms-flex: 0 0 32.5%;
+        flex: 0 0 32.5%;
+    max-width: 32.5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-2dot4 {
     -ms-flex: 0 0 20%;
         flex: 0 0 20%;
     max-width: 20%;
@@ -33796,7 +33830,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 @media (min-width: 992px) {
-  .col-2dot4-lg {
+  .col-lg-3dot9 {
+    -ms-flex: 0 0 32.5%;
+        flex: 0 0 32.5%;
+    max-width: 32.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-xl-2dot4 {
     -ms-flex: 0 0 20%;
         flex: 0 0 20%;
     max-width: 20%;
@@ -33804,7 +33846,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 @media (min-width: 1200px) {
-  .col-2dot4-xl {
+  .col-xl-3dot9 {
+    -ms-flex: 0 0 32.5%;
+        flex: 0 0 32.5%;
+    max-width: 32.5%;
+  }
+}
+
+@media (min-width: 1480px) {
+  .col-wd-2dot4 {
     -ms-flex: 0 0 20%;
         flex: 0 0 20%;
     max-width: 20%;
@@ -33812,10 +33862,10 @@ h1, h2, h3, h4, h5, h6,
 }
 
 @media (min-width: 1480px) {
-  .col-2dot4-wd {
-    -ms-flex: 0 0 20%;
-        flex: 0 0 20%;
-    max-width: 20%;
+  .col-wd-3dot9 {
+    -ms-flex: 0 0 32.5%;
+        flex: 0 0 32.5%;
+    max-width: 32.5%;
   }
 }
 

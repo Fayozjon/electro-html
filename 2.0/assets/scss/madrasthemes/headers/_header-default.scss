@@ -105,6 +105,7 @@
         right: $header-vertical-mega-menu-position-right;
         background-color: $header-bg;
         @include border-bottom-radius($header-sub-menu-bottom-border-radius);
+        z-index: $zindex-dropdown;
 
         &.v1 {
             /* Nav Item */
@@ -122,6 +123,7 @@
 
         &.v2 {
             min-width: 16.875rem; //270px
+            box-shadow: $header-submenu-box-shadow;
 
             /* Nav Item */
             .u-header__nav-item {
@@ -132,6 +134,10 @@
                     }
                 }
             }
+        }
+
+        &.v3 {
+            box-shadow: $header-submenu-box-shadow;
         }
 
         /* Nav Item */

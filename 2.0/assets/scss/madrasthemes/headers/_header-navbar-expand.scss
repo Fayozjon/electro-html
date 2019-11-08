@@ -44,6 +44,28 @@
     }
 }
 
+.vertical-menu {
+    &.v2,
+    &.v3 {
+        .navbar-expand {
+            @each $breakpoint in map-keys($grid-breakpoints) {
+                $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+                @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+                    &#{$infix} {
+                        // Submenu
+                        .u-header__navbar-nav .u-header {
+                            &__sub-menu {
+                                box-shadow: $header-vm-submenu-box-shadow;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .u-header__navbar--wide {
     &.navbar-expand {
         @each $breakpoint in map-keys($grid-breakpoints) {

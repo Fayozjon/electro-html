@@ -26,6 +26,12 @@
     font-size: 0.938rem; //15px
 }
 
+.font-size-sl-15 {
+    @include media-breakpoint-up(md) {
+        font-size: 0.938rem; //15px
+    }
+}
+
 .font-size-16 {
     font-size: ($font-size-base * 1.143); //16px
 }
@@ -70,6 +76,10 @@
     font-size: ($font-size-base * 2.286); //32px
 }
 
+.font-size-34 {
+    font-size: ($font-size-base * 2.429); //34px
+}
+
 .font-size-40 {
     font-size: ($font-size-base * 2.857); //40px
 }
@@ -80,6 +90,16 @@
 
 .font-size-46 {
     font-size: ($font-size-base * 3.286); //46px
+}
+
+.font-size-sl-48 {
+    @include media-breakpoint-up(lg) {
+        font-size: ($font-size-base * 3); //48px
+    }
+
+    @include media-breakpoint-up(wd) {
+        font-size: ($font-size-base * 3.429); //48px
+    }
 }
 
 .font-size-50 {
@@ -107,6 +127,16 @@
 
     @include media-breakpoint-up(md) {
         font-size: ($font-size-base * 4.571); //64px
+    }
+}
+
+.font-size-sl-72 {
+    @include media-breakpoint-up(lg) {
+        font-size: 3.2rem; //72px
+    }
+
+    @include media-breakpoint-up(wd) {
+        font-size: ($font-size-base * 5.143); //72px
     }
 }
 
@@ -183,6 +213,10 @@
 
 .text-lh-1 {
     line-height: 1;
+}
+
+.text-lh-default {
+    line-height: 1.5 !important;
 }
 
 .text-lh-14 {

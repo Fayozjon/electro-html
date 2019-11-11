@@ -143,6 +143,13 @@
                             padding-bottom: $header-secondary-nav-link-paddingY;
                         }
                     }
+
+                    .u-header__navbar-nav-divider {
+                        .u-header__nav-link {
+                            padding-right: $header-secondary-nav-link-divider-paddingY;
+                            padding-left: $header-secondary-nav-link-divider-paddingY;
+                        }
+                    }
                 }
             }
         }

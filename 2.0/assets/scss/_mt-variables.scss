@@ -172,8 +172,8 @@ $navbar-padding-x:                  0 !default;
 
 // Text Colors
 $header-nav-link-color:                                     $gray-90 !default;
-$header-nav-link-active-color:     							$dark !default;
-$header-nav-link-hover-color:            				    $dark !default;
+$header-nav-link-active-color:     							$black !default;
+$header-nav-link-hover-color:            				    $black !default;
 $header-topbar-nav-link-color:                              $gray-70 !default;
 $header-topbar-nav-link-hover-color:                        $gray-90 !default;
 $header-topbar-nav-separator-color:                         $gray-40 !default;
@@ -231,6 +231,7 @@ $header-vmm-nav-link-hover-color:                           $gray-2000 !default;
 
 //secondary-menu
 $header-secondary-nav-link-paddingY:                        ($font-size-base * 0.614) !default; //8.5px
+$header-secondary-nav-link-divider-paddingY:                .5rem !default; //8px
 
 
 // Drop Down

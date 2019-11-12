@@ -5,3 +5,16 @@
 .banner-bg {
     background-color: $gray-2000 !important;
 }
+
+.bg-xl-transparent {
+    @include media-breakpoint-up(xl) {
+        background-color: transparent !important;
+    }
+}
+
+.bg-lg-down-black {
+    @include media-breakpoint-down(lg) {
+        background-color: $black !important;
+        color: $white;
+    }
+}

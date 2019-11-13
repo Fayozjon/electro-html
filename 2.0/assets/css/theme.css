@@ -26436,7 +26436,7 @@ label.btn {
   top: 0;
   right: 0;
   z-index: 1002;
-  width: 23.4375rem;
+  width: 18.75rem;
   height: 100%;
   background-color: #fff;
   box-shadow: -13px 0 20px rgba(119, 131, 143, 0.08);
@@ -31492,14 +31492,14 @@ del {
 }
 
 /* Secondary Menu Navbar Divider */
-.u-header__navbar-nav-divider .u-header__nav-item + .u-header__nav-item {
+.u-header__navbar-nav-divider .u-header__nav-item {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
 }
 
-.u-header__navbar-nav-divider .u-header__nav-item + .u-header__nav-item::before {
+.u-header__navbar-nav-divider .u-header__nav-item:not(:last-child)::after {
   content: '|';
   color: #cad5d5;
   line-height: 1;
@@ -32017,6 +32017,33 @@ del {
   .vertical-menu .u-header__navbar-nav {
     margin-left: 0;
   }
+}
+
+/*------------------------------------
+  Header Sidebar
+------------------------------------*/
+.u-header-sidebar {
+  /* Sub Menu */
+}
+
+.u-header-sidebar__content {
+  padding: 1rem 2rem 2rem;
+}
+
+.u-header-sidebar__sub-menu-title {
+  display: block;
+  color: #333e48;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+/*------------------------------------
+  Header Collapse
+------------------------------------*/
+.u-header-collapse__nav-link, .u-header-collapse__submenu-nav-link, .u-header-collapse__submenu-list-link {
+  padding-top: .4rem;
+  padding-bottom: .4rem;
 }
 
 /*------------------------------------

@@ -99,11 +99,13 @@
 /* Secondary Menu Navbar Divider */
 .u-header {
     &__navbar-nav-divider {
-        .u-header__nav-item + .u-header__nav-item {
+        .u-header__nav-item {
             display: flex;
             align-items: center;
+        }
 
-            &::before {
+        .u-header__nav-item:not(:last-child) {
+            &::after {
                 content: '|';
                 color: $gray-40;
                 line-height: 1;

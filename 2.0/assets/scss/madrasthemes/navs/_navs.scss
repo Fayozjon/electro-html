@@ -82,4 +82,13 @@
             }
         }
     }
+
+    &-tab-pill-fill {
+        .nav-link {
+            &.active {
+                background-color: $primary;
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
 }

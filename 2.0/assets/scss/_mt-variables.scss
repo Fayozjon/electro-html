@@ -6,43 +6,44 @@
 // =========================================================
 
 // Grays
-$gray-20:                                                   #e8e8e8 !default;
-$gray-30:                                                   #a0a0a0 !default;
-$gray-40:                                                   #cad5d5 !default;
-$gray-50:                                                   #959595 !default;
-$gray-60:                                                   #6b6b6b !default;
-$gray-70:                                                   #334141 !default;
-$gray-80:                                                   #dddddd !default;
-$gray-90:                                                   #333e48 !default; //body color
-$gray-1000:                                                 #b0b5b9 !default;
-$gray-2000:                                                 #f5f5f5 !default;
-$gray-3000:                                                 #bcbcbc !default;
-$gray-4000:                                                 #383838 !default;
-$gray-5000:                                                 #eeeeee !default;
-$gray-6000:                                                 #e6e6e6 !default;
-$gray-7000:                                                 #343f49 !default;
-$gray-8000:                                                 #878787 !default;
-$gray-9000:                                                 #848484 !default;
-$gray-10000:                                                #f9f9f9 !default;
-$gray-11000:                                                #7b8186 !default;
-$gray-12000:                                                #8f8f8f !default;
-$gray-13000:                                                #f8f8f8 !default;
-$gray-14000:                                                #eaeaea !default;
-$gray-15000:                                                #7c7c7c !default;
-$gray-16000:                                                #9d9c9c !default;
-$gray-17000:                                                #606060 !default;
+$gray-20:                                                   #e8e8e8;
+$gray-30:                                                   #a0a0a0;
+$gray-40:                                                   #cad5d5;
+$gray-50:                                                   #959595;
+$gray-60:                                                   #6b6b6b;
+$gray-70:                                                   #334141;
+$gray-80:                                                   #dddddd;
+$gray-90:                                                   #333e48 ; //body color
+$gray-1000:                                                 #b0b5b9;
+$gray-2000:                                                 #f5f5f5;
+$gray-3000:                                                 #bcbcbc;
+$gray-4000:                                                 #383838;
+$gray-5000:                                                 #eeeeee;
+$gray-6000:                                                 #e6e6e6;
+$gray-7000:                                                 #343f49;
+$gray-8000:                                                 #878787;
+$gray-9000:                                                 #848484;
+$gray-10000:                                                #f9f9f9;
+$gray-11000:                                                #7b8186;
+$gray-12000:                                                #8f8f8f;
+$gray-13000:                                                #f8f8f8;
+$gray-14000:                                                #eaeaea;
+$gray-15000:                                                #7c7c7c;
+$gray-16000:                                                #9d9c9c;
+$gray-17000:                                                #606060;
+$gray-18000:                                                #ecedf2;
 
 // Colors
-$yellow:                                                    #fed700 !default;
-$dark:                                                      $gray-90 !default;
-$black:                                                     #000000 !default;
-$blue:                                                      #0062bd !default;
-$cyan:                                                      #34bcec !default;
-$red:                                                       #ee0000 !default;
-$sale:                                                      #df3737 !default;
+$yellow:                                                    #fed700;
+$dark:                                                      $gray-90;
+$black:                                                     #000000;
+$blue:                                                      #0062bd;
+$cyan:                                                      #34bcec;
+$red:                                                       #ee0000;
+$sale:                                                      #df3737;
 
 // Theme Colors
-$primary:                                                   $yellow !default;
+$primary:                                                   $yellow;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -64,7 +65,8 @@ $theme-colors: map-merge(
     "gray-13":    $gray-13000, //#f8f8f8
     "gray-14":    $gray-14000, //#eaeaea
     "gray-15":    $gray-16000, //#eaeaea
-    "gray-16":    $gray-17000 //#606060
+    "gray-16":    $gray-17000, //#606060
+    "gray-17":    $gray-18000 //#ecedf2
   ),
   $theme-colors
 );
@@ -87,7 +89,7 @@ $grid-breakpoints: (
   lg:                                                       $lg,
   xl:                                                       $xl,
   wd:                                                       $wd /* EOC */
-) !default;
+);
 
 
 // Grid containers
@@ -100,7 +102,7 @@ $container-max-widths: (
   lg: 960px,
   xl: 1200px,
   wd: 1430px /* EOC */
-) !default;
+) ;
 
 
 // Spacing
@@ -137,180 +139,181 @@ $spacers: map-merge((
 // =========================================================
 // Settings for the `<body>` element.
 
-$body-color:                $gray-90 !default;
+$body-color:                $gray-90;
 
 
 // Fonts
 // =========================================================
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:                                    "Open Sans", Helvetica, Arial, sans-serif !default;
-$font-size-base:                                            .875rem !default; // Assumes the browser default, typically 16px
+$font-family-sans-serif:                                    "Open Sans", Helvetica, Arial, sans-serif;
+$font-size-base:                                            .875rem; // Assumes the browser default, typically 16px
 
-$font-weight-light:                                         300 !default;
-$font-weight-medium:                                        500 !default;
-$font-weight-semi-bold:                                     600 !default;
-$font-weight-bold:                                          700 !default;
+$font-weight-light:                                         300;
+$font-weight-medium:                                        500;
+$font-weight-semi-bold:                                     600;
+$font-weight-bold:                                          700;
 
 // Links
 //
 // Style anchor elements.
 
-$link-hover-color:                        $dark !default;
+$link-hover-color:                                        $dark;
 
 
 // Borders
 // =========================================================
 
-$border-radius-pill:                                        6.1875rem !default;
+$border-radius-pill:                                        6.1875rem;
+$header-sub-menu-border-color:                              $primary;
 
 // Navbar
 
-$navbar-padding-x:                  0 !default;
+$navbar-padding-x:                                          0;
 
 
 // Header
 // =========================================================
 
 // Text Colors
-$header-nav-link-color:                                     $gray-90 !default;
-$header-nav-link-active-color:     							$black !default;
-$header-nav-link-hover-color:            				    $black !default;
-$header-topbar-nav-link-color:                              $gray-70 !default;
-$header-topbar-nav-link-hover-color:                        $gray-90 !default;
-$header-topbar-nav-separator-color:                         $gray-40 !default;
+$header-nav-link-color:                                     $gray-90;
+$header-nav-link-active-color:     							$black;
+$header-nav-link-hover-color:            				    $black;
+$header-topbar-nav-link-color:                              $gray-70;
+$header-topbar-nav-link-hover-color:                        $gray-90;
+$header-topbar-nav-separator-color:                         $gray-40;
 
 // Width & Heights
-$header-navbar-brand-width-sm:                               6.375rem !default;
+$header-navbar-brand-width-sm:                               6.375rem;
 
 // Font
-$header-topbar-nav-link-font-size:                          .813rem !default;
-$header-topbar-nav-link-icon-font-size:                     ($font-size-base * 1.286) !default; //18px
-//$header-nav-link-icon-font-size:                            ($font-size-base * .625) !default;
-//$header-navbar-link-font-size:                              ($font-size-base * .875) !default;
-$header-sub-menu-nav-link-font-size:             			$font-size-base !default;
-//$header-sub-menu-title-font-size:                           ($font-size-base * 1) !default;
-$header-sub-menu-title-font-weight:                         $font-weight-bold !default;
+$header-topbar-nav-link-font-size:                          .813rem;
+$header-topbar-nav-link-icon-font-size:                     ($font-size-base * 1.286); //18px
+//$header-nav-link-icon-font-size:                            ($font-size-base * .625);
+//$header-navbar-link-font-size:                              ($font-size-base * .875);
+$header-sub-menu-nav-link-font-size:             			$font-size-base;
+//$header-sub-menu-title-font-size:                           ($font-size-base * 1);
+$header-sub-menu-title-font-weight:                         $font-weight-bold;
 
 // Borders
-$header-topbar-border-color:                                $gray-20 !default;
-$header-sub-menu-border-top-width:                          ($font-size-base * .125) !default;
-$header-sub-menu-bottom-border-radius:                      ($font-size-base * .5) !default;
+$header-topbar-border-color:                                $gray-20;
+$header-sub-menu-border-top-width:                          ($font-size-base * .125);
+$header-sub-menu-bottom-border-radius:                      ($font-size-base * .5);
 
 // Box Shadow
-$header-submenu-box-shadow:                                 0 2px 5px rgba($black, .28) !default;
-$header-vm-submenu-box-shadow:                              3px 5px 11px -10px rgba(0, 0, 0, 0.8) !default;
+$header-submenu-box-shadow:                                 0 2px 5px rgba($black, .28);
+$header-vm-submenu-box-shadow:                              3px 5px 11px -10px rgba(0, 0, 0, 0.8);
 
 // Padding Spaces
-$header-nav-link-paddingY:                                  .781rem !default; //12.5px
-$header-nav-link-paddingX:                                  .99rem !default;
-$header-sub-menu-nav-link-paddingY:                         ($font-size-base * 0.38) !default; //5px
-$header-nav-wide-link-paddingY:                             .75rem !default; //12px
-$header-nav-wide-link-paddingX:                             1.1rem !default; //16px
+$header-nav-link-paddingY:                                  .781rem; //12.5px
+$header-nav-link-paddingX:                                  .99rem;
+$header-sub-menu-nav-link-paddingY:                         ($font-size-base * 0.38); //5px
+$header-nav-wide-link-paddingY:                             .75rem; //12px
+$header-nav-wide-link-paddingX:                             1.1rem; //16px
 
 
 // Vertical-Menu - Padding Spaces
-$header-vmm-nav-item-paddingX:                              $font-size-base !default; //14px
-$header-vmm-nav-link-paddingY:                              ($font-size-base * 0.464) !default; //6.5px
-$header-vmm-nav-link-paddingX:                              ($font-size-base * 0.357) !default; //5px
-$header-vmm-nav-bar-nav-paddingY:                           ($font-size-base * 0.5) !default; //7px
-$header-vmm-wrapper-paddingY:                               ($font-size-base * 2.571) !default; //36px
+$header-vmm-nav-item-paddingX:                              $font-size-base; //14px
+$header-vmm-nav-link-paddingY:                              ($font-size-base * 0.464); //6.5px
+$header-vmm-nav-link-paddingX:                              ($font-size-base * 0.357); //5px
+$header-vmm-nav-bar-nav-paddingY:                           ($font-size-base * 0.5); //7px
+$header-vmm-wrapper-paddingY:                               ($font-size-base * 2.571); //36px
 
 // Vertical-Menu - Position
-$header-vertical-mega-menu-position:                        absolute !default;
-$header-vertical-mega-menu-position-top:                    100% !default;
-$header-vertical-mega-menu-position-left:                   0 !default;
-$header-vertical-mega-menu-position-right:                  $header-vertical-mega-menu-position-left !default;
+$header-vertical-mega-menu-position:                        absolute;
+$header-vertical-mega-menu-position-top:                    100%;
+$header-vertical-mega-menu-position-left:                   0;
+$header-vertical-mega-menu-position-right:                  $header-vertical-mega-menu-position-left;
 
 // Vertical-Menu - Border
-$header-vmm-nav-link-border-color:                          $gray-80 !default;
+$header-vmm-nav-link-border-color:                          $gray-80;
 
 // Vertical-Menu - Font
-$header-vmm-nav-link-toggle-icon-color:                     $gray-1000 !default;
-$header-vmm-nav-link-toggle-icon-size:                      ($font-size-base * 1.143) !default; //16px
-$header-vmm-nav-link-hover-color:                           $gray-2000 !default;
+$header-vmm-nav-link-toggle-icon-color:                     $gray-1000;
+$header-vmm-nav-link-toggle-icon-size:                      ($font-size-base * 1.143); //16px
+$header-vmm-nav-link-hover-color:                           $gray-2000;
 
 
 //secondary-menu
-$header-secondary-nav-link-paddingY:                        ($font-size-base * 0.614) !default; //8.5px
-$header-secondary-nav-link-divider-paddingY:                .5rem !default; //8px
+$header-secondary-nav-link-paddingY:                        ($font-size-base * 0.614); //8.5px
+$header-secondary-nav-link-divider-paddingY:                .5rem; //8px
 
 
 // Drop Down
 // =========================================================
 
 // Colors
-$dropdown-item-states:                                      $gray-90 !default;
-$dropdown-link-color:                                       $gray-70 !default;
+$dropdown-item-states:                                      $gray-90;
+$dropdown-link-color:                                       $gray-70;
 
 
 // Type
-$dropdown-item-font-size:                                   $font-size-base !default;
+$dropdown-item-font-size:                                   $font-size-base;
 
 // Box Shadow
-$dropdown-box-shadow:                                       0 2px 5px rgba($black, .28) !default;
+$dropdown-box-shadow:                                       0 2px 5px rgba($black, .28);
 
 
 // Borders
 // =========================================================
-$border-radius-lg:                                          ($font-size-base * .714) !default;
+$border-radius-lg:                                          ($font-size-base * .714);
 
 
 // Hamburgers
 // =========================================================
 
 // Width & Heights
-$hamburger-layer-width:             						($font-size-base * 1.6) !default;
+$hamburger-layer-width:             						($font-size-base * 1.6);
 
 // Spacing
-$hamburger-layer-spacing:                                   .3rem !default;
+$hamburger-layer-spacing:                                   .3rem;
 
 //Colors
-$hamburger-layer-color:             					    $black !default;
-$hamburger-layer-hover-color:             					$black !default;
+$hamburger-layer-color:             					    $black;
+$hamburger-layer-hover-color:             					$black;
 
 // Tooltip
 // =========================================================
 
 // Background Color
-$tooltip-bg:                                                $black !default;
+$tooltip-bg:                                                $black;
 
 
 // Slick
 // =========================================================
 
-$slick-pagination-long-dot-bg-color:                        $gray-3000 !default;
-$slick-pagination-long-active-dot-border-radius:            $border-radius-pill !default;
+$slick-pagination-long-dot-bg-color:                        $gray-3000;
+$slick-pagination-long-active-dot-border-radius:            $border-radius-pill;
 
 
 // Media Player
 // =========================================================
 
-$media-viewer-icon-width:                                   1.5rem !default;
+$media-viewer-icon-width:                                   1.5rem;
 
 
 // Links
 // =========================================================
 
 // Background Color
-$link-icon-bg-color:                                        $primary !default;
+$link-icon-bg-color:                                        $primary;
 
 // Width & Heights
-$link-icon-width:                                           1.063rem !default;
-$link-icon-height:                                          $link-icon-width !default;
+$link-icon-width:                                           1.063rem;
+$link-icon-height:                                          $link-icon-width;
 
 // List Group
 // =========================================================
 
-$list-group-item-padding-y:         .32rem !default;
+$list-group-item-padding-y:         .32rem;
 
 // Colors
-$list-group-action-hover-color:                             $black !default;
-$list-group-action-active-color:                            $list-group-action-hover-color !default;
-$list-group-action-color:                                   $gray-90 !default;
+$list-group-action-hover-color:                             $black;
+$list-group-action-active-color:                            $list-group-action-hover-color;
+$list-group-action-color:                                   $gray-90;
 
 // Font Sizes
-$list-group-item-font-size:                                 $font-size-base !default;
+$list-group-item-font-size:                                 $font-size-base;
 
 // Default Sidebar Elements
 // =========================================================
@@ -319,4 +322,4 @@ $list-group-item-font-size:                                 $font-size-base !def
 //$sidebar-bg-color:                                          $white !default;
 
 // Width & Heights
-$sidebar-width:             							    18.75rem !default;
+$sidebar-width:             							    18.75rem;

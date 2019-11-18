@@ -76,6 +76,10 @@
     }
 }
 
+.max-width-216 {
+    max-width: 13.5rem; //216px
+}
+
 .min-width-200 {
     @include media-breakpoint-up(lg) {
         min-width: 12.5rem; //200px

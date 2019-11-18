@@ -32,6 +32,7 @@ $gray-15000:                                                #7c7c7c;
 $gray-16000:                                                #9d9c9c;
 $gray-17000:                                                #606060;
 $gray-18000:                                                #ecedf2;
+$gray-19000:                                                #333e484d;
 
 // Colors
 $yellow:                                                    #fed700;
@@ -53,6 +54,7 @@ $theme-colors: map-merge(
     "dark":       $dark,
     "cyan":       $cyan,
     "sale":       $sale,
+    "black":      $black,
     "gray-1":     $gray-2000, //#f5f5f5
     "gray-2":     $gray-4000, //#383838
     "gray-3":     $gray-5000, //#eeeeee
@@ -66,7 +68,8 @@ $theme-colors: map-merge(
     "gray-14":    $gray-14000, //#eaeaea
     "gray-15":    $gray-16000, //#eaeaea
     "gray-16":    $gray-17000, //#606060
-    "gray-17":    $gray-18000 //#ecedf2
+    "gray-17":    $gray-18000, //#ecedf2
+    "gray-18":    $gray-19000 //#333e484d
   ),
   $theme-colors
 );
@@ -113,6 +116,7 @@ $spacer: 1rem !default;
 $spacers: () !default;
 $spacers: map-merge((
   0: 0,
+  0dot5:($spacer * .143),
   1: ($spacer * .25),
   2: ($spacer * .5),
   3: $spacer,
@@ -284,12 +288,19 @@ $tooltip-bg:                                                $black;
 
 $slick-pagination-long-dot-bg-color:                        $gray-3000;
 $slick-pagination-long-active-dot-border-radius:            $border-radius-pill;
+$slick-arrow-classic-hover-bg-color:                        $primary;
+$slick-arrow-flat-bg-color:                                 rgba($primary, .8);
+$slick-arrow-hover-bg-color:                                $primary;
 
 
 // Media Player
 // =========================================================
 
+// Background Colors
+$media-viewer-icon-bg-color:                                $primary;
+
 $media-viewer-icon-width:                                   1.5rem;
+$media-viewer-icon-height:                                  $media-viewer-icon-width;
 
 
 // Links
@@ -323,3 +334,10 @@ $list-group-item-font-size:                                 $font-size-base;
 
 // Width & Heights
 $sidebar-width:             							    18.75rem;
+
+// Navs
+// =========================================================
+// Background Colors
+$nav-white-nav-link-active-bg-color:                        $white !default;
+$nav-box-custom-nav-link-active-bg-color:                   $primary;
+$nav-classic-nav-link-state-color:                          $primary;

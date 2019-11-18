@@ -92,3 +92,33 @@
         }
     }
 }
+
+/* Box */
+.nav-box-custom {
+    .nav-item {
+        width: 100%;
+    }
+
+	.nav-link {
+		color: $nav-box-nav-link-color;
+        position: relative;
+        display: block;
+
+		&.active {
+			color: $nav-box-nav-link-color;
+			background-color: $nav-box-custom-nav-link-active-bg-color;
+            font-weight: $font-weight-bold;
+
+            &::before {
+                content: " ";
+                display: block;
+                border-top: 18px solid transparent;
+                border-right: 18px solid $nav-box-custom-nav-link-active-bg-color;
+                border-bottom: 18px solid transparent;
+                position: absolute;
+                top: 0;
+                right: 100%;
+            }
+		}
+	}
+}

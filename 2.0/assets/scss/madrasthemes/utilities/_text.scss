@@ -130,6 +130,10 @@
     font-size: ($font-size-base * 4); //56px
 }
 
+.font-size-58 {
+    font-size: ($font-size-base * 4.143); //58px
+}
+
 .font-size-64 {
     font-size: ($font-size-base * 2); //64px
 
@@ -162,6 +166,24 @@
 @include media-breakpoint-only(md) {
     .font-size-15-md {
         font-size: 0.75rem; //12px
+    }
+}
+
+@include media-breakpoint-between(md,lg) {
+    .font-size-14-lg {
+        font-size: $font-size-base; //14px
+    }
+
+    .font-size-30-lg {
+        font-size: 1.875rem; //30px
+    }
+
+    .font-size-24-lg {
+        font-size: 1.5rem; //24px
+    }
+
+    .font-size-20-lg {
+        font-size: 1.25rem; //20px
     }
 }
 

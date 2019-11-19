@@ -38,6 +38,10 @@
     left: ($font-size-base * .857); //12px
 }
 
+.left-n16 {
+    left: -1rem; //16px
+}
+
 .bottom-1 {
     bottom: 1rem;
 }
@@ -56,6 +60,10 @@
 
 .right-3 {
     right: 3rem;
+}
+
+.right-n20 {
+    right: -1.25rem; //20px
 }
 
 .right-xl-220 {

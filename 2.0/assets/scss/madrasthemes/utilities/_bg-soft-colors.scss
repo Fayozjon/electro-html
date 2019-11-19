@@ -18,3 +18,17 @@
         color: $white;
     }
 }
+
+.bg-on-hover {
+    .bg {
+        color: $gray-8000;
+        background-color: $gray-10000;
+    }
+
+    &:hover {
+        .bg {
+            color: $black;
+            background-color: $primary;
+        }
+    }
+}

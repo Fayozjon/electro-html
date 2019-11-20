@@ -161,4 +161,10 @@
             font-size: ($font-size-base * .929); //13px
         }
     }
+
+    &.v1 .u-header__navbar-nav .u-header {
+        &__nav-link {
+            font-size: $font-size-base; //14px
+        }
+    }
 }

@@ -134,6 +134,22 @@
     font-size: ($font-size-base * 4.143); //58px
 }
 
+.font-size-58-sm {
+    font-size: 1.5rem; //24px
+
+    @include media-breakpoint-up(md) {
+        font-size: ($font-size-base * 4.143); //58px
+    }
+}
+
+.font-size-15-sm {
+    font-size: 0.75rem; //12px
+    
+    @include media-breakpoint-up(md) {
+        font-size: 0.938rem; //15px
+    }
+}
+
 .font-size-64 {
     font-size: ($font-size-base * 2); //64px
 

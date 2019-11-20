@@ -6,6 +6,10 @@
     background-color: $gray-2000 !important;
 }
 
+.slider-bg {
+    background-color: $slider-bg;
+}
+
 .bg-xl-transparent {
     @include media-breakpoint-up(xl) {
         background-color: transparent !important;

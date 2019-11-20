@@ -42,6 +42,7 @@ $blue:                                                      #0062bd;
 $cyan:                                                      #34bcec;
 $red:                                                       #ee0000;
 $sale:                                                      #df3737;
+$slider-bg:                                                 #eef7f9;
 
 // Theme Colors
 $primary:                                                   $yellow;
@@ -196,7 +197,7 @@ $header-topbar-nav-link-icon-font-size:                     ($font-size-base * 1
 //$header-nav-link-icon-font-size:                            ($font-size-base * .625);
 //$header-navbar-link-font-size:                              ($font-size-base * .875);
 $header-sub-menu-nav-link-font-size:             			$font-size-base;
-//$header-sub-menu-title-font-size:                           ($font-size-base * 1);
+$header-sub-menu-title-font-size:                           $font-size-base;
 $header-sub-menu-title-font-weight:                         $font-weight-bold;
 
 // Borders
@@ -312,6 +313,12 @@ $link-icon-bg-color:                                        $primary;
 // Width & Heights
 $link-icon-width:                                           1.063rem;
 $link-icon-height:                                          $link-icon-width;
+
+// Forms
+// =========================================================
+
+// States
+$form-focus-border-color:                                   rgba($primary, .5);
 
 // List Group
 // =========================================================

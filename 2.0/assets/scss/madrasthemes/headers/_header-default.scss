@@ -115,7 +115,8 @@
 }
 
 /* Vertical-Menu */
-.u-header {
+.u-header,
+.u-header + main {
     .vertical-menu {
         position: $header-vertical-mega-menu-position;
         top: $header-vertical-mega-menu-position-top;

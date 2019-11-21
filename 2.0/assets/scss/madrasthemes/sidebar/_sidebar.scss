@@ -1,0 +1,10 @@
+/*------------------------------------
+  Sidebar Navigation
+------------------------------------*/
+
+// Common styles of Sidebar Navigation
+.u-sidebar {
+    &__lg {
+        width: $sidebar-lg-width;    
+    }
+}

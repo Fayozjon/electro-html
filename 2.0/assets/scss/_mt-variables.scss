@@ -33,6 +33,7 @@ $gray-16000:                                                #9d9c9c;
 $gray-17000:                                                #606060;
 $gray-18000:                                                #ecedf2;
 $gray-19000:                                                #333e484d;
+$gray-20000:                                                #7d7d7d;
 
 // Colors
 $yellow:                                                    #fed700;
@@ -40,6 +41,7 @@ $dark:                                                      $gray-90;
 $black:                                                     #000000;
 $blue:                                                      #0062bd;
 $cyan:                                                      #34bcec;
+$green:                                                     #5cb85c;
 $red:                                                       #ee0000;
 $sale:                                                      #df3737;
 $slider-bg:                                                 #eef7f9;
@@ -56,6 +58,7 @@ $theme-colors: map-merge(
     "cyan":       $cyan,
     "sale":       $sale,
     "black":      $black,
+    "green":      $green,
     "gray-1":     $gray-2000, //#f5f5f5
     "gray-2":     $gray-4000, //#383838
     "gray-3":     $gray-5000, //#eeeeee
@@ -67,7 +70,7 @@ $theme-colors: map-merge(
     "gray-9":     $gray-12000, //#8f8f8f
     "gray-13":    $gray-13000, //#f8f8f8
     "gray-14":    $gray-14000, //#eaeaea
-    "gray-15":    $gray-16000, //#eaeaea
+    "gray-15":    $gray-16000, //#7c7c7c
     "gray-16":    $gray-17000, //#606060
     "gray-17":    $gray-18000, //#ecedf2
     "gray-18":    $gray-19000 //#333e484d
@@ -153,6 +156,7 @@ $body-color:                $gray-90;
 
 $font-family-sans-serif:                                    "Open Sans", Helvetica, Arial, sans-serif;
 $font-size-base:                                            .875rem; // Assumes the browser default, typically 16px
+$font-electro:                                              "font-electro";
 
 $font-weight-light:                                         300;
 $font-weight-medium:                                        500;
@@ -164,6 +168,12 @@ $font-weight-bold:                                          700;
 // Style anchor elements.
 
 $link-hover-color:                                        $dark;
+
+
+// Paragraphs
+//
+// Style p element.
+$paragraph-color:            							  $gray-20000;
 
 
 // Borders
@@ -341,6 +351,7 @@ $list-group-item-font-size:                                 $font-size-base;
 
 // Width & Heights
 $sidebar-width:             							    18.75rem;
+$sidebar-lg-width:             							    23.4375rem;
 
 // Navs
 // =========================================================
@@ -348,3 +359,35 @@ $sidebar-width:             							    18.75rem;
 $nav-white-nav-link-active-bg-color:                        $white !default;
 $nav-box-custom-nav-link-active-bg-color:                   $primary;
 $nav-classic-nav-link-state-color:                          $primary;
+
+
+// Breadcrumbs
+// =========================================================
+
+// Quote
+$breadcrumb-divider:                                        quote("\65");
+
+// Colors
+$breadcrumb-active-color:                                   $gray-90;
+$breadcrumb-item-link-color:                                $gray-90;
+
+// Border Colors
+$breadcrumb-divider-color:                                  $gray-90;
+
+//Background Color
+$breadcrumb-item-bg-color:                                  $gray-2000;
+$breadcrumb-item-bg-hover-color:                            $gray-20;
+
+
+//Border Radius
+$breadcrumb-border-radius:                                  $border-radius;
+
+// Margin and Padding Spaces
+$breadcrumb-item-padding:                                   1rem;
+$breadcrumb-item-padding-y:                                 .438rem;
+$breadcrumb-item-padding-x:                                 .875rem;
+$breadcrumb-padding-y:                                      1.563rem;
+$breadcrumb-padding-x:                                      0;
+
+//Font
+$breadcrumb-divider-font-family:                            $font-electro;

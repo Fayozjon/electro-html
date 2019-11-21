@@ -56,6 +56,11 @@
     font-size: ($font-size-base * 1.714); //24px
 }
 
+.font-size-25 {
+    font-size: ($font-size-base * 1.786); //25px
+}
+
+
 .font-size-wd-25 {
     @include media-breakpoint-up(wd) {
         font-size: ($font-size-base * 1.786); //25px
@@ -144,7 +149,7 @@
 
 .font-size-15-sm {
     font-size: 0.75rem; //12px
-    
+
     @include media-breakpoint-up(md) {
         font-size: 0.938rem; //15px
     }

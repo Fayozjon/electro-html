@@ -87,3 +87,22 @@
         }
     }
 }
+
+.add-accessories {
+    &::before {
+        content: '+';
+        position: absolute;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        height: 2.188rem;
+        width: 2.188rem;
+        border: 1px solid $gray-80;
+        background-color: $white;
+        border-radius: 50%;
+        top: 50%;
+        left: -1.125rem;
+        display: inline-block;
+        text-align: center;
+        transform: translateY(-50%);
+    }
+}

@@ -56,6 +56,24 @@
                 }
             }
         }
+
+        &-lg {
+            &.nav .nav-item:not(:first-child) {
+                margin-left: 1.15rem;
+            }
+
+            &.nav .nav-item:not(:last-child) {
+                margin-right: 1.15rem;
+            }
+
+            &.nav .nav-item:not(:first-child) {
+                margin-left: 1rem;
+            }
+
+            &.nav .nav .nav-item:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
     }
 
     .nav-item {

@@ -60,6 +60,9 @@
     font-size: ($font-size-base * 1.786); //25px
 }
 
+.font-size-26 {
+    font-size: ($font-size-base * 1.857); //26px
+}
 
 .font-size-wd-25 {
     @include media-breakpoint-up(wd) {
@@ -338,6 +341,14 @@
     &:hover {
         text-decoration: underline;
     }
+}
+
+.text-decoration-on {
+    text-decoration: underline;
+}
+
+.cursor-pointer-on {
+    cursor: pointer;
 }
 
 .line-clamp-1 {

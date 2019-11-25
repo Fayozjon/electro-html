@@ -73,6 +73,19 @@
             &.nav .nav .nav-item:not(:last-child) {
                 margin-right: 1rem;
             }
+
+            @include media-breakpoint-down(lg) {
+                &::after {
+                    content: ' ';
+                    border-bottom: 1px solid $gray-80;
+                    display: block;
+                    position: absolute;
+                    bottom: 3px;
+                    width: 100%;
+                    right: 0;
+                    left: 0;
+                }
+            }
         }
     }
 

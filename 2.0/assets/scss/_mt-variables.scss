@@ -35,6 +35,8 @@ $gray-18000:                                                #ecedf2;
 $gray-19000:                                                #333e484d;
 $gray-20000:                                                #7d7d7d;
 $gray-21000:                                                #686c6f;
+$gray-22000:                                                #d8d8d8;
+$gray-23000:                                                #aeaeae;
 
 // Colors
 $yellow:                                                    #fed700;
@@ -176,7 +178,7 @@ $link-hover-color:                                        $dark;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$text-muted:                                              $gray-21000;
+$text-muted:                                              rgba($black, .2);
 
 
 // Paragraphs
@@ -348,7 +350,7 @@ $form-focus-border-color:                                   rgba($primary, .5);
 // List Group
 // =========================================================
 
-$list-group-item-padding-y:         .32rem;
+$list-group-item-padding-y:                                 .32rem;
 
 // Colors
 $list-group-action-hover-color:                             $black;
@@ -395,13 +397,13 @@ $breadcrumb-item-bg-hover-color:                            $gray-20;
 
 
 //Border Radius
-$breadcrumb-border-radius:                                  $border-radius;
+$breadcrumb-border-radius:                                  .313rem;
 
 // Margin and Padding Spaces
 $breadcrumb-item-padding:                                   1rem;
 $breadcrumb-item-padding-y:                                 .438rem;
 $breadcrumb-item-padding-x:                                 .875rem;
-$breadcrumb-padding-y:                                      1.563rem;
+$breadcrumb-padding-y:                                      .62rem;
 $breadcrumb-padding-x:                                      0;
 
 //Font
@@ -415,3 +417,36 @@ $table-cell-padding:                                        .5rem;
 
 $table-border-color:                                        $gray-18000;
 $table-th-font-weight:                                      $font-weight-bold;
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+// Progress bars
+
+$progress-bg:                                               $gray-2000;
+$progress-bar-bg:                                           $gray-22000;
+
+// Forms
+//$input-border-radius:                                       1.375rem;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:                                           1.4rem;
+$btn-border-radius-lg:                                        2rem;
+$btn-border-radius-sm:                                        1.3rem;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:                                         .67rem;
+
+$input-border-radius:                                         $btn-border-radius;
+$input-border-radius-lg:                                      $btn-border-radius-lg;
+$input-border-radius-sm:                                      $btn-border-radius-sm;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-font-weight:                                         $font-weight-bold;

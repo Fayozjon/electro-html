@@ -47,3 +47,24 @@
         background-color: transparent !important;
     }
 }
+
+.btn-primary-dark {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+
+    &:hover {
+        background-color: $gray-90;
+        border-color: $gray-90;
+        color: $white;
+    }
+}
+
+.btn-primary-dark[type]:hover,
+.btn-primary-dark[type]:active,
+.btn-primary-dark[type]:focus,
+.btn-primary-dark[href]:hover,
+.btn-primary-dark[href]:active,
+.btn-primary-dark[href]:focus {
+    box-shadow: 0 4px 11px rgba($gray-90, .25);
+}

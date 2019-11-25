@@ -189,6 +189,14 @@
         }
     }
 
+    &.remove-divider-sm-down {
+        @include media-breakpoint-down(sm) {
+            &::after {
+                content: none;
+            }
+        }
+    }
+
     &.remove-divider-md {
         @include media-breakpoint-only(md) {
             &::after {

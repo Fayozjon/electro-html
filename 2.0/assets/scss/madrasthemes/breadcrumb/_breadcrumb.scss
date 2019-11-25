@@ -30,11 +30,15 @@
 
         a {
             padding: $breadcrumb-item-padding-y $breadcrumb-item-padding-x;
-            background-color: $breadcrumb-item-bg-color;
+            background-color: transparent;
             @include border-radius($breadcrumb-border-radius);
 
-            &:hover {
-                background-color: $breadcrumb-item-bg-hover-color;
+            @include media-breakpoint-up(md) {
+                background-color: $breadcrumb-item-bg-color;
+
+                &:hover {
+                    background-color: $breadcrumb-item-bg-hover-color;
+                }
             }
         }
     }

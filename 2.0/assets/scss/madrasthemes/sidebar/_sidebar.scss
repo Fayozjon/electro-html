@@ -5,6 +5,65 @@
 // Common styles of Sidebar Navigation
 .u-sidebar {
     &__lg {
-        width: $sidebar-lg-width;    
+        width: $sidebar-lg-width;
+    }
+}
+
+.sidebar-navbar {
+    font-size: $font-size-base;
+    color: $gray-90;
+
+    a {
+        color: $gray-90;
+        display: block;
+    }
+
+    .dropdown-toggle {
+        padding: 0.938rem 1.75rem;
+
+        &::after {
+            content: "\f054";
+        }
+    }
+
+    .dropdown-toggle-collapse[aria-expanded="true"]::after {
+        transform: rotate(-90deg);
+    }
+
+    .dropdown-toggle,
+    .dropdown-current {
+        border-bottom: 1px solid $gray-24000;
+    }
+
+    .dropdown-current {
+        margin: 0 $font-size-base;
+        padding: 1rem 1rem .538rem;
+        border-color: $gray-80;
+    }
+
+    .dropdown-list {
+        padding: $font-size-base;
+
+        li {
+            border-top: 1px solid $gray-80;
+
+            &:first-child {
+                border-top-width: 0;
+            }
+        }
+    }
+
+    .dropdown-item {
+        padding: 0.5rem 1.5rem;
+
+        &.active {
+            font-weight: $font-weight-bold;
+        }
+    }
+
+    .dropdown-current + .dropdown-list {
+        li {
+            border-top-width: 0;
+        }
     }
 }

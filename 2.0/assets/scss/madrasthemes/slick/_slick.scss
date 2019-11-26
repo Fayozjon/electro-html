@@ -82,13 +82,17 @@
 			padding: 0.625rem;
 			border: 1px solid $gray-14000;
 
-			@include media-breakpoint-up(xl) {
-				width: 5rem !important;
-			}
-
 			&.slick-current {
 				border-bottom-width: 2px;
 				border-bottom-color: $primary;
+			}
+		}
+	}
+
+	&--slider-syncing-size {
+		.slick-slide {
+			@include media-breakpoint-up(xl) {
+				width: 5rem !important;
 			}
 		}
 	}

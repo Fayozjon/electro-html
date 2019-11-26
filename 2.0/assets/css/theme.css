@@ -33912,6 +33912,10 @@ del {
   font-weight: 400;
 }
 
+.form-check-input:disabled ~ .form-check-label {
+  color: #686c6f;
+}
+
 /*------------------------------------
   Progress Bar
 ------------------------------------*/
@@ -33924,6 +33928,64 @@ del {
 ------------------------------------*/
 .u-sidebar__lg {
   width: 23.4375rem;
+}
+
+.sidebar-navbar {
+  font-size: 0.875rem;
+  color: #333e48;
+}
+
+.sidebar-navbar a {
+  color: #333e48;
+  display: block;
+}
+
+.sidebar-navbar .dropdown-toggle {
+  padding: 0.938rem 1.75rem;
+}
+
+.sidebar-navbar .dropdown-toggle::after {
+  content: "\f054";
+}
+
+.sidebar-navbar .dropdown-toggle-collapse[aria-expanded="true"]::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.sidebar-navbar .dropdown-toggle,
+.sidebar-navbar .dropdown-current {
+  border-bottom: 1px solid #ececec;
+}
+
+.sidebar-navbar .dropdown-current {
+  margin: 0 0.875rem;
+  padding: 1rem 1rem .538rem;
+  border-color: #dddddd;
+}
+
+.sidebar-navbar .dropdown-list {
+  padding: 0.875rem;
+}
+
+.sidebar-navbar .dropdown-list li {
+  border-top: 1px solid #dddddd;
+}
+
+.sidebar-navbar .dropdown-list li:first-child {
+  border-top-width: 0;
+}
+
+.sidebar-navbar .dropdown-item {
+  padding: 0.5rem 1.5rem;
+}
+
+.sidebar-navbar .dropdown-item.active {
+  font-weight: 700;
+}
+
+.sidebar-navbar .dropdown-current + .dropdown-list li {
+  border-top-width: 0;
 }
 
 /*------------------------------------
@@ -34031,15 +34093,15 @@ del {
   border: 1px solid #eaeaea;
 }
 
-@media (min-width: 1200px) {
-  .u-slick--slider-syncing .slick-slide {
-    width: 5rem !important;
-  }
-}
-
 .u-slick--slider-syncing .slick-slide.slick-current {
   border-bottom-width: 2px;
   border-bottom-color: #fed700;
+}
+
+@media (min-width: 1200px) {
+  .u-slick--slider-syncing-size .slick-slide {
+    width: 5rem !important;
+  }
 }
 
 /*------------------------------------
@@ -34644,6 +34706,10 @@ del {
   color: #aeaeae;
 }
 
+.text-gray-25 {
+  color: #acacac;
+}
+
 .text-blue {
   color: #0062bd !important;
 }
@@ -34683,6 +34749,10 @@ del {
 /*------------------------------------
   Borders-radius
 ------------------------------------*/
+.borders-radius-6 {
+  border-radius: 0.375rem;
+}
+
 .borders-radius-20 {
   border-radius: 1.25rem;
 }
@@ -34700,6 +34770,10 @@ del {
 
 .border-color-2 {
   border-top: 1px solid #e5c100;
+}
+
+.border-color-3 {
+  border-color: #ececec !important;
 }
 
 .border-top-primary {
@@ -36086,6 +36160,12 @@ del {
   }
 }
 
+@media (min-width: 768px) {
+  .position-md-static {
+    position: static !important;
+  }
+}
+
 /*------------------------------------
   Content Centered
 ------------------------------------*/
@@ -36197,6 +36277,12 @@ del {
   max-width: 72.5%;
 }
 
+.col-xs-9gdot5 {
+  -ms-flex: 0 0 79.16667%;
+      flex: 0 0 79.16667%;
+  max-width: 79.16667%;
+}
+
 @media (min-width: 576px) {
   .col-sm-2gdot4 {
     -ms-flex: 0 0 20%;
@@ -36250,6 +36336,14 @@ del {
     -ms-flex: 0 0 72.5%;
         flex: 0 0 72.5%;
     max-width: 72.5%;
+  }
+}
+
+@media (min-width: 576px) {
+  .col-sm-9gdot5 {
+    -ms-flex: 0 0 79.16667%;
+        flex: 0 0 79.16667%;
+    max-width: 79.16667%;
   }
 }
 
@@ -36309,6 +36403,14 @@ del {
   }
 }
 
+@media (min-width: 768px) {
+  .col-md-9gdot5 {
+    -ms-flex: 0 0 79.16667%;
+        flex: 0 0 79.16667%;
+    max-width: 79.16667%;
+  }
+}
+
 @media (min-width: 992px) {
   .col-lg-2gdot4 {
     -ms-flex: 0 0 20%;
@@ -36362,6 +36464,14 @@ del {
     -ms-flex: 0 0 72.5%;
         flex: 0 0 72.5%;
     max-width: 72.5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-9gdot5 {
+    -ms-flex: 0 0 79.16667%;
+        flex: 0 0 79.16667%;
+    max-width: 79.16667%;
   }
 }
 
@@ -36421,6 +36531,14 @@ del {
   }
 }
 
+@media (min-width: 1200px) {
+  .col-xl-9gdot5 {
+    -ms-flex: 0 0 79.16667%;
+        flex: 0 0 79.16667%;
+    max-width: 79.16667%;
+  }
+}
+
 @media (min-width: 1480px) {
   .col-wd-2gdot4 {
     -ms-flex: 0 0 20%;
@@ -36474,6 +36592,14 @@ del {
     -ms-flex: 0 0 72.5%;
         flex: 0 0 72.5%;
     max-width: 72.5%;
+  }
+}
+
+@media (min-width: 1480px) {
+  .col-wd-9gdot5 {
+    -ms-flex: 0 0 79.16667%;
+        flex: 0 0 79.16667%;
+    max-width: 79.16667%;
   }
 }
 

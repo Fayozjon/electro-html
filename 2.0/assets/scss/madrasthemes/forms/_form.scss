@@ -8,3 +8,9 @@
     font-size: $font-size-base;
     font-weight: $font-weight-normal;
 }
+
+.form-check-input {
+    &:disabled ~ .form-check-label {
+        color: $gray-21000;
+    }
+}

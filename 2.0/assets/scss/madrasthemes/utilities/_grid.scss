@@ -47,4 +47,10 @@
             @include make-col(8.7);
         }
     }
+
+    .col-#{$size}-9gdot5 {
+        @include media-breakpoint-up($size) {
+            @include make-col(9.5);
+        }
+    }
 }

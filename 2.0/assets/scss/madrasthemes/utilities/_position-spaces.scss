@@ -71,3 +71,9 @@
         right: 13.75rem; //220px
     }
 }
+
+@include media-breakpoint-up(md) {
+    .position-md-static {
+        position: static !important;
+    }
+}

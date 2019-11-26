@@ -18,9 +18,12 @@
         display: block;
     }
 
-    .dropdown-toggle {
+    .dropdown-title {
         padding: 0.938rem 1.75rem;
+        border-bottom: 1px solid $gray-80;
+    }
 
+    .dropdown-toggle {
         &::after {
             content: "\f054";
         }
@@ -30,30 +33,44 @@
         transform: rotate(-90deg);
     }
 
-    .dropdown-toggle,
-    .dropdown-current {
-        border-bottom: 1px solid $gray-24000;
-    }
-
-    .dropdown-current {
-        margin: 0 $font-size-base;
-        padding: 1rem 1rem .538rem;
-        border-color: $gray-80;
-    }
 
     .dropdown-list {
-        padding: $font-size-base;
+        padding: 0 $font-size-base $font-size-base;
 
-        li {
-            border-top: 1px solid $gray-80;
+        li:not(:nth-last-child(1)) {
+            .dropdown-item,
+            .dropdown-toggle {
+                border-bottom: 1px solid $gray-80;
+            }
+        }
 
-            &:first-child {
-                border-top-width: 0;
+        /* li:nth-last-child(1) {
+            .dropdown-item,
+            .dropdown-toggle {
+                border-bottom-width: 0;
+            }
+        } */
+    }
+
+    .dropdown-current {
+        margin: 0 $font-size-base .4rem;
+        padding: 1rem 1rem .538rem;
+        border-bottom:1px solid $gray-80;
+
+        & + .dropdown-list {
+            padding: 0 $font-size-base $font-size-base;
+
+            li:not(:nth-last-child(1)) {
+                .dropdown-item,
+                .dropdown-toggle {
+                    border-bottom-width: 0;
+                }
             }
         }
     }
 
-    .dropdown-item {
+    .dropdown-item,
+    .dropdown-toggle:not(.dropdown-title) {
         padding: 0.5rem 1.5rem;
 
         &.active {
@@ -61,9 +78,24 @@
         }
     }
 
-    .dropdown-current + .dropdown-list {
-        li {
-            border-top-width: 0;
+    &.view-all {
+        padding-bottom: .3rem;
+
+        > li:not(:first-child) {
+            margin: 0 $font-size-base;
+        }
+
+        > li:not(:last-child):not(:first-child) {
+            border-bottom:1px solid $gray-80;
+        }
+
+        .dropdown-list {
+            li {
+                .dropdown-item,
+                .dropdown-toggle {
+                    border-bottom-width: 0;
+                }
+            }
         }
     }
 }

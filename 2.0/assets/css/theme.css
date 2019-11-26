@@ -33940,8 +33940,9 @@ del {
   display: block;
 }
 
-.sidebar-navbar .dropdown-toggle {
+.sidebar-navbar .dropdown-title {
   padding: 0.938rem 1.75rem;
+  border-bottom: 1px solid #dddddd;
 }
 
 .sidebar-navbar .dropdown-toggle::after {
@@ -33953,39 +33954,61 @@ del {
           transform: rotate(-90deg);
 }
 
-.sidebar-navbar .dropdown-toggle,
-.sidebar-navbar .dropdown-current {
-  border-bottom: 1px solid #ececec;
-}
-
-.sidebar-navbar .dropdown-current {
-  margin: 0 0.875rem;
-  padding: 1rem 1rem .538rem;
-  border-color: #dddddd;
-}
-
 .sidebar-navbar .dropdown-list {
-  padding: 0.875rem;
+  padding: 0 0.875rem 0.875rem;
+  /* li:nth-last-child(1) {
+            .dropdown-item,
+            .dropdown-toggle {
+                border-bottom-width: 0;
+            }
+        } */
 }
 
-.sidebar-navbar .dropdown-list li {
-  border-top: 1px solid #dddddd;
+.sidebar-navbar .dropdown-list li:not(:nth-last-child(1)) .dropdown-item,
+.sidebar-navbar .dropdown-list li:not(:nth-last-child(1)) .dropdown-toggle {
+  border-bottom: 1px solid #dddddd;
 }
 
-.sidebar-navbar .dropdown-list li:first-child {
-  border-top-width: 0;
+.sidebar-navbar .dropdown-current {
+  margin: 0 0.875rem 0.4rem;
+  padding: 1rem 1rem .538rem;
+  border-bottom: 1px solid #dddddd;
 }
 
-.sidebar-navbar .dropdown-item {
+.sidebar-navbar .dropdown-current + .dropdown-list {
+  padding: 0 0.875rem 0.875rem;
+}
+
+.sidebar-navbar .dropdown-current + .dropdown-list li:not(:nth-last-child(1)) .dropdown-item,
+.sidebar-navbar .dropdown-current + .dropdown-list li:not(:nth-last-child(1)) .dropdown-toggle {
+  border-bottom-width: 0;
+}
+
+.sidebar-navbar .dropdown-item,
+.sidebar-navbar .dropdown-toggle:not(.dropdown-title) {
   padding: 0.5rem 1.5rem;
 }
 
-.sidebar-navbar .dropdown-item.active {
+.sidebar-navbar .dropdown-item.active,
+.sidebar-navbar .dropdown-toggle:not(.dropdown-title).active {
   font-weight: 700;
 }
 
-.sidebar-navbar .dropdown-current + .dropdown-list li {
-  border-top-width: 0;
+.sidebar-navbar.view-all {
+  padding-bottom: .3rem;
+}
+
+.sidebar-navbar.view-all > li:not(:first-child) {
+  margin: 0 0.875rem;
+}
+
+.sidebar-navbar.view-all > li:not(:last-child):not(:first-child) {
+  border-bottom: 1px solid #dddddd;
+}
+
+.sidebar-navbar.view-all .dropdown-list li .dropdown-item,
+.sidebar-navbar.view-all .dropdown-list li .dropdown-toggle {
+  border-bottom-width: 0;
 }
 
 /*------------------------------------

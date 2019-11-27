@@ -39,9 +39,13 @@
 
 // Form Controls
 @import "forms/form";
+@import "forms/checkbox/custom-checkbox";
 
 // Progress
 @import "progress/progress";
+
+// Pagination
+@import "pagination/pagination";
 
 // Sidebar
 @import "sidebar/sidebar";
@@ -68,3 +72,6 @@
 @import "utilities/transform";
 @import "utilities/z-index";
 @import "utilities/grid";
+
+// Vendor
+@import "vendor/range-slider/range-slider";

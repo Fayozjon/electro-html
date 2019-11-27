@@ -39,6 +39,12 @@ $gray-22000:                                                #d8d8d8;
 $gray-23000:                                                #aeaeae;
 $gray-24000:                                                #ececec;
 $gray-25000:                                                #acacac;
+$gray-26000:                                                #dfdfdf;
+$gray-27000:                                                #575560;
+$gray-28000:                                                #dcdcdc;
+$gray-29000:                                                #d6dbe1;
+$gray-30000:                                                #b0b0b0;
+$gray-31000:                                                #262626;
 
 
 // Colors
@@ -438,6 +444,12 @@ $btn-border-radius:                                           1.4rem;
 $btn-border-radius-lg:                                        2rem;
 $btn-border-radius-sm:                                        1.3rem;
 
+$custom-checkbox-indicator-border-radius:                     2px;
+$custom-control-indicator-size:                               .9rem;
+$custom-control-indicator-height-size:                        .86rem;
+$custom-control-indicator-border-color:                       $gray-26000;
+$custom-control-indicator-border-width:                       2px;
+
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
@@ -453,3 +465,20 @@ $input-border-radius-sm:                                      $btn-border-radius
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 $btn-font-weight:                                         $font-weight-bold;
+
+
+// Range Slider
+// =========================================================
+
+// Colors
+//$range-slider-inner-elements-bg:                            $gray-300 !default;
+
+// Text
+//$range-slider-inner-elements-text-size:                     .875rem !default;
+
+// Width & Heights
+//$range-slider-height:                                       1.25rem;
+$range-slider-inner-elements-height:                          .375rem;
+$range-slider-indicator-grid-height:                          1.5rem;
+$range-slider-stats-pointer-width:                            1rem;
+$range-slider-stats-pointer-height:                           $range-slider-stats-pointer-width;

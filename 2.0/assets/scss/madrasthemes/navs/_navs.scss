@@ -89,6 +89,19 @@
         }
     }
 
+    &-tab-shop {
+        .nav-link {
+            color: $gray-29000;
+            padding: 0;
+            font-size: ($font-size-base * 1.286); //18px
+
+            &.active,
+            &:hover {
+                color: $gray-27000;
+            }
+        }
+    }
+
     .nav-item {
 		&:not(:first-child) {
 			margin-left: .4rem;

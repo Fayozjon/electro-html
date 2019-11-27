@@ -95,6 +95,8 @@
         }
 
         .dropdown-list {
+            padding: 0 $font-size-base;
+            
             li {
                 .dropdown-item,
                 .dropdown-toggle {

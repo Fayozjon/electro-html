@@ -1,0 +1,10 @@
+/*------------------------------------
+  Custom Checkbox
+------------------------------------*/
+
+.custom-control-label {
+    // Background-color and (when enabled) gradient
+    &::before {
+        height: $custom-control-indicator-height-size;
+    }
+}

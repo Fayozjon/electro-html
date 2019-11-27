@@ -60,6 +60,18 @@
     }
 }
 
+.btn-primary-dark-w {
+    color: $dark;
+    background-color: $primary;
+    border-color: $primary;
+
+    &:hover {
+        background-color: $gray-90;
+        border-color: $gray-90;
+        color: $white;
+    }
+}
+
 .btn-primary-dark[type]:hover,
 .btn-primary-dark[type]:active,
 .btn-primary-dark[type]:focus,

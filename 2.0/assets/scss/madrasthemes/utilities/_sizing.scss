@@ -46,12 +46,20 @@
     width: 7.625rem; //122px
 }
 
+.min-width-50 {
+    min-width: 3.125rem; //50px
+}
+
 .max-width-60 {
     max-width: 3.75rem; //60px
 }
 
 .max-width-70 {
     max-width: 4.375rem; //70px
+}
+
+.max-width-100 {
+    max-width: 6.25rem; //100px
 }
 
 .max-width-100-xl {

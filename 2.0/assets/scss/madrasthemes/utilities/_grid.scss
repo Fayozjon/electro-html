@@ -54,3 +54,12 @@
         }
     }
 }
+
+.cart-page,
+.checkout-page {
+    .container {
+        @include media-breakpoint-up(wd) {
+            max-width: 1200px;
+        }
+    }
+}

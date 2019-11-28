@@ -242,6 +242,13 @@
     }
 }
 
+.prodcut-list-view,
+.prodcut-list-view-small {
+    .product-item:not(:last-child) {
+        border-bottom: 1px solid $gray-14000;
+    }
+}
+
 .remove-bd-xl-only {
     @include media-breakpoint-only(xl) {
         border-width: 0 !important;

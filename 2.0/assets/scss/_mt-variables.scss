@@ -45,6 +45,10 @@ $gray-28000:                                                #dcdcdc;
 $gray-29000:                                                #d6dbe1;
 $gray-30000:                                                #b0b0b0;
 $gray-31000:                                                #262626;
+$gray-32000:                                                #a7a7a7;
+$gray-33000:                                                #747474;
+$gray-34000:                                                #818181;
+
 
 
 // Colors
@@ -52,6 +56,7 @@ $yellow:                                                    #fed700;
 $dark:                                                      $gray-90;
 $black:                                                     #000000;
 $blue:                                                      #0062bd;
+$blue-light:                                                #66afe9;
 $cyan:                                                      #34bcec;
 $green:                                                     #5cb85c;
 $red:                                                       #ee0000;
@@ -353,8 +358,10 @@ $link-icon-height:                                          $link-icon-width;
 // Forms
 // =========================================================
 
+$form-focus-box-shadow:                                     none;
+
 // States
-$form-focus-border-color:                                   rgba($primary, .5);
+$form-focus-border-color:                                   $blue-light;
 
 // List Group
 // =========================================================
@@ -449,6 +456,14 @@ $custom-control-indicator-size:                               .9rem;
 $custom-control-indicator-height-size:                        .86rem;
 $custom-control-indicator-border-color:                       $gray-26000;
 $custom-control-indicator-border-width:                       2px;
+
+$input-color:                                                 $gray-34000;
+$input-border-color:                                          $gray-80;
+$input-placeholder-color:                                     $gray-34000;
+
+$input-focus-border-color:                                    $blue-light;
+$input-focus-color:                                           $input-color;
+$input-focus-box-shadow:                                      none;
 
 // Buttons + Forms
 //

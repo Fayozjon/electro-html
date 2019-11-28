@@ -22,6 +22,16 @@
     }
 }
 
+.bg-lg-down-transparent,
+a.bg-lg-down-transparent.bg-white:hover, 
+a.bg-lg-down-transparent.bg-white:focus,
+button.bg-lg-down-transparent.bg-white:hover,
+button.bg-lg-down-transparent.bg-white:focus {
+    @include media-breakpoint-down(lg) {
+        background-color: transparent !important;
+    }
+}
+
 .bg-lg-down-black {
     @include media-breakpoint-down(lg) {
         background-color: $black !important;

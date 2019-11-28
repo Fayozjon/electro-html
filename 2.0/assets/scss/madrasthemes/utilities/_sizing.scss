@@ -90,6 +90,12 @@
     max-width: 9.25rem; //148px
 }
 
+.max-width-160-sm {
+    @include media-breakpoint-down(sm) {
+        max-width: 10rem; //160px
+    }
+}
+
 .max-width-180 {
     max-width: 11.25rem; //180px
 }

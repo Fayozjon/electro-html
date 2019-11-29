@@ -33958,10 +33958,6 @@ del {
 /*------------------------------------
   Custom Checkbox
 ------------------------------------*/
-.custom-checkbox .custom-control-label::before {
-  height: 0.86rem;
-}
-
 .custom-radio {
   padding-left: 1.6rem;
 }

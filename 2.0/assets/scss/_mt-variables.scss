@@ -278,6 +278,15 @@ $header-vmm-nav-link-hover-color:                           $gray-2000;
 $header-secondary-nav-link-paddingY:                        ($font-size-base * 0.614); //8.5px
 $header-secondary-nav-link-divider-paddingY:                .5rem; //8px
 
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-padding-y:                                           .92rem;
+$alert-link-font-weight:                                    $font-weight-bold;
+$alert-border-radius:                                       0;
+
+
 // Go To
 // =========================================================
 
@@ -474,6 +483,7 @@ $input-btn-padding-y:                                         .67rem;
 $input-border-radius:                                         $btn-border-radius;
 $input-border-radius-lg:                                      $btn-border-radius-lg;
 $input-border-radius-sm:                                      $btn-border-radius-sm;
+$custom-select-border-radius:                                 $btn-border-radius;
 
 // Buttons
 //

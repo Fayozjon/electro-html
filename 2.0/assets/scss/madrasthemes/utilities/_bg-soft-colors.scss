@@ -22,8 +22,12 @@
     }
 }
 
+.bg-dark-lighter {
+    background-color: rgba(0,0,0,.035);
+}
+
 .bg-lg-down-transparent,
-a.bg-lg-down-transparent.bg-white:hover, 
+a.bg-lg-down-transparent.bg-white:hover,
 a.bg-lg-down-transparent.bg-white:focus,
 button.bg-lg-down-transparent.bg-white:hover,
 button.bg-lg-down-transparent.bg-white:focus {

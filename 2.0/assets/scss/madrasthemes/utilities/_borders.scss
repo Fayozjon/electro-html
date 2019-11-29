@@ -11,8 +11,24 @@
     border-width: 2px !important;
 }
 
+.border-width-3 {
+    border-width: 3px !important;
+}
+
 .border-width-0 {
     border-width: 0 !important;
+}
+
+/*------------------------------------
+  Borders-style
+------------------------------------*/
+
+.border-dotted-top {
+    border-top: 1px dotted transparent !important;
+}
+
+.border-dotted-bottom {
+    border-bottom: 1px dotted transparent !important;
 }
 
 /*------------------------------------

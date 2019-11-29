@@ -5860,7 +5860,7 @@ input[type="button"].btn-block {
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1rem center/8px 10px;
   background-color: #fff;
   border: 1px solid #d5dae2;
-  border-radius: 0.3125rem;
+  border-radius: 1.4rem;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -7572,10 +7572,10 @@ a.badge-indigo:focus, a.badge-indigo.focus {
 
 .alert {
   position: relative;
-  padding: 0.75rem 1.25rem;
+  padding: 0.92rem 1.25rem;
   margin-bottom: 1rem;
   border: 0 solid transparent;
-  border-radius: 0.3125rem;
+  border-radius: 0;
 }
 
 .alert-heading {
@@ -7583,7 +7583,7 @@ a.badge-indigo:focus, a.badge-indigo.focus {
 }
 
 .alert-link {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .alert-dismissible {
@@ -7594,7 +7594,7 @@ a.badge-indigo:focus, a.badge-indigo.focus {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0.75rem 1.25rem;
+  padding: 0.92rem 1.25rem;
   color: inherit;
 }
 
@@ -33639,6 +33639,33 @@ del {
 }
 
 /*------------------------------------
+  Alert
+------------------------------------*/
+.alert-primary {
+  background-color: #fed700;
+  color: #333e48;
+}
+
+.alert-primary .alert-link {
+  color: #333e48;
+}
+
+.alert-primary .alert-link:hover {
+  color: #000000;
+}
+
+.alert-primary,
+.alert-secondary,
+.alert-success,
+.alert-danger,
+.alert-warning,
+.alert-info,
+.alert-light,
+.alert-dark {
+  border-left: 9px solid rgba(0, 0, 0, 0.15);
+}
+
+/*------------------------------------
   Search-Forms
 ------------------------------------*/
 .custom-search-categories-select {
@@ -33921,7 +33948,7 @@ del {
   display: block;
   text-transform: capitalize;
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .form-check-input:disabled ~ .form-check-label {
@@ -33931,8 +33958,19 @@ del {
 /*------------------------------------
   Custom Checkbox
 ------------------------------------*/
-.custom-control-label::before {
+.custom-checkbox .custom-control-label::before {
   height: 0.86rem;
+}
+
+.custom-radio {
+  padding-left: 1.6rem;
+}
+
+.custom-radio .custom-control-label::after,
+.custom-radio .custom-control-label::before {
+  width: 1rem;
+  height: 1rem;
+  left: -1.6rem;
 }
 
 /*------------------------------------
@@ -34324,6 +34362,20 @@ del {
 }
 
 .cart-total .table td {
+  text-align: right;
+}
+
+.checkout-table .table thead th, .checkout-table .table thead td {
+  border-width: 0;
+}
+
+.checkout-table .table th, .checkout-table .table td {
+  padding: .75rem 0;
+  border-color: #dddddd;
+}
+
+.checkout-table .table th:last-child,
+.checkout-table .table td:last-child {
   text-align: right;
 }
 
@@ -34951,8 +35003,23 @@ del {
   border-width: 2px !important;
 }
 
+.border-width-3 {
+  border-width: 3px !important;
+}
+
 .border-width-0 {
   border-width: 0 !important;
+}
+
+/*------------------------------------
+  Borders-style
+------------------------------------*/
+.border-dotted-top {
+  border-top: 1px dotted transparent !important;
+}
+
+.border-dotted-bottom {
+  border-bottom: 1px dotted transparent !important;
 }
 
 /*------------------------------------
@@ -35769,6 +35836,10 @@ del {
   .bg-xl-transparent {
     background-color: transparent !important;
   }
+}
+
+.bg-dark-lighter {
+  background-color: rgba(0, 0, 0, 0.035);
 }
 
 @media (max-width: 1199.98px) {

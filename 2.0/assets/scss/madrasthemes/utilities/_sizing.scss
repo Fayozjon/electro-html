@@ -2,6 +2,10 @@
   Width
 ------------------------------------*/
 
+.width-1 {
+    width: 1px;
+}
+
 .width-22 {
     width: ($font-size-base * 1.571); //22px
 }
@@ -12,6 +16,10 @@
 
 .width-60 {
     width: ($font-size-base * 4.286); //60px
+}
+
+.width-50 {
+    width: 3.125rem; //50px
 }
 
 .width-75 {
@@ -112,6 +120,12 @@
 
 .min-width-200 {
     @include media-breakpoint-up(lg) {
+        min-width: 12.5rem; //200px
+    }
+}
+
+.min-width-200-md-lg {
+    @include media-breakpoint-between(md,lg) {
         min-width: 12.5rem; //200px
     }
 }
@@ -267,6 +281,10 @@
 
 .height-35 {
     height: ($font-size-base * 2.5); //35px
+}
+
+.height-50 {
+    height: 3.125rem; //50px
 }
 
 .height-60 {

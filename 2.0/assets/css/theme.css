@@ -34284,68 +34284,107 @@ del {
 /*------------------------------------
   Tables
 ------------------------------------*/
-.cart-table .table th, .cart-table .table td {
+.cart-table .table th, .cart-table .table td,
+.wishlist-table .table th,
+.wishlist-table .table td {
   border-width: 0;
   vertical-align: middle;
   padding: .75rem;
 }
 
-.cart-table .table thead th {
+.cart-table .table thead th,
+.wishlist-table .table thead th {
   border-bottom-width: 1px;
   color: #747474;
 }
 
-.cart-table table th {
+.cart-table table th,
+.wishlist-table table th {
   font-weight: 400;
 }
 
-.cart-table .table tbody tr:first-child td {
+.cart-table .table,
+.wishlist-table .table {
+  margin-bottom: 0;
+}
+
+.cart-table .table tbody tr:first-child td,
+.wishlist-table .table tbody tr:first-child td {
   padding-top: 2.188rem;
 }
 
-.cart-table .table tbody tr td {
+.cart-table .table tbody tr td,
+.wishlist-table .table tbody tr td {
   padding: 1.125rem 0.75rem;
 }
 
-.cart-table .table td {
+.cart-table .table td,
+.wishlist-table .table td {
   font-size: 1.06225rem;
 }
 
 @media (max-width: 767.98px) {
-  .cart-table .table thead {
+  .cart-table .table thead,
+  .wishlist-table .table thead {
     display: none;
   }
 }
 
 @media (max-width: 767.98px) {
-  .cart-table .table tr {
+  .cart-table .table tr,
+  .wishlist-table .table tr {
     display: block;
   }
-  .cart-table .table tr td {
+  .cart-table .table tr td,
+  .wishlist-table .table tr td {
     text-align: right;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
   }
-  .cart-table .table tr td::before {
+  .cart-table .table tr td::before,
+  .wishlist-table .table tr td::before {
     content: attr(data-title) ": ";
     font-weight: 700;
   }
 }
 
 @media (max-width: 767.98px) {
-  .cart-table .table tbody tr td:first-child {
+  .cart-table .table tbody tr td:first-child,
+  .wishlist-table .table tbody tr td:first-child {
     -ms-flex-pack: end;
         justify-content: flex-end;
   }
-  .cart-table .table tbody tr td:first-child::before {
+  .cart-table .table tbody tr td:first-child::before,
+  .wishlist-table .table tbody tr td:first-child::before {
     display: none;
   }
-  .cart-table .table tbody tr:not(:first-child):not(:last-child) td:first-child {
+  .cart-table .table tbody tr:not(:first-child):not(:last-child) td:first-child,
+  .wishlist-table .table tbody tr:not(:first-child):not(:last-child) td:first-child {
     border-top: 1px solid #dddddd;
     margin-top: 15px;
   }
+}
+
+.wishlist-table .table thead th {
+  border-top-width: 0;
+  border-bottom-width: 1px;
+}
+
+@media (max-width: 767.98px) {
+  .wishlist-table .table tbody tr td:last-child::before {
+    display: none;
+  }
+}
+
+.wishlist-table .table th {
+  font-weight: 400;
+}
+
+.wishlist-table .table tbody td {
+  border-top-width: 0;
+  border-bottom: 1px solid #eceeef;
 }
 
 .cart-total .table tr:first-child th,
@@ -34373,6 +34412,28 @@ del {
 .checkout-table .table th:last-child,
 .checkout-table .table td:last-child {
   text-align: right;
+}
+
+.table-compare-list th {
+  vertical-align: middle;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d7d7d7;
+  text-transform: uppercase;
+  min-width: 12.5rem;
+}
+
+.table-compare-list .table th, .table-compare-list .table td {
+  padding: .75rem;
+  text-align: center;
+}
+
+.table-compare-list .table th ul, .table-compare-list .table td ul {
+  text-align: left;
+}
+
+.table-compare-list .table .product-price {
+  font-size: 1.12525rem;
 }
 
 /*------------------------------------
@@ -35818,6 +35879,10 @@ del {
   background-color: #f5f5f5 !important;
 }
 
+.bg-1 {
+  background-color: #dddddd;
+}
+
 .slider-bg {
   background-color: #eef7f9;
 }
@@ -35868,6 +35933,10 @@ del {
 /*------------------------------------
   Width
 ------------------------------------*/
+.width-1 {
+  width: 1px;
+}
+
 .width-22 {
   width: 1.37462rem;
 }
@@ -35878,6 +35947,10 @@ del {
 
 .width-60 {
   width: 3.75025rem;
+}
+
+.width-50 {
+  width: 3.125rem;
 }
 
 .width-75 {
@@ -35973,6 +36046,12 @@ del {
 
 @media (min-width: 992px) {
   .min-width-200 {
+    min-width: 12.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .min-width-200-md-lg {
     min-width: 12.5rem;
   }
 }
@@ -36140,6 +36219,10 @@ del {
 
 .height-35 {
   height: 2.1875rem;
+}
+
+.height-50 {
+  height: 3.125rem;
 }
 
 .height-60 {

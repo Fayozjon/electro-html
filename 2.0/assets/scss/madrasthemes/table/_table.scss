@@ -2,7 +2,8 @@
   Tables
 ------------------------------------*/
 
-.cart-table {
+.cart-table,
+.wishlist-table {
     .table th, .table td {
         border-width: 0;
         vertical-align: middle;
@@ -19,6 +20,8 @@
     }
 
     .table {
+        margin-bottom: 0;
+
         tbody tr:first-child td {
             padding-top: 2.188rem;
         }
@@ -73,6 +76,35 @@
     }
 }
 
+.wishlist-table {
+    .table {
+        thead th {
+            border-top-width: 0;
+            border-bottom-width: 1px;
+        }
+
+        tbody {
+            @include media-breakpoint-down(sm) {
+                tr td:last-child {
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        th {
+            font-weight: $font-weight-normal;
+        }
+
+        tbody td {
+            border-top-width: 0;
+            border-bottom: 1px solid $gray-37000;
+        }
+    }
+}
+
 .cart-total {
     .table tr:first-child th,
     .table tr:first-child td {
@@ -104,6 +136,32 @@
         th:last-child,
         td:last-child {
             text-align: right;
+        }
+    }
+}
+
+.table-compare-list {
+    th {
+        vertical-align: middle;
+        background-color: $gray-35000;
+        text-align: center;
+        border: 1px solid $gray-36000;
+        text-transform: uppercase;
+        min-width: 12.5rem; //200px
+    }
+
+    .table {
+        th,td {
+            padding: .75rem;
+            text-align: center;
+
+            ul {
+                text-align: left;
+            }
+        }
+
+        .product-price {
+            font-size: ($font-size-base * 1.286); //18px
         }
     }
 }

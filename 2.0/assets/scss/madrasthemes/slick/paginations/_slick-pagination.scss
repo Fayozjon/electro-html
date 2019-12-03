@@ -26,3 +26,22 @@
         }
     }
 }
+
+.u-slick__pagination {
+    &--hover {
+        position: absolute;
+        opacity: 0;
+        left: 2.25rem;
+        bottom: -2.125rem;
+        @include transition($btn-transition);
+    }
+}
+
+.u-slick:hover {
+    .u-slick__pagination {
+        &--hover {
+            opacity: 1;
+            bottom: 2.125rem;
+        }
+    }
+}

@@ -60,6 +60,18 @@
     }
 }
 
+.btn-soft-secondary-w {
+    color: $body-color;
+    background-color: $gray-38000;
+    border-color: $gray-38000;
+
+    &:hover {
+        background-color: $body-color;
+        border-color: $body-color;
+        color: $white;
+    }
+}
+
 .btn-primary-dark-w {
     color: $dark;
     background-color: $primary;

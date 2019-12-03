@@ -10,6 +10,10 @@
     background-color: $gray-80; //#ddd
 }
 
+.bg-2 {
+    background-color: $gray-90; //#333e48
+}
+
 .slider-bg {
     background-color: $slider-bg;
 }
@@ -58,5 +62,12 @@ button.bg-lg-down-transparent.bg-white:focus {
             color: $black;
             background-color: $primary;
         }
+    }
+}
+
+.bg-primary-on-hover {
+    &:hover {
+        border-color: $primary !important;
+        background-color: $primary;
     }
 }

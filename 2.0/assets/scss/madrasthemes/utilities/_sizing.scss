@@ -234,6 +234,18 @@
     }
 }
 
+.max-width-1100-wd {
+    @include media-breakpoint-up(wd) {
+        max-width: 68.75rem; //1100px
+    }
+}
+
+.min-width-1100-wd {
+    @include media-breakpoint-up(wd) {
+        min-width: 68.75rem; //1100px
+    }
+}
+
 .max-width-1130 {
     @include media-breakpoint-up(wd) {
         max-width: 1130px;
@@ -332,6 +344,8 @@
     height: 7.625rem; //122px
 }
 
+
+
 .height-410-xl {
     @include media-breakpoint-up(md) {
         height: 25.625rem;
@@ -386,6 +400,10 @@
     @include media-breakpoint-only(xl) {
         min-height: ($font-size-base * 13); //182px
     }
+}
+
+.min-height-250 {
+    min-height: 15.625rem; //250px
 }
 
 .min-height-420 {
@@ -474,4 +492,9 @@
 
 .pyc-10 {
     padding: 10.5px 0 !important;
+}
+
+.object-fit-cover {
+    height: inherit;
+    object-fit: cover;
 }

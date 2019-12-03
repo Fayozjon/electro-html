@@ -51,6 +51,8 @@ $gray-34000:                                                #818181;
 $gray-35000:                                                #f1f1f1;
 $gray-36000:                                                #d7d7d7;
 $gray-37000:                                                #eceeef;
+$gray-38000:                                                #efecec;
+$gray-39000:                                                #434343;
 
 
 
@@ -201,7 +203,10 @@ $text-muted:                                              rgba($black, .2);
 // Paragraphs
 //
 // Style p element.
-$paragraph-color:            							  $gray-20000;
+$paragraph-color:            							  $gray-33000;
+$paragraph-margin-bottom:                                 1.875rem;
+
+
 
 
 // Borders

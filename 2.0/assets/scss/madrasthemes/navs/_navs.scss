@@ -166,3 +166,15 @@
 		}
 	}
 }
+
+.list-divider {
+
+    li:not(:last-child) {
+        &::after {
+            content: "/";
+            display: inline-block;
+            color: $gray-40000;
+            margin: 0 .6rem;
+        }
+    }
+}

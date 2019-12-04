@@ -109,3 +109,46 @@
         }
     }
 }
+
+.about-accordion {
+    .card-collapse:hover {
+        background-color: transparent;
+    }
+
+    .card-btn {
+        span {
+            padding: 0.594rem 0.798rem;
+        }
+
+        i {
+            color: $gray-43000;
+        }
+
+        .fa-minus {
+            display: none;
+        }
+    }
+
+    .card-btn[aria-expanded="false"] {
+        border-bottom-width: 0;
+    }
+
+    .card-btn[aria-expanded="true"] {
+        font-weight: $font-weight-bold;
+
+        .fa-plus {
+            display: none;
+        }
+
+        .fa-minus {
+            display: block;
+            color: $body-color;
+        }
+
+        span {
+            background-color: $primary;
+            border-color: $primary !important;
+            padding: 0.781rem 0.798rem;
+        }
+    }
+}

@@ -24304,8 +24304,8 @@ button:focus {
 }
 
 .u-xl-avatar {
-  width: 10rem;
-  height: 10rem;
+  width: 6.25012rem;
+  height: 6.25012rem;
 }
 
 /*------------------------------------
@@ -32989,6 +32989,25 @@ del {
   content: "- ";
 }
 
+blockquote:not(.blockquote) {
+  margin: 0 0 1.25rem 2.375rem;
+}
+
+blockquote:not(.blockquote)::before {
+  color: #a7a7a7;
+  content: "\f10d";
+  float: left;
+  font-family: FontAwesome;
+  font-size: 1.563rem;
+  margin-left: -2.313rem;
+}
+
+blockquote:not(.blockquote) p {
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  font-style: italic;
+}
+
 /*------------------------------------
   Links
 ------------------------------------*/
@@ -33989,6 +34008,45 @@ del {
   }
 }
 
+.about-accordion .card-collapse:hover {
+  background-color: transparent;
+}
+
+.about-accordion .card-btn span {
+  padding: 0.594rem 0.798rem;
+}
+
+.about-accordion .card-btn i {
+  color: #b5b5b5;
+}
+
+.about-accordion .card-btn .fa-minus {
+  display: none;
+}
+
+.about-accordion .card-btn[aria-expanded="false"] {
+  border-bottom-width: 0;
+}
+
+.about-accordion .card-btn[aria-expanded="true"] {
+  font-weight: 700;
+}
+
+.about-accordion .card-btn[aria-expanded="true"] .fa-plus {
+  display: none;
+}
+
+.about-accordion .card-btn[aria-expanded="true"] .fa-minus {
+  display: block;
+  color: #333e48;
+}
+
+.about-accordion .card-btn[aria-expanded="true"] span {
+  background-color: #fed700;
+  border-color: #fed700 !important;
+  padding: 0.781rem 0.798rem;
+}
+
 /*------------------------------------
   Form
 ------------------------------------*/
@@ -34652,6 +34710,13 @@ del {
   right: 100%;
 }
 
+.list-divider li:not(:last-child)::after {
+  content: "/";
+  display: inline-block;
+  color: #b9b9b9;
+  margin: 0 .6rem;
+}
+
 /*------------------------------------
   Typography Font Size
 ------------------------------------*/
@@ -35099,6 +35164,10 @@ del {
   color: #575560;
 }
 
+.text-gray-27[href]:hover {
+  color: #333e48;
+}
+
 .text-gray-300 {
   color: #b0b0b0;
 }
@@ -35109,6 +35178,10 @@ del {
 
 .text-gray-39 {
   color: #434343;
+}
+
+.text-gray-41 {
+  color: #989898;
 }
 
 .text-blue {
@@ -35194,6 +35267,14 @@ del {
 
 .border-color-3 {
   border-color: #ececec !important;
+}
+
+.border-color-4 {
+  border-color: #f7f7f7 !important;
+}
+
+.border-color-5 {
+  border-color: #b5b5b5 !important;
 }
 
 .border-top-primary {
@@ -36249,6 +36330,12 @@ del {
 @media (min-width: 1200px) {
   .max-width-450 {
     max-width: 28.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .max-width-620-lg {
+    max-width: 38.75rem;
   }
 }
 

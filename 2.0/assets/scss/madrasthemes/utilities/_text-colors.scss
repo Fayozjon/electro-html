@@ -52,6 +52,10 @@
 
 .text-gray-27 {
     color: $gray-27000; //#575560
+
+    &[href]:hover {
+		color: $gray-90;
+	}
 }
 
 .text-gray-300 {
@@ -64,6 +68,10 @@
 
 .text-gray-39 {
     color: $gray-39000; //#434343
+}
+
+.text-gray-41 {
+    color: $gray-41000; //#989898
 }
 
 

@@ -53,6 +53,10 @@ $gray-36000:                                                #d7d7d7;
 $gray-37000:                                                #eceeef;
 $gray-38000:                                                #efecec;
 $gray-39000:                                                #434343;
+$gray-40000:                                                #b9b9b9;
+$gray-41000:                                                #989898;
+$gray-42000:                                                #f7f7f7;
+$gray-43000:                                                #b5b5b5;
 
 
 
@@ -515,3 +519,10 @@ $range-slider-inner-elements-height:                          .375rem;
 $range-slider-indicator-grid-height:                          1.5rem;
 $range-slider-stats-pointer-width:                            1rem;
 $range-slider-stats-pointer-height:                           $range-slider-stats-pointer-width;
+
+
+// Avatar
+// =========================================================
+
+// Width & Heights
+$avatar-xl:                                                 ($font-size-base * 7.143);

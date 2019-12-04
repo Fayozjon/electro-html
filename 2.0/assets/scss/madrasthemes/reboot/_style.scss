@@ -59,3 +59,22 @@ del {
         //content: "\2014\00A0"; // em dash, nbsp
     }
 }
+
+blockquote:not(.blockquote) {
+    margin: 0 0 1.25rem 2.375rem;
+
+    &::before {
+        color: $gray-32000;
+        content: "\f10d";
+        float: left;
+        font-family: FontAwesome;
+        font-size: 1.563rem;
+        margin-left: -2.313rem;
+    }
+
+    p {
+        font-size: 0.938rem;
+        line-height: 1.563rem;
+        font-style: italic;
+    }
+}

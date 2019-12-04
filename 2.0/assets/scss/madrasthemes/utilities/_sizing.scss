@@ -222,6 +222,12 @@
     }
 }
 
+.max-width-620-lg {
+    @include media-breakpoint-up(lg) {
+        max-width: 38.75rem; //620px
+    }
+}
+
 .max-width-660-xl {
     @include media-breakpoint-up(xl) {
         max-width: 41.25rem; //660px

@@ -65,6 +65,12 @@ button.bg-lg-down-transparent.bg-white:focus {
     }
 }
 
+.bg-transparent-on-hover {
+    &:hover {
+        background-color: transparent !important;
+    }
+}
+
 .bg-primary-on-hover {
     &:hover {
         border-color: $primary !important;

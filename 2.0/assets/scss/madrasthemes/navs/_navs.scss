@@ -168,7 +168,6 @@
 }
 
 .list-divider {
-
     li:not(:last-child) {
         &::after {
             content: "/";
@@ -176,5 +175,85 @@
             color: $gray-40000;
             margin: 0 .6rem;
         }
+    }
+}
+
+.ec-store-directory {
+    >ul,
+    >ul ul {
+        margin: 0 0 0 0.438rem;
+        padding: 0;
+        list-style: none;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            border-left: 1px solid $gray-80;
+        }
+    }
+
+    a {
+        font-weight: $font-weight-bold;
+        color: $gray-90;
+    }
+
+    >ul {
+        margin-left: 0;
+
+        ul a {
+            font-weight: $font-weight-normal;
+        }
+
+        li {
+            margin: 0;
+            padding: 0 1.313rem;
+            line-height: 1.75rem;
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 10px;
+                height: 0;
+                border-top: 1px solid $gray-80;
+                margin-top: -1px;
+                position: absolute;
+                top: 1.25rem;
+                left: 0;
+            }
+        }
+
+        > li {
+            &::before {
+                top: 1.25rem;
+            }
+        }
+
+        li:last-child:before {
+            background-color: $white;
+            height: auto;
+            top: 1.313rem;
+            bottom: 0;
+        }
+
+        ul {
+            li:last-child:before {
+                top: 1.25rem;
+            }
+        }
+
+        li>a {
+            padding: 0.35rem 0;
+        }
+    }
+
+    ul li>a {
+        display: inline-block;
     }
 }

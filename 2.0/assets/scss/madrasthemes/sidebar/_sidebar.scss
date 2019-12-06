@@ -72,6 +72,10 @@
                 }
             }
         }
+
+        &.active {
+            font-weight: $font-weight-bold;
+        }
     }
 
     .dropdown-item,

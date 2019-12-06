@@ -30,6 +30,12 @@
     }
 }
 
+.bg-primary-down-lg {
+    @include media-breakpoint-down(lg) {
+        background-color: $primary !important;
+    }
+}
+
 .bg-dark-lighter {
     background-color: rgba(0,0,0,.035);
 }

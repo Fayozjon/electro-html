@@ -33105,7 +33105,7 @@ blockquote:not(.blockquote) p {
   width: 6.375rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .u-header__navbar-brand,
   .u-header__navbar-brand > img {
     width: 9.375rem;
@@ -36150,6 +36150,12 @@ blockquote:not(.blockquote) p {
   }
 }
 
+@media (max-width: 1199.98px) {
+  .bg-primary-down-lg {
+    background-color: #fed700 !important;
+  }
+}
+
 .bg-dark-lighter {
   background-color: rgba(0, 0, 0, 0.035);
 }
@@ -36328,11 +36334,19 @@ blockquote:not(.blockquote) p {
   }
 }
 
-.max-width-270 {
-  max-width: 16.875rem;
+@media (min-width: 1200px) {
+  .max-width-270 {
+    max-width: 16.875rem;
+  }
 }
 
-.min-width-270 {
+@media (min-width: 1200px) {
+  .min-width-270 {
+    min-width: 16.875rem;
+  }
+}
+
+.min-width-270-all {
   min-width: 16.875rem;
 }
 

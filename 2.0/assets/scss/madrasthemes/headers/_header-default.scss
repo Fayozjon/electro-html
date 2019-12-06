@@ -90,7 +90,7 @@
     & > img {
         width: $header-navbar-brand-width-sm;
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(xl) {
             width: $header-navbar-brand-width;
         }
     }

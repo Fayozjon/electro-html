@@ -143,10 +143,18 @@
 }
 
 .max-width-270 {
-    max-width: 16.875rem; //270px
+    @include media-breakpoint-up(xl) {
+        max-width: 16.875rem; //270px
+    }
 }
 
 .min-width-270 {
+    @include media-breakpoint-up(xl) {
+        min-width: 16.875rem; //270px
+    }
+}
+
+.min-width-270-all {
     min-width: 16.875rem; //270px
 }
 

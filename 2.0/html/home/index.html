@@ -55,7 +55,7 @@
                                         <a href="#" class="u-header-topbar__nav-link"><i class="ec ec-map-pointer mr-1"></i> Store Locator</a>
                                     </li>
                                     <li class="list-inline-item mr-0 u-header-topbar__nav-item u-header-topbar__nav-item-border">
-                                        <a href="#" class="u-header-topbar__nav-link"><i class="ec ec-transport mr-1"></i> Track Your Order</a>
+                                        <a href="../shop/track-your-order.html" class="u-header-topbar__nav-link"><i class="ec ec-transport mr-1"></i> Track Your Order</a>
                                     </li>
                                     <li class="list-inline-item mr-0 u-header-topbar__nav-item u-header-topbar__nav-item-border u-header-topbar__nav-item-no-border u-header-topbar__nav-item-border-single">
                                         <div class="d-flex align-items-center">
@@ -183,24 +183,24 @@
                                 <!-- End Nav -->
 
                                 <!-- ========== HEADER SIDEBAR ========== -->
-                                <aside id="sidebarHeader1" class="u-sidebar u-sidebar--left" aria-labelledby="sidebarHeaderInvokerMenu">
+                                <aside id="sidebarHeader1" class="u-sidebar u-sidebar--left" aria-labelledby="sidebarHeaderInvoker">
                                     <div class="u-sidebar__scroller">
                                         <div class="u-sidebar__container">
-                                            <div class="u-header-sidebar__footer-offset pb-0">
+                                            <div class="u-header-sidebar__footer-offset">
                                                 <!-- Toggle Button -->
-                                                <div class="d-sm-none position-absolute top-0 right-0 z-index-2 pt-4 pr-7">
+                                                <div class="position-absolute top-0 right-0 z-index-2 pt-4 pr-4 bg-white">
                                                     <button type="button" class="close ml-auto"
                                                         aria-controls="sidebarHeader"
                                                         aria-haspopup="true"
                                                         aria-expanded="false"
                                                         data-unfold-event="click"
                                                         data-unfold-hide-on-scroll="false"
-                                                        data-unfold-target="#sidebarHeader"
+                                                        data-unfold-target="#sidebarHeader1"
                                                         data-unfold-type="css-animation"
                                                         data-unfold-animation-in="fadeInLeft"
                                                         data-unfold-animation-out="fadeOutLeft"
                                                         data-unfold-duration="500">
-                                                        <span aria-hidden="true">×</span>
+                                                        <span aria-hidden="true"><i class="ec ec-close-remove text-gray-90 font-size-20"></i></span>
                                                     </button>
                                                 </div>
                                                 <!-- End Toggle Button -->
@@ -209,7 +209,7 @@
                                                 <div class="js-scrollbar u-sidebar__body">
                                                     <div id="headerSidebarContent" class="u-sidebar__content u-header-sidebar__content">
                                                         <!-- Logo -->
-                                                        <a class="d-flex navbar-brand u-header__navbar-brand u-header__navbar-brand-vertical" href="index.html" aria-label="Front">
+                                                        <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center mb-3" href="index.html" aria-label="Front">
                                                             <svg version="1.1" x="0px" y="0px" width="175.748px" height="42.52px" viewBox="0 0 175.748 42.52" enable-background="new 0 0 175.748 42.52" style="margin-bottom: 0;">
                                                                 <ellipse class="ellipse-bg" fill-rule="evenodd" clip-rule="evenodd" fill="#FDD700" cx="170.05" cy="36.341" rx="5.32" ry="5.367"></ellipse>
                                                                 <path fill-rule="evenodd" clip-rule="evenodd" fill="#333E48" d="M30.514,0.71c-0.034,0.003-0.066,0.008-0.056,0.056
@@ -254,405 +254,235 @@
 
                                                         <!-- List -->
                                                         <ul id="headerSidebarList" class="u-header-collapse__nav">
-                                                            <!-- Home Section -->
+                                                            <!-- Value of the Day -->
+                                                            <li class="">
+                                                                <a class="u-header-collapse__nav-link font-weight-bold" href="#">Value of the Day</a>
+                                                            </li>
+                                                            <!-- End Value of the Day -->
+
+                                                            <!-- Top 100 Offers -->
+                                                            <li class="">
+                                                                <a class="u-header-collapse__nav-link font-weight-bold" href="#">Top 100 Offers</a>
+                                                            </li>
+                                                            <!-- End Top 100 Offers -->
+
+                                                            <!-- New Arrivals -->
+                                                            <li class="">
+                                                                <a class="u-header-collapse__nav-link font-weight-bold" href="#">New Arrivals</a>
+                                                            </li>
+                                                            <!-- End New Arrivals -->
+
+                                                            <!-- Computers & Accessories -->
                                                             <li class="u-has-submenu u-header-collapse__submenu">
-                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomeCollapse" data-target="#headerSidebarHomeCollapse">
-                                                                    Home
+                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarComputersCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarComputersCollapse">
+                                                                    Computers & Accessories
                                                                 </a>
 
-                                                                <div id="headerSidebarHomeCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                                                    <ul id="headerSidebarHomeMenu" class="u-header-collapse__nav-list">
-                                                                        <!-- Home - Classic -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomeClassicSubNavCollapse" data-target="#headerSidebarHomeClassicSubNavCollapse">
-                                                                                Classic
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarHomeClassicSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="index.html">Classic Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-business.html">Classic Business</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-marketing.html">Classic Marketing</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-consulting.html">Classic Consulting</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-start-up.html">Classic Start-up</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-studio.html">Classic Studio <span class="badge badge-success badge-primary ml-1">New</span></a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Home - Classic -->
-
-                                                                        <!-- Home - Corporate -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarHomeCorporateSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomeCorporateSubNavCollapse">
-                                                                                Corporate
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarHomeCorporateSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="corporate-agency.html">Corporate Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="corporate-start-up.html">Corporate Start-Up</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="corporate-business.html">Corporate Business</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Home - Corporate -->
-
-                                                                        <!-- Home - Portfolio -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarHomePortfolioSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomePortfolioSubNavCollapse">
-                                                                                Portfolio
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarHomePortfolioSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="portfolio-agency.html">Portfolio Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="portfolio-profile.html">Portfolio Profile</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Home - Portfolio -->
-
-                                                                        <!-- Home - App -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarHomeAppSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomeAppSubNavCollapse">
-                                                                                App
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarHomeAppSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-ui-kit.html">App UI kit</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-saas.html">App SaaS</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-workflow.html">App Workflow</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-payment.html">App Payment</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-software.html">App Software</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Home - App -->
-
-                                                                        <!-- Home - Onepages -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerHomeSidebarOnepagesSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerHomeSidebarOnepagesSubNavCollapse">
-                                                                                Onepages <span class="badge badge-success badge-primary ml-2">New</span>
-                                                                            </a>
-
-                                                                            <ul id="headerHomeSidebarOnepagesSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="onepages-agency.html">Onepages Agency <span class="badge badge-success badge-primary ml-1">New</span></a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="onepages-showcase.html">Onepages Showcase <span class="badge badge-success badge-primary ml-1">New</span></a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Home - Onepages -->
-
-                                                                        <!-- Home - Blog -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerHomeSidebarBlogSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerHomeSidebarBlogSubNavCollapse">
-                                                                                Blog
-                                                                            </a>
-
-                                                                            <ul id="headerHomeSidebarBlogSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="blog-agency.html">Blog Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="blog-start-up.html">Blog Start-Up</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="blog-business.html">Blog Business</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Home - Blog -->
+                                                                <div id="headerSidebarComputersCollapse" class="collapse" data-parent="#headerSidebarContent">
+                                                                    <ul class="u-header-collapse__nav-list">
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Computers &amp; Accessories</span></li>
+                                                                        <li class=""><a class="u-header-collapse__submenu-nav-link" href="#">All Computers & Accessories</a></li>
+                                                                        <li class=""><a class="u-header-collapse__submenu-nav-link" href="#">Laptops, Desktops & Monitors</a></li>
+                                                                        <li class=""><a class="u-header-collapse__submenu-nav-link" href="#">Printers & Ink</a></li>
+                                                                        <li class=""><a class="u-header-collapse__submenu-nav-link" href="#">Networking & Internet Devices</a></li>
+                                                                        <li class=""><a class="u-header-collapse__submenu-nav-link" href="#">Computer Accessories</a></li>
+                                                                        <li class=""><a class="u-header-collapse__submenu-nav-link" href="#">Software</a></li>
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Office & Stationery</span></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Office & Stationery</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Electronics</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <!-- End Home Section -->
+                                                            <!-- End Computers & Accessories -->
 
-                                                            <!-- Page Section -->
+                                                            <!-- Cameras, Audio & Video -->
                                                             <li class="u-has-submenu u-header-collapse__submenu">
-                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesCollapse">
-                                                                    Pages
+                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarCamerasCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarCamerasCollapse">
+                                                                    Cameras, Audio & Video
                                                                 </a>
 
-                                                                <div id="headerSidebarPagesCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                                                    <ul id="headerSidebarPagesMenu" class="u-header-collapse__nav-list">
-                                                                        <!-- Page - Account -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesAccountSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesAccountSubNavCollapse">
-                                                                                Account
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarPagesAccountSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/dashboard.html">Dashboard</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/profile.html">Profile</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/my-tasks.html">My tasks</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/projects.html">Projects</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/members.html">Members</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/edit-profile.html">Edit profile</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/change-password.html">Change password</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/notifications.html">Notifications</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/activity.html">Activity</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/payment-methods.html">Payment methods</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/invite-friends.html">Invite friends</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/plans.html">Plans</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/api-token.html">API Token</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Account -->
-
-                                                                        <!-- Page - Company -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesCompanySubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesCompanySubNavCollapse">
-                                                                                Company
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarPagesCompanySubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/about-agency.html">About Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/services-agency.html">Services Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/careers.html">Careers</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/careers-single.html">Careers Single</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/hire-us.html">Hire Us</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/customers.html">Customers</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/customer-story.html">Customer story</a></li>;
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Company -->
-
-                                                                        <!-- Page - Portfolio -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesPortfolioSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesPortfolioSubNavCollapse">
-                                                                                Portfolio
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarPagesPortfolioSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/boxed-classic.html">All layouts</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/case-studies-simple.html">Case Studies Simple</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/case-studies-modern.html">Case Studies Modern</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/single-page-simple.html">Single Page Simple</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/single-page-grid.html">Single Page Grid</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/single-page-masonry.html">Single Page Masonry</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Portfolio -->
-
-                                                                        <!-- Page - Login -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesLoginSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesLoginSubNavCollapse">
-                                                                                Login
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarPagesLoginSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/login.html">Login</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/signup.html">Signup</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/recover-account.html">Recover Account</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/login-simple.html">Login Simple</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/signup-simple.html">Signup Simple</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/recover-account-simple.html">Recover Account Simple</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Login -->
-
-                                                                        <!-- Page - Contacts -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesContactsSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesContactsSubNavCollapse">
-                                                                                Contacts
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarPagesContactsSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/contacts-agency.html">Contacts Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/contacts-start-up.html">Contacts Start-Up</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Contacts -->
-
-                                                                        <!-- Page - Resources -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesResourcesSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesResourcesSubNavCollapse">
-                                                                                Resources
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarPagesResourcesSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/help.html">Help</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/help-article.html">Help article</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/faq.html">FAQ</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Resources -->
-
-                                                                        <!-- Page - Utilities -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesUtilitiesSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesUtilitiesSubNavCollapse">
-                                                                                Utilities
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarPagesUtilitiesSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/pricing.html">Pricing</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/terms.html">Terms & Conditions</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/privacy.html">Privacy & Policy</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Utilities -->
-
-                                                                        <!-- Page - Specialty -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesSpecialtySubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesSpecialtySubNavCollapse">
-                                                                                Specialty
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarPagesSpecialtySubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/cover-page.html">Cover Page</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/coming-soon.html">Coming Soon</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/maintenance-mode.html">Maintenance Mode</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/status.html">Status</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/invoice.html">Status</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/error-404.html">Error 404</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Specialty -->
+                                                                <div id="headerSidebarCamerasCollapse" class="collapse" data-parent="#headerSidebarContent">
+                                                                    <ul class="u-header-collapse__nav-list">
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Cameras & Photography</span></li>
+                                                                        <li class=""><a class="u-header-collapse__submenu-nav-link" href="#">Lenses</a></li>
+                                                                        <li class=""><a class="u-header-collapse__submenu-nav-link" href="#">Camera Accessories</a></li>
+                                                                        <li class=""><a class="u-header-collapse__submenu-nav-link" href="#">Security & Surveillance</a></li>
+                                                                        <li class=""><a class="u-header-collapse__submenu-nav-link" href="#">Binoculars & Telescopes</a></li>
+                                                                        <li class=""><a class="u-header-collapse__submenu-nav-link" href="#">Camcorders</a></li>
+                                                                        <li class=""><a class="u-header-collapse__submenu-nav-link" href="#">Software</a></li>
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Audio & Video</span></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Audio & Video</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Headphones & Speakers</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Electronics</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <!-- End Page Section -->
+                                                            <!-- End Cameras, Audio & Video -->
 
-                                                            <!-- Blog -->
+                                                            <!-- Mobiles & Tablets -->
                                                             <li class="u-has-submenu u-header-collapse__submenu">
-                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogCollapse">
-                                                                    Blog
+                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarMobilesCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarMobilesCollapse">
+                                                                    Mobiles & Tablets
                                                                 </a>
 
-                                                                <div id="headerSidebarBlogCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                                                    <ul id="headerSidebarBlogMenu" class="u-header-collapse__nav-list">
-                                                                        <!-- Blog - Classic -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogClassicSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogClassicSubNavCollapse">
-                                                                                Classic
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarBlogClassicSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/classic-left-sidebar.html">Left Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/classic-right-sidebar.html">Right Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/classic-full-width.html">Full Width</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Blog - Classic -->
-
-                                                                        <!-- Blog - Grid -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogGridSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogGridSubNavCollapse">
-                                                                                Grid
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarBlogGridSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/grid-left-sidebar.html">Left Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/grid-right-sidebar.html">Right Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/grid-full-width.html">Full Width</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Blog - Grid -->
-
-                                                                        <!-- Blog - List -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogListSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogListSubNavCollapse">
-                                                                                List
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarBlogListSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/list-left-sidebar.html">Left Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/list-right-sidebar.html">Right Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/list-full-width.html">Full Width</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Blog - List -->
-
-                                                                        <!-- Blog - Modern -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogModernSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogModernSubNavCollapse">
-                                                                                Modern
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarBlogModernSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/modern-left-sidebar.html">Left Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/modern-right-sidebar.html">Right Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/modern-full-width.html">Full Width</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Blog - Modern -->
-
-                                                                        <!-- Blog - Masonry -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogMasonrySubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogMasonrySubNavCollapse">
-                                                                                Masonry
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarBlogMasonrySubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/masonry-left-sidebar.html">Left Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/masonry-right-sidebar.html">Right Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/masonry-full-width.html">Full Width</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Blog - Masonry -->
-
-                                                                        <!-- Blog - Single Article -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogSingleArticleSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogSingleArticleSubNavCollapse">
-                                                                                Single Article
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarBlogSingleArticleSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/single-article-classic.html">Classic</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/single-article-simple.html">Simple</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Blog - Single Article -->
+                                                                <div id="headerSidebarMobilesCollapse" class="collapse" data-parent="#headerSidebarContent">
+                                                                    <ul class="u-header-collapse__nav-list">
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Mobiles & Tablets</span></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Mobile Phones</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Smartphones</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Refurbished Mobiles</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Cases & Covers</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Mobile Accessories</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Cases & Covers</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Tablets</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Tablet Accessories</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Electronics</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <!-- End Blog -->
+                                                            <!-- End Mobiles & Tablets -->
 
-                                                            <!-- Shop Section -->
+                                                            <!-- Movies, Music & Video -->
                                                             <li class="u-has-submenu u-header-collapse__submenu">
-                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarShopCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarShopCollapse">
-                                                                    Shop
+                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarMoviesCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarMoviesCollapse">
+                                                                    Movies, Music & Video
                                                                 </a>
 
-                                                                <div id="headerSidebarShopCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                                                    <ul id="headerSidebarShopMenu" class="u-header-collapse__nav-list u-header-collapse__nav-list--no-spacer">
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/classic.html">Classic</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/categories.html">Categories</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/categories-sidebar.html">Categories Sidebar</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/products-grid.html">Products Grid</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/products-list.html">Products List</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/single-product.html">Single Product</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/empty-cart.html">Empty Cart</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/cart.html">Cart</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/checkout.html">Checkout</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/order-completed.html">Order Completed</a></li>
+                                                                <div id="headerSidebarMoviesCollapse" class="collapse" data-parent="#headerSidebarContent">
+                                                                    <ul class="u-header-collapse__nav-list">
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Movies & TV Shows</span></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Movies & TV Shows</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All English</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Hindi</a></li>
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Video Games</span></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">PC Games</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Consoles</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Accessories</a></li>
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Music</span></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Music</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Indian Classical</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Musical Instruments</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <!-- End Shop Section -->
+                                                            <!-- End Movies, Music & Video -->
 
-                                                            <!-- Demos Section -->
+                                                            <!-- TV & Audio -->
                                                             <li class="u-has-submenu u-header-collapse__submenu">
-                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarDemosCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarDemosCollapse">
-                                                                    Demos
+                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarTvCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarTvCollapse">
+                                                                    TV & Audio
                                                                 </a>
 
-                                                                <div id="headerSidebarDemosCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                                                    <ul id="headerSidebarDemosMenu" class="u-header-collapse__nav-list u-header-collapse__nav-list--no-spacer">
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../house/index.html">House</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../job/index.html">Job</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../crypto/index.html">Crypto Landing</a></li>
+                                                                <div id="headerSidebarTvCollapse" class="collapse" data-parent="#headerSidebarContent">
+                                                                    <ul class="u-header-collapse__nav-list">
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Audio & Video</span></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Audio & Video</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Televisions</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Headphones</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Speakers</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Audio & Video Accessories</a></li>
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Music</span></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Televisions</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Headphones</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Electro Home Appliances</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <!-- End Demos Section -->
+                                                            <!-- End TV & Audio -->
 
-                                                            <!-- Docs Section -->
+                                                            <!-- Watches & Eyewear -->
                                                             <li class="u-has-submenu u-header-collapse__submenu">
-                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebardocsCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebardocsCollapse">
-                                                                    Docs
+                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarWatchesCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarWatchesCollapse">
+                                                                    Watches & Eyewear
                                                                 </a>
 
-                                                                <div id="headerSidebardocsCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                                                    <ul id="headerSidebardocsMenu" class="u-header-collapse__nav-list u-header-collapse__nav-list--no-spacer">
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../documentation/index.html">Classic</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../index.html">Get started</a></li>
+                                                                <div id="headerSidebarWatchesCollapse" class="collapse" data-parent="#headerSidebarContent">
+                                                                    <ul class="u-header-collapse__nav-list">
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Watches</span></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Watches</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Men's Watches</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Women's Watches</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Premium Watches</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Deals on Watches</a></li>
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Eyewear</span></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Men's Sunglasses</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <!-- End Docs Section -->
+                                                            <!-- End Watches & Eyewear -->
+
+                                                            <!-- Car, Motorbike & Industrial -->
+                                                            <li class="u-has-submenu u-header-collapse__submenu">
+                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarCarCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarCarCollapse">
+                                                                    Car, Motorbike & Industrial
+                                                                </a>
+
+                                                                <div id="headerSidebarCarCollapse" class="collapse" data-parent="#headerSidebarContent">
+                                                                    <ul class="u-header-collapse__nav-list">
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Car & Motorbike</span></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Cars & Bikes</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Car & Bike Care</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Lubricants</a></li>
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Shop for Bike</span></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Helmets & Gloves</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Bike Parts</a></li>
+                                                                        <li><span class="u-header-sidebar__sub-menu-title">Industrial Supplies</span></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Industrial Supplies</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Lab & Scientific</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <!-- End Car, Motorbike & Industrial -->
+
+                                                            <!-- Accessories -->
+                                                            <li class="u-has-submenu u-header-collapse__submenu">
+                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarAccessoriesCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarAccessoriesCollapse">
+                                                                    Accessories
+                                                                </a>
+
+                                                                <div id="headerSidebarAccessoriesCollapse" class="collapse" data-parent="#headerSidebarContent">
+                                                                    <ul class="u-header-collapse__nav-list">
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Cases</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Chargers</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Headphone Accessories</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Headphone Cases</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Headphones</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">All Industrial Supplies</a></li>
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="#">Lab & Scientific</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <!-- End Accessories -->
                                                         </ul>
                                                         <!-- End List -->
                                                     </div>
                                                 </div>
                                                 <!-- End Content -->
                                             </div>
+                                            <!-- Footer -->
+                                            <footer id="SVGwaveWithDots" class="svg-preloader u-header-sidebar__footer">
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item pr-3">
+                                                        <a class="u-header-sidebar__footer-link text-gray-90" href="#">Privacy</a>
+                                                    </li>
+                                                    <li class="list-inline-item pr-3">
+                                                        <a class="u-header-sidebar__footer-link text-gray-90" href="#">Terms</a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="u-header-sidebar__footer-link text-gray-90" href="#">
+                                                            <i class="fas fa-info-circle"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <!-- SVG Background Shape -->
+                                                <div class="position-absolute right-0 bottom-0 left-0 z-index-n1">
+                                                    <img class="js-svg-injector" src="../../assets/svg/components/wave-bottom-with-dots.svg" alt="Image Description"
+                                                    data-parent="#SVGwaveWithDots">
+                                                </div>
+                                                <!-- End SVG Background Shape -->
+                                            </footer>
+                                            <!-- End Footer -->
                                         </div>
                                     </div>
                                 </aside>
@@ -718,14 +548,14 @@
                                             <!-- End Input -->
                                         </li>
                                         <!-- End Search -->
-                                        <li class="col d-none d-xl-block"><a href="#" class="text-gray-90" data-toggle="tooltip" data-placement="top" title="Compare"><i class="font-size-22 ec ec-compare"></i></a></li>
-                                        <li class="col d-none d-xl-block"><a href="#" class="text-gray-90" data-toggle="tooltip" data-placement="top" title="Favorites"><i class="font-size-22 ec ec-favorites"></i></a></li>
-                                        <li class="col d-xl-none px-2 px-sm-3"><a href="#" class="text-gray-90" data-toggle="tooltip" data-placement="top" title="My Account"><i class="font-size-22 ec ec-user"></i></a></li>
+                                        <li class="col d-none d-xl-block"><a href="../shop/compare.html" class="text-gray-90" data-toggle="tooltip" data-placement="top" title="Compare"><i class="font-size-22 ec ec-compare"></i></a></li>
+                                        <li class="col d-none d-xl-block"><a href="../shop/wishlist.html" class="text-gray-90" data-toggle="tooltip" data-placement="top" title="Favorites"><i class="font-size-22 ec ec-favorites"></i></a></li>
+                                        <li class="col d-xl-none px-2 px-sm-3"><a href="../shop/my-account.html" class="text-gray-90" data-toggle="tooltip" data-placement="top" title="My Account"><i class="font-size-22 ec ec-user"></i></a></li>
                                         <li class="col pr-xl-0 px-2 px-sm-3">
-                                            <a href="#" class="text-gray-90 position-relative d-flex " data-toggle="tooltip" data-placement="top" title="Cart">
+                                            <a href="../shop/cart.html" class="text-gray-90 position-relative d-flex " data-toggle="tooltip" data-placement="top" title="Cart">
                                                 <i class="font-size-22 ec ec-shopping-bag"></i>
-                                                <span class="bg-lg-down-black width-22 height-22 bg-primary position-absolute d-flex align-items-center justify-content-center rounded-circle left-12 top-8 font-weight-bold font-size-12">4</span>
-                                                <span class="d-none d-xl-block font-weight-bold font-size-16 text-gray-90 ml-3">$299.00</span>
+                                                <span class="bg-lg-down-black width-22 height-22 bg-primary position-absolute d-flex align-items-center justify-content-center rounded-circle left-12 top-8 font-weight-bold font-size-12">2</span>
+                                                <span class="d-none d-xl-block font-weight-bold font-size-16 text-gray-90 ml-3">$1785.00</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -1137,67 +967,67 @@
                                                             <li><a href="home-v5.html" class="nav-link u-header__sub-menu-nav-link">Home v5</a></li>
                                                             <li><a href="home-v6.html" class="nav-link u-header__sub-menu-nav-link">Home v6</a></li>
                                                             <li><a href="home-v7.html" class="nav-link u-header__sub-menu-nav-link">Home v7</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">About</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Contact v2</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Contact v1</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">FAQ</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Store Directory</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Terms and Conditions</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">404</a></li>
+                                                            <li><a href="about.html" class="nav-link u-header__sub-menu-nav-link">About</a></li>
+                                                            <li><a href="contact-v1.html" class="nav-link u-header__sub-menu-nav-link">Contact v1</a></li>
+                                                            <li><a href="contact-v2.html" class="nav-link u-header__sub-menu-nav-link">Contact v2</a></li>
+                                                            <li><a href="faq.html" class="nav-link u-header__sub-menu-nav-link">FAQ</a></li>
+                                                            <li><a href="store-directory.html" class="nav-link u-header__sub-menu-nav-link">Store Directory</a></li>
+                                                            <li><a href="terms-and-conditions.html" class="nav-link u-header__sub-menu-nav-link">Terms and Conditions</a></li>
+                                                            <li><a href="404.html" class="nav-link u-header__sub-menu-nav-link">404</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <span class="u-header__sub-menu-title">Shop Pages</span>
                                                         <ul class="u-header__sub-menu-nav-group mb-3">
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Shop Grid</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Shop Grid Extended</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Shop List View</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Shop List View Small</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Shop Left Sidebar</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Shop Full width</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Shop Right Sidebar</a></li>
+                                                            <li><a href="../shop/shop-grid.html" class="nav-link u-header__sub-menu-nav-link">Shop Grid</a></li>
+                                                            <li><a href="../shop/shop-grid-extended.html" class="nav-link u-header__sub-menu-nav-link">Shop Grid Extended</a></li>
+                                                            <li><a href="../shop/shop-list-view.html" class="nav-link u-header__sub-menu-nav-link">Shop List View</a></li>
+                                                            <li><a href="../shop/shop-list-view-small.html" class="nav-link u-header__sub-menu-nav-link">Shop List View Small</a></li>
+                                                            <li><a href="../shop/shop-left-sidebar.html" class="nav-link u-header__sub-menu-nav-link">Shop Left Sidebar</a></li>
+                                                            <li><a href="../shop/shop-full-width.html" class="nav-link u-header__sub-menu-nav-link">Shop Full width</a></li>
+                                                            <li><a href="../shop/shop-right-sidebar.html" class="nav-link u-header__sub-menu-nav-link">Shop Right Sidebar</a></li>
                                                         </ul>
                                                         <span class="u-header__sub-menu-title">Product Categories</span>
                                                         <ul class="u-header__sub-menu-nav-group">
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">4 Column Sidebar</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">5 Column Sidebar</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">6 Column Full width</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">7 Columns Full width</a></li>
+                                                            <li><a href="../shop/product-categories-4-column-sidebar.html" class="nav-link u-header__sub-menu-nav-link">4 Column Sidebar</a></li>
+                                                            <li><a href="../shop/product-categories-5-column-sidebar.html" class="nav-link u-header__sub-menu-nav-link">5 Column Sidebar</a></li>
+                                                            <li><a href="../shop/product-categories-6-column-full-width.html" class="nav-link u-header__sub-menu-nav-link">6 Column Full width</a></li>
+                                                            <li><a href="../shop/product-categories-7-column-full-width.html" class="nav-link u-header__sub-menu-nav-link">7 Columns Full width</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <span class="u-header__sub-menu-title">Single Product Pages</span>
                                                         <ul class="u-header__sub-menu-nav-group mb-3">
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Single Product Extended</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Single Product Fullwidth</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Single Product Sidebar</a></li>
+                                                            <li><a href="../shop/single-product-extended.html" class="nav-link u-header__sub-menu-nav-link">Single Product Extended</a></li>
+                                                            <li><a href="../shop/single-product-fullwidth.html" class="nav-link u-header__sub-menu-nav-link">Single Product Fullwidth</a></li>
+                                                            <li><a href="../shop/single-product-sidebar.html" class="nav-link u-header__sub-menu-nav-link">Single Product Sidebar</a></li>
                                                         </ul>
                                                         <span class="u-header__sub-menu-title">WooCommerce Pages</span>
                                                         <ul class="u-header__sub-menu-nav-group">
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Shop</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Cart</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Checkout</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">My Account</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Track your Order</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Compare</a></li>
+                                                            <li><a href="../shop/shop.html" class="nav-link u-header__sub-menu-nav-link">Shop</a></li>
+                                                            <li><a href="../shop/cart.html" class="nav-link u-header__sub-menu-nav-link">Cart</a></li>
+                                                            <li><a href="../shop/checkout.html" class="nav-link u-header__sub-menu-nav-link">Checkout</a></li>
+                                                            <li><a href="../shop/my-account.html" class="nav-link u-header__sub-menu-nav-link">My Account</a></li>
+                                                            <li><a href="../shop/track-your-order.html" class="nav-link u-header__sub-menu-nav-link">Track your Order</a></li>
+                                                            <li><a href="../shop/compare.html" class="nav-link u-header__sub-menu-nav-link">Compare</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <span class="u-header__sub-menu-title">Blog Pages</span>
                                                         <ul class="u-header__sub-menu-nav-group mb-3">
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Blog v1</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Blog v3</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Blog v2</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Blog Full Width</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">Single Blog Post</a></li>
+                                                            <li><a href="../blog/blog-v1.html" class="nav-link u-header__sub-menu-nav-link">Blog v1</a></li>
+                                                            <li><a href="../blog/blog-v2.html" class="nav-link u-header__sub-menu-nav-link">Blog v2</a></li>
+                                                            <li><a href="../blog/blog-v3.html" class="nav-link u-header__sub-menu-nav-link">Blog v3</a></li>
+                                                            <li><a href="../blog/blog-full-width.html" class="nav-link u-header__sub-menu-nav-link">Blog Full Width</a></li>
+                                                            <li><a href="../blog/single-blog-post.html" class="nav-link u-header__sub-menu-nav-link">Single Blog Post</a></li>
                                                         </ul>
                                                         <span class="u-header__sub-menu-title">Shop Columns</span>
                                                         <ul class="u-header__sub-menu-nav-group">
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">7 Columns Full width</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">6 Columns Full width</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">5 Columns Sidebar</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">4 Columns Sidebar</a></li>
-                                                            <li><a href="#" class="nav-link u-header__sub-menu-nav-link">3 Columns Sidebar</a></li>
+                                                            <li><a href="../shop/shop-7-columns-full-width.html" class="nav-link u-header__sub-menu-nav-link">7 Columns Full width</a></li>
+                                                            <li><a href="../shop/shop-6-columns-full-width.html" class="nav-link u-header__sub-menu-nav-link">6 Columns Full width</a></li>
+                                                            <li><a href="../shop/shop-5-columns-sidebar.html" class="nav-link u-header__sub-menu-nav-link">5 Columns Sidebar</a></li>
+                                                            <li><a href="../shop/shop-4-columns-sidebar.html" class="nav-link u-header__sub-menu-nav-link">4 Columns Sidebar</a></li>
+                                                            <li><a href="../shop/shop-3-columns-sidebar.html" class="nav-link u-header__sub-menu-nav-link">3 Columns Sidebar</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -8910,7 +8740,7 @@
 
                                         <div class="text-center mb-4">
                                             <span class="small text-muted">Do not have an account?</span>
-                                            <a class="js-animation-link small" href="javascript:;"
+                                            <a class="js-animation-link small text-dark" href="javascript:;"
                                                data-target="#signup"
                                                data-link-group="idForm"
                                                data-animation-in="slideInUp">Signup
@@ -9007,7 +8837,7 @@
 
                                         <div class="text-center mb-4">
                                             <span class="small text-muted">Already have an account?</span>
-                                            <a class="js-animation-link small" href="javascript:;"
+                                            <a class="js-animation-link small text-dark" href="javascript:;"
                                                 data-target="#login"
                                                 data-link-group="idForm"
                                                 data-animation-in="slideInUp">Login
@@ -9144,6 +8974,9 @@
                     breakpoint: 767.98,
                     hideTimeOut: 0
                 });
+
+                // initialization of svg injector module
+                $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
             });
 
             $(document).on('ready', function () {

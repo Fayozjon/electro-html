@@ -6,7 +6,7 @@
  * http://revaxarts.com
  *
  */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{
 	margin:0;
 	padding:0;
 	border:0;
@@ -17,7 +17,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,ac
 	font-family:inherit;
 	vertical-align:baseline;
 }
-html { 
+html {
 	font-size:101%;
 	font-family:Arial,verdana,arial,sans-serif;
 	font-size:12px;
@@ -47,7 +47,7 @@ li.placeholder{
 	width:100%;
 	font-size:16px;
 }
-hr { 
+hr {
 	display:block;
 	height:0px;
 	line-height:0px;
@@ -159,7 +159,8 @@ noscript p{
 	height:20%;
 	max-height:200px;
 	min-height:70px;
-	width:200px;
+	width:160px;
+	margin: auto;
 	background-position:center center;
 	background-repeat:no-repeat;
 }
@@ -285,7 +286,10 @@ noscript p{
 }
 #documenter_content code{
 	font-family:"Courier New", Courier, monospace;
-	font-size:12px;
+	font-size:14px;
+	color: #000;
+	tab-size: 2;
+	line-height: 1.6;
 }
 #documenter_content .warning{
 	padding:10px 10px 10px 30px;
@@ -365,7 +369,7 @@ noscript p{
 	p, h2, h3 { orphans: 3; widows: 3; }
 	h2, h3{ page-break-after: avoid; }
 	hr { border-top:1px solid #000 !important;border-bottom:0 !important; }
-	
+
 	#documenter_sidebar{
 		-moz-box-shadow:none;
 		-webkit-box-shadow:none;
@@ -377,7 +381,7 @@ noscript p{
 		margin-top:500px;
 	}
 	#documenter_sidebar ul:before { content: "Table of Contents"; }
-	
+
 	#documenter_sidebar ul{
 		border:0 !important;
 	}

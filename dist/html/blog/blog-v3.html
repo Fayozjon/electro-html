@@ -181,19 +181,19 @@
                                         <div class="u-sidebar__container">
                                             <div class="u-header-sidebar__footer-offset pb-0">
                                                 <!-- Toggle Button -->
-                                                <div class="d-sm-none position-absolute top-0 right-0 z-index-2 pt-4 pr-7">
+                                                <div class="position-absolute top-0 right-0 z-index-2 pt-4 pr-7">
                                                     <button type="button" class="close ml-auto"
                                                         aria-controls="sidebarHeader"
                                                         aria-haspopup="true"
                                                         aria-expanded="false"
                                                         data-unfold-event="click"
                                                         data-unfold-hide-on-scroll="false"
-                                                        data-unfold-target="#sidebarHeader"
+                                                        data-unfold-target="#sidebarHeader1"
                                                         data-unfold-type="css-animation"
                                                         data-unfold-animation-in="fadeInLeft"
                                                         data-unfold-animation-out="fadeOutLeft"
                                                         data-unfold-duration="500">
-                                                        <span aria-hidden="true">×</span>
+                                                        <span aria-hidden="true"><i class="ec ec-close-remove text-gray-90 font-size-20"></i></span>
                                                     </button>
                                                 </div>
                                                 <!-- End Toggle Button -->
@@ -202,7 +202,7 @@
                                                 <div class="js-scrollbar u-sidebar__body">
                                                     <div id="headerSidebarContent" class="u-sidebar__content u-header-sidebar__content">
                                                         <!-- Logo -->
-                                                        <a class="d-flex navbar-brand u-header__navbar-brand u-header__navbar-brand-vertical" href="../home/index.html" aria-label="Electro">
+                                                        <a class="d-flex ml-0 navbar-brand u-header__navbar-brand u-header__navbar-brand-vertical" href="../home/index.html" aria-label="Electro">
                                                             <svg version="1.1" x="0px" y="0px" width="175.748px" height="42.52px" viewBox="0 0 175.748 42.52" enable-background="new 0 0 175.748 42.52" style="margin-bottom: 0;">
                                                                 <ellipse class="ellipse-bg" fill-rule="evenodd" clip-rule="evenodd" fill="#FDD700" cx="170.05" cy="36.341" rx="5.32" ry="5.367"></ellipse>
                                                                 <path fill-rule="evenodd" clip-rule="evenodd" fill="#333E48" d="M30.514,0.71c-0.034,0.003-0.066,0.008-0.056,0.056
@@ -250,396 +250,256 @@
                                                             <!-- Home Section -->
                                                             <li class="u-has-submenu u-header-collapse__submenu">
                                                                 <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomeCollapse" data-target="#headerSidebarHomeCollapse">
-                                                                    Home
+                                                                    Home & Static Pages
                                                                 </a>
 
                                                                 <div id="headerSidebarHomeCollapse" class="collapse" data-parent="#headerSidebarContent">
                                                                     <ul id="headerSidebarHomeMenu" class="u-header-collapse__nav-list">
-                                                                        <!-- Home - Classic -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomeClassicSubNavCollapse" data-target="#headerSidebarHomeClassicSubNavCollapse">
-                                                                                Classic
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarHomeClassicSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="index.html">Classic Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-business.html">Classic Business</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-marketing.html">Classic Marketing</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-consulting.html">Classic Consulting</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-start-up.html">Classic Start-up</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="classic-studio.html">Classic Studio <span class="badge badge-success badge-primary ml-1">New</span></a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Home - Classic -->
-
-                                                                        <!-- Home - Corporate -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarHomeCorporateSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomeCorporateSubNavCollapse">
-                                                                                Corporate
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarHomeCorporateSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="corporate-agency.html">Corporate Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="corporate-start-up.html">Corporate Start-Up</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="corporate-business.html">Corporate Business</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Home - Corporate -->
-
-                                                                        <!-- Home - Portfolio -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarHomePortfolioSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomePortfolioSubNavCollapse">
-                                                                                Portfolio
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarHomePortfolioSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="portfolio-agency.html">Portfolio Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="portfolio-profile.html">Portfolio Profile</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Home - Portfolio -->
-
-                                                                        <!-- Home - App -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarHomeAppSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarHomeAppSubNavCollapse">
-                                                                                App
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarHomeAppSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-ui-kit.html">App UI kit</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-saas.html">App SaaS</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-workflow.html">App Workflow</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-payment.html">App Payment</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="app-software.html">App Software</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Home - App -->
-
-                                                                        <!-- Home - Onepages -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerHomeSidebarOnepagesSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerHomeSidebarOnepagesSubNavCollapse">
-                                                                                Onepages <span class="badge badge-success badge-primary ml-2">New</span>
-                                                                            </a>
-
-                                                                            <ul id="headerHomeSidebarOnepagesSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="onepages-agency.html">Onepages Agency <span class="badge badge-success badge-primary ml-1">New</span></a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="onepages-showcase.html">Onepages Showcase <span class="badge badge-success badge-primary ml-1">New</span></a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Home - Onepages -->
-
-                                                                        <!-- Home - Blog -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerHomeSidebarBlogSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerHomeSidebarBlogSubNavCollapse">
-                                                                                Blog
-                                                                            </a>
-
-                                                                            <ul id="headerHomeSidebarBlogSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarHomeMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="blog-agency.html">Blog Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="blog-start-up.html">Blog Start-Up</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="blog-business.html">Blog Business</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Home - Blog -->
+                                                                        <!-- Home - v1 -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/index.html">Home v1</a></li>
+                                                                        <!-- End Home - v1 -->
+                                                                        <!-- Home - v2 -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/home-v2.html">Home v2</a></li>
+                                                                        <!-- End Home - v2 -->
+                                                                        <!-- Home - v3 -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/home-v3.html">Home v3</a></li>
+                                                                        <!-- End Home - v3 -->
+                                                                        <!-- Home - v3-full-color-bg -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/home-v3-full-color-bg.html">Home v3.1</a></li>
+                                                                        <!-- End Home - v3-full-color-bg -->
+                                                                        <!-- Home - v4 -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/home-v4.html">Home v4</a></li>
+                                                                        <!-- End Home - v4 -->
+                                                                        <!-- Home - v5 -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/home-v5.html">Home v5</a></li>
+                                                                        <!-- End Home - v5 -->
+                                                                        <!-- Home - v6 -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/home-v6.html">Home v6</a></li>
+                                                                        <!-- End Home - v6 -->
+                                                                        <!-- Home - v7 -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/home-v7.html">Home v7</a></li>
+                                                                        <!-- End Home - v7 -->
+                                                                        <!-- About -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/about.html">About</a></li>
+                                                                        <!-- End About -->
+                                                                        <!-- Contact v1 -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/contact-v1.html">Contact v1</a></li>
+                                                                        <!-- End Contact v1 -->
+                                                                        <!-- Contact v2 -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/contact-v2.html">Contact v2</a></li>
+                                                                        <!-- End Contact v2 -->
+                                                                        <!-- FAQ -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/faq.html">FAQ</a></li>
+                                                                        <!-- End FAQ -->
+                                                                        <!-- Store Directory -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/store-directory.html">Store Directory</a></li>
+                                                                        <!-- End Store Directory -->
+                                                                        <!-- Terms and Conditions -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/terms-and-conditions.html">Terms and Conditions</a></li>
+                                                                        <!-- End Terms and Conditions -->
+                                                                        <!-- 404 -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../home/404.html">404</a></li>
+                                                                        <!-- End 404 -->
                                                                     </ul>
                                                                 </div>
                                                             </li>
                                                             <!-- End Home Section -->
 
-                                                            <!-- Page Section -->
+                                                            <!-- Shop Pages -->
                                                             <li class="u-has-submenu u-header-collapse__submenu">
                                                                 <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesCollapse">
-                                                                    Pages
+                                                                    Shop Pages
                                                                 </a>
 
                                                                 <div id="headerSidebarPagesCollapse" class="collapse" data-parent="#headerSidebarContent">
                                                                     <ul id="headerSidebarPagesMenu" class="u-header-collapse__nav-list">
-                                                                        <!-- Page - Account -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesAccountSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesAccountSubNavCollapse">
-                                                                                Account
-                                                                            </a>
+                                                                        <!-- Shop Grid -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/shop-grid.html">Shop Grid</a></li>
+                                                                        <!-- End Shop Grid -->
 
-                                                                            <ul id="headerSidebarPagesAccountSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/dashboard.html">Dashboard</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/profile.html">Profile</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/my-tasks.html">My tasks</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/projects.html">Projects</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/members.html">Members</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/edit-profile.html">Edit profile</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/change-password.html">Change password</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/notifications.html">Notifications</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/activity.html">Activity</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/payment-methods.html">Payment methods</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/invite-friends.html">Invite friends</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/plans.html">Plans</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../account/api-token.html">API Token</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Account -->
+                                                                        <!-- Shop Grid Extended -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/shop-grid-extended.html">Shop Grid Extended</a></li>
+                                                                        <!-- End Shop Grid Extended -->
 
-                                                                        <!-- Page - Company -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesCompanySubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesCompanySubNavCollapse">
-                                                                                Company
-                                                                            </a>
+                                                                        <!-- Shop List View -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/shop-list-view.html">Shop List View</a></li>
+                                                                        <!-- End Shop List View -->
 
-                                                                            <ul id="headerSidebarPagesCompanySubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/about-agency.html">About Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/services-agency.html">Services Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/careers.html">Careers</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/careers-single.html">Careers Single</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/hire-us.html">Hire Us</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/customers.html">Customers</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/customer-story.html">Customer story</a></li>;
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Company -->
+                                                                        <!-- Shop List View Small -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/shop-list-view-small.html">Shop List View Small</a></li>
+                                                                        <!-- End Shop List View Small -->
 
-                                                                        <!-- Page - Portfolio -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesPortfolioSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesPortfolioSubNavCollapse">
-                                                                                Portfolio
-                                                                            </a>
+                                                                        <!-- Shop Left Sidebar -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/shop-left-sidebar.html">Shop Left Sidebar</a></li>
+                                                                        <!-- End Shop Left Sidebar -->
 
-                                                                            <ul id="headerSidebarPagesPortfolioSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/boxed-classic.html">All layouts</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/case-studies-simple.html">Case Studies Simple</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/case-studies-modern.html">Case Studies Modern</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/single-page-simple.html">Single Page Simple</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/single-page-grid.html">Single Page Grid</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../portfolio/single-page-masonry.html">Single Page Masonry</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Portfolio -->
+                                                                        <!-- Shop Full width -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/shop-full-width.html">Shop Full width</a></li>
+                                                                        <!-- End Shop Full width -->
 
-                                                                        <!-- Page - Login -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesLoginSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesLoginSubNavCollapse">
-                                                                                Login
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarPagesLoginSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/login.html">Login</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/signup.html">Signup</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/recover-account.html">Recover Account</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/login-simple.html">Login Simple</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/signup-simple.html">Signup Simple</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/recover-account-simple.html">Recover Account Simple</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Login -->
-
-                                                                        <!-- Page - Contacts -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesContactsSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesContactsSubNavCollapse">
-                                                                                Contacts
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarPagesContactsSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/contacts-agency.html">Contacts Agency</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/contacts-start-up.html">Contacts Start-Up</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Contacts -->
-
-                                                                        <!-- Page - Resources -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesResourcesSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesResourcesSubNavCollapse">
-                                                                                Resources
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarPagesResourcesSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/help.html">Help</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/help-article.html">Help article</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/faq.html">FAQ</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Resources -->
-
-                                                                        <!-- Page - Utilities -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesUtilitiesSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesUtilitiesSubNavCollapse">
-                                                                                Utilities
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarPagesUtilitiesSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/pricing.html">Pricing</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/terms.html">Terms & Conditions</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/privacy.html">Privacy & Policy</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Utilities -->
-
-                                                                        <!-- Page - Specialty -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarPagesSpecialtySubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarPagesSpecialtySubNavCollapse">
-                                                                                Specialty
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarPagesSpecialtySubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarPagesMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/cover-page.html">Cover Page</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/coming-soon.html">Coming Soon</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/maintenance-mode.html">Maintenance Mode</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/status.html">Status</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/invoice.html">Status</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../pages/error-404.html">Error 404</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Page - Specialty -->
+                                                                        <!-- Shop Right Sidebar -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                                                        <!-- End Shop Right Sidebar -->
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <!-- End Page Section -->
+                                                            <!-- End Shop Pages -->
 
-                                                            <!-- Blog -->
+                                                            <!-- Product Categories -->
                                                             <li class="u-has-submenu u-header-collapse__submenu">
                                                                 <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogCollapse">
-                                                                    Blog
+                                                                    Product Categories
                                                                 </a>
 
                                                                 <div id="headerSidebarBlogCollapse" class="collapse" data-parent="#headerSidebarContent">
                                                                     <ul id="headerSidebarBlogMenu" class="u-header-collapse__nav-list">
-                                                                        <!-- Blog - Classic -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogClassicSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogClassicSubNavCollapse">
-                                                                                Classic
-                                                                            </a>
+                                                                        <!-- 4 Column Sidebar -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/product-categories-4-column-sidebar.html">4 Column Sidebar</a></li>
+                                                                        <!-- End 4 Column Sidebar -->
 
-                                                                            <ul id="headerSidebarBlogClassicSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/classic-left-sidebar.html">Left Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/classic-right-sidebar.html">Right Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/classic-full-width.html">Full Width</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Blog - Classic -->
+                                                                        <!-- 5 Column Sidebar -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/product-categories-5-column-sidebar.html">5 Column Sidebar</a></li>
+                                                                        <!-- End 5 Column Sidebar -->
 
-                                                                        <!-- Blog - Grid -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogGridSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogGridSubNavCollapse">
-                                                                                Grid
-                                                                            </a>
+                                                                        <!-- 6 Column Full width -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/product-categories-6-column-full-width.html">6 Column Full width</a></li>
+                                                                        <!-- End 6 Column Full width -->
 
-                                                                            <ul id="headerSidebarBlogGridSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/grid-left-sidebar.html">Left Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/grid-right-sidebar.html">Right Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/grid-full-width.html">Full Width</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Blog - Grid -->
-
-                                                                        <!-- Blog - List -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogListSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogListSubNavCollapse">
-                                                                                List
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarBlogListSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/list-left-sidebar.html">Left Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/list-right-sidebar.html">Right Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/list-full-width.html">Full Width</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Blog - List -->
-
-                                                                        <!-- Blog - Modern -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogModernSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogModernSubNavCollapse">
-                                                                                Modern
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarBlogModernSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/modern-left-sidebar.html">Left Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/modern-right-sidebar.html">Right Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/modern-full-width.html">Full Width</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Blog - Modern -->
-
-                                                                        <!-- Blog - Masonry -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogMasonrySubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogMasonrySubNavCollapse">
-                                                                                Masonry
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarBlogMasonrySubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/masonry-left-sidebar.html">Left Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/masonry-right-sidebar.html">Right Sidebar</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/masonry-full-width.html">Full Width</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Blog - Masonry -->
-
-                                                                        <!-- Blog - Single Article -->
-                                                                        <li class="u-has-submenu u-header-collapse__submenu">
-                                                                            <a class="u-header-collapse__submenu-nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarBlogSingleArticleSubNavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarBlogSingleArticleSubNavCollapse">
-                                                                                Single Article
-                                                                            </a>
-
-                                                                            <ul id="headerSidebarBlogSingleArticleSubNavCollapse" class="collapse u-header-collapse__submenu-list" data-parent="#headerSidebarBlogMenu">
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/single-article-classic.html">Classic</a></li>
-                                                                                <li><a class="nav-link u-header-collapse__submenu-list-link" href="../blog/single-article-simple.html">Simple</a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <!-- End Blog - Single Article -->
+                                                                        <!-- 7 Column Full width -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/product-categories-7-column-full-width.html">7 Column Full width</a></li>
+                                                                        <!-- End 7 Column Full width -->
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <!-- End Blog -->
+                                                            <!-- End Product Categories -->
 
-                                                            <!-- Shop Section -->
+                                                            <!-- Single Product Pages -->
                                                             <li class="u-has-submenu u-header-collapse__submenu">
                                                                 <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarShopCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarShopCollapse">
-                                                                    Shop
+                                                                    Single Product Pages
                                                                 </a>
 
                                                                 <div id="headerSidebarShopCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                                                    <ul id="headerSidebarShopMenu" class="u-header-collapse__nav-list u-header-collapse__nav-list--no-spacer">
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/classic.html">Classic</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/categories.html">Categories</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/categories-sidebar.html">Categories Sidebar</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/products-grid.html">Products Grid</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/products-list.html">Products List</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/single-product.html">Single Product</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/empty-cart.html">Empty Cart</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/cart.html">Cart</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/checkout.html">Checkout</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../html/shop/order-completed.html">Order Completed</a></li>
+                                                                    <ul id="headerSidebarShopMenu" class="u-header-collapse__nav-list">
+                                                                        <!-- Single Product Extended -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/single-product-extended.html">Single Product Extended</a></li>
+                                                                        <!-- End Single Product Extended -->
+
+                                                                        <!-- Single Product Fullwidth -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/single-product-fullwidth.html">Single Product Fullwidth</a></li>
+                                                                        <!-- End Single Product Fullwidth -->
+
+                                                                        <!-- Single Product Sidebar -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/single-product-sidebar.html">Single Product Sidebar</a></li>
+                                                                        <!-- End Single Product Sidebar -->
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <!-- End Shop Section -->
+                                                            <!-- End Single Product Pages -->
 
-                                                            <!-- Demos Section -->
+                                                            <!-- Ecommerce Pages -->
                                                             <li class="u-has-submenu u-header-collapse__submenu">
                                                                 <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarDemosCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarDemosCollapse">
-                                                                    Demos
+                                                                    Ecommerce Pages
                                                                 </a>
 
                                                                 <div id="headerSidebarDemosCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                                                    <ul id="headerSidebarDemosMenu" class="u-header-collapse__nav-list u-header-collapse__nav-list--no-spacer">
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../house/index.html">House</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../job/index.html">Job</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../crypto/index.html">Crypto Landing</a></li>
+                                                                    <ul id="headerSidebarDemosMenu" class="u-header-collapse__nav-list">
+                                                                        <!-- Shop -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/shop.html">Shop</a></li>
+                                                                        <!-- End Shop -->
+
+                                                                        <!-- Cart -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/cart.html">Cart</a></li>
+                                                                        <!-- End Cart -->
+
+                                                                        <!-- Checkout -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/checkout.html">Checkout</a></li>
+                                                                        <!-- End Checkout -->
+
+                                                                        <!-- My Account -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/my-account.html">My Account</a></li>
+                                                                        <!-- End My Account -->
+
+                                                                        <!-- Track your Order -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/track-your-order.html">Track your Order</a></li>
+                                                                        <!-- End Track your Order -->
+
+                                                                        <!-- Compare -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/compare.html">Compare</a></li>
+                                                                        <!-- End Compare -->
+
+                                                                        <!-- wishlist -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/wishlist.html">wishlist</a></li>
+                                                                        <!-- End wishlist -->
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <!-- End Demos Section -->
+                                                            <!-- End Ecommerce Pages -->
 
-                                                            <!-- Docs Section -->
+                                                            <!-- Shop Columns -->
                                                             <li class="u-has-submenu u-header-collapse__submenu">
                                                                 <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebardocsCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebardocsCollapse">
-                                                                    Docs
+                                                                    Shop Columns
                                                                 </a>
 
                                                                 <div id="headerSidebardocsCollapse" class="collapse" data-parent="#headerSidebarContent">
-                                                                    <ul id="headerSidebardocsMenu" class="u-header-collapse__nav-list u-header-collapse__nav-list--no-spacer">
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../../documentation/index.html">Classic</a></li>
-                                                                        <li><a class="nav-link u-header-collapse__submenu-list-link" href="../index.html">Get started</a></li>
+                                                                    <ul id="headerSidebardocsMenu" class="u-header-collapse__nav-list">
+                                                                        <!-- 7 Column Full width -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/shop-7-columns-full-width.html">7 Column Full width</a></li>
+                                                                        <!-- End 7 Column Full width -->
+
+                                                                        <!-- 6 Column Full width -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/shop-6-columns-full-width.html">6 Column Full width</a></li>
+                                                                        <!-- End 6 Column Full width -->
+
+                                                                        <!-- 5 Column Sidebar -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/shop-5-columns-sidebar.html">5 Column Sidebar</a></li>
+                                                                        <!-- End 5 Column Sidebar -->
+
+                                                                        <!-- 4 Column Sidebar -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/shop-4-columns-sidebar.html">4 Column Sidebar</a></li>
+                                                                        <!-- End 4 Column Sidebar -->
+
+                                                                        <!-- 3 Column Sidebar -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../shop/shop-3-columns-sidebar.html">3 Column Sidebar</a></li>
+                                                                        <!-- End 3 Column Sidebar -->
                                                                     </ul>
                                                                 </div>
                                                             </li>
-                                                            <!-- End Docs Section -->
+                                                            <!-- End Shop Columns -->
+
+                                                            <!-- Blog Pages -->
+                                                            <li class="u-has-submenu u-header-collapse__submenu">
+                                                                <a class="u-header-collapse__nav-link u-header-collapse__nav-pointer" href="javascript:;" data-target="#headerSidebarblogsCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="headerSidebarblogsCollapse">
+                                                                    Blog Pages
+                                                                </a>
+
+                                                                <div id="headerSidebarblogsCollapse" class="collapse" data-parent="#headerSidebarContent">
+                                                                    <ul id="headerSidebarblogsMenu" class="u-header-collapse__nav-list">
+                                                                        <!-- Blog v1 -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../blog/blog-v1.html">Blog v1</a></li>
+                                                                        <!-- End Blog v1 -->
+
+                                                                        <!-- Blog v2 -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../blog/blog-v2.html">Blog v2</a></li>
+                                                                        <!-- End Blog v2 -->
+
+                                                                        <!-- Blog v3 -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../blog/blog-v3.html">Blog v3</a></li>
+                                                                        <!-- End Blog v3 -->
+
+                                                                        <!-- Blog Full Width -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../blog/blog-full-width.html">Blog Full Width</a></li>
+                                                                        <!-- End Blog Full Width -->
+
+                                                                        <!-- Single Blog Post -->
+                                                                        <li><a class="u-header-collapse__submenu-nav-link" href="../blog/single-blog-post.html">Single Blog Post</a></li>
+                                                                        <!-- End Single Blog Post -->
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <!-- End Blog Pages -->
                                                         </ul>
                                                         <!-- End List -->
                                                     </div>
@@ -1332,25 +1192,25 @@
                             <article class="card mb-13 border-0">
                                 <div class="row">
                                     <div class="col-lg-4 mb-5 mb-lg-0">
-                                        <a href="#" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img1.jpg" alt="Image Description"></a>
+                                        <a href="../blog/single-blog-post.html" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img1.jpg" alt="Image Description"></a>
                                     </div>
                                     <div class="col-lg-8">
                                         <div class="card-body p-0">
-                                            <h4 class="mb-3"><a href="#">Robot Wars – Post with Gallery</a></h4>
+                                            <h4 class="mb-3"><a href="../blog/single-blog-post.html">Robot Wars – Post with Gallery</a></h4>
                                             <div class="mb-3 pb-3 border-bottom">
                                                 <div class="list-group list-group-horizontal flex-wrap list-group-borderless align-items-center mx-n0dot5">
-                                                    <a href="#" class="mx-0dot5 text-gray-5">Design,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Technology,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> News,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Videos</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">Design,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Technology,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> News,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Videos</a>
                                                     <span class="mx-2 font-size-n5 mt-1 text-gray-5"><i class="fas fa-circle"></i></span>
-                                                    <a href="#" class="mx-0dot5 text-gray-5">March 4, 2016</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">March 4, 2016</a>
                                                 </div>
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque. Quisque id sodales libero. In nec enim nisi, in ultricies quam. Sed lacinia feugiat velit, cursus molestie lectus.</p>
                                             <div class="flex-horizontal-center">
-                                                <button type="button" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</button>
-                                                <a href="#" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> 3</a>
+                                                <a href="../blog/single-blog-post.html" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</a>
+                                                <a href="../blog/single-blog-post.html" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> 3</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1359,25 +1219,25 @@
                             <article class="card mb-13 border-0">
                                 <div class="row">
                                     <div class="col-lg-4 mb-5 mb-lg-0">
-                                        <a href="#" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img3.jpg" alt="Image Description"></a>
+                                        <a href="../blog/single-blog-post.html" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img3.jpg" alt="Image Description"></a>
                                     </div>
                                     <div class="col-lg-8">
                                         <div class="card-body p-0">
-                                            <h4 class="mb-3"><a href="#">Robot Wars – Now Closed – Post with Audio</a></h4>
+                                            <h4 class="mb-3"><a href="../blog/single-blog-post.html">Robot Wars – Now Closed – Post with Audio</a></h4>
                                             <div class="mb-3 pb-3 border-bottom">
                                                 <div class="list-group list-group-horizontal flex-wrap list-group-borderless align-items-center mx-n0dot5">
-                                                    <a href="#" class="mx-0dot5 text-gray-5">Design,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Technology,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> News,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Audio</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">Design,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Technology,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> News,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Audio</a>
                                                     <span class="mx-2 font-size-n5 mt-1 text-gray-5"><i class="fas fa-circle"></i></span>
-                                                    <a href="#" class="mx-0dot5 text-gray-5">March 4, 2016</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">March 4, 2016</a>
                                                 </div>
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque. Quisque id sodales libero. In nec enim nisi, in ultricies quam. Sed lacinia feugiat velit, cursus molestie lectus.</p>
                                             <div class="flex-horizontal-center">
-                                                <button type="button" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</button>
-                                                <a href="#" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
+                                                <a href="../blog/single-blog-post.html" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</a>
+                                                <a href="../blog/single-blog-post.html" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1386,25 +1246,25 @@
                             <article class="card mb-13 border-0">
                                 <div class="row">
                                     <div class="col-lg-4 mb-5 mb-lg-0">
-                                        <a href="#" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img5.jpg" alt="Image Description"></a>
+                                        <a href="../blog/single-blog-post.html" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img5.jpg" alt="Image Description"></a>
                                     </div>
                                     <div class="col-lg-8">
                                         <div class="card-body p-0">
-                                            <h4 class="mb-3"><a href="#">Robot Wars – Now Closed – Post with Video</a></h4>
+                                            <h4 class="mb-3"><a href="../blog/single-blog-post.html">Robot Wars – Now Closed – Post with Video</a></h4>
                                             <div class="mb-3 pb-3 border-bottom">
                                                 <div class="list-group list-group-horizontal flex-wrap list-group-borderless align-items-center mx-n0dot5">
-                                                    <a href="#" class="mx-0dot5 text-gray-5">Design,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Technology,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> News,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Video</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">Design,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Technology,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> News,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Video</a>
                                                     <span class="mx-2 font-size-n5 mt-1 text-gray-5"><i class="fas fa-circle"></i></span>
-                                                    <a href="#" class="mx-0dot5 text-gray-5">March 4, 2016</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">March 4, 2016</a>
                                                 </div>
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque. Quisque id sodales libero. In nec enim nisi, in ultricies quam. Sed lacinia feugiat velit, cursus molestie lectus.</p>
                                             <div class="flex-horizontal-center">
-                                                <button type="button" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</button>
-                                                <a href="#" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
+                                                <a href="../blog/single-blog-post.html" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</a>
+                                                <a href="../blog/single-blog-post.html" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1413,28 +1273,28 @@
                             <article class="card mb-13 border-0">
                                 <div class="row">
                                     <div class="col-lg-4 d-none d-lg-block">
-                                        <a href="#" class="d-block position-relative">
+                                        <a href="../blog/single-blog-post.html" class="d-block position-relative">
                                             <img class="img-fluid" src="https://placehold.it/340x250/DDD/DDD/" alt="Image Description">
                                             <i class="fa fa-paragraph font-size-24 position-absolute-center text-white"></i>
                                         </a>
                                     </div>
                                     <div class="col-lg-8">
                                         <div class="card-body p-0">
-                                        <h4 class="mb-3"><a href="#">Announcement – Post without Image</a></h4>
+                                        <h4 class="mb-3"><a href="../blog/single-blog-post.html">Announcement – Post without Image</a></h4>
                                         <div class="mb-3 pb-3 border-bottom">
                                             <div class="list-group list-group-horizontal flex-wrap list-group-borderless align-items-center mx-n0dot5">
-                                                <a href="#" class="mx-0dot5 text-gray-5">Design,</a>
-                                                <a href="#" class="mx-0dot5 text-gray-5"> Technology,</a>
-                                                <a href="#" class="mx-0dot5 text-gray-5"> News,</a>
-                                                <a href="#" class="mx-0dot5 text-gray-5"> Image</a>
+                                                <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">Design,</a>
+                                                <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Technology,</a>
+                                                <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> News,</a>
+                                                <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Image</a>
                                                 <span class="mx-2 font-size-n5 mt-1 text-gray-5"><i class="fas fa-circle"></i></span>
-                                                <a href="#" class="mx-0dot5 text-gray-5">March 4, 2016</a>
+                                                <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">March 4, 2016</a>
                                             </div>
                                         </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque. Quisque id sodales libero. In nec enim nisi, in ultricies quam. Sed lacinia feugiat velit, cursus molestie lectus.</p>
                                         <div class="flex-horizontal-center">
-                                            <button type="button" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</button>
-                                            <a href="#" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
+                                            <a href="../blog/single-blog-post.html" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</a>
+                                            <a href="../blog/single-blog-post.html" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
                                         </div>
                                     </div>
                                     </div>
@@ -1443,25 +1303,25 @@
                             <article class="card mb-13 border-0">
                                 <div class="row">
                                     <div class="col-lg-4 mb-5 mb-lg-0">
-                                        <a href="#" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img6.jpg" alt="Image Description"></a>
+                                        <a href="../blog/single-blog-post.html" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img6.jpg" alt="Image Description"></a>
                                     </div>
                                     <div class="col-lg-8">
                                         <div class="card-body p-0">
-                                            <h4 class="mb-3"><a href="#">Robot Wars – Now Closed</a></h4>
+                                            <h4 class="mb-3"><a href="../blog/single-blog-post.html">Robot Wars – Now Closed</a></h4>
                                             <div class="mb-3 pb-3 border-bottom">
                                                 <div class="list-group list-group-horizontal flex-wrap list-group-borderless align-items-center mx-n0dot5">
-                                                    <a href="#" class="mx-0dot5 text-gray-5">Design,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Technology,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> News,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Image</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">Design,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Technology,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> News,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Image</a>
                                                     <span class="mx-2 font-size-n5 mt-1 text-gray-5"><i class="fas fa-circle"></i></span>
-                                                    <a href="#" class="mx-0dot5 text-gray-5">March 4, 2016</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">March 4, 2016</a>
                                                 </div>
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque. Quisque id sodales libero. In nec enim nisi, in ultricies quam. Sed lacinia feugiat velit, cursus molestie lectus.</p>
                                             <div class="flex-horizontal-center">
-                                                <button type="button" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</button>
-                                                <a href="#" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
+                                                <a href="../blog/single-blog-post.html" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</a>
+                                                <a href="../blog/single-blog-post.html" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1470,25 +1330,25 @@
                             <article class="card mb-13 border-0">
                                 <div class="row">
                                     <div class="col-lg-4 mb-5 mb-lg-0">
-                                        <a href="#" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img7.jpg" alt="Image Description"></a>
+                                        <a href="../blog/single-blog-post.html" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img7.jpg" alt="Image Description"></a>
                                     </div>
                                     <div class="col-lg-8">
                                         <div class="card-body p-0">
-                                            <h4 class="mb-3"><a href="#">SpaceX Falcon explodes after Landing</a></h4>
+                                            <h4 class="mb-3"><a href="../blog/single-blog-post.html">SpaceX Falcon explodes after Landing</a></h4>
                                             <div class="mb-3 pb-3 border-bottom">
                                                 <div class="list-group list-group-horizontal flex-wrap list-group-borderless align-items-center mx-n0dot5">
-                                                    <a href="#" class="mx-0dot5 text-gray-5">Design,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Technology,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> News,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Image</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">Design,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Technology,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> News,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Image</a>
                                                     <span class="mx-2 font-size-n5 mt-1 text-gray-5"><i class="fas fa-circle"></i></span>
-                                                    <a href="#" class="mx-0dot5 text-gray-5">March 4, 2016</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">March 4, 2016</a>
                                                 </div>
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque. Quisque id sodales libero. In nec enim nisi, in ultricies quam. Sed lacinia feugiat velit, cursus molestie lectus.</p>
                                             <div class="flex-horizontal-center">
-                                                <button type="button" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</button>
-                                                <a href="#" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
+                                                <a href="../blog/single-blog-post.html" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</a>
+                                                <a href="../blog/single-blog-post.html" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1497,25 +1357,25 @@
                             <article class="card mb-13 border-0">
                                 <div class="row">
                                     <div class="col-lg-4 mb-5 mb-lg-0">
-                                        <a href="#" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img4.jpg" alt="Image Description"></a>
+                                        <a href="../blog/single-blog-post.html" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img4.jpg" alt="Image Description"></a>
                                     </div>
                                     <div class="col-lg-8">
                                         <div class="card-body p-0">
-                                            <h4 class="mb-3"><a href="#">The first flowers in space</a></h4>
+                                            <h4 class="mb-3"><a href="../blog/single-blog-post.html">The first flowers in space</a></h4>
                                             <div class="mb-3 pb-3 border-bottom">
                                                 <div class="list-group list-group-horizontal flex-wrap list-group-borderless align-items-center mx-n0dot5">
-                                                    <a href="#" class="mx-0dot5 text-gray-5">Design,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Technology,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> News,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Image</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">Design,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Technology,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> News,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Image</a>
                                                     <span class="mx-2 font-size-n5 mt-1 text-gray-5"><i class="fas fa-circle"></i></span>
-                                                    <a href="#" class="mx-0dot5 text-gray-5">March 4, 2016</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">March 4, 2016</a>
                                                 </div>
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque. Quisque id sodales libero. In nec enim nisi, in ultricies quam. Sed lacinia feugiat velit, cursus molestie lectus.</p>
                                             <div class="flex-horizontal-center">
-                                                <button type="button" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</button>
-                                                <a href="#" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
+                                                <a href="../blog/single-blog-post.html" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</a>
+                                                <a href="../blog/single-blog-post.html" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1524,25 +1384,25 @@
                             <article class="card mb-13 border-0">
                                 <div class="row">
                                     <div class="col-lg-4 mb-5 mb-lg-0">
-                                        <a href="#" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img8.jpg" alt="Image Description"></a>
+                                        <a href="../blog/single-blog-post.html" class="d-block"><img class="img-fluid min-height-250 object-fit-cover" src="../../assets/img/1500X730/img8.jpg" alt="Image Description"></a>
                                     </div>
                                     <div class="col-lg-8">
                                         <div class="card-body p-0">
-                                            <h4 class="mb-3"><a href="#">HoloLens technical details emerge</a></h4>
+                                            <h4 class="mb-3"><a href="../blog/single-blog-post.html">HoloLens technical details emerge</a></h4>
                                             <div class="mb-3 pb-3 border-bottom">
                                                 <div class="list-group list-group-horizontal flex-wrap list-group-borderless align-items-center mx-n0dot5">
-                                                    <a href="#" class="mx-0dot5 text-gray-5">Design,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Technology,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> News,</a>
-                                                    <a href="#" class="mx-0dot5 text-gray-5"> Image</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">Design,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Technology,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> News,</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5"> Image</a>
                                                     <span class="mx-2 font-size-n5 mt-1 text-gray-5"><i class="fas fa-circle"></i></span>
-                                                    <a href="#" class="mx-0dot5 text-gray-5">March 4, 2016</a>
+                                                    <a href="../blog/single-blog-post.html" class="mx-0dot5 text-gray-5">March 4, 2016</a>
                                                 </div>
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque. Quisque id sodales libero. In nec enim nisi, in ultricies quam. Sed lacinia feugiat velit, cursus molestie lectus.</p>
                                             <div class="flex-horizontal-center">
-                                                <button type="button" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</button>
-                                                <a href="#" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
+                                                <a href="../blog/single-blog-post.html" class="btn btn-soft-secondary-w mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5">Read More</a>
+                                                <a href="../blog/single-blog-post.html" class="font-size-12 text-gray-5 ml-4"><i class="far fa-comment"></i> Leave a comment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1559,7 +1419,7 @@
                             <article class="card mb-8 border-0">
                                 <div class="card-body p-5 p-md-10 bg-gray-1">
                                     <p class="d-block font-size-25 text-gray-39">If you are looking for a developer on ThemeForest – check out the link</p>
-                                    <a href="#" class="text-blue">http://wwww.transvelo.com</a>
+                                    <a href="../blog/single-blog-post.html" class="text-blue">http://wwww.transvelo.com</a>
                                 </div>
                             </article>
                         </div>
@@ -1589,14 +1449,14 @@
                                 <h3 class="section-title section-title__sm mb-0 pb-2 font-size-18">Categories</h3>
                             </div>
                             <div class="list-group">
-                                <a href="#" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-0"><i class="mr-2 fas fa-angle-right"></i> Design</a>
-                                <a href="#" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> Events</a>
-                                <a href="#" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> Links & Quotes</a>
-                                <a href="#" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> News</a>
-                                <a href="#" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> Social</a>
-                                <a href="#" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> Technology</a>
-                                <a href="#" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> Audios</a>
-                                <a href="#" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> Videos</a>
+                                <a href="../blog/single-blog-post.html" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-0"><i class="mr-2 fas fa-angle-right"></i> Design</a>
+                                <a href="../blog/single-blog-post.html" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> Events</a>
+                                <a href="../blog/single-blog-post.html" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> Links & Quotes</a>
+                                <a href="../blog/single-blog-post.html" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> News</a>
+                                <a href="../blog/single-blog-post.html" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> Social</a>
+                                <a href="../blog/single-blog-post.html" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> Technology</a>
+                                <a href="../blog/single-blog-post.html" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> Audios</a>
+                                <a href="../blog/single-blog-post.html" class="font-bold-on-hover px-3 py-2 list-group-item list-group-item-action border-right-0 border-left-0 border-bottom-0"><i class="mr-2 fas fa-angle-right"></i> Videos</a>
                             </div>
                         </aside>
                         <aside class="mb-7">
@@ -1609,7 +1469,7 @@
                                         <img class="img-fluid object-fit-cover" src="../../assets/img/1500X730/img1.jpg" alt="Image Description">
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="font-size-14 mb-1"><a href="#" class="text-gray-39">Robot Wars – Post with Gallery</a></h4>
+                                        <h4 class="font-size-14 mb-1"><a href="../blog/single-blog-post.html" class="text-gray-39">Robot Wars – Post with Gallery</a></h4>
                                         <span class="text-gray-5">March 3, 2020</span>
                                     </div>
                                 </div>
@@ -1620,7 +1480,7 @@
                                         <img class="img-fluid object-fit-cover" src="../../assets/img/1500X730/img4.jpg" alt="Image Description">
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="font-size-14 mb-1"><a href="#" class="text-gray-39">Robot Wars – Now Closed – Post with Audio</a></h4>
+                                        <h4 class="font-size-14 mb-1"><a href="../blog/single-blog-post.html" class="text-gray-39">Robot Wars – Now Closed – Post with Audio</a></h4>
                                         <span class="text-gray-5">March 3, 2020</span>
                                     </div>
                                 </div>
@@ -1631,7 +1491,7 @@
                                         <img class="img-fluid object-fit-cover" src="../../assets/img/1500X730/img5.jpg" alt="Image Description">
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="font-size-14 mb-1"><a href="#" class="text-gray-39">Robot Wars – Now Closed – Post with Video</a></h4>
+                                        <h4 class="font-size-14 mb-1"><a href="../blog/single-blog-post.html" class="text-gray-39">Robot Wars – Now Closed – Post with Video</a></h4>
                                         <span class="text-gray-5">March 3, 2020</span>
                                     </div>
                                 </div>
@@ -1643,7 +1503,7 @@
                                         <i class="fa fa-paragraph position-absolute-center text-white"></i>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="font-size-14 mb-1"><a href="#" class="text-gray-39">Announcement – Post without Image</a></h4>
+                                        <h4 class="font-size-14 mb-1"><a href="../blog/single-blog-post.html" class="text-gray-39">Announcement – Post without Image</a></h4>
                                         <span class="text-gray-5">March 3, 2020</span>
                                     </div>
                                 </div>
@@ -1654,7 +1514,7 @@
                                         <img class="img-fluid object-fit-cover" src="../../assets/img/1500X730/img6.jpg" alt="Image Description">
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="font-size-14 mb-1"><a href="#" class="text-gray-39">Robot Wars – Now Closed</a></h4>
+                                        <h4 class="font-size-14 mb-1"><a href="../blog/single-blog-post.html" class="text-gray-39">Robot Wars – Now Closed</a></h4>
                                         <span class="text-gray-5">March 3, 2020</span>
                                     </div>
                                 </div>
@@ -1665,16 +1525,16 @@
                                 <h3 class="section-title section-title__sm mb-0 pb-2 font-size-18">Tags Clouds</h3>
                             </div>
                             <div class="d-flex flex-wrap mx-n1">
-                                <a href="#" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">amazon like</a>
-                                <a href="#" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">Awesome</a>
-                                <a href="#" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">bootstrap</a>
-                                <a href="#" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">buy it</a>
-                                <a href="#" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">clean design</a>
-                                <a href="#" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">electronics</a>
-                                <a href="#" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">theme</a>
-                                <a href="#" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">video post format</a>
-                                <a href="#" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">Ecommerce</a>
-                                <a href="#" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">wordpress</a>
+                                <a href="../blog/single-blog-post.html" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">amazon like</a>
+                                <a href="../blog/single-blog-post.html" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">Awesome</a>
+                                <a href="../blog/single-blog-post.html" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">bootstrap</a>
+                                <a href="../blog/single-blog-post.html" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">buy it</a>
+                                <a href="../blog/single-blog-post.html" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">clean design</a>
+                                <a href="../blog/single-blog-post.html" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">electronics</a>
+                                <a href="../blog/single-blog-post.html" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">theme</a>
+                                <a href="../blog/single-blog-post.html" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">video post format</a>
+                                <a href="../blog/single-blog-post.html" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">Ecommerce</a>
+                                <a href="../blog/single-blog-post.html" class="text-gray-90 mb-2 bg-primary-on-hover py-2 px-3 border mx-1">wordpress</a>
                             </div>
                         </aside>
                     </div>

@@ -48,87 +48,120 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.ec-add-to-cart:before {
+.ec-menu:before {
   content: "\61";
 }
-.ec-comment:before {
-  content: "\63";
-}
-.ec-compare:before {
-  content: "\64";
-}
-.ec-customers:before {
-  content: "\65";
-}
-.ec-dollar:before {
-  content: "\66";
-}
-.ec-favorites:before {
-  content: "\67";
-}
-.ec-grid-view:before {
-  content: "\68";
-}
-.ec-list-view:before {
-  content: "\69";
-}
-.ec-phone:before {
-  content: "\6b";
-}
-.ec-returning:before {
-  content: "\6c";
-}
-.ec-search:before {
-  content: "\6d";
-}
-.ec-shopping-bag:before {
-  content: "\6e";
-}
-.ec-support:before {
-  content: "\6f";
-}
-.ec-tag:before {
-  content: "\70";
-}
-.ec-thing-arrow-right:before {
-  content: "\71";
-}
-.ec-user:before {
-  content: "\72";
-}
-.ec-arrow-right-categproes:before {
+.ec-list-view-medium:before {
   content: "\62";
 }
-.ec-blog-likes:before {
+.ec-transport:before {
+  content: "\63";
+}
+.ec-add-to-cart:before {
+  content: "\64";
+}
+.ec-arrow-right-categproes:before {
+  content: "\65";
+}
+.ec-comment:before {
+  content: "\66";
+}
+.ec-compare:before {
+  content: "\67";
+}
+.ec-customers:before {
+  content: "\68";
+}
+.ec-dollar:before {
+  content: "\69";
+}
+.ec-favorites:before {
   content: "\6a";
 }
-.ec-category-icon:before {
+.ec-grid-view:before {
+  content: "\6b";
+}
+.ec-list-view:before {
+  content: "\6c";
+}
+.ec-blog-likes:before {
+  content: "\6d";
+}
+.ec-phone:before {
+  content: "\6e";
+}
+.ec-returning:before {
+  content: "\6f";
+}
+.ec-search:before {
+  content: "\70";
+}
+.ec-shopping-bag:before {
+  content: "\71";
+}
+.ec-support:before {
+  content: "\72";
+}
+.ec-tag:before {
   content: "\73";
 }
-.ec-mail:before {
+.ec-thing-arrow-right:before {
   content: "\74";
 }
-.ec-map-pointer:before {
+.ec-user:before {
   content: "\75";
 }
-.ec-newsletter:before {
+.ec-category-icon:before {
   content: "\76";
 }
-.ec-close-remove:before {
+.ec-mail:before {
   content: "\77";
 }
-.ec-payment:before {
+.ec-map-pointer:before {
   content: "\78";
 }
-.ec-arrow-down-search:before {
+.ec-newsletter:before {
   content: "\79";
 }
-.ec-list-view-small:before {
+.ec-close-remove:before {
   content: "\7a";
 }
-.ec-list-view-medium:before {
+.ec-payment:before {
   content: "\41";
 }
-.ec-transport:before {
+.ec-arrow-down-search:before {
   content: "\42";
+}
+.ec-list-view-small:before {
+  content: "\43";
+}
+.ec-cameras:before {
+  content: "\44";
+}
+.ec-drone:before {
+  content: "\45";
+}
+.ec-gamepad:before {
+  content: "\46";
+}
+.ec-headphones:before {
+  content: "\47";
+}
+.ec-laptop:before {
+  content: "\48";
+}
+.ec-printer:before {
+  content: "\49";
+}
+.ec-smartphones:before {
+  content: "\4a";
+}
+.ec-smartwatch:before {
+  content: "\4b";
+}
+.ec-speaker:before {
+  content: "\4c";
+}
+.ec-tvs:before {
+  content: "\4d";
 }

@@ -6,6 +6,10 @@
     width: 1px;
 }
 
+.width-11 {
+  width: 5rem;
+}
+
 .width-22 {
     width: ($font-size-base * 1.571); //22px
 }
@@ -24,6 +28,10 @@
 
 .width-75 {
     width: 4.688rem; //75px
+}
+
+.width-80 {
+    width: 5rem; //800px
 }
 
 .width-134 {
@@ -317,10 +325,26 @@
     height: ($font-size-base * 4.286); //60px
 }
 
+.height-80 {
+    height: 5rem; //100px
+}
+
 .height-xl-20 {
     @include media-breakpoint-only(xl) {
         height: ($font-size-base * 1.429); //20px
     }
+}
+
+.height-240 {
+  height: 15rem;
+}
+
+.height-300 {
+  height: 18.75rem;
+}
+
+.height-350 {
+  height: 21.875rem;
 }
 
 .height-wd-14 {
@@ -357,8 +381,6 @@
 .height-122 {
     height: 7.625rem; //122px
 }
-
-
 
 .height-410-xl {
     @include media-breakpoint-up(md) {

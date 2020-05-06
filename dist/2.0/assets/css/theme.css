@@ -30225,6 +30225,17 @@ label.btn {
   position: relative;
 }
 
+.u-slick__tab .tab-pane:not(.active) {
+  display: block !important;
+  height: 0 !important;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+.u-slick__tab .tab-pane.active {
+  height: auto !important;
+}
+
 .u-slick--transform-off.slick-transform-off .slick-track {
   -webkit-transform: none !important;
           transform: none !important;
@@ -36207,6 +36218,10 @@ blockquote:not(.blockquote) p {
   width: 1px;
 }
 
+.width-11 {
+  width: 5rem;
+}
+
 .width-22 {
   width: 1.37462rem;
 }
@@ -36225,6 +36240,10 @@ blockquote:not(.blockquote) p {
 
 .width-75 {
   width: 4.688rem;
+}
+
+.width-80 {
+  width: 5rem;
 }
 
 .width-134 {
@@ -36525,10 +36544,26 @@ blockquote:not(.blockquote) p {
   height: 3.75025rem;
 }
 
+.height-80 {
+  height: 5rem;
+}
+
 @media (min-width: 1200px) and (max-width: 1479.98px) {
   .height-xl-20 {
     height: 1.25038rem;
   }
+}
+
+.height-240 {
+  height: 15rem;
+}
+
+.height-300 {
+  height: 18.75rem;
+}
+
+.height-350 {
+  height: 21.875rem;
 }
 
 @media (min-width: 1480px) {

@@ -30225,6 +30225,17 @@ label.btn {
   position: relative;
 }
 
+.u-slick__tab .tab-pane:not(.active) {
+  display: block !important;
+  height: 0 !important;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+.u-slick__tab .tab-pane.active {
+  height: auto !important;
+}
+
 .u-slick--transform-off.slick-transform-off .slick-track {
   -webkit-transform: none !important;
           transform: none !important;

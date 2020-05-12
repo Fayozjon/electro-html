@@ -19,7 +19,7 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^6.2.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-jpeg-recompress": "^6.0.0",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "animate.css": "^3.7.2",
-    "bootstrap-select": "^1.13.12",
+    "bootstrap-select": "^1.13.17",
     "chartist": "^0.11.3",
     "clipboard": "^2.0.6",
     "custombox": "^4.0.3",
@@ -37,8 +37,8 @@
     "gmaps": "^0.4.25",
     "instafeed.js": "^1.4.1",
     "ion-rangeslider": "^2.3.1",
-    "jquery": "^3.5.0",
-    "jquery-migrate": "^3.2.0",
+    "jquery": "^3.5.1",
+    "jquery-migrate": "^3.3.0",
     "jquery-validation": "^1.19.1",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "popper.js": "^1.16.1"

@@ -116,6 +116,10 @@
     max-width: 11.25rem; //180px
 }
 
+.max-width-174 {
+    max-width: 10.875rem; //174px
+}
+
 .max-width-200 {
     @include media-breakpoint-up(lg) {
         max-width: 12.5rem; //200px
@@ -412,6 +416,10 @@
     min-height: ($font-size-base * 10.429); //146px
 }
 
+.min-height-152 {
+    min-height: ($font-size-base * 10.857); //152px
+}
+
 .min-height-166 {
     min-height: ($font-size-base * 11.857); //166px
 }
@@ -432,6 +440,10 @@
     }
 }
 
+.min-height-120 {
+    min-height: 8.571rem; //120px
+}
+
 .min-height-xl-182 {
     @include media-breakpoint-only(xl) {
         min-height: ($font-size-base * 13); //182px
@@ -440,6 +452,10 @@
 
 .min-height-250 {
     min-height: 15.625rem; //250px
+}
+
+.min-height-272 {
+    min-height: 19.428rem; //272px
 }
 
 .min-height-420 {
@@ -512,6 +528,10 @@
 
 .max-height-50 {
     max-height: 3.125rem; //50px
+}
+
+.max-height-152 {
+    max-height: ($font-size-base * 10.857); //152px
 }
 
 .max-height-345-xl {

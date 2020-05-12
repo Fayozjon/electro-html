@@ -35,6 +35,18 @@
         bottom: -2.125rem;
         @include transition($btn-transition);
     }
+
+    &--dark {
+        li {
+            span {
+                background-color: $gray-41000;
+            }
+
+            &.slick-active span {
+                background-color: $dark;
+            }
+        }
+    }
 }
 
 .u-slick:hover {

@@ -35348,6 +35348,10 @@ blockquote:not(.blockquote) p {
   border-radius: 1.25rem;
 }
 
+.borders-radius-15 {
+  border-radius: 0.938rem;
+}
+
 .borders-radius-17 {
   border-radius: 1.063rem;
 }
@@ -37052,6 +37056,12 @@ blockquote:not(.blockquote) p {
   max-width: 79.16667%;
 }
 
+.col-xs-9gdot6 {
+  -ms-flex: 0 0 80%;
+      flex: 0 0 80%;
+  max-width: 80%;
+}
+
 @media (min-width: 576px) {
   .col-sm-1gdot7 {
     -ms-flex: 0 0 14.28571%;
@@ -37121,6 +37131,14 @@ blockquote:not(.blockquote) p {
     -ms-flex: 0 0 79.16667%;
         flex: 0 0 79.16667%;
     max-width: 79.16667%;
+  }
+}
+
+@media (min-width: 576px) {
+  .col-sm-9gdot6 {
+    -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+    max-width: 80%;
   }
 }
 
@@ -37196,6 +37214,14 @@ blockquote:not(.blockquote) p {
   }
 }
 
+@media (min-width: 768px) {
+  .col-md-9gdot6 {
+    -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+    max-width: 80%;
+  }
+}
+
 @media (min-width: 992px) {
   .col-lg-1gdot7 {
     -ms-flex: 0 0 14.28571%;
@@ -37265,6 +37291,14 @@ blockquote:not(.blockquote) p {
     -ms-flex: 0 0 79.16667%;
         flex: 0 0 79.16667%;
     max-width: 79.16667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-9gdot6 {
+    -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+    max-width: 80%;
   }
 }
 
@@ -37340,6 +37374,14 @@ blockquote:not(.blockquote) p {
   }
 }
 
+@media (min-width: 1200px) {
+  .col-xl-9gdot6 {
+    -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+    max-width: 80%;
+  }
+}
+
 @media (min-width: 1480px) {
   .col-wd-1gdot7 {
     -ms-flex: 0 0 14.28571%;
@@ -37409,6 +37451,14 @@ blockquote:not(.blockquote) p {
     -ms-flex: 0 0 79.16667%;
         flex: 0 0 79.16667%;
     max-width: 79.16667%;
+  }
+}
+
+@media (min-width: 1480px) {
+  .col-wd-9gdot6 {
+    -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+    max-width: 80%;
   }
 }
 

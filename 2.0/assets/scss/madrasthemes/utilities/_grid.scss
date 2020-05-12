@@ -59,6 +59,12 @@
             @include make-col(9.5);
         }
     }
+
+    .col-#{$size}-9gdot6 {
+        @include media-breakpoint-up($size) {
+            @include make-col(9.6);
+        }
+    }
 }
 
 .cart-page,

@@ -47,6 +47,10 @@
     border-radius: 1.25rem; //20px
 }
 
+.borders-radius-15 {
+    border-radius: 0.938rem; //15px
+}
+
 .borders-radius-17 {
     border-radius: 1.063rem; //17px
 }
@@ -72,6 +76,10 @@
 
 .border-color-5 {
     border-color: $gray-43000 !important; //#b5b5b5
+}
+
+.border-color-6 {
+    border-color: $gray-45000 !important; //#d9dcdf
 }
 
 @each $color, $value in $theme-colors {

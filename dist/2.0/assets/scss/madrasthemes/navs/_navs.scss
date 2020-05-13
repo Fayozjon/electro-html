@@ -103,17 +103,25 @@
     }
 
     &-tab-header {
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 0;
+            right: 101%;
+            height: 0;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-left: 6px solid $blue-light;
+            transform: translateY(-50%);
+        }
+
         .nav-item {
             margin: 0 !important;
 
             + .nav-item {
                 margin-left: 0.5rem !important;
-
-                .nav-link.active::before {
-                    right: -8%;
-                    border-left: unset;
-                    border-right: 6px solid $blue-light;
-                }
             }
         }
 
@@ -129,20 +137,6 @@
             &:hover {
                 background-color: $white;
                 color: $dark;
-            }
-
-            &.active::before {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 50%;
-                width: 0;
-                right: 104%;
-                height: 0;
-                border-top: 12px solid transparent;
-                border-bottom: 12px solid transparent;
-                border-left: 6px solid $blue-light;
-                transform: translateY(-50%);
             }
         }
     }

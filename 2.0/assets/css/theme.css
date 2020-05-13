@@ -35973,18 +35973,27 @@ blockquote:not(.blockquote) p {
   color: #575560;
 }
 
+.nav-tab-header::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 0;
+  right: 101%;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 6px solid #66afe9;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .nav-tab-header .nav-item {
   margin: 0 !important;
 }
 
 .nav-tab-header .nav-item + .nav-item {
   margin-left: 0.5rem !important;
-}
-
-.nav-tab-header .nav-item + .nav-item .nav-link.active::before {
-  right: -8%;
-  border-left: unset;
-  border-right: 6px solid #66afe9;
 }
 
 .nav-tab-header .nav-link {
@@ -35999,21 +36008,6 @@ blockquote:not(.blockquote) p {
 .nav-tab-header .nav-link.active, .nav-tab-header .nav-link:hover {
   background-color: #fff;
   color: #333e48;
-}
-
-.nav-tab-header .nav-link.active::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 50%;
-  width: 0;
-  right: 104%;
-  height: 0;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-  border-left: 6px solid #66afe9;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .nav .nav-item:not(:first-child) {

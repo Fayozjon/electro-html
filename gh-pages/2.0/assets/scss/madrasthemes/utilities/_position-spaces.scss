@@ -38,6 +38,10 @@
     left: 1rem; //16px
 }
 
+.left-3dot5 {
+    left: 3.5rem; //56px
+}
+
 .left-12 {
     left: ($font-size-base * .857); //12px
 }
@@ -64,6 +68,10 @@
 
 .right-3 {
     right: 3rem;
+}
+
+.right-100 {
+    right: 100% !important; //100%
 }
 
 .right-n20 {

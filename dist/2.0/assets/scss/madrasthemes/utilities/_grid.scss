@@ -30,6 +30,12 @@
         }
     }
 
+    .col-#{$size}-2gdot4 {
+        @include media-breakpoint-up($size) {
+            @include make-col(2.4);
+        }
+    }
+
     .col-#{$size}-2gdot5 {
         @include media-breakpoint-up($size) {
             @include make-col(2.5);
@@ -39,6 +45,18 @@
     .col-#{$size}-3gdot3 {
         @include media-breakpoint-up($size) {
             @include make-col(3.3);
+        }
+    }
+
+    .col-#{$size}-4gdot9 {
+        @include media-breakpoint-up($size) {
+            @include make-col(4.9);
+        }
+    }
+
+    .col-#{$size}-7gdot1 {
+        @include media-breakpoint-up($size) {
+            @include make-col(7.1);
         }
     }
 
@@ -57,6 +75,12 @@
     .col-#{$size}-9gdot5 {
         @include media-breakpoint-up($size) {
             @include make-col(9.5);
+        }
+    }
+
+    .col-#{$size}-9gdot6 {
+        @include media-breakpoint-up($size) {
+            @include make-col(9.6);
         }
     }
 }

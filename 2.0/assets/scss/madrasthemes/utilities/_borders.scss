@@ -7,6 +7,10 @@
     @include border-top-radius($border-radius-lg);
 }
 
+.rounded-top-10 {
+    @include border-top-radius(10px);
+}
+
 .border-width-2 {
     border-width: 2px !important;
 }
@@ -92,6 +96,10 @@
 
 .border-color-7 {
     border-color: $gray-14000 !important; //#eaeaea
+}
+
+.border-color-8 {
+    border-color: $gray-46000 !important; //#e0be00
 }
 
 @each $color, $value in $theme-colors {

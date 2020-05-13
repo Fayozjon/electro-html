@@ -59,13 +59,14 @@ $gray-42000:                                                #f7f7f7;
 $gray-43000:                                                #b5b5b5;
 $gray-44000:                                                #9f9f9f;
 $gray-45000:                                                #d9dcdf;
+$gray-46000:                                                #e0be00;
 
 
 // Colors
 $yellow:                                                    #fed700;
 $dark:                                                      $gray-90;
 $black:                                                     #000000;
-$blue:                                                      #0062bd;
+$blue:                                                      #0077d0;
 $blue-light:                                                #66afe9;
 $cyan:                                                      #34bcec;
 $green:                                                     #5cb85c;
@@ -83,6 +84,7 @@ $theme-colors: map-merge(
     "primary":    $primary,
     "dark":       $dark,
     "cyan":       $cyan,
+    "blue":       $blue,
     "sale":       $sale,
     "black":      $black,
     "green":      $green,
@@ -150,9 +152,12 @@ $spacers: map-merge((
   0: 0,
   0dot5:($spacer * .143),
   1: ($spacer * .25),
+  1d: ($spacer * .35),
   2: ($spacer * .5),
+  2d: ($spacer * .8),
   3: $spacer,
   4: ($spacer * 1.5),
+  4d: ($spacer * 1.8),
   5: ($spacer * 2),
   6: ($spacer * 2.5),
   7: ($spacer * 3),
